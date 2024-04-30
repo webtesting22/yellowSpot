@@ -5,7 +5,6 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 const About = () => {
- 
   return (
     <div className="full-screen">
       <Swiper
@@ -119,15 +118,25 @@ const About = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="founders">
-            <h1 style={{fontSize:"4rem"}}>Our Founders</h1>
-          
+            <h1 style={{ fontSize: "4rem" }}>Our Founders</h1>
+
             <div className="name1">
-              <img src="https://t4.ftcdn.net/jpg/02/44/43/69/240_F_244436923_vkMe10KKKiw5bjhZeRDT05moxWcPpdmb.jpg" style={{borderRadius:"50%",marginRight:"40%"}}></img>
-              <h4>Pranay Shah</h4>
+              <div style={{display:"flex"}}>
+                <img
+                  src="https://t4.ftcdn.net/jpg/02/44/43/69/240_F_244436923_vkMe10KKKiw5bjhZeRDT05moxWcPpdmb.jpg"
+                  style={{ borderRadius: "50%", marginRight: "40%" }}
+                ></img>
+                <h4>Pranay Shah</h4>
+              </div>
             </div>
             <div className="name2">
-              <h4>Asit Shah</h4>
-              <img src="https://t4.ftcdn.net/jpg/02/44/43/69/240_F_244436923_vkMe10KKKiw5bjhZeRDT05moxWcPpdmb.jpg" style={{borderRadius:"50%",marginLeft:"40%"}}></img>
+              <div style={{display:"flex"}}>
+                <h4>Asit Shah</h4>
+                <img
+                  src="https://t4.ftcdn.net/jpg/02/44/43/69/240_F_244436923_vkMe10KKKiw5bjhZeRDT05moxWcPpdmb.jpg"
+                  style={{ borderRadius: "50%", marginLeft: "40%" }}
+                ></img>
+              </div>
             </div>
 
             <img src="./images/bgimg.png" className="video-background"></img>

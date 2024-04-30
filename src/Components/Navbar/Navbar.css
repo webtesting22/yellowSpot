@@ -1,14 +1,14 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px;
   color: white;
   position: relative;
+  z-index: 10; 
 }
 
 .logo a {
-  margin-left: 400%;
   text-decoration: none;
   color: #fff;
   font-size: 24px;
@@ -23,7 +23,7 @@
   height: 100%;
   width: 250px;
   background-color: #222;
-  transform: translateX(100%);
+  transform: translate(0%);
   transition: transform 0.3s ease-in-out, opacity 0.3s ease;
   opacity: 0;
   z-index: 1;
@@ -41,11 +41,11 @@
 .menu.active {
   transform: translateX(0);
   opacity: 1;
+  transition: none;
 }
 
 .menu-toggle {
   display: flex;
-  margin-right: 19%;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
@@ -110,26 +110,28 @@ ul li {
 
 
 @media (max-width: 768px) {
- 
+
   .logo {
-    flex: 1; 
+    flex: 1;
   }
-.logo a{
-  margin-left: 2px;
-}
+
+  .logo a {
+    margin-left: 2px;
+  }
+
   .menu {
-    width: 80%; 
+    width: 80%;
   }
 
   .menu-toggle {
-    margin-right: 10px; 
+    margin-right: 10px;
   }
 
   .menubar-section {
     position: relative;
   }
 
- 
+
 
   .menu.active {
     transform: translateX(0);
@@ -137,6 +139,6 @@ ul li {
   }
 
   .menubar-section .menu ul li a {
-    color: black; 
+    color: black;
   }
 }

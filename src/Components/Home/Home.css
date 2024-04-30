@@ -4,6 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 .mySwiper {
@@ -28,7 +31,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
@@ -68,15 +71,17 @@
 
 .content-text-two {
     margin-top: 40px;
-    
+
 }
-.content-text-three{
+
+.content-text-three {
     background-image: url("https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=600");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.content-three{
+
+.content-three {
     background-color: rgba(0, 0, 0, 0.397);
     width: 60vh;
     height: 100%;
@@ -86,13 +91,90 @@
     justify-content: center;
     flex-direction: column;
 }
+
+
+@media (max-width: 1630px) {
+    .content-three {
+        margin-right: 74%;
+        width: 70vh;
+    }
+}
+
+@media (max-width:964px) {
+    .content-three {
+        width: 60vh;
+        margin-right: 64%;
+    }
+}
+
+@media (max-width:1059px) {
+    .content-three {
+        width: 104vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
-   .btn{
-    padding: 3px 60px;
-   }
-} 
-@media (max-width: 890px) {
- .swiper-two{
-    font-size: 13px;
-  }
+    .content-three {
+        width: 60vh;
+        margin-right: 54%;
+    }
+}
+
+@media (max-width: 526px) {
+    .sub-content {
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 14px 34px;
+    }
+}
+
+@media (max-width: 874px) {
+    .box-content {
+        font-size: 9px;
+        width: 550px;
+    }
+
+    .line {
+        height: 142px;
+    }
+}
+
+@media (max-width: 581px) {
+    .box-content {
+        font-size: 6px;
+        width: 430px;
+    }
+
+    .line {
+        height: 120px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .box-content {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .line {
+        width: 50%;
+        height: 2px;
+        margin: 20px;
+        background-color: rgb(255, 166, 0);
+    }
+}
+
+
+@media (max-width: 637px) {
+    .content-three {
+        width: 160vh;
+        margin-right: 4%;
+    }
 }

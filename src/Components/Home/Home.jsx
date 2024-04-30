@@ -25,7 +25,7 @@ const Home = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
                 dolor.
               </h4>
-              <h1>Lorem ipsum dolor sit amet.</h1>
+              <h1>Lorem ipsum dolor sit amet</h1>
               <button className="btn">About</button>
             </div>
           </div>
@@ -59,10 +59,12 @@ const Home = () => {
         </div>
 
         <SwiperSlide className="content-text-three">
-          <div className="content-three">
-            <h1>Information</h1>
-            <h3>Lorem ipsum dolor sit</h3>
-            <button className="btn">See More</button>
+         
+            <div className="content-three">
+              <h1>Information</h1>
+              <h3>Lorem ipsum dolor sit</h3>
+              <button className="btn">See More</button>
+         
           </div>
         </SwiperSlide>
       </Swiper>
