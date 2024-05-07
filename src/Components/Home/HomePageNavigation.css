@@ -15,7 +15,7 @@
     display: none;
 }
 
-:where(.css-dev-only-do-not-override-kghr11).ant-drawer .ant-drawer-content{
+.ant-drawer .ant-drawer-content{
     backdrop-filter: blur(12px);
     background: transparent;
     transition: .5s;
