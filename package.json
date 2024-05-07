@@ -10,10 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "antd": "^5.16.5",
+    "bootstrap": "^5.3.3",
     "framer-motion": "^11.1.7",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^5.2.0",
     "react-router-dom": "^6.23.0",
     "styled-components": "^6.1.8",
     "styled-off-canvas": "^2.0.9",

@@ -1,88 +1,83 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
-
+import "./Navbar.css"
+import { Link } from "react-router-dom"
+import logo from "../Navbar/logo1.svg"
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const handleLeftHover = () => {
+    document.querySelector('.left-side-ul .line > div').style.transform = 'translateX(-30px)';
+    document.querySelector('.left-side-ul .line > div').style.width = '15px';
+    document.querySelector('.left-side-ul .line > div').style.transition = '.7s';
+    document.querySelector('.left-side-ul .line > div').style.opacity = '1';
   };
 
-  const handleMenuClick = (section) => {
-    setActiveSection(section);
-    setIsOpen(false);
+  const handleRightHover = () => {
+    document.querySelector('.left-side-ul .line > div').style.transform = 'translateX(30px)';
+    document.querySelector('.left-side-ul .line > div').style.width = '15px';
+    document.querySelector('.left-side-ul .line > div').style.transition = '.7s';
+    document.querySelector('.left-side-ul .line > div').style.opacity = '1';
+  };
+  const handletwoLeftHover = () => {
+    document.querySelector('.right-side-ul .line > div').style.transform = 'translateX(-30px)';
+    document.querySelector('.right-side-ul .line > div').style.width = '15px';
+    document.querySelector('.right-side-ul .line > div').style.transition = '.7s';
+    document.querySelector('.right-side-ul .line > div').style.opacity = '1';
   };
 
+  const handletwoRightHover = () => {
+    document.querySelector('.right-side-ul .line > div').style.transform = 'translateX(30px)';
+    document.querySelector('.right-side-ul .line > div').style.width = '15px';
+    document.querySelector('.right-side-ul .line > div').style.transition = '.7s';
+    document.querySelector('.right-side-ul .line > div').style.opacity = '1';
+  };
+
+  const handleHoverOut = () => {
+    document.querySelector('.left-side-ul .line > div').style.transform = '';
+    document.querySelector('.left-side-ul .line > div').style.width = '';
+    document.querySelector('.left-side-ul .line > div').style.opacity = '0.2';
+  };
+  const handletwoHoverOut = () => {
+    document.querySelector('.right-side-ul .line > div').style.transform = '';
+    document.querySelector('.right-side-ul .line > div').style.width = '';
+    document.querySelector('.right-side-ul .line > div').style.opacity = '0.2';
+  };
   return (
-    <div className="navbar">
-      <div className="logo">
-        <Link to="/">Logo</Link>
-      </div>
+    <>
+      <header className="header" id="header">
+        <div className="main-nav-container">
+          <div className="left-side-links">
+            <div className="container">
+              <div className="left-side-ul">
+                <div className="d-flex animation-class" style={{ alignItems: "center" }}>
+                  <div className="left-side" onMouseEnter={handleLeftHover} onMouseLeave={handleHoverOut}><span><Link to="/">ABOUT US</Link> </span></div>
+                  <div className="line"><div></div></div>
+                  <div className="right-side" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/Inventory">INVENTORY</Link></span></div>
+                </div>
 
-      <div className="menubar-section">
-        <div
-          className={`fade-in-image menu ${isOpen ? "active" : ""}`}
-          style={{
-            backgroundColor: "white",
-            zIndex: "10",
-            right: "20%",
-            width: "150px",
-            height: "190px",
-            marginTop: "60px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <ul>
-            <li>
-              <Link
-                to="/"
-                className={activeSection === "home" ? "active" : ""}
-                onClick={() => handleMenuClick("home")}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/about"
-                className={activeSection === "about" ? "active" : ""}
-                onClick={() => handleMenuClick("about")}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/services"
-                className={activeSection === "services" ? "active" : ""}
-                onClick={() => handleMenuClick("services")}
-              >
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className={activeSection === "contact" ? "active" : ""}
-                onClick={() => handleMenuClick("contact")}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+              </div>
+            </div>
+          </div>
+          <div className="website-identity">
+            <div className="yellow-spot-logo">
+              <Link to="/"><img src={logo} alt="" style={{ width: "90%" }} /></Link>
+            </div>
+          </div>
+          <div className="right-side-links">
+            <div className="container">
+              <div className="right-side-ul">
+                <div className="d-flex animation-class" style={{ alignItems: "center" }}>
+                  <div className="left-side" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/">REVIEWS</Link></span></div>
+                  <div className="line"><div></div></div>
+                  <div className="right-side" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="">CONTACT US</Link></span></div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="menu-toggle" onClick={toggleMenu}>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
-        <div className={`bar ${isOpen ? "open" : ""}`}></div>
-      </div>
-    </div>
+      </header>
+    </>
   );
 };
 

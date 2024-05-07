@@ -1,0 +1,123 @@
+#home-page-header{
+    position: absolute;
+    top: 0px;
+    z-index: 555;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 555555555;
+    padding: 30px 50px;
+}
+.logo-home{
+    width: 60px;
+}
+:where(.css-dev-only-do-not-override-kghr11).ant-drawer .ant-drawer-header {
+    display: none;
+}
+
+:where(.css-dev-only-do-not-override-kghr11).ant-drawer .ant-drawer-content{
+    backdrop-filter: blur(12px);
+    background: transparent;
+    transition: .5s;
+}
+.ant-drawer-body{
+    display: flex;
+    align-items: center;
+}
+.home-menu-ul{
+    padding: 0px 0px;
+}
+.home-menu-ul li{
+    list-style: none;
+    margin: 10px 12px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 55;
+    cursor: pointer;
+}
+.home-menu-ul li:hover{
+    list-style: none;
+    margin: 10px 12px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 55;
+    cursor: pointer;
+    
+}
+
+
+  
+  li.flip-animate span {
+    position: relative;
+    display: inline-block;
+    padding: 0;    
+    font-weight: 300;
+    transition: transform 0.3s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+  }
+  
+  li.flip-animate span:before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: attr(data-hover);
+    transition: color 0.3s;
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0;
+    text-align: center;
+  }
+  
+  li.flip-animate:hover span,
+  li.flip-animate:focus span {
+    transform: rotateX(90deg) translateY(-22px);
+    
+  }
+  
+  li.flip-animate:hover span:before,
+  li.flip-animate:focus span:before {
+    color: #ffffff;
+
+    
+  }
+
+  .navigation-btn-home{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    content: "f";
+    color: white;
+  }
+
+  .menu-btn{
+    border: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.539);
+    transition: .6s;
+  }
+  .menu-btn:hover{
+    background-color: rgba(255, 255, 255, 0.231);
+    transition: .6s;
+  }
+  .icon-transition{
+    color: white;
+  }
+  .container-heading h5{
+    color: rgb(230, 230, 230);
+    font-size: 20px;
+    font-weight: 300;
+  }
+ 
+  .flip-animate img{
+    margin-right: 10px;
+  }

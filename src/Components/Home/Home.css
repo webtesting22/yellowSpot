@@ -1,5 +1,5 @@
 .full-screen {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -9,10 +9,6 @@
     margin: 0;
 }
 
-.mySwiper {
-    width: 100%;
-    height: 100%;
-}
 
 .btn {
     padding: 21px 64px;
@@ -27,13 +23,7 @@
     background-color: white;
 }
 
-.swiper-slide {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
+
 
 .video-background {
     position: absolute;
@@ -56,11 +46,7 @@
     text-align: center;
 }
 
-.line {
-    height: 230px;
-    border-left: 2px solid rgb(255, 166, 0);
-    margin: 0 50px;
-}
+
 
 .box-content {
     display: flex;
@@ -139,9 +125,6 @@
         width: 550px;
     }
 
-    .line {
-        height: 142px;
-    }
 }
 
 @media (max-width: 581px) {
@@ -150,31 +133,21 @@
         width: 430px;
     }
 
-    .line {
-        height: 120px;
-    }
-
+  
+}
+.home-page-slider .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: transparent;
+    border: 2px solid #FFED00;
+    padding: 3px;
+   
 }
 
-@media (max-width: 450px) {
-    .box-content {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .line {
-        width: 50%;
-        height: 2px;
-        margin: 20px;
-        background-color: rgb(255, 166, 0);
-    }
+.text-container-set{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
 }
-
-
-@media (max-width: 637px) {
-    .content-three {
-        width: 160vh;
-        margin-right: 4%;
-    }
+.btn-container button{
+    border: none;
+    margin: 30px 0px;
 }

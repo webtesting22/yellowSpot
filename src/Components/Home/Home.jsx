@@ -4,71 +4,86 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./Home.css";
-
+import HomePageNavigation from "./HomePageNavigation";
 const Home = () => {
+  const carousalImagers = [
+    {
+      image: "https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      sliderHeading: "Hello Demo Heading"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1593363725982-860117ff8b78?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1629005514669-70e8bbfcf917?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
   return (
-    <div className="full-screen">
-      <Swiper
-        direction="vertical"
-        slidesPerView={1}
-        spaceBetween={30}
-        mousewheel={true}
-        pagination={{ clickable: true }}
-        modules={[Mousewheel, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <div className="content-text">
-            <div className="sub-content">
-              <h1>LOGO</h1>
-              <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
-                dolor.
-              </h4>
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <button className="btn">About</button>
-            </div>
-          </div>
-          <video autoPlay muted loop className="video-background">
-            <source
-              src="https://lilamanigroup.com/video/lilamani.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </SwiperSlide>
-        <div className="content-text-two">
-          <SwiperSlide className="swiper-two">
-            <div className="heading-two">
-              <h1>Heading Of Name</h1>
-              <h2>With</h2>
-            </div>
-            <div className="box-content">
-              <h1>400 Million Urban Audience </h1>
-              <div className="line"></div>
-              <h1>700+ Daily Impressions </h1>
-              <div className="line"></div>
-              <h1>500+ Brand clients</h1>
-            </div>
-            <video autoPlay muted loop className="video-background">
-              <source
-                src="https://videos.pexels.com/video-files/2818546/2818546-sd_640_360_24fps.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </SwiperSlide>
-        </div>
+    <>
+      <HomePageNavigation />
+      <div className="home-page-slider">
+        <Swiper
+          direction="vertical"
+          slidesPerView={1}
+          spaceBetween={30}
+          mousewheel={true}
+          pagination={{ clickable: true }}
+          modules={[Mousewheel, Pagination]}
+          style={{ height: "100vh", width: "100%", position: "relative" }}
 
-        <SwiperSlide className="content-text-three">
-         
-            <div className="content-three">
-              <h1>Information</h1>
-              <h3>Lorem ipsum dolor sit</h3>
-              <button className="btn">See More</button>
-         
-          </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
+        >
+
+          <SwiperSlide style={{ height: "100vh" }}>
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <div className="text-container-set">
+              <div className="text-container">
+                {/* <h1>{item.sliderHeading}</h1> */}
+                <div className="btn-container">
+                  <button>View More<span></span></button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ height: "100vh" }}>
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <div className="text-container-set">
+              <div className="text-container">
+                {/* <h1>{item.sliderHeading}</h1> */}
+                <div className="btn-container">
+                  <button>View More<span></span></button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ height: "100vh" }}>
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <div className="text-container-set">
+              <div className="text-container">
+                {/* <h1>{item.sliderHeading}</h1> */}
+                <div className="btn-container">
+                  <button>View More<span></span></button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ height: "100vh" }}>
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <div className="text-container-set">
+              <div className="text-container">
+                {/* <h1>{item.sliderHeading}</h1> */}
+                <div className="btn-container">
+                  <button>View More<span></span></button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+
+
+        </Swiper>
+      </div>
+    </>
+
   );
 };
 
