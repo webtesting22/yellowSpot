@@ -34,7 +34,7 @@ const Home = () => {
         >
 
           <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
             <div className="text-container-set">
               <div className="text-container">
                 {/* <h1>{item.sliderHeading}</h1> */}
@@ -45,7 +45,7 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
             <div className="text-container-set">
               <div className="text-container">
                 {/* <h1>{item.sliderHeading}</h1> */}
@@ -56,7 +56,7 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
             <div className="text-container-set">
               <div className="text-container">
                 {/* <h1>{item.sliderHeading}</h1> */}
@@ -67,7 +67,7 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style={{ width: "100%", height: "100%" }} />
+            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
             <div className="text-container-set">
               <div className="text-container">
                 {/* <h1>{item.sliderHeading}</h1> */}
