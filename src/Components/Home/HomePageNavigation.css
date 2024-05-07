@@ -8,6 +8,19 @@
     z-index: 555555555;
     padding: 30px 50px;
 }
+@media (max-width:600px){
+    #home-page-header{
+        position: absolute;
+        top: 0px;
+        z-index: 555;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        z-index: 555555555;
+        padding: 30px 20px;
+    }
+
+}
 .logo-home{
     width: 60px;
 }
