@@ -11,7 +11,7 @@
 .logo-home{
     width: 60px;
 }
-:where(.css-dev-only-do-not-override-kghr11).ant-drawer .ant-drawer-header {
+.ant-drawer .ant-drawer-header {
     display: none;
 }
 
