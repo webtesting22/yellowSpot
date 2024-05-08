@@ -61,7 +61,7 @@ const HomePageNavigation = () => {
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00" }} />
                             <ul className="home-menu-ul">
                                 <li class="flip-animate" ><img src={vector5} alt="" /><span data-hover="About&nbsp;US">About&nbsp;US</span></li>
-                                <li class="flip-animate" ><img src={vector1} alt="" /><span data-hover="Inventory">Inventory</span></li>
+                                <Link to="/Inventory"><li class="flip-animate" ><img src={vector1} alt="" /><span data-hover="Inventory">Inventory</span></li></Link>
                                 <li class="flip-animate" ><img src={vector3} alt="" /><span data-hover="Review">Review</span></li>
                                 <li class="flip-animate" ><img src={vector7} alt="" /><span data-hover="Contact US">Contact US</span></li>
                             </ul>
