@@ -53,8 +53,9 @@ const Inventory = () => {
     };
     useEffect(() => {
         const fetchData = async () => {
+            console.log("hello", import.meta.env)
             try {
-                const response = await fetch('http://192.168.1.5:4040/api/inventoryManagement');
+                const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/inventoryManagement`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
