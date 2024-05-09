@@ -131,13 +131,13 @@ const AboutUS = () => {
                                         <div className="founder-img-container">
                                             <img src={item.Founderimage} alt="YellowSpotFounder" />
                                         </div>
-                                        <div className="slite-padding"></div>
-                                        <div className="slite-padding"></div>
+                                        {/* <div className="slite-padding"></div>
+                                        <div className="slite-padding"></div> */}
                                         <div className="founder-info">
                                             <i class='bx bxs-user-circle'></i><h4><span>{item.FounderName}</span> {item.FounderSecondName}</h4>
                                         </div>
                                         <div className="social-icons">
-                                            
+
                                         </div>
                                     </div>
                                 </Col>
