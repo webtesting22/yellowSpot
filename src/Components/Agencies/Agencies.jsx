@@ -8,6 +8,7 @@ const Agencies = () => {
             <Navbar />
             <div className="slite-padding"></div>
             <div className="slite-padding"></div>
+            <div className="slite-padding"></div>
             <section className="slite-padding">
                 {/* <div className="overlay-back-img">
                     <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
@@ -27,6 +28,11 @@ const Agencies = () => {
                         repeat={Infinity}
                     />
                     <p>When two leaders come together, magic happens!</p>
+                    <div className="slite-padding"></div>
+                    <div>
+                        <button className="animated-scroll-down-btn">Scroll Down <br /><i class='bx bxs-chevron-down' ></i></button>
+                        <span></span>
+                    </div>
                 </div>
             </section>
         </>

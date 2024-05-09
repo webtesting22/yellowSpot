@@ -1,0 +1,154 @@
+.overlay-back-img img{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+    /* background-color: gray; */
+}
+.animated-text-about{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.animated-text-about h1{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+}
+
+.index-module_type__E-SaG::after{
+    content: '|';
+    color: #FFED00;
+}
+.animated-text-about P{
+    color: white;
+    letter-spacing:5px;
+}
+
+.animated-scroll-down-btn {
+    /* Add your button styles here */
+    /* For example */
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #2929294b;
+    color: #FFED00;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translateX(-50%);
+    animation: scrollAnimation 1.5s infinite;
+    
+    transition: .5s;
+}
+
+.animated-scroll-down-btn:hover {
+    /* Add your button styles here */
+    /* For example */
+    padding: 5px 20px;
+    background-color: #FFED00;
+    border: 1px solid #ffee0015;
+    transition: .5s;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translateX(-50%);
+    animation: scrollAnimation 1s infinite;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.parent-Company-info img{
+    width: 100%;
+    /* padding: 4rem; */
+    /* aspect-ratio: 3/2;
+    object-fit: contain; */
+    display: flex;
+    margin: auto;
+}
+.parent-comapny-content h4{
+    font-size: 40px;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+}
+.parent-comapny-content h4 span{
+    font-size: 40px;
+    color: #FFED00;
+    font-family: "Barlow Condensed", sans-serif;
+}
+.parent-comapny-content p{
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(198, 198, 198);
+    font-family: "Barlow Condensed", sans-serif;
+}
+.yellow-color-back{
+    background-color: #FFED00;
+    height: 70vh;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.yellow-poster-insideone{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.yellow-poster-insideone h4{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.yellow-poster-insideone h4 span{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.yellow-poster-insidetwo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yellow-poster-insidetwo img{
+    width: 70%;
+}
+.yellow-poster-insideone img{
+    width:300px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+.yellow-poster-insideLogo {
+    display: flex;
+}
+
+.yellow-poster-insideLogo div:nth-child(1){
+    border-right: 2px solid black;
+}
+.parent-Company-info .ant-row .ant-col{
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+
+.first{
+    padding-left: 2rem;
+}
+.second{
+    padding-right: 2rem;
+}
