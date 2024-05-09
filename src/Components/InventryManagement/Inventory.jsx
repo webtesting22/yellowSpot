@@ -299,7 +299,7 @@ const Inventory = () => {
                                         <div className="small-slite-padding"></div>
                                         <div className="card-description">
 
-                                            <h6>CodeNo: {item.CodeNo}</h6>
+                                            {/* <h6>CodeNo: {item.CodeNo}</h6> */}
                                             <p><img src={locationIcon} alt="" style={{ color: "white" }} />
                                                 <a
                                                     href="#"
@@ -325,10 +325,10 @@ const Inventory = () => {
                                                     </div>
                                                 </div>
                                                 <hr style={{ margin: "4px 0px" }} />
-                                                <div className="card-display">
+                                                {/* <div className="card-display">
                                                     <p>Display:</p>
                                                     <p>{item.display}</p>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                         <div className="small-slite-padding"></div>

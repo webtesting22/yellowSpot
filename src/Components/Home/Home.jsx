@@ -86,22 +86,22 @@ const Home = () => {
                     <Row>
                       <Col lg={6}>
                         <div>
-                          <CounterAnimationComponent number={400} title="Premium Outdoor Sites in Ahmedabad " />
+                          <CounterAnimationComponent number="400" title="Premium Outdoor Sites in Ahmedabad " />
                         </div>
                       </Col>
                       <Col lg={6}>
                         <div>
-                          <CounterAnimationComponent number={1000} title="Daily Impressions " />
+                          <CounterAnimationComponent number="500" title="Daily Impressions " />
                         </div>
                       </Col>
                       <Col lg={6}>
                         <div>
-                          <CounterAnimationComponent number={500} title="Clients" />
+                          <CounterAnimationComponent number="1000" title="Clients" />
                         </div>
                       </Col>
                       <Col lg={6}>
                         <div>
-                          <CounterAnimationComponent number={25} title="Years of Industry Experience" />
+                          <CounterAnimationComponent number="25" title="Years of Industry Experience" />
                         </div>
                       </Col>
                     </Row>
