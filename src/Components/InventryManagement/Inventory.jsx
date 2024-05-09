@@ -269,7 +269,7 @@ const Inventory = () => {
                 <div className="inventry-card-container ">
                     <div className="row w-100 m-auto">
                         {filteredData && filteredData.map(item => (
-                            <div className="col-lg-4 col-md-6" style={{ padding: "12px" }} key={item.id}>
+                            <div className="col-lg-3 col-md-6" style={{ padding: "12px" }} key={item.id}>
                                 <Card>
                                     <div>
                                         <div className="card-img">
@@ -289,7 +289,7 @@ const Inventory = () => {
                                                 </a>
                                             </p>
                                             <div className="small-slite-padding"></div>
-                                            <div className="small-slite-padding"></div>
+                                            {/* <div className="small-slite-padding"></div> */}
                                             <div>
                                                 <div className="card-dimentions">
                                                     <p>Dimensions (W X H) ft:</p>
@@ -303,7 +303,7 @@ const Inventory = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <hr style={{ margin: "10px 0px" }} />
+                                                <hr style={{ margin: "4px 0px" }} />
                                                 <div className="card-display">
                                                     <p>Display:</p>
                                                     <p>{item.display}</p>

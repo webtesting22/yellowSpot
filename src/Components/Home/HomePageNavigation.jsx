@@ -60,10 +60,10 @@ const HomePageNavigation = () => {
                             <h5>Menu</h5>
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00" }} />
                             <ul className="home-menu-ul">
-                                <li class="flip-animate" ><img src={vector5} alt="" /><span data-hover="About&nbsp;US">About&nbsp;US</span></li>
+                            <Link to="/AboutUs"><li class="flip-animate" ><img src={vector5} alt="" /><span data-hover="About&nbsp;US">About&nbsp;US</span></li></Link>
                                 <Link to="/Inventory"><li class="flip-animate" ><img src={vector1} alt="" /><span data-hover="Inventory">Inventory</span></li></Link>
-                                <li class="flip-animate" ><img src={vector3} alt="" /><span data-hover="Review">Review</span></li>
-                                <li class="flip-animate" ><img src={vector7} alt="" /><span data-hover="Contact US">Contact US</span></li>
+                                <Link to="/Agencies"><li class="flip-animate" ><img src={vector3} alt="" /><span data-hover="Agencies">Agencies</span></li></Link>
+                                <Link to="/OurOfferings"><li class="flip-animate" ><img src={vector7} alt="" /><span data-hover="Our Offerings">Our Offerings</span></li></Link>
                             </ul>
                         </div>
                         <div className="slite-padding"></div>

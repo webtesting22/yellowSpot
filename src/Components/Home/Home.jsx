@@ -3,9 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 import "./Home.css";
 import HomePageNavigation from "./HomePageNavigation";
+import CounterAnimationComponent from "../CounterAnimationComponent/CounterAnimationComponent";
+import billboard from "../Home/iconsImages/billboard.png"
+import logo from "../Navbar/logo1.svg"
 const Home = () => {
+  
   const carousalImagers = [
     {
       image: "https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -32,47 +37,90 @@ const Home = () => {
           style={{ height: "100vh", width: "100%", position: "relative" }}
 
         >
+          <SwiperSlide style={{ height: "100vh" }}>
+            <div className="image-container">
+              <img src="https://images.unsplash.com/photo-1638368888211-cecd27facf71?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            </div>
+            <div className="image-overlay"></div>
+            <div className="text-container-set">
+              <div className="text-container second">
+                <div>
+                  <h1>YELLOWSPOT - When two leaders come together, magic happens!</h1>
+                </div>
+                <div className="slite-padding"></div>
+                <div className="btn-container">
+                  <Link to="/AboutUs"><button><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ height: "100vh" }}>
+            <div className="image-container">
+           
+              <img src=" https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            </div>
+            <div className="image-overlay"></div>
+            <div className="text-container-set">
+              <div className="text-container">
+                <div className="main-content-container">
+                  <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} />
+                  <h1><span>industry experience</span></h1>
+                  <div className="slite-padding"></div>
+                  <div className="content-container">
+                    <div>
+                      <CounterAnimationComponent number={400} title="Premium Outdoor Sites in Ahmedabad " />
+                    </div>
+                    <div>
+                      <CounterAnimationComponent number={1000} title="Daily Impressions " />
+                    </div>
+                    <div>
+                      <CounterAnimationComponent number={500 / 1000} title="Clients" />
+                    </div>
+                    <div>
+                      <CounterAnimationComponent number={25} title="Years of Industry Experience" />
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="btn-container">
+                  <button>View More<span></span></button>
+                </div> */}
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ height: "100vh" }}>
+            <div className="image-container">
+              <img src="https://images.unsplash.com/photo-1557858310-9052820906f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            </div>
+            <div className="image-overlay"></div>
+            <div className="text-container-set">
+              <div className="text-container second">
+                <div>
+                  <h1>For Agencies | For Brands</h1>
+                </div>
+                <div className="slite-padding"></div>
+                <div className="btn-container">
+                  <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
 
           <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
-            <div className="text-container-set">
-              <div className="text-container">
-                {/* <h1>{item.sliderHeading}</h1> */}
-                <div className="btn-container">
-                  <button>View More<span></span></button>
-                </div>
-              </div>
+            <div className="image-container">
+              <img src="https://images.unsplash.com/photo-1571769380537-2e0bf17dd263?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
             </div>
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
+            <div className="image-overlay"></div>
             <div className="text-container-set">
-              <div className="text-container">
-                {/* <h1>{item.sliderHeading}</h1> */}
-                <div className="btn-container">
-                  <button>View More<span></span></button>
+              <div className="text-container second">
+                <div>
+                  <h1>For Agencies | For Brands</h1>
                 </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
-            <div className="text-container-set">
-              <div className="text-container">
-                {/* <h1>{item.sliderHeading}</h1> */}
+                <div className="slite-padding"></div>
                 <div className="btn-container">
-                  <button>View More<span></span></button>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide style={{ height: "100vh" }}>
-            <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  />
-            <div className="text-container-set">
-              <div className="text-container">
-                {/* <h1>{item.sliderHeading}</h1> */}
-                <div className="btn-container">
-                  <button>View More<span></span></button>
+                  <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
                 </div>
               </div>
             </div>

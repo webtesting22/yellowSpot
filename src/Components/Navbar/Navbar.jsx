@@ -48,7 +48,7 @@ const Navbar = () => {
             <div className="container">
               <div className="left-side-ul">
                 <div className="d-flex animation-class" style={{ alignItems: "center" }}>
-                  <div className="left-side" onMouseEnter={handleLeftHover} onMouseLeave={handleHoverOut}><span><Link to="/">ABOUT US</Link> </span></div>
+                  <div className="left-side" onMouseEnter={handleLeftHover} onMouseLeave={handleHoverOut}><span><Link to="/AboutUS">ABOUT US</Link> </span></div>
                   <div className="line"><div></div></div>
                   <div className="right-side" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/Inventory">INVENTORY</Link></span></div>
                 </div>
@@ -65,9 +65,9 @@ const Navbar = () => {
             <div className="container">
               <div className="right-side-ul">
                 <div className="d-flex animation-class" style={{ alignItems: "center" }}>
-                  <div className="left-side" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/">REVIEWS</Link></span></div>
+                  <div className="left-side" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/Agencies">Agencies</Link></span></div>
                   <div className="line"><div></div></div>
-                  <div className="right-side" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="">CONTACT US</Link></span></div>
+                  <div className="right-side" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="/OurOfferings">Our Offerings</Link></span></div>
                 </div>
 
 

@@ -6,6 +6,9 @@ import Home from "./Components/Home/Home";
 // import Contact from "./Components/Contact/Contact";
 // import Services from "./Components/Services/Services";
 import Inventory from "./Components/InventryManagement/Inventory";
+import AboutUS from "./Components/AboutUs/AboutUs";
+import Agencies from "./Components/Agencies/Agencies";
+import OurOfferings from "./Components/OurOfferings/OurOfferings";
 function App() {
   return (
     <BrowserRouter>
@@ -14,9 +17,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Inventory" element={<Inventory />} />
-            {/* <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/contact" element={<Contact />} /> */}
+            <Route path="/AboutUS" element={<AboutUS />} />
+            <Route path="/Agencies" element={<Agencies />} />
+            <Route path="/OurOfferings" element={<OurOfferings />} />
           </Routes>
       </div>
     </BrowserRouter>
