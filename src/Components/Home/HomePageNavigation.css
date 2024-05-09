@@ -25,7 +25,7 @@ a{
 
 }
 .logo-home{
-    width: 60px;
+    width: 80px;
 }
 .ant-drawer .ant-drawer-header {
     display: none;
@@ -138,3 +138,6 @@ a{
     margin-right: 10px;
   }
  
+  .ant-drawer-content-wrapper{
+    width: 400px;
+  }

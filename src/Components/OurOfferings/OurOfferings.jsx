@@ -110,7 +110,8 @@ const OurOfferings = () => {
                     <span></span>
                 </div>
             </div>
-            <section id="serviceCard">
+            <section id="serviceCard" className="container">
+                <h1>Our Services</h1>
                 <div className="container p-0">
                     {/* <div className="section-padding"></div>
                     <h1 className="services-heading">Our Services</h1>
@@ -138,6 +139,9 @@ const OurOfferings = () => {
                         </Row>
                     </div>
                 </div>
+
+
+
                 {/* <div>
                     <h2>Shape Generator</h2>
                     <label>
@@ -152,6 +156,42 @@ const OurOfferings = () => {
                     {shape && <div style={{ margin: '20px 0' }}>{shape}</div>}
                 </div> */}
             </section>
+            <div className="slite-padding"></div>
+            <div className="slite-padding"></div>
+            {/* <div className="our-products">
+                <div className="animated-hover-boxes">
+                    <div className="animated-boxes-one">
+                        <div className="back-overlay"></div>
+                        <div className="content-box">
+                            <h4>Holding Type</h4>
+                            <button>Yellow Spot</button>
+                        </div>
+                    </div>
+                    <div className="animated-boxes-two">
+                        <div className="back-overlay"></div>
+                        <div className="content-box">
+                            <h4>Holding Type</h4>
+                            <button>Yellow Spot</button>
+                        </div>
+                    </div>
+                    <div className="animated-boxes-three">
+                        <div className="back-overlay"></div>
+                        <div className="content-box">
+                            <h4>Holding Type</h4>
+                            <button>Yellow Spot</button>
+                        </div>
+                    </div>
+                    <div className="animated-boxes-four">
+                        <div className="back-overlay"></div>
+                        <div className="content-box">
+                            <h4>Holding Type</h4>
+                            <button>Yellow Spot</button>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+            <div className="slite-padding"></div>
+            <div className="slite-padding"></div>
         </>
     );
 };

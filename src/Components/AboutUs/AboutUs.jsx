@@ -9,7 +9,20 @@ import logo from "../AboutUs/logo1.svg"
 import { Link } from "react-router-dom";
 import billboard from "../Home/iconsImages/billboard.png"
 const AboutUS = () => {
+    const foudersDetails = [
+        {
+            Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            FounderName: "Pranay",
+            FounderSecondName: "Shah"
 
+        },
+        {
+            Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            FounderName: "Asit",
+            FounderSecondName: "Shah"
+
+        }
+    ]
     return (
 
         <>
@@ -81,7 +94,7 @@ const AboutUS = () => {
                         <Col lg={16}>
                             <div className="parent-comapny-content first">
                                 <h4><span>HET Graphics</span> Total Outdoor Solutions</h4>
-                                <p>Het Graphics, well-known in the industry for the iconic pole kiosks and innovative ideas, has successfully provided clients with a one-stop solution for outdoor advertising. Our extensive network of kiosks, hoardings and signages make creating awareness for your brand/ product/ service easier. With HET by their side, many brands have advertised throughout Ahmedabad.</p>
+                                <p>Het Graphics, known as the industry leader in Ahmedabad city for its innovative ideas and extensive coverage, has successfully provided clients with a one-stop solution for outdoor advertising. Their extensive network of hoardings, gantries and signages makes creating awareness for your brand/product/service easier. With HET by their side, many national and local brands have advertised throughout the state of Gujarat.</p>
                                 <div className="small-slite-padding"></div>
                                 <div className="btn-container">
                                     <Link to="/AboutUs"><button className="m-0" style={{ backgroundColor: "#FFED00" }}><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
@@ -92,7 +105,7 @@ const AboutUS = () => {
                         <Col lg={16}>
                             <div className="parent-comapny-content second">
                                 <h4><span>Khushi</span> Advertising</h4>
-                                <p>Khushi Advertising, India’s leading ambient media agency, leverages its expertise and consummate skills to present the most effective campaigns with a distinct and long-lasting impact. With a presence in 22 cities, we are your one-stop solution for advertising in India’s 2700+ multiplex screens, 350+ malls, and 30+ airports.</p>
+                                <p>Khushi Advertising, India’s leading ambient media agency, leverages its expertise and consummate skills to present the most effective campaigns with a distinct and long-lasting impact. With a presence in 22 cities, we are your one-stop solution for advertising in India’s 2700+ multiplex screens, 350+ malls, and 30+ airports. Our wide-spread reach across India and 300+ professionals enable us to be present at the right avenue at the right time to reach out to the right audience.</p>
                                 <div className="small-slite-padding"></div>
                                 <div className="btn-container d-block">
                                     <Link to="/AboutUs"><button className="m-0"><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
@@ -104,6 +117,35 @@ const AboutUS = () => {
                             <img src={khushiImage} alt="" className="HET_IMG_two" />
                         </Col>
                     </Row>
+                </div>
+                <div className="paddin-slite"></div>
+
+                <div className="co-founder-section container">
+                    <h1>Meet The Founders</h1>
+                    <div className="slite-padding"></div>
+                    <div>
+                        <Row className="w-100">
+                            {foudersDetails.map((item, index) => (
+                                <Col lg={12} key={index}>
+                                    <div className="founder-container">
+                                        <div className="founder-img-container">
+                                            <img src={item.Founderimage} alt="YellowSpotFounder" />
+                                        </div>
+                                        <div className="slite-padding"></div>
+                                        <div className="slite-padding"></div>
+                                        <div className="founder-info">
+                                            <i class='bx bxs-user-circle'></i><h4><span>{item.FounderName}</span> {item.FounderSecondName}</h4>
+                                        </div>
+                                        <div className="social-icons">
+                                            
+                                        </div>
+                                    </div>
+                                </Col>
+                            ))}
+
+
+                        </Row>
+                    </div>
                 </div>
             </section>
 

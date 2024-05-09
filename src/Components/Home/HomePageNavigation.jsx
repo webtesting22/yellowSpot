@@ -49,7 +49,7 @@ const HomePageNavigation = () => {
                 <Drawer
                     title={null}
                     placement={placement}
-                    width={500}
+                    width={400}
                     onClose={onCloseDrawer}
                     visible={drawerVisible}
                     footer={null}

@@ -295,3 +295,12 @@
     margin: 0px 20px;
     background-color: #FFED00;
 }
+
+.second p{
+    font-family: "Barlow Condensed", sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.text-container-set h1{
+    font-family: "Barlow Condensed", sans-serif;
+}

@@ -10,7 +10,7 @@ import CounterAnimationComponent from "../CounterAnimationComponent/CounterAnima
 import billboard from "../Home/iconsImages/billboard.png"
 import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
-import { Row,Col } from "antd";
+import { Row, Col } from "antd";
 const Home = () => {
 
   const carousalImagers = [
@@ -61,6 +61,7 @@ const Home = () => {
                     repeat={Infinity}
                   />
                 </div>
+                <p>As the city’s largest media planner and advertising solution provider</p>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
                   <Link to="/AboutUs"><button><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
@@ -79,7 +80,7 @@ const Home = () => {
               <div className="text-container">
                 <div className="main-content-container">
                   {/* <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} /> */}
-                  <h1><span><span style={{color:"#FFED00"}}>industry</span> experience</span></h1>
+                  <h1><span><span style={{ color: "#FFED00" }}>industry</span> experience</span></h1>
                   <div className="slite-padding"></div>
                   <div className="content-container">
                     <Row>
@@ -117,19 +118,39 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
-            <div className="image-container">
-              <img src="https://images.unsplash.com/photo-1557858310-9052820906f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-            </div>
-            <div className="image-overlay"></div>
-            <div className="text-container-set">
-              <div className="text-container second">
-                <div>
-                  <h1>For Agencies | For Brands</h1>
+            <div className="our-products">
+              <div className="animated-hover-boxes">
+                <div className="animated-boxes-one">
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4>Holding Type</h4>
+                    <div className="small-slite-padding"></div>
+                    <button>Yellow Spot</button>
+                  </div>
                 </div>
-                <div className="slite-padding"></div>
-                <div className="btn-container">
-                  <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-                  <button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
+                <div className="animated-boxes-two">
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4>Holding Type</h4>
+                    <div className="small-slite-padding"></div>
+                    <button>Yellow Spot</button>
+                  </div>
+                </div>
+                <div className="animated-boxes-three">
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4>Holding Type</h4>
+                    <div className="small-slite-padding"></div>
+                    <button>Yellow Spot</button>
+                  </div>
+                </div>
+                <div className="animated-boxes-four">
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4>Holding Type</h4>
+                    <div className="small-slite-padding"></div>
+                    <button>Yellow Spot</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -143,7 +164,25 @@ const Home = () => {
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
-                  <h1>For Agencies | For Brands</h1>
+                  <h1>Our Product | For Services</h1>
+                </div>
+                <div className="slite-padding"></div>
+                <div className="btn-container">
+                  <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide style={{ height: "100vh" }}>
+            <div className="image-container">
+              <img src="https://images.unsplash.com/photo-1582129165473-a878f105f3b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+            </div>
+            <div className="image-overlay"></div>
+            <div className="text-container-set">
+              <div className="text-container second">
+                <div>
+                  <h1>Our Key Clients</h1>
                 </div>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
