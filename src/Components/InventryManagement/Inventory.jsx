@@ -15,7 +15,7 @@ import locationIcon from "../InventryManagement/LocationIcon.svg"
 import NamedSelectComponent from "../FilterSelect/NameSelectComponent";
 import Navbar from "../Navbar/Navbar";
 import { Autoplay } from 'swiper/modules';
-
+import { TypeAnimation } from 'react-type-animation';
 const Inventory = () => {
     const [showDrawer, setShowDrawer] = useState(false);
     const drawerRef = useRef(null);
@@ -121,8 +121,29 @@ const Inventory = () => {
             <Navbar />
             <div className="section-padding"></div>
             <br />
+            <div className="animated-text-about">
+                <TypeAnimation
+                    sequence={[
+                        // Same substring at the start will only be typed out once, initially
+                        'YELLOWSPOT  ',
+                        6000, // wait 1s before replacing "Mice" with "Hamsters"
 
-            <section className="section-padding main-container-edit container">
+                    ]}
+                    wrapper="h1"
+                    speed={200}
+                    style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
+                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                    repeat={Infinity}
+                />
+                <p>Sky's the Limit: Elevate Your Brand with Our Billboard Inventory!</p>
+                <div className="slite-padding"></div>
+                <div>
+                    <a href="#InventoryFilters"> <button className="animated-scroll-down-btn">Scroll Down <br /><i class='bx bxs-chevron-down' ></i></button></a>
+
+                    <span></span>
+                </div>
+            </div>
+            <section className=" main-container-edit container" id="InventoryFilters">
                 {/* <div className="open-overlay"></div> */}
                 <div className="left-side-container">
                     <div className="pc-filter-btn">
@@ -141,7 +162,7 @@ const Inventory = () => {
                             >
                                 {imgMap.map((item, index) => (
                                     <SwiperSlide key={index}>
-                                        <img src={item.img} alt="" style={{ width: "100%", height: "100%", backgroundColor: "white", borderRadius: "50%" }} />
+                                        <img src={item.img} alt="" style={{ width: "100%", height: "100%", backgroundColor: "#FFED00", borderRadius: "50%" }} />
                                     </SwiperSlide>
                                 ))}
 
@@ -279,7 +300,7 @@ const Inventory = () => {
                                         <div className="card-description">
 
                                             <h6>CodeNo: {item.CodeNo}</h6>
-                                            <p><img src={locationIcon} alt="" style={{ color: "#FFED00" }} />
+                                            <p><img src={locationIcon} alt="" style={{ color: "white" }} />
                                                 <a
                                                     href="#"
                                                     onClick={() => handleLocationClick(item.lat, item.lng)}

@@ -38,29 +38,29 @@ function NamedSelectComponent({ title, selectedItems, setSelectedItems, options 
 
     return (
         <div className="stikycontainer-style">
-        <div className="named-select-filter" ref={selectFilterRef} onClick={() => setShowOptions(!showOptions)}>
-            <div style={{ fontWeight: 600, color: "black" }}>{title}</div>
-            <div style={{ display: "flex", alignItems: "center", gap: "1.6rem" }}>
-                <div className="named-select-filter-name">{selectedItems.length}&nbsp;selected</div>
-                {
-                    showOptions ? <AiFillCaretUp style={{ color: 'gray' }} /> : <AiFillCaretDown />
-                }
-            </div>
-            {showOptions && (
-                <div className="named-select-filter-options" onClick={(e) => e.stopPropagation()}>
-                    <div style={{ color: "#0dbaff", fontSize: "12px", cursor: "pointer", margin: "10px 0px" }} onClick={handleClearAll}>Clear All</div>
-                    {options?.map(option => (
-                        <div key={option.value}>
-                            {option.label}
-                            <Checkbox
-                                onChange={() => handleCheckboxChange(option.value)}
-                                checked={selectedItems.includes(option.value)}
-                            />
-                        </div>
-                    ))}
+            <div className="named-select-filter" ref={selectFilterRef} onClick={() => setShowOptions(!showOptions)}>
+                <div ><p id="dropdown-title">{title}</p></div>
+                <div style={{ display: "flex", alignItems: "center", gap: "1.6rem" }}>
+                    <div className="named-select-filter-name">{selectedItems.length}&nbsp;selected</div>
+                    {
+                        showOptions ? <AiFillCaretUp style={{ color: 'gray' }} /> : <AiFillCaretDown />
+                    }
                 </div>
-            )}
-        </div>
+                {showOptions && (
+                    <div className="named-select-filter-options" onClick={(e) => e.stopPropagation()}>
+                        <div style={{ color: "#0dbaff", fontSize: "12px", cursor: "pointer", margin: "10px 0px" }} onClick={handleClearAll}>Clear All</div>
+                        {options?.map(option => (
+                            <div key={option.value}>
+                                <p className="options-style">{option.label}</p>
+                                <Checkbox
+                                    onChange={() => handleCheckboxChange(option.value)}
+                                    checked={selectedItems.includes(option.value)}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                )}
+            </div>
         </div>
     );
 }

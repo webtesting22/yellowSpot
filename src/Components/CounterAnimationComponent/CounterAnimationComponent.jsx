@@ -8,7 +8,7 @@ const CounterAnimationComponent = ({ number, title }) => {
                 <div>
                     <CountUp duration={10} className="counter" end={number} />
                 </div>
-                <div>
+                <div className="title">
                     <span>{title}</span>
                 </div>
             </div>

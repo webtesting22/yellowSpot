@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Card, Row, Col } from 'antd';
 import demoImage from "../Home/1.jpg"
+import { TypeAnimation } from 'react-type-animation';
 import "./ouroffering.css"
 const OurOfferings = () => {
     // const [width, setWidth] = useState('');
@@ -86,20 +87,43 @@ const OurOfferings = () => {
         <>
             <Navbar />
             <div className="section-padding"></div>
-            <section className="section-padding">
+            <br />
+            <div className="animated-text-about">
+                <TypeAnimation
+                    sequence={[
+                        // Same substring at the start will only be typed out once, initially
+                        'YELLOWSPOT  ',
+                        6000, // wait 1s before replacing "Mice" with "Hamsters"
+
+                    ]}
+                    wrapper="h1"
+                    speed={200}
+                    style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
+                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                    repeat={Infinity}
+                />
+                <p>Stand Tall, Be Seen: Amplify Your Message with Our Billboard Solutions</p>
+                <div className="slite-padding"></div>
+                <div>
+                    <a href="#serviceCard"> <button className="animated-scroll-down-btn">Scroll Down <br /><i class='bx bxs-chevron-down' ></i></button></a>
+
+                    <span></span>
+                </div>
+            </div>
+            <section id="serviceCard">
                 <div className="container p-0">
-                    <div className="section-padding"></div>
+                    {/* <div className="section-padding"></div>
                     <h1 className="services-heading">Our Services</h1>
-                    <div className="section-padding"></div>
+                    <div className="section-padding"></div> */}
                     <div className="container serviceCard">
                         <Row>
 
                             {servicesCards.map((item, index) => (
                                 <Col lg={8} md={12} key={index}>
                                     <Card
-                                        
+
                                     >
-                                        <div style={{overflow:"hidden", borderRadius:"20px"}}>
+                                        <div style={{ overflow: "hidden", borderRadius: "20px" }}>
                                             <img src={item.cardImage} alt="" style={{ width: "100%" }} />
                                         </div>
                                         <div className="small-slite-padding"></div>

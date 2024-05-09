@@ -74,7 +74,7 @@ const HomePageNavigation = () => {
                                 <li class="flip-animate"><img src={vector4} alt="" /><span data-hover="Instagram">Instagram</span></li>
                                 <li class="flip-animate"><img src={vector8} alt="" /><span data-hover="Twitter">Twitter</span></li>
                                 <li class="flip-animate"><img src={LinkdinImg} alt="" /><span data-hover="Linkdin">Linkdin</span></li>
-                                <li class="flip-animate"><img src={vector6} alt="" /><span data-hover="">What'sapp</span></li>
+                                <li class="flip-animate"><img src={vector6} alt="" /><span data-hover="What'sapp">What'sapp</span></li>
                             </ul>
                         </div>
                     </div>

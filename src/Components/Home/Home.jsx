@@ -9,8 +9,10 @@ import HomePageNavigation from "./HomePageNavigation";
 import CounterAnimationComponent from "../CounterAnimationComponent/CounterAnimationComponent";
 import billboard from "../Home/iconsImages/billboard.png"
 import logo from "../Navbar/logo1.svg"
+import { TypeAnimation } from 'react-type-animation';
+import { Row,Col } from "antd";
 const Home = () => {
-  
+
   const carousalImagers = [
     {
       image: "https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -45,7 +47,19 @@ const Home = () => {
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
-                  <h1>YELLOWSPOT - When two leaders come together, magic happens!</h1>
+                  <TypeAnimation
+                    sequence={[
+                      // Same substring at the start will only be typed out once, initially
+                      'YELLOWSPOT  ',
+                      6000, // wait 1s before replacing "Mice" with "Hamsters"
+
+                    ]}
+                    wrapper="h1"
+                    speed={200}
+                    style={{ fontWeight: "300", fontSize: "6vw", margin: "0px", color: "#FFED00" }}
+                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                    repeat={Infinity}
+                  />
                 </div>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
@@ -57,29 +71,43 @@ const Home = () => {
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-           
-              <img src=" https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+
+              <img src="https://images.unsplash.com/photo-1571769380537-2e0bf17dd263?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
             </div>
             <div className="image-overlay"></div>
             <div className="text-container-set">
               <div className="text-container">
                 <div className="main-content-container">
-                  <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} />
-                  <h1><span>industry experience</span></h1>
+                  {/* <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} /> */}
+                  <h1><span><span style={{color:"#FFED00"}}>industry</span> experience</span></h1>
                   <div className="slite-padding"></div>
                   <div className="content-container">
-                    <div>
-                      <CounterAnimationComponent number={400} title="Premium Outdoor Sites in Ahmedabad " />
-                    </div>
-                    <div>
-                      <CounterAnimationComponent number={1000} title="Daily Impressions " />
-                    </div>
-                    <div>
-                      <CounterAnimationComponent number={500 / 1000} title="Clients" />
-                    </div>
-                    <div>
-                      <CounterAnimationComponent number={25} title="Years of Industry Experience" />
-                    </div>
+                    <Row>
+                      <Col lg={6}>
+                        <div>
+                          <CounterAnimationComponent number={400} title="Premium Outdoor Sites in Ahmedabad " />
+                        </div>
+                      </Col>
+                      <Col lg={6}>
+                        <div>
+                          <CounterAnimationComponent number={1000} title="Daily Impressions " />
+                        </div>
+                      </Col>
+                      <Col lg={6}>
+                        <div>
+                          <CounterAnimationComponent number={500} title="Clients" />
+                        </div>
+                      </Col>
+                      <Col lg={6}>
+                        <div>
+                          <CounterAnimationComponent number={25} title="Years of Industry Experience" />
+                        </div>
+                      </Col>
+                    </Row>
+
+
+
+
                   </div>
                 </div>
                 {/* <div className="btn-container">
@@ -109,7 +137,7 @@ const Home = () => {
 
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-              <img src="https://images.unsplash.com/photo-1571769380537-2e0bf17dd263?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <img src="https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
             </div>
             <div className="image-overlay"></div>
             <div className="text-container-set">

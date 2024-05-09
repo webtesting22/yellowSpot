@@ -20,6 +20,7 @@ h1{
     border: none;
 
 }
+
 .serviceCard .ant-card-body img{
     border-radius: 20px;
     transform: scale(1);
@@ -36,6 +37,10 @@ h1{
     overflow-wrap: normal;
     font-size: 1rem;
     font-weight: 400;
+}
+.ant-card .ant-card-body img{
+    transform: scale(1);
+    transition: .5s;
 }
 .ant-card:hover .ant-card-body img{
     transform: scale(1.1);

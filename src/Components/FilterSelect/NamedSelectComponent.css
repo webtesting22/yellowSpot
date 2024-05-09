@@ -1,7 +1,7 @@
 
 .named-select-filter {
     background-color: #ffffff;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
     width: fit-content;
     /* Use max-content instead of fit-content */
     padding: 4px 11px;
@@ -55,4 +55,19 @@
 .ant-checkbox-wrapper {
     color: black;
     /* Color of the label text */
+}
+#dropdown-title{
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    font-weight: 600;
+}
+.named-select-filter-name{
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    font-weight: 400;
+}
+.options-style{
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    font-weight: 400;
 }

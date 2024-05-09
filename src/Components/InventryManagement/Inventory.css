@@ -220,6 +220,8 @@ p {
 }
 .pc-filter-btn h6{
     margin: 0px;
+    color: white;
+    margin: 0px 30px;
     font-size: 1.5rem;
 }
 .filter-select{
@@ -239,4 +241,18 @@ p {
 
 .inventry-card-container .ant-card{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.inventry-card-container .card-img{
+    overflow: hidden;
+}
+.card-description h6{
+    color: white;
+}
+
+.inventry-card-container .ant-card
+.inventry-card-container .ant-card a{
+    color: white;
+}
+.inventry-card-container .ant-card:hover a{
+    color: #FFED00;
 }
