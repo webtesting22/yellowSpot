@@ -126,7 +126,7 @@ const AboutUS = () => {
                 <br /><br />
 
                 <div className="co-founder-section container">
-                    <h1>Meet The Founders</h1>
+                    <h1 className="section-heading">Meet The Founders</h1>
                     <div className="slite-padding"></div>
                     <div>
                         <Row className="w-100">

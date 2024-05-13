@@ -170,6 +170,7 @@
     margin-bottom: 80px;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 
@@ -224,11 +225,16 @@
 }
 
 @media (max-width:900px){
+    
+.founder-container {
+    padding: 0px;
+}
     .parent-Company-info .ant-row .ant-col {
         margin-bottom: 80px;
         display: flex;
         align-items: center;
         width: 100%;
+        padding: 0px;
     }
     
     .yellow-color-back {
