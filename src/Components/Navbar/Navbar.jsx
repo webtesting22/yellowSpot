@@ -50,7 +50,7 @@ const Navbar = () => {
                 <div className="d-flex animation-class" style={{ alignItems: "center" }}>
                   <div className="left-side" onMouseEnter={handleLeftHover} onMouseLeave={handleHoverOut}><span><Link to="/AboutUS">ABOUT US</Link> </span></div>
                   <div className="line"><div></div></div>
-                  <div className="right-side" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/Inventory">INVENTORY</Link></span></div>
+                  <div className="right-side" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/OurClientele">Our clientele</Link></span></div>
                 </div>
 
               </div>

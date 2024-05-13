@@ -38,7 +38,7 @@ const HomePageNavigation = () => {
         <>
             <section id="home-page-header">
 
-                <img src={Logo} alt="Yellowspotgogo" className="logo-home" />
+               <Link to="/"> <img src={Logo} alt="Yellowspotgogo" className="logo-home" /></Link>
                 <button className="menu-btn" onClick={showDrawer}>
                     <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
                         {drawerVisible ? <CloseOutlined /> : <MenuOutlined />}
@@ -61,7 +61,7 @@ const HomePageNavigation = () => {
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00" }} />
                             <ul className="home-menu-ul">
                             <Link to="/AboutUs"><li class="flip-animate" ><img src={vector5} alt="" /><span data-hover="About&nbsp;US">About&nbsp;US</span></li></Link>
-                                <Link to="/Inventory"><li class="flip-animate" ><img src={vector1} alt="" /><span data-hover="Inventory">Inventory</span></li></Link>
+                                <Link to="/OurClientele"><li class="flip-animate" ><img src={vector1} alt="" /><span data-hover="Inventory">OurClientele</span></li></Link>
                                 <Link to="/Agencies"><li class="flip-animate" ><img src={vector3} alt="" /><span data-hover="Agencies">Agencies</span></li></Link>
                                 <Link to="/OurOfferings"><li class="flip-animate" ><img src={vector7} alt="" /><span data-hover="Our Offerings">Our Offerings</span></li></Link>
                             </ul>

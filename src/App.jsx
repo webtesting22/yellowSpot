@@ -12,6 +12,7 @@ import OurOfferings from "./Components/OurOfferings/OurOfferings";
 import Footer from "./Components/Footer/Footer";
 import BackToTop from "./Components/BackTotop";
 import DynamicCreateShape from "./Components/DynamicCreateShape/DynamicCreateShape";
+import OurClientele from "./Components/OurClients/OurClientele";
 import "../src/index.css"
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/OurOfferings" element={<OurOfferings />} />
             <Route path="/Footer" element={<Footer />} />
             <Route path="/DynamicCreateShape" element={<DynamicCreateShape />} />
+            <Route path="/OurClientele" element={<OurClientele />} />
           </Routes>
       </div>
       <BackToTop/>
