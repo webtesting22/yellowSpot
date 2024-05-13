@@ -115,9 +115,10 @@
 
 .yellow-color-back {
     background-color: #FFED00;
-    height: 70vh;
+    height: 100%;
     width: 100%;
     border-radius: 20px;
+    padding: 40px 0px;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -239,9 +240,10 @@
     
     .yellow-color-back {
         background-color: #FFED00;
-        height: 70vh;
+        height: 100%;
         width: 100%;
         border-radius: 20px;
+        /* padding: 40px 0px; */
         display: flex;
         align-items: center;
         flex-direction: column;
