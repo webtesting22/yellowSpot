@@ -223,8 +223,15 @@
         bottom: 5%;
         left: 0%;
     }
+    .content-container .ant-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .content-container .ant-row .ant-col{
         margin: auto;
+        display: flex;
+        justify-content: center;
     }
 
 

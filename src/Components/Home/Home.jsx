@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <>
       <div id="HomePage">
-      <HomePageNavigation />
+        <HomePageNavigation />
       </div>
       <div className="home-page-slider">
         <Swiper
@@ -85,33 +85,30 @@ const Home = () => {
                   <h1><span><span style={{ color: "#FFED00" }}>industry</span> experience</span></h1>
                   <div className="slite-padding"></div>
                   <div className="content-container">
-                    <Row>
-                      <Col lg={6}>
+                    <Row gutter={[16, 16]}>
+                      <Col lg={6} md={12} >
                         <div>
-                          <CounterAnimationComponent number="400" title="Premium Outdoor Sites in Ahmedabad " />
+                          <CounterAnimationComponent number="400" title="Premium Outdoor Sites in Ahmedabad" />
                         </div>
                       </Col>
-                      <Col lg={6}>
+                      <Col lg={6} md={12} >
                         <div>
-                          <CounterAnimationComponent number="500" title="Daily Impressions " />
+                          <CounterAnimationComponent number="500" title="Daily Impressions" />
                         </div>
                       </Col>
-                      <Col lg={6}>
+                      <Col lg={6} md={12} >
                         <div>
                           <CounterAnimationComponent number="1000" title="Clients" />
                         </div>
                       </Col>
-                      <Col lg={6}>
+                      <Col lg={6} md={12} >
                         <div>
                           <CounterAnimationComponent number="25" title="Years of Industry Experience" />
                         </div>
                       </Col>
                     </Row>
-
-
-
-
                   </div>
+
                 </div>
                 {/* <div className="btn-container">
                   <button>View More<span></span></button>
