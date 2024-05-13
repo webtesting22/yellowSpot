@@ -55,7 +55,7 @@ const OurOfferings = () => {
                 <p>Stand Tall, Be Seen: Amplify Your Message with Our Billboard Solutions</p>
                 <div className="slite-padding"></div>
                 <div>
-                    <a href="#serviceCard"> <button className="animated-scroll-down-btn">Scroll Down <br /><i class='bx bxs-chevron-down' ></i></button></a>
+                    <a href="#serviceCard"> <button className="animated-scroll-down-btn">Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button></a>
 
                     <span></span>
                 </div>

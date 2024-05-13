@@ -122,7 +122,7 @@ const Home = () => {
                 <div className="animated-boxes-one">
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Holding Type</h4>
+                    <h4>Unipoles</h4>
                     <div className="small-slite-padding"></div>
                     <button>Yellow Spot</button>
                   </div>
@@ -130,7 +130,7 @@ const Home = () => {
                 <div className="animated-boxes-two">
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Holding Type</h4>
+                    <h4>Gantries</h4>
                     <div className="small-slite-padding"></div>
                     <button>Yellow Spot</button>
                   </div>
@@ -138,7 +138,7 @@ const Home = () => {
                 <div className="animated-boxes-three">
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Holding Type</h4>
+                    <h4>Hoardings</h4>
                     <div className="small-slite-padding"></div>
                     <button>Yellow Spot</button>
                   </div>
@@ -146,7 +146,7 @@ const Home = () => {
                 <div className="animated-boxes-four">
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Holding Type</h4>
+                    <h4>Cantilevers</h4>
                     <div className="small-slite-padding"></div>
                     <button>Yellow Spot</button>
                   </div>

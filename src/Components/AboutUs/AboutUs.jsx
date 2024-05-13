@@ -75,7 +75,7 @@ const AboutUS = () => {
                     <p>Make Your Brand Tower Above: Billboard Excellence, Tailored for You</p>
                     <div className="slite-padding"></div>
                     <div>
-                        <a href="#parent-company"> <button className="animated-scroll-down-btn">Scroll Down <br /><i class='bx bxs-chevron-down' ></i></button></a>
+                        <a href="#parent-company"> <button className="animated-scroll-down-btn">Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button></a>
 
                         <span></span>
                     </div>
@@ -162,7 +162,7 @@ const AboutUS = () => {
                                         {/* <div className="slite-padding"></div>
                                         <div className="slite-padding"></div> */}
                                         <div className="founder-info">
-                                            <i class='bx bxs-user-circle'></i><h4><span>{item.FounderName}</span> {item.FounderSecondName}</h4>
+                                            <i className='bx bxs-user-circle'></i><h4><span>{item.FounderName}</span> {item.FounderSecondName}</h4>
                                         </div>
                                         <div className="social-icons">
 

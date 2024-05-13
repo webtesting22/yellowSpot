@@ -28,7 +28,7 @@ const Agencies = () => {
                 <p>Elevate Your Brand: Billboard Solutions Tailored for Success</p>
                 <div className="slite-padding"></div>
                 <div>
-                    <a href="#InventoryFilters"> <button className="animated-scroll-down-btn">Scroll Down <br /><i class='bx bxs-chevron-down' ></i></button></a>
+                    <a href="#InventoryFilters"> <button className="animated-scroll-down-btn">Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button></a>
 
                     <span></span>
                 </div>

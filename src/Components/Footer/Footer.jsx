@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className=" slite-padding container">
                     <div className="ContactusHeading container">
                         <p style={{ textAlign: "start" }}>Ready to work together?</p>
-                        <h1>Get In Touch <i class='bx bxs-right-top-arrow-circle'></i></h1>
+                        <h1>Get In Touch <i className='bx bxs-right-top-arrow-circle'></i></h1>
                     </div>
                     <div className="slite-padding"></div>
                     <hr style={{ opacity: "1" }} />

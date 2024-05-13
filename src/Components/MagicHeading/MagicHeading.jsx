@@ -11,16 +11,23 @@ const MagicHeading = ({ text }) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
+                } else {
+                    setIsVisible(false);
                 }
             });
         });
-
-        observer.observe(sectionRef.current);
-
+    
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+    
         return () => {
-            observer.unobserve(sectionRef.current);
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
         };
     }, []);
+    
     return (
         <div ref={sectionRef}>
             <h1 className={`${isVisible ? "section-heading " : ""}`}

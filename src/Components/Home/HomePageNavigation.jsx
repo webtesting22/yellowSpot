@@ -60,10 +60,10 @@ const HomePageNavigation = () => {
                             <h5>Menu</h5>
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00" }} />
                             <ul className="home-menu-ul">
-                            <Link to="/AboutUs"><li class="flip-animate" ><img src={vector5} alt="" /><span data-hover="About&nbsp;US">About&nbsp;US</span></li></Link>
-                                <Link to="/OurClientele"><li class="flip-animate" ><img src={vector1} alt="" /><span data-hover="Inventory">OurClientele</span></li></Link>
-                                <Link to="/Agencies"><li class="flip-animate" ><img src={vector3} alt="" /><span data-hover="Agencies">Agencies</span></li></Link>
-                                <Link to="/OurOfferings"><li class="flip-animate" ><img src={vector7} alt="" /><span data-hover="Our Offerings">Our Offerings</span></li></Link>
+                            <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" /><span data-hover="About&nbsp;US">About&nbsp;US</span></li></Link>
+                                <Link to="/OurClientele"><li className="flip-animate" ><img src={vector1} alt="" /><span data-hover="Inventory">OurClientele</span></li></Link>
+                                <Link to="/Agencies"><li className="flip-animate" ><img src={vector3} alt="" /><span data-hover="Agencies">Agencies</span></li></Link>
+                                <Link to="/OurOfferings"><li className="flip-animate" ><img src={vector7} alt="" /><span data-hover="Our Offerings">Our Offerings</span></li></Link>
                             </ul>
                         </div>
                         <div className="slite-padding"></div>
@@ -71,10 +71,10 @@ const HomePageNavigation = () => {
                             <h5>Social</h5>
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00" }} />
                             <ul className="home-menu-ul">
-                                <li class="flip-animate"><img src={vector4} alt="" /><span data-hover="Instagram">Instagram</span></li>
-                                <li class="flip-animate"><img src={vector8} alt="" /><span data-hover="Twitter">Twitter</span></li>
-                                <li class="flip-animate"><img src={LinkdinImg} alt="" /><span data-hover="Linkdin">Linkdin</span></li>
-                                <li class="flip-animate"><img src={vector6} alt="" /><span data-hover="What'sapp">What'sapp</span></li>
+                                <li className="flip-animate"><img src={vector4} alt="" /><span data-hover="Instagram">Instagram</span></li>
+                                <li className="flip-animate"><img src={vector8} alt="" /><span data-hover="Twitter">Twitter</span></li>
+                                <li className="flip-animate"><img src={LinkdinImg} alt="" /><span data-hover="Linkdin">Linkdin</span></li>
+                                <li className="flip-animate"><img src={vector6} alt="" /><span data-hover="What'sapp">What'sapp</span></li>
                             </ul>
                         </div>
                     </div>
