@@ -6,6 +6,11 @@
     position: relative;
     z-index: 5;
 }
+@media (max-width:769px){
+    .section-heading{
+        font-size: 40px;
+    }
+}
 
 .animated-span {
     position: absolute;
