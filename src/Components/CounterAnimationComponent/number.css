@@ -26,3 +26,10 @@
 .title{
     text-align: center;
 }
+@media (max-width:500px){
+    .number div:nth-child(1) span{
+        font-size: 20px;
+        text-shadow: 2px 2px #00000048;
+        margin-bottom: -20px;
+    }
+}
