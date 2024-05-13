@@ -239,6 +239,12 @@
 } */
 
 @media (max-width:900px){
+    /* .parent-Company-info .ant-row .ant-col {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    } */
     .co-founder-section .ant-row {
         margin-top: 45px;
     }
@@ -260,7 +266,7 @@
     padding: 0px;
 }
     .parent-Company-info .ant-row .ant-col {
-        margin-bottom: 80px;
+        margin-bottom: 30px;
         display: flex;
         align-items: center;
         width: 100%;
