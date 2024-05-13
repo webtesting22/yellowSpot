@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <div className="slite-padding"></div>
             <div className="slite-padding"></div>
-            
+
             <section className="footer">
                 <div className=" slite-padding container">
                     <div className="ContactusHeading container">
@@ -27,7 +27,7 @@ const Footer = () => {
                                     <img src={FooterLogo} alt="" />
                                 </div>
                                 <div className="social-content">
-                                    <img src={instgramImg} alt="" />
+                                    <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>
                                     <img src={twitterImg} alt="" />
                                     <img src={LinkedinImg} alt="" />
                                 </div>

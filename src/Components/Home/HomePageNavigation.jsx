@@ -71,10 +71,10 @@ const HomePageNavigation = () => {
                             <h5>Social</h5>
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00" }} />
                             <ul className="home-menu-ul">
-                                <li className="flip-animate"><img src={vector4} alt="" /><span data-hover="Instagram">Instagram</span></li>
+                                <li className="flip-animate"><a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={vector4} alt="" /><span data-hover="Instagram">Instagram</span></a></li>
                                 <li className="flip-animate"><img src={vector8} alt="" /><span data-hover="Twitter">Twitter</span></li>
                                 <li className="flip-animate"><img src={LinkdinImg} alt="" /><span data-hover="Linkdin">Linkdin</span></li>
-                                <li className="flip-animate"><img src={vector6} alt="" /><span data-hover="What'sapp">What'sapp</span></li>
+                                <li className="flip-animate"><a href="https://www.facebook.com/people/Yellow-Spot/100083305608740/" target="_blank"><img src={vector6} alt="" /><span data-hover="Facebook">Facebook</span></a></li>
                             </ul>
                         </div>
                     </div>

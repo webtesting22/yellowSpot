@@ -179,7 +179,7 @@ const Inventory = () => {
                     </div>
                     <div className="slite-padding"></div>
                     {/* <div className="mobile-filter-btn">
-                        <button className="filter-button" onClick={toggleDrawer}>Filter <i class='bx bx-filter-alt'></i></button>
+                        <button className="filter-button" onClick={toggleDrawer}>Filter <i className='bx bx-filter-alt'></i></button>
                         <div ref={drawerRef} className={`filter-drawer ${showDrawer ? 'visible' : ''}`}>
 
                             <div className="drawer-screen">

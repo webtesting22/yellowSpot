@@ -49,7 +49,7 @@ const AboutUS = () => {
 
         <>
             <Navbar />
-            <HomePageNavigation/>
+            <HomePageNavigation />
             <div className="slite-padding"></div>
             <br />
             {/* <div className="slite-padding"></div> */}
@@ -68,7 +68,7 @@ const AboutUS = () => {
                         ]}
                         wrapper="h1"
                         speed={200}
-                        style={{ fontWeight: "300",color: "#FFED00", fontSize: "45px", textAlign: "start", margin: "20px 0px" }}
+                        style={{ fontWeight: "300", color: "#FFED00", fontSize: "45px", textAlign: "start", margin: "20px 0px" }}
                         // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
                         repeat={Infinity}
                     />
@@ -82,7 +82,7 @@ const AboutUS = () => {
                 </div>
 
                 <div className="parent-poster-content container" id="parent-company">
-                {/* <h1 className={`${isVisible ? "section-heading " : ""}`}
+                    {/* <h1 className={`${isVisible ? "section-heading " : ""}`}
                         >We are development experts on <br /> all technologies & platforms</h1>
                     <br /> */}
                     <MagicHeading text="We are development experts on all technologies & platforms" />
@@ -113,14 +113,35 @@ const AboutUS = () => {
                 <br /><br />
                 <div className="parent-Company-info container" >
                     <Row>
+                        <Col lg={16}>
+                            <div className="parent-comapny-content second">
+                                <h4><span>Yellow</span>Spot</h4>
+                                {/* <br /> */}
+                                <p>YellowSpot emerged as a collaborative effort between Khushi Advertising and
+                                    Het Graphics. Our strategic alliance brings together two industry leaders,
+                                    establishing one of the most formidable media houses in Gujarat. The
+                                    motivation behind the collaboration is to provide comprehensive and holistic
+                                    360-degree marketing solutions to our local, national and international clients
+                                    across diverse platforms.
+                                </p>
+                                <div className="small-slite-padding"></div>
+                                <div className="btn-container d-block">
+                                    <Link to="/AboutUs"><button className="m-0"><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={8}>
+                            <img src={logo} alt="" className="HET_IMG_two" style={{backgroundColor:"#FFED00",padding:"10px"}}/>
+                        </Col>
                         <Col lg={8}>
                             <img src={hetgraphics} alt="" className="HET_IMG" />
                         </Col>
 
                         <Col lg={16}>
                             <div className="parent-comapny-content first">
-                               <h4><span>HET Graphics</span> Total Outdoor Solutions</h4> 
-                               {/* <br /> */}
+                                <h4><span>HET Graphics</span> Total Outdoor Solutions</h4>
+                                {/* <br /> */}
                                 <p>Het Graphics, known as the industry leader in Ahmedabad city for its innovative ideas and extensive coverage, has successfully provided clients with a one-stop solution for outdoor advertising. Their extensive network of hoardings, gantries and signages makes creating awareness for your brand/product/service easier. With HET by their side, many national and local brands have advertised throughout the state of Gujarat.</p>
                                 <div className="small-slite-padding"></div>
                                 <div className="btn-container">
@@ -149,7 +170,7 @@ const AboutUS = () => {
                 <br /><br />
 
                 <div className="co-founder-section container">
-                <MagicHeading text="Meet The Founder" />
+                    <MagicHeading text="Meet The Founder" />
                     <div className="slite-padding"></div>
                     <div>
                         <Row className="w-100">

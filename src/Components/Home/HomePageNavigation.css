@@ -64,6 +64,9 @@ a{
     cursor: pointer;
     
 }
+.home-menu-ul li a{
+  color: white;
+}
 
 
   
