@@ -186,7 +186,7 @@ const Home = () => {
                 <div className="slite-padding"></div>
                 <div className="btn-container">
                   <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-                  <button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
+                  <Link to="/Agencies"><button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>
             </div>

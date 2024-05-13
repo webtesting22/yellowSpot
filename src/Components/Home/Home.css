@@ -209,6 +209,9 @@
 }
 
 @media (max-width:600px) {
+    .btn-container a{
+        margin: 10px 0px;
+    }
     .home-page-slider img {
         height: 100%;
         width: auto;
