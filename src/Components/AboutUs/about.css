@@ -1,3 +1,6 @@
+#home-page-header{
+    display: none;
+}
 .overlay-back-img img {
     width: 100%;
     height: 100vh;
@@ -27,6 +30,13 @@
 .animated-text-about P {
     color: white;
     letter-spacing: 5px;
+}
+@media (max-width:700px){
+    .animated-text-about P {
+        color: white;
+        letter-spacing: 5px;
+        text-align: center;
+    }
 }
 
 .animated-scroll-down-btn {
@@ -207,4 +217,9 @@
     font-size: 30px;
     /* width: 300px; */
     color: #FFED00;
+}
+
+.section-heading{
+    font-size: 50px;
+    font-family: "Barlow Condensed", sans-serif;
 }

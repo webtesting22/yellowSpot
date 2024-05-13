@@ -12,6 +12,7 @@ import OurOfferings from "./Components/OurOfferings/OurOfferings";
 import Footer from "./Components/Footer/Footer";
 import BackToTop from "./Components/BackTotop";
 import DynamicCreateShape from "./Components/DynamicCreateShape/DynamicCreateShape";
+import "../src/index.css"
 function App() {
   return (
     <BrowserRouter>

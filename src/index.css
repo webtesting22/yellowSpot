@@ -1,0 +1,10 @@
+
+@media (max-width:800px){
+    #header{
+        display: none;
+    }
+    #home-page-header{
+        display: flex;
+        justify-content: space-between;
+    }
+}

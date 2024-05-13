@@ -3,10 +3,12 @@ import Navbar from "../Navbar/Navbar";
 import "./Agencies.css"
 import { TypeAnimation } from 'react-type-animation';
 import Footer from "../Footer/Footer";
+import HomePageNavigation from "../Home/HomePageNavigation";
 const Agencies = () => {
     return (
         <>
             <Navbar />
+            <HomePageNavigation/>
             <div className="section-padding"></div>
             <br />
             <div className="animated-text-about">

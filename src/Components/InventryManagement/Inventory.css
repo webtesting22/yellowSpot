@@ -72,3 +72,7 @@
     margin: 0px;
     margin-left: 20px;
 }
+.pc-filter-btn{
+    display: flex;
+    align-items: center;
+}

@@ -9,8 +9,9 @@ import logo from "../AboutUs/logo1.svg"
 import { Link } from "react-router-dom";
 import billboard from "../Home/iconsImages/billboard.png"
 import Footer from "../Footer/Footer";
+import HomePageNavigation from "../Home/HomePageNavigation";
 const AboutUS = () => {
-   
+
 
     const foudersDetails = [
         {
@@ -30,6 +31,7 @@ const AboutUS = () => {
 
         <>
             <Navbar />
+            <HomePageNavigation/>
             <div className="slite-padding"></div>
             <br />
             {/* <div className="slite-padding"></div> */}
@@ -60,10 +62,11 @@ const AboutUS = () => {
                         <span></span>
                     </div>
                 </div>
-                <div className="slite-padding"></div>
+
                 <div className="parent-poster-content container" id="parent-company" >
-                    <h1>When two leaders come together, magic happens</h1>
-                    <div className="slite-padding"></div>
+                    <h1 className="section-heading">When two leaders come together, magic happens</h1>
+                    <br />
+                    {/* <br /> */}
                     <div className="container yellow-color-back">
 
 
@@ -86,8 +89,7 @@ const AboutUS = () => {
                     </div>
 
                 </div>
-                <div className="slite-padding"></div>
-                <div className="slite-padding"></div>
+                <br /><br />
                 <div className="parent-Company-info container" >
                     <Row>
                         <Col lg={8}>
@@ -121,7 +123,7 @@ const AboutUS = () => {
                         </Col>
                     </Row>
                 </div>
-                <div className="paddin-slite"></div>
+                <br /><br />
 
                 <div className="co-founder-section container">
                     <h1>Meet The Founders</h1>
@@ -150,9 +152,10 @@ const AboutUS = () => {
                         </Row>
                     </div>
                 </div>
+                <br /><br />
             </section>
             <Footer />
-            
+
 
         </>
     )

@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 import "./ouroffering.css"
 import Inventory from "../InventryManagement/Inventory";
 import Footer from "../Footer/Footer";
-
+import HomePageNavigation from "../Home/HomePageNavigation";
 const OurOfferings = () => {
   
     const servicesCards = [
@@ -35,6 +35,7 @@ const OurOfferings = () => {
     return (
         <>
             <Navbar />
+            <HomePageNavigation/>
             <div className="section-padding"></div>
             <br />
             <div className="animated-text-about">
