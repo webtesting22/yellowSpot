@@ -27,7 +27,9 @@ const Home = () => {
   ]
   return (
     <>
+      <div id="HomePage">
       <HomePageNavigation />
+      </div>
       <div className="home-page-slider">
         <Swiper
           direction="vertical"

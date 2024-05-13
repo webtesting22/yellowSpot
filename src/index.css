@@ -1,9 +1,25 @@
-
+#home-page-header{
+    display: none;
+}
+#header{
+    display: block;
+}
+#HomePage #home-page-header{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width:800px){
     #header{
         display: none;
     }
+    #HomePage #home-page-header{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+    }
     #home-page-header{
+        display: block;
         display: flex;
         justify-content: space-between;
     }
