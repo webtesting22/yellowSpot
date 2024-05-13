@@ -58,7 +58,7 @@ const Home = () => {
                     ]}
                     wrapper="h1"
                     speed={200}
-                    style={{ fontWeight: "300", fontSize: "6vw", margin: "0px", color: "#FFED00" }}
+                    style={{ fontWeight: "300", fontSize: "45px", margin: "0px", color: "#FFED00" }}
                     // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
                     repeat={Infinity}
                   />
