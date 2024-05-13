@@ -226,7 +226,12 @@
 }
 
 @media (max-width:900px){
-    
+    .parent-comapny-content p {
+        font-size: 20px;
+        font-weight: 300;
+        color: rgb(198, 198, 198);
+        font-family: "Barlow Condensed", sans-serif;
+    }
 .founder-container {
     padding: 0px;
 }
