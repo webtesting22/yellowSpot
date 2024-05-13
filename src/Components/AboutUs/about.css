@@ -223,9 +223,15 @@
 .section-heading{
     font-size: 50px;
     font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
 }
 
 @media (max-width:900px){
+    .section-heading{
+        font-size: 40px;
+        font-family: "Barlow Condensed", sans-serif;
+        font-weight: 300;
+    }
     .parent-comapny-content p {
         font-size: 20px;
         font-weight: 300;
