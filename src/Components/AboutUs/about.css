@@ -29,6 +29,7 @@
     color: white;
     letter-spacing: 5px;
     text-align: center;
+    font-family: "Barlow Condensed", sans-serif;
 }
 @media (max-width:700px){
     .animated-text-about P {
