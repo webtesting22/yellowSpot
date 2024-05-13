@@ -1,10 +1,11 @@
-.overlay-back-img img{
+.overlay-back-img img {
     width: 100%;
     height: 100vh;
     opacity: 0.2;
     /* background-color: gray; */
 }
-.animated-text-about{
+
+.animated-text-about {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -12,18 +13,20 @@
     justify-content: center;
     align-items: center;
 }
-.animated-text-about h1{
+
+.animated-text-about h1 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 400;
 }
 
-.index-module_type__E-SaG::after{
+.index-module_type__E-SaG::after {
     content: '|';
     color: #FFED00;
 }
-.animated-text-about P{
+
+.animated-text-about P {
     color: white;
-    letter-spacing:5px;
+    letter-spacing: 5px;
 }
 
 .animated-scroll-down-btn {
@@ -38,7 +41,7 @@
     font-size: 16px;
     transform: translateX(-50%);
     animation: scrollAnimation 1.5s infinite;
-    
+
     transition: .5s;
 }
 
@@ -61,16 +64,18 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(0);
     }
 }
 
 
-.parent-Company-info img{
+.parent-Company-info img {
     width: 100%;
     /* padding: 4rem; */
     /* aspect-ratio: 3/2;
@@ -79,23 +84,27 @@
     display: flex;
     margin: auto;
 }
-.parent-comapny-content h4{
+
+.parent-comapny-content h4 {
     font-size: 40px;
     color: white;
     font-family: "Barlow Condensed", sans-serif;
 }
-.parent-comapny-content h4 span{
+
+.parent-comapny-content h4 span {
     font-size: 40px;
     color: #FFED00;
     font-family: "Barlow Condensed", sans-serif;
 }
-.parent-comapny-content p{
+
+.parent-comapny-content p {
     font-size: 30px;
     font-weight: 300;
     color: rgb(198, 198, 198);
     font-family: "Barlow Condensed", sans-serif;
 }
-.yellow-color-back{
+
+.yellow-color-back {
     background-color: #FFED00;
     height: 70vh;
     width: 100%;
@@ -104,7 +113,8 @@
     align-items: center;
     /* justify-content: center; */
 }
-.yellow-poster-insideone{
+
+.yellow-poster-insideone {
     width: 50%;
     height: 100%;
     display: flex;
@@ -112,73 +122,88 @@
     align-items: center;
     justify-content: center;
 }
-.yellow-poster-insideone h4{
+
+.yellow-poster-insideone h4 {
     font-family: "Barlow Condensed", sans-serif;
 }
-.yellow-poster-insideone h4 span{
+
+.yellow-poster-insideone h4 span {
     font-family: "Barlow Condensed", sans-serif;
 }
-.yellow-poster-insidetwo{
+
+.yellow-poster-insidetwo {
     width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.yellow-poster-insidetwo img{
+
+.yellow-poster-insidetwo img {
     width: 70%;
 }
-.yellow-poster-insideone img{
-    width:300px;
+
+.yellow-poster-insideone img {
+    width: 300px;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
+
 .yellow-poster-insideLogo {
     display: flex;
 }
 
-.yellow-poster-insideLogo div:nth-child(1){
+.yellow-poster-insideLogo div:nth-child(1) {
     border-right: 2px solid black;
 }
-.parent-Company-info .ant-row .ant-col{
+
+.parent-Company-info .ant-row .ant-col {
     margin-bottom: 80px;
     display: flex;
     align-items: center;
 }
 
 
-.first{
+.first {
     padding-left: 2rem;
 }
-.second{
+
+.second {
     padding-right: 2rem;
 }
-.founder-img-container{
+
+.founder-img-container {
     /* height: 50vh; */
     width: 100%;
     overflow: hidden;
 }
-.founder-img-container img{
+
+.founder-img-container img {
     width: 100%;
     border-radius: 20px;
 }
-.founder-container{
+
+.founder-container {
     padding: 50px;
 }
-.founder-info h4{
+
+.founder-info h4 {
     color: white;
     margin: 0px 10px;
     font-family: "Barlow Condensed", sans-serif;
     font-size: 40px;
 }
-.founder-info h4 span{
+
+.founder-info h4 span {
     color: #FFED00;
 }
-.founder-info{
+
+.founder-info {
     display: flex;
     align-items: center;
 }
-.founder-info i{
+
+.founder-info i {
     font-size: 30px;
     /* width: 300px; */
     color: #FFED00;

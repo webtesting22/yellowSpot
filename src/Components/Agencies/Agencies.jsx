@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Agencies.css"
 import { TypeAnimation } from 'react-type-animation';
+import Footer from "../Footer/Footer";
 const Agencies = () => {
     return (
         <>
@@ -30,6 +31,7 @@ const Agencies = () => {
                     <span></span>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

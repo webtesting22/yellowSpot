@@ -76,7 +76,7 @@ const Home = () => {
               <img src="https://images.unsplash.com/photo-1571769380537-2e0bf17dd263?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
             </div>
             <div className="image-overlay"></div>
-            <div className="text-container-set">
+            <div className="text-container-set four">
               <div className="text-container">
                 <div className="main-content-container">
                   {/* <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} /> */}

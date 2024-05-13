@@ -9,13 +9,16 @@ const onChange = (e) => {
 };
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import DynamicCreateShape from "../DynamicCreateShape/DynamicCreateShape";
 import 'swiper/css/pagination';
 import img from "../InventryManagement/animatedImg.svg"
 import locationIcon from "../InventryManagement/LocationIcon.svg"
 import NamedSelectComponent from "../FilterSelect/NameSelectComponent";
+import { Row, Col } from 'antd'
 import Navbar from "../Navbar/Navbar";
 import { Autoplay } from 'swiper/modules';
 import { TypeAnimation } from 'react-type-animation';
+import { Button, Modal } from 'antd';
 const Inventory = () => {
     const [showDrawer, setShowDrawer] = useState(false);
     const drawerRef = useRef(null);
@@ -30,7 +33,19 @@ const Inventory = () => {
     const [selectedItemsOnType, setSelectedItemsOnType] = useState([]);
     const [areas, setAreas] = useState([]);
     const [selectedItemsOnArea, setSelectedItemsOnArea] = useState([]);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [modalItem, setModalItem] = useState(null);
 
+    const showModal = (item) => {
+        setModalItem(item);
+        setIsModalOpen(true);
+    };
+    const handleOk = () => {
+        setIsModalOpen(false);
+    };
+    const handleCancel = () => {
+        setIsModalOpen(false);
+    };
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
     };
@@ -118,32 +133,8 @@ const Inventory = () => {
     ]
     return (
         <>
-            <Navbar />
-            <div className="section-padding"></div>
-            <br />
-            <div className="animated-text-about">
-                <TypeAnimation
-                    sequence={[
-                        // Same substring at the start will only be typed out once, initially
-                        'YELLOWSPOT  ',
-                        6000, // wait 1s before replacing "Mice" with "Hamsters"
 
-                    ]}
-                    wrapper="h1"
-                    speed={200}
-                    style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
-                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
-                    repeat={Infinity}
-                />
-                <p>Sky's the Limit: Elevate Your Brand with Our Billboard Inventory!</p>
-                <div className="slite-padding"></div>
-                <div>
-                    <a href="#InventoryFilters"> <button className="animated-scroll-down-btn">Scroll Down <br /><i class='bx bxs-chevron-down' ></i></button></a>
-
-                    <span></span>
-                </div>
-            </div>
-            <section className=" main-container-edit container" id="InventoryFilters">
+            <section className=" main-container-edit container p-0" id="InventoryFilters">
                 {/* <div className="open-overlay"></div> */}
                 <div className="left-side-container">
                     <div className="pc-filter-btn">
@@ -187,7 +178,7 @@ const Inventory = () => {
                         </div>
                     </div>
                     <div className="slite-padding"></div>
-                    <div className="mobile-filter-btn">
+                    {/* <div className="mobile-filter-btn">
                         <button className="filter-button" onClick={toggleDrawer}>Filter <i class='bx bx-filter-alt'></i></button>
                         <div ref={drawerRef} className={`filter-drawer ${showDrawer ? 'visible' : ''}`}>
 
@@ -211,11 +202,11 @@ const Inventory = () => {
                                     <button className="reset-btn"><i class='bx bx-reset' ></i></button>
                                     {activeTab === 'types' && (
                                         <div className="tab-content">
-                                            {/* Populate uniqueNames with unique names */}
+                                            Populate uniqueNames with unique names
                                             {data && data.allInv.forEach((item, index) => {
                                                 uniqueNames.add(item.typeOfMedia.name);
                                             })}
-                                            {/* Render unique names with checkboxes */}
+                                            Render unique names with checkboxes
                                             {[...uniqueNames].map((name, index) => (
                                                 <div key={index} className="container" style={{ margin: "5px 0px" }}>
                                                     <input
@@ -237,13 +228,13 @@ const Inventory = () => {
                                     )}
                                     {activeTab === 'area' && (
                                         <div className="tab-content">
-                                            {/* Populate uniqueAreaNames with unique names */}
+                                            Populate uniqueAreaNames with unique names
                                             {data && data.allInv.forEach((item, index) => {
                                                 if (item.locations && item.locations.Area) {
                                                     uniqueAreaNames.add(item.locations.Area);
                                                 }
                                             })}
-                                            {/* Render unique Area names with checkboxes */}
+                                            Render unique Area names with checkboxes
                                             {[...uniqueAreaNames].map((name, index) => (
                                                 <div key={index} className="container" style={{ margin: "5px 0px" }}>
                                                     <input
@@ -285,71 +276,72 @@ const Inventory = () => {
                                 </style>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div className="inventry-card-container ">
-                    <div className="row w-100 m-auto">
-                        {filteredData && filteredData.map(item => (
-                            <div className="col-lg-3 col-md-6" style={{ padding: "12px" }} key={item.id}>
-                                <Card>
-                                    <div>
-                                        <div className="card-img">
-                                            <img src={item.img} alt="" style={{ width: "100%" }} />
-                                        </div>
-                                        <div className="small-slite-padding"></div>
-                                        <div className="card-description">
-
-                                            {/* <h6>CodeNo: {item.CodeNo}</h6> */}
-                                            <p><img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                <a
-                                                    href="#"
-                                                    onClick={() => handleLocationClick(item.lat, item.lng)}
-                                                    style={{ marginLeft: "5px" }}
-                                                >
-                                                    {item.locations?.name}
-                                                </a>
-                                            </p>
-                                            <div className="small-slite-padding"></div>
-                                            {/* <div className="small-slite-padding"></div> */}
-                                            <div>
-                                                <div className="card-dimentions">
-                                                    <p>Dimensions (W X H) ft:</p>
-                                                    <div style={{ display: "flex" }}>
-                                                        <div>
-                                                            {item.width}
-                                                        </div>
-                                                        *
-                                                        <div>
-                                                            {item.height}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <hr style={{ margin: "4px 0px" }} />
-                                                {/* <div className="card-display">
-                                                    <p>Display:</p>
-                                                    <p>{item.display}</p>
-                                                </div> */}
-                                            </div>
-                                        </div>
-                                        <div className="small-slite-padding"></div>
-                                    </div>
-                                </Card>
-                            </div>
-                        ))}
-
-                    </div>
-                    {/* <div className="pagination-container">
-                        <Pagination
-                            current={currentPage}
-                            pageSize={pageSize}
-                            total={totalItems}
-                            onChange={handlePaginationChange}
-                            showSizeChanger
-                            pageSizeOptions={['10', '20', '30', '40']}
-                        />
                     </div> */}
+                    <br /><br />
                 </div>
-            </section>
+
+                <div className="inventry-card-restucture">
+                    <Row>
+
+                        <Modal title="Image Details" footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            {modalItem && (
+                                <div className="complete-card-design">
+                                    <div className="inside-card-data">
+                                        <div className="card-image-container">
+                                            <img src={modalItem.img} alt="" />
+                                        </div>
+                                        <div className="Content-info">
+                                            <DynamicCreateShape width={modalItem.width} height={modalItem.height} />
+                                        </div>
+                                    </div>
+                                    {/* <div className="location-details">
+                                        <p style={{ margin: "5px 0px" }}>{modalItem.Illu}</p>
+                                        <a
+                                            href="#"
+                                            onClick={() => handleLocationClick(modalItem.lat, modalItem.lng)}
+                                        >
+                                            <p style={{ margin: "0px" }}>
+                                                <img src={locationIcon} alt="" style={{ color: "white" }} />
+                                                &nbsp;<span>{modalItem.locations?.name}</span>
+                                            </p>
+                                        </a>
+                                    </div> */}
+                                </div>
+                            )}
+                        </Modal>
+                        {filteredData && filteredData.map(item => (
+                            <Col lg={8} key={item.id}>
+                                <div className="complete-card-design">
+                                    <div className="inside-card-data">
+                                        <div className="card-image-container">
+                                            <img src={item.img} alt="" onClick={() => showModal(item)} />
+                                        </div>
+                                        <div className="Content-info">
+                                            <DynamicCreateShape width={item.width} height={item.height} />
+                                        </div>
+                                    </div>
+                                    <div className="location-details">
+                                        <p style={{ margin: "5px 0px" }}>Illumination: {item.Illu}</p>
+                                        <a
+                                            href="#"
+                                            onClick={() => handleLocationClick(item.lat, item.lng)}
+                                        >
+                                            <p style={{ margin: "0px" }}>
+                                                <img src={locationIcon} alt="" style={{ color: "white" }} />
+                                                &nbsp;<span>{item.locations?.name}</span>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+
+
+                </div>
+
+            </section >
+            <br /><br />
         </>
     )
 }

@@ -10,12 +10,16 @@
     gap: 2rem;
     position: relative;
     cursor: pointer;
+    margin:20px 20px;
     transition: all 300ms ease;
     color: rgb(88, 86, 86);
     user-select: none;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.filter-select{
+    display: flex;
+}
 .named-select-filter-options {
     position: absolute;
     background-color: #ffffff;
@@ -60,6 +64,7 @@
     font-family: "Barlow Condensed", sans-serif;
     color: black;
     font-weight: 600;
+    margin: 0px;
 }
 .named-select-filter-name{
     font-family: "Barlow Condensed", sans-serif;

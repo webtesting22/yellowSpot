@@ -213,6 +213,19 @@
         height: 100%;
         width: auto;
     }
+    .text-container-set {
+        position: absolute;
+        bottom: 20%;
+        left: 0%;
+    }
+    .four {
+        position: absolute;
+        bottom: 5%;
+        left: 0%;
+    }
+    .content-container .ant-row .ant-col{
+        margin: auto;
+    }
 
 
 }
@@ -290,6 +303,23 @@
 .second .btn-container{
     display: flex;
     justify-content: center;
+}
+@media (max-width:600px){
+    .second{
+        padding-right: 0px;
+    }
+    .text-container{
+        width: 100%;
+    }
+    .second .btn-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .second .btn-container button{
+        margin: 10px 0px;
+    }
 }
 .second .btn-container button{
     margin: 0px 20px;

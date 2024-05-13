@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { TypeAnimation } from 'react-type-animation';
 import "./about.css"
@@ -8,7 +8,10 @@ import { Row, Col } from "antd";
 import logo from "../AboutUs/logo1.svg"
 import { Link } from "react-router-dom";
 import billboard from "../Home/iconsImages/billboard.png"
+import Footer from "../Footer/Footer";
 const AboutUS = () => {
+   
+
     const foudersDetails = [
         {
             Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -148,6 +151,8 @@ const AboutUS = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
+            
 
         </>
     )

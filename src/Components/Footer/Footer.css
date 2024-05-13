@@ -1,0 +1,113 @@
+.Footer_Logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.Footer_Logo img{
+    width: 100px;
+    margin: auto;
+   
+}
+
+.scrollToTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #FFED00;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    animation: moveUpDown 1s infinite alternate;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        /* Adjust this value according to your preference */
+    }
+}
+
+.scrollToTopButton.show {
+    opacity: 1;
+    transform: translateX(20px);
+}
+
+.scrollToTopButton.hide {
+    opacity: 0;
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+}
+.common-boxes-footer {
+    height: 30vh;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(43, 43, 43);
+}
+.footer .ant-row .ant-col{
+    padding: 0px 20px;
+}
+.footer p{
+    text-align: center;
+    color: white;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 5px;
+}
+.ContactusHeading h1{
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 90px;
+    transition: .5s;
+}
+.ContactusHeading h1:hover i{
+    transform: translateX(10px) translateY(-10px);
+    transition: .5s;
+}
+.ContactusHeading h1 i{
+    font-size: 20px;
+    color: #FFED00;
+    transition: .5s;
+}
+.logo-set-and-social{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.logo-set-and-social .social-content img{
+    margin: 0px 10px;
+    height: 30px;
+    width: 25px;
+    cursor: pointer;
+    transform: translatey(0px);
+    transition: .5s;
+    /* border: 1px solid #FFED00; */
+    /* padding: 5px; */
+}
+
+.logo-set-and-social .social-content img:hover{
+    margin: 0px 10px;
+    height: 30px;
+    width: 25px;
+    cursor: pointer;
+    transform: translatey(-5px);
+    transition: .5s;
+    /* border: 1px solid #FFED00; */
+    /* padding: 5px; */
+}
