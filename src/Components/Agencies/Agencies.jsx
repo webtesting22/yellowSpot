@@ -21,7 +21,7 @@ const Agencies = () => {
                     ]}
                     wrapper="h1"
                     speed={200}
-                    style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
+                    style={{ fontWeight: "300", fontSize: "45px",color: "#FFED00", textAlign: "start", margin: "0px" }}
                     // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
                     repeat={Infinity}
                 />

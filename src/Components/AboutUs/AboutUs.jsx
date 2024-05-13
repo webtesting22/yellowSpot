@@ -50,7 +50,7 @@ const AboutUS = () => {
                         ]}
                         wrapper="h1"
                         speed={200}
-                        style={{ fontWeight: "300", fontSize: "45px", textAlign: "start", margin: "20px 0px" }}
+                        style={{ fontWeight: "300",color: "#FFED00", fontSize: "45px", textAlign: "start", margin: "20px 0px" }}
                         // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
                         repeat={Infinity}
                     />

@@ -33,7 +33,7 @@
 @media (max-width:700px){
     .animated-text-about P {
         color: white;
-        letter-spacing: 5px;
+        letter-spacing: 0px;
         text-align: center;
     }
 }
