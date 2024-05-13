@@ -1,0 +1,49 @@
+.section-heading {
+    animation: fadeDown 2s ease forwards;
+    font-size: 50px;
+    font-family: Barlow Condensed, sans-serif;
+    font-weight: 300;
+    position: relative;
+    z-index: 5;
+}
+
+.animated-span {
+    position: absolute;
+    width: 20px;
+    bottom: 0;
+    left: -10px;
+    background-color: rgb(255, 237, 0);
+    height: 100%;
+    z-index: -1;
+    animation: spananimated 3s ease forwards;
+}
+
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+        
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+}
+@keyframes spananimated {
+    0% {
+        opacity: 0;
+        width: 0px;
+        border-radius: 0px 0px 0px 0px;
+    }
+    50%{
+        opacity: 0.1;
+        width: 20px;
+        border-radius: 0px 5px 5px 0px;
+    }
+    100% {
+        opacity: 0.2;
+        width: 200px;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
