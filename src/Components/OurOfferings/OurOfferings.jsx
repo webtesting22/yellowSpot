@@ -7,6 +7,7 @@ import "./ouroffering.css"
 import Inventory from "../InventryManagement/Inventory";
 import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
+import MagicHeading from "../MagicHeading/MagicHeading";
 const OurOfferings = () => {
   
     const servicesCards = [
@@ -61,7 +62,8 @@ const OurOfferings = () => {
                 </div>
             </div>
             <section id="serviceCard" className="container">
-                <h1>Our Services</h1>
+            <MagicHeading text="Our Services" />
+            <br />
                 <div className="container p-0">
                     {/* <div className="section-padding"></div>
                     <h1 className="services-heading">Our Services</h1>

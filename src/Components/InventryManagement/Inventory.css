@@ -75,4 +75,13 @@
 .pc-filter-btn{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+@media (max-width:769px){
+    .pc-filter-btn{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }

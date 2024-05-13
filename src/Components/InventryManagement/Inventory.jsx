@@ -19,6 +19,7 @@ import Navbar from "../Navbar/Navbar";
 import { Autoplay } from 'swiper/modules';
 import { TypeAnimation } from 'react-type-animation';
 import { Button, Modal } from 'antd';
+import MagicHeading from "../MagicHeading/MagicHeading";
 const Inventory = () => {
     const [showDrawer, setShowDrawer] = useState(false);
     const drawerRef = useRef(null);
@@ -137,8 +138,8 @@ const Inventory = () => {
             <section className=" main-container-edit container p-0" id="InventoryFilters">
                 {/* <div className="open-overlay"></div> */}
                 <div className="left-side-container">
-                    <div className="pc-filter-btn">
-                        <div style={{ display: "flex", alignItems: "center" }}>
+                    <div className="pc-filter-btn container">
+                        <div style={{ display: "flex", alignItems: "center",width:"100%" }}>
                             <Swiper
                                 direction={'vertical'}
 
@@ -158,7 +159,9 @@ const Inventory = () => {
                                 ))}
 
                             </Swiper>
-                            <h6>Filters</h6>
+                            <div style={{marginTop:"-30px", marginLeft:"30px"}}>
+                                <MagicHeading text="Filters" />
+                            </div>
                         </div>
                         <div className="small-slite-padding"></div>
                         <div className="filter-select">
@@ -281,7 +284,7 @@ const Inventory = () => {
                 </div>
 
                 <div className="inventry-card-restucture">
-                    <Row>
+                    <Row style={{display:"flex",justifyContent:"center"}}>
 
                         <Modal title="Image Details" footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                             {modalItem && (
@@ -314,14 +317,20 @@ const Inventory = () => {
                                 <div className="complete-card-design">
                                     <div className="inside-card-data">
                                         <div className="card-image-container">
-                                            <img src={item.img} alt="" onClick={() => showModal(item)} />
+                                            <img src={item.img} alt="" />
                                         </div>
                                         <div className="Content-info">
                                             <DynamicCreateShape width={item.width} height={item.height} />
                                         </div>
                                     </div>
                                     <div className="location-details">
-                                        <p style={{ margin: "5px 0px" }}>Illumination: {item.Illu}</p>
+                                        <p style={{ margin: "5px 0px" }}>
+                                            Illumination: {item.Illu ?
+                                                (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
+                                                : "No light"
+                                            }
+                                        </p>
+
                                         <a
                                             href="#"
                                             onClick={() => handleLocationClick(item.lat, item.lng)}
