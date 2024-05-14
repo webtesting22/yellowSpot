@@ -122,7 +122,7 @@ const Home = () => {
               <div className="animated-boxes-five">
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Cantilevers</h4>
+                    <h4>Gantry</h4>
                     <div className="small-slite-padding"></div>
                     <button>Yellow Spot</button>
                   </div>
@@ -131,7 +131,7 @@ const Home = () => {
                   <div className="animated-boxes-one">
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Unipoles</h4>
+                      <h4>Cantilever</h4>
                       <div className="small-slite-padding"></div>
                       <button>Yellow Spot</button>
                     </div>
@@ -139,7 +139,7 @@ const Home = () => {
                   <div className="animated-boxes-two">
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Gantries</h4>
+                      <h4>Unipole</h4>
                       <div className="small-slite-padding"></div>
                       <button>Yellow Spot</button>
                     </div>
@@ -157,7 +157,7 @@ const Home = () => {
                   <div className="animated-boxes-four">
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Cantilevers</h4>
+                      <h4>Pole Kiosks</h4>
                       <div className="small-slite-padding"></div>
                       <button>Yellow Spot</button>
                     </div>
@@ -178,12 +178,12 @@ const Home = () => {
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
-                  <h1>Our Product | For Services</h1>
+                  <h1>Our Offerings</h1>
                 </div>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
-                  <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-                  <button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
+                  <Link to="/Agencies"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@ const Home = () => {
                 <div className="slite-padding"></div>
                 <div className="btn-container">
                   {/* <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link> */}
-                  <Link to="/OurClientele"><button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  {/* <Link to="/OurClientele"><button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link> */}
                 </div>
               </div>
             </div>

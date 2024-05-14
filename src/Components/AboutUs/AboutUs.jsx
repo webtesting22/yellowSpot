@@ -45,6 +45,13 @@ const AboutUS = () => {
 
         }
     ]
+    const teamData = [
+        {
+            img: "",
+            name: "helo",
+            description: "hellooo"
+        }
+    ]
     return (
 
         <>
@@ -132,7 +139,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={logo} alt="" className="HET_IMG_two" style={{backgroundColor:"#FFED00",padding:"10px"}}/>
+                            <img src={logo} alt="" className="HET_IMG_two" style={{ backgroundColor: "#FFED00", padding: "10px" }} />
                         </Col>
                         <Col lg={8}>
                             <img src={hetgraphics} alt="" className="HET_IMG" />
@@ -170,18 +177,33 @@ const AboutUS = () => {
                 <br /><br />
 
                 <div className="co-founder-section container">
-                    <MagicHeading text="Meet The Founder" />
-                    <div className="slite-padding"></div>
+                    <MagicHeading text="Meet Our Team" />
+                    {/* <div className="slite-padding"></div> */}
+                    <br /><br />
                     <div>
-                        <Row className="w-100">
+                        <Row>
+                            {foudersDetails.map((item, index) => (
+                                <Col lg={12}>
+                                    <div className="founder-info">
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <i className='bx bxs-user-circle'></i><h4><span>{item.FounderName}</span> {item.FounderSecondName}</h4>
+                                        </div>
+                                        <div className="socials">
+                                            <i class='bx bxl-linkedin-square'></i>
+                                            <i class='bx bxl-twitter' ></i>
+                                        </div>
+                                    </div>
+                                </Col>
+                            ))}
+                        </Row>
+                        {/* <Row className="w-100">
                             {foudersDetails.map((item, index) => (
                                 <Col lg={12} key={index}>
                                     <div className="founder-container">
                                         <div className="founder-img-container">
                                             <img src={item.Founderimage} alt="YellowSpotFounder" />
                                         </div>
-                                        {/* <div className="slite-padding"></div>
-                                        <div className="slite-padding"></div> */}
+
                                         <div className="founder-info">
                                             <i className='bx bxs-user-circle'></i><h4><span>{item.FounderName}</span> {item.FounderSecondName}</h4>
                                         </div>
@@ -193,9 +215,10 @@ const AboutUS = () => {
                             ))}
 
 
-                        </Row>
+                        </Row> */}
                     </div>
                 </div>
+
                 <br /><br />
             </section>
             <Footer />

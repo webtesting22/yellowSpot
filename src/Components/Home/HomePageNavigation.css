@@ -40,23 +40,49 @@ a{
 .ant-drawer-body{
     display: flex;
     align-items: center;
+    position: relative;
 }
 .home-menu-ul{
     padding: 0px 0px;
 }
 .home-menu-ul li{
     list-style: none;
-    margin: 10px 12px;
+    margin: 30px 12px;
     font-size: 20px;
     display: flex;
     align-items: center;
     color: white;
     z-index: 55;
     cursor: pointer;
+    font-weight: 300;
+    font-family: "Barlow Condensed", sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+}
+.home-menu-ul li span{
+  height: 2px ;
+  width: 2px;
+  background-color: transparent;
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  transition: .5s;
+}
+
+.home-menu-ul li:hover span{
+  height: 2px ;
+  width: 30px;
+  background-color: #ffee0093;
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  transition: .5s;
 }
 .home-menu-ul li:hover{
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
     list-style: none;
-    margin: 10px 12px;
+    margin: 30px 12px;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -68,8 +94,24 @@ a{
 .home-menu-ul li a{
   color: white;
 }
+.social-container{
+  position: absolute;
+  bottom: 20px;
+}
+.social{
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
 
-
+.social li{
+  list-style: none;
+  margin-right: 20px;
+}
+.social{
+  padding: 0px;
+}
+/* 
   
   li.flip-animate span {
     position: relative;
@@ -105,7 +147,7 @@ a{
     color: #ffffff;
 
     
-  }
+  } */
 
   .navigation-btn-home{
     height: 30px;

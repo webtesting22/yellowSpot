@@ -175,15 +175,15 @@
 }
 
 .btn-container button span:nth-child(2) {
-    transform:translatex(0px);
+    transform:translatex(30px);
     opacity: 0;
     transition: .6s;
     position: absolute;
-    right: 0;
+    /* right: 0; */
 }
 
 .btn-container button:hover span:nth-child(2) {
-    transform:translatex(-40px);
+    transform:translatex(0px);
     opacity: 1;
     margin: 0px 10px;
     transition: .6s;
