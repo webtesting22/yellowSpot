@@ -38,7 +38,7 @@ const Home = () => {
           mousewheel={true}
           pagination={{ clickable: true }}
           modules={[Mousewheel, Pagination]}
-          style={{ height: "100vh", width: "100%", position: "relative" }}
+          // style={{ height: "100vh", width: "100%", position: "relative" }}
 
         >
           <SwiperSlide style={{ height: "100vh" }}>
@@ -119,31 +119,7 @@ const Home = () => {
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="our-products">
               <div className="animated-hover-boxes">
-                <div className="animated-boxes-one">
-                  <div className="back-overlay"></div>
-                  <div className="content-box">
-                    <h4>Unipoles</h4>
-                    <div className="small-slite-padding"></div>
-                    <button>Yellow Spot</button>
-                  </div>
-                </div>
-                <div className="animated-boxes-two">
-                  <div className="back-overlay"></div>
-                  <div className="content-box">
-                    <h4>Gantries</h4>
-                    <div className="small-slite-padding"></div>
-                    <button>Yellow Spot</button>
-                  </div>
-                </div>
-                <div className="animated-boxes-three">
-                  <div className="back-overlay"></div>
-                  <div className="content-box">
-                    <h4>Hoardings</h4>
-                    <div className="small-slite-padding"></div>
-                    <button>Yellow Spot</button>
-                  </div>
-                </div>
-                <div className="animated-boxes-four">
+              <div className="animated-boxes-five">
                   <div className="back-overlay"></div>
                   <div className="content-box">
                     <h4>Cantilevers</h4>
@@ -151,7 +127,46 @@ const Home = () => {
                     <button>Yellow Spot</button>
                   </div>
                 </div>
+                <div className="twoslidesContainer">
+                  <div className="animated-boxes-one">
+                    <div className="back-overlay"></div>
+                    <div className="content-box">
+                      <h4>Unipoles</h4>
+                      <div className="small-slite-padding"></div>
+                      <button>Yellow Spot</button>
+                    </div>
+                  </div>
+                  <div className="animated-boxes-two">
+                    <div className="back-overlay"></div>
+                    <div className="content-box">
+                      <h4>Gantries</h4>
+                      <div className="small-slite-padding"></div>
+                      <button>Yellow Spot</button>
+                    </div>
+                  </div>
+                </div>
+                <div className="twoslidesContainer">
+                  <div className="animated-boxes-three">
+                    <div className="back-overlay"></div>
+                    <div className="content-box">
+                      <h4>Hoardings</h4>
+                      <div className="small-slite-padding"></div>
+                      <button>Yellow Spot</button>
+                    </div>
+                  </div>
+                  <div className="animated-boxes-four">
+                    <div className="back-overlay"></div>
+                    <div className="content-box">
+                      <h4>Cantilevers</h4>
+                      <div className="small-slite-padding"></div>
+                      <button>Yellow Spot</button>
+                    </div>
+                  </div>
+                </div>
+
+                
               </div>
+
             </div>
           </SwiperSlide>
 
