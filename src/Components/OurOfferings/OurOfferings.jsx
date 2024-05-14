@@ -68,7 +68,7 @@ const OurOfferings = () => {
                     {/* <div className="section-padding"></div>
                     <h1 className="services-heading">Our Services</h1>
                     <div className="section-padding"></div> */}
-                    <div className="container serviceCard">
+                    <div className=" serviceCard">
                         <Row>
 
                             {servicesCards.map((item, index) => (
