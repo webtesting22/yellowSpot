@@ -150,7 +150,7 @@ const Inventory = () => {
                                 modules={[Autoplay]}
                                 className="mySwiper"
                                 loop={true}
-                                style={{ height: "10vh", margin: "0px" }}
+                                style={{ height: "10vh",width:"10vh", margin: "0px" }}
                             >
                                 {imgMap.map((item, index) => (
                                     <SwiperSlide key={index}>
