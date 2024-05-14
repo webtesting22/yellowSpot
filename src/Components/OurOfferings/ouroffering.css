@@ -171,17 +171,39 @@ h1 {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.content-box h4{
+
+.content-box h4 {
     color: white;
-    font-family:"Barlow Condensed", sans-serif ;
+    font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 3px;
     font-weight: 400;
     font-size: 30px;
     /* margin-bottom: 20px; */
 }
-.content-box button{
+
+.content-box button {
     border: none;
     padding: 7px 15px;
     border-radius: 5px;
     background-color: #ffed00;
+}
+
+@media (max-width:600px) {
+    .animated-hover-boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .animated-hover-boxes .animated-boxes-one,
+    .animated-hover-boxes .animated-boxes-two,
+    .animated-hover-boxes .animated-boxes-three,
+    .animated-hover-boxes .animated-boxes-four {
+        height: 25vh;
+    }
+    .animated-hover-boxes .animated-boxes-one:hover,
+    .animated-hover-boxes .animated-boxes-two:hover,
+    .animated-hover-boxes .animated-boxes-three:hover,
+    .animated-hover-boxes .animated-boxes-four:hover {
+        height: 25vh;
+    }
 }

@@ -7,6 +7,7 @@ a{
     z-index: 555;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     z-index: 555555555;
     padding: 30px 50px;
@@ -25,7 +26,7 @@ a{
 
 }
 .logo-home{
-    width: 80px;
+    width: 150px;
 }
 .ant-drawer .ant-drawer-header {
     display: none;

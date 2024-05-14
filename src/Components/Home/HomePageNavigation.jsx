@@ -15,6 +15,7 @@ import vector5 from "../Home/iconsImages/Vector5.svg"
 import vector6 from "../Home/iconsImages/Vector6.svg"
 import vector7 from "../Home/iconsImages/Vector7.svg"
 import vector8 from "../Home/iconsImages/Vector8.svg"
+import CombineLogo from "../Navbar/CombineLogo.jpg"
 const HomePageNavigation = () => {
     const [open, setOpen] = useState(false);
     const [placement, setPlacement] = useState('right');
@@ -38,7 +39,7 @@ const HomePageNavigation = () => {
         <>
             <section id="home-page-header">
 
-               <Link to="/"> <img src={Logo} alt="Yellowspotgogo" className="logo-home" /></Link>
+               <Link to="/"> <img src={CombineLogo} alt="Yellowspotgogo" className="logo-home" /></Link>
                 <button className="menu-btn" onClick={showDrawer}>
                     <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
                         {drawerVisible ? <CloseOutlined /> : <MenuOutlined />}

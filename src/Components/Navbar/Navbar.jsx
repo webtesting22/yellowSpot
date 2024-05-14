@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css"
 import { Link } from "react-router-dom"
 import logo from "../Navbar/logo1.svg"
+import CombineLogo from "../Navbar/CombineLogo.jpg"
 const Navbar = () => {
   const handleLeftHover = () => {
     document.querySelector('.left-side-ul .line > div').style.transform = 'translateX(-30px)';
@@ -58,7 +59,7 @@ const Navbar = () => {
           </div>
           <div className="website-identity">
             <div className="yellow-spot-logo">
-              <Link to="/"><img src={logo} alt="" style={{ width: "90%" }} /></Link>
+              <Link to="/"><img src={CombineLogo} alt="" style={{ width: "180px" }} /></Link>
             </div>
           </div>
           <div className="right-side-links">
