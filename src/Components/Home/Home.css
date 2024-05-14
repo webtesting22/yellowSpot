@@ -231,6 +231,7 @@
         flex-direction: column;
         justify-content: center;
         row-gap: 10px;
+        padding-bottom: 30px;
     }
     .content-container .ant-row .ant-col{
         margin: auto;
