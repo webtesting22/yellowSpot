@@ -72,7 +72,7 @@ a{
 .home-menu-ul li:hover span{
   height: 2px ;
   width: 30px;
-  background-color: #ffee0093;
+  background-color: #ffee00;
   position: absolute;
   bottom: 0px;
   left: 30px;
@@ -155,7 +155,7 @@ a{
     background-color: black;
     border-radius: 50%;
     content: "f";
-    color: white;
+    color: #FFED00;
   }
 
   .menu-btn{
@@ -164,7 +164,7 @@ a{
     width: 50px;
     border-radius: 50%;
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.539);
+    border: 1px solid #FFED00;
     transition: .6s;
   }
   .menu-btn:hover{
@@ -172,7 +172,7 @@ a{
     transition: .6s;
   }
   .icon-transition{
-    color: white;
+    color: #FFED00;
   }
   .container-heading h5{
     color: rgb(230, 230, 230);

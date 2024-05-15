@@ -4,7 +4,7 @@
     height: 100%;
 }
 .Footer_Logo img{
-    width: 100px;
+    width: 150px;
     margin: auto;
    
 }
@@ -51,7 +51,8 @@
     opacity: 0;
 }
 .footer{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(36, 36, 36);
+    padding: 30px 0px;
 }
 .common-boxes-footer {
     height: 30vh;
@@ -64,6 +65,8 @@
 }
 .footer p{
     text-align: center;
+    margin: 0px;
+    /* padding: 20px 0px; */
     color: white;
     font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 5px;
