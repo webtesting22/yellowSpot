@@ -5,6 +5,7 @@ import { Row, Col } from "antd";
 import instgramImg from "../Home/iconsImages/Vector4.svg"
 import twitterImg from "../Home/iconsImages/Vector8.svg"
 import LinkedinImg from "../Home/iconsImages/Vector.svg"
+import { Link } from "react-router-dom";
 const Footer = () => {
 
     return (
@@ -24,7 +25,7 @@ const Footer = () => {
                         <Col lg={24}>
                             <div className="logo-set-and-social">
                                 <div className="Footer_Logo">
-                                    <img src={FooterLogo} alt="" />
+                                    <Link to="/"><img src={FooterLogo} alt="" /></Link>
                                 </div>
                                 <div className="social-content">
                                     <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>

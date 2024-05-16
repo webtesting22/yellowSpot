@@ -170,7 +170,7 @@ const AboutUS = () => {
                     </div>
                 </div>
 
-                <div className="parent-poster-content container" id="parent-company">
+                <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
                     {/* <h1 className={`${isVisible ? "section-heading " : ""}`}
                         >We are development experts on <br /> all technologies & platforms</h1>
                     <br /> */}
@@ -203,7 +203,7 @@ const AboutUS = () => {
                 <div className="parent-Company-info container" >
                     <Row>
                         <Col lg={16}>
-                            <div className="parent-comapny-content second">
+                            <div className="parent-comapny-content second" data-aos="fade-up">
                                 <h4><span>Yellow</span>Spot</h4>
                                 {/* <br /> */}
                                 <p>YellowSpot emerged as a collaborative effort between Khushi Advertising and
@@ -221,14 +221,14 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={logo} alt="" className="HET_IMG_two" style={{ backgroundColor: "#FFED00", padding: "10px" }} />
+                            <img src={logo} alt="yellowspot_logo" className="HET_IMG_two" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up"/>
                         </Col>
                         <Col lg={8}>
-                            <img src={hetgraphics} alt="" className="HET_IMG" />
+                            <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up"/>
                         </Col>
 
                         <Col lg={16}>
-                            <div className="parent-comapny-content first">
+                            <div className="parent-comapny-content first" data-aos="fade-up">
                                 <h4><span>HET Graphics</span> Total Outdoor Solutions</h4>
                                 {/* <br /> */}
                                 <p>Het Graphics, known as the industry leader in Ahmedabad city for its innovative ideas and extensive coverage, has successfully provided clients with a one-stop solution for outdoor advertising. Their extensive network of hoardings, gantries and signages makes creating awareness for your brand/product/service easier. With HET by their side, many national and local brands have advertised throughout the state of Gujarat.</p>
@@ -240,7 +240,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={16}>
-                            <div className="parent-comapny-content second">
+                            <div className="parent-comapny-content second" data-aos="fade-up">
                                 <h4><span>Khushi</span> Advertising</h4>
                                 {/* <br /> */}
                                 <p>Khushi Advertising, India’s leading ambient media agency, leverages its expertise and consummate skills to present the most effective campaigns with a distinct and long-lasting impact. With a presence in 22 cities, we are your one-stop solution for advertising in India’s 2700+ multiplex screens, 350+ malls, and 30+ airports. Our wide-spread reach across India and 300+ professionals enable us to be present at the right avenue at the right time to reach out to the right audience.</p>
@@ -252,11 +252,11 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={khushiImage} alt="" className="HET_IMG_two" />
+                            <img src={khushiImage} alt="khushi_advertising_logo" className="HET_IMG_two" data-aos="fade-up"/>
                         </Col>
                     </Row>
                 </div>
-                <br /><br />
+                {/* <br /> */}
 
                 <div className="co-founder-section container">
                     <MagicHeading text="Meet Our Team" />

@@ -39,7 +39,7 @@ const HomePageNavigation = () => {
         <>
             <section id="home-page-header">
 
-                <Link to="/"> <img src={CombineLogo} alt="Yellowspotgogo" className="logo-home" /></Link>
+                <Link to="/"> <img src={CombineLogo} alt="Yellowspotgogo" className="logo-home"/></Link>
                 <button className="menu-btn" onClick={showDrawer}>
                     <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
                         {drawerVisible ? <CloseOutlined /> : <MenuOutlined />}
