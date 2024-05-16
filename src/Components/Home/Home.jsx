@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper/modules";
+import { Mousewheel, Pagination, FreeMode } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
@@ -11,20 +12,24 @@ import billboard from "../Home/iconsImages/billboard.png"
 import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
 import { Row, Col } from "antd";
+import ClientLogos from './ClientLogosData';
+import Homepagefirst from "../Home/Homepage1.png"
 const Home = () => {
 
-  const carousalImagers = [
-    {
-      image: "https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      sliderHeading: "Hello Demo Heading"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1593363725982-860117ff8b78?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1629005514669-70e8bbfcf917?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    }
-  ]
+
+
+  // const carousalImagers = [
+  //   {
+  //     image: "https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //     sliderHeading: "Hello Demo Heading"
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1593363725982-860117ff8b78?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  //   },
+  //   {
+  //     image: "https://images.unsplash.com/photo-1629005514669-70e8bbfcf917?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  //   }
+  // ]
   return (
     <>
       <div id="HomePage">
@@ -38,12 +43,12 @@ const Home = () => {
           mousewheel={true}
           pagination={{ clickable: true }}
           modules={[Mousewheel, Pagination]}
-          // style={{ height: "100vh", width: "100%", position: "relative" }}
+        // style={{ height: "100vh", width: "100%", position: "relative" }}
 
         >
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-              <img src="https://images.unsplash.com/photo-1638368888211-cecd27facf71?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <img src={Homepagefirst} alt="" />
             </div>
             <div className="image-overlay"></div>
             <div className="text-container-set">
@@ -119,7 +124,7 @@ const Home = () => {
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="our-products">
               <div className="animated-hover-boxes">
-              <div className="animated-boxes-five">
+                <div className="animated-boxes-five">
                   <div className="back-overlay"></div>
                   <div className="content-box">
                     <h4>Gantry</h4>
@@ -164,7 +169,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                
+
               </div>
 
             </div>
@@ -182,8 +187,8 @@ const Home = () => {
                 </div>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
-                  <Link to="/Agencies"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-                  <button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button>
+                  <Link to="/OurOfferings"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <Link to="/OurOfferings"><button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>
             </div>
@@ -199,9 +204,43 @@ const Home = () => {
                   <h1>Our Key Clients</h1>
                 </div>
                 <div className="slite-padding"></div>
+                <div className="clients-logo-home-container">
+                  <Swiper
+                    slidesPerView={6}
+                    spaceBetween={30}
+                    freeMode={true}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    breakpoints={{
+                      // Define breakpoints for different screen sizes
+                      1100: {
+                        slidesPerView: 6
+                      },
+                      768: {
+                        slidesPerView: 3// For tablets
+                      },
+                      300: {
+                        slidesPerView: 2 // For mobile devices
+                      },
+                    }}
+                    style={{ height: "20vh", padding: "10px 10px" }}
+                    modules={[FreeMode, Pagination]}
+                    className="mySwiper"
+                  >
+                    {ClientLogos.map((item, index) => (
+                      <SwiperSlide style={{ display: "flex" }}>
+                        <div key={index} className='home-page-client-logo'>
+                          <img src={item.img} alt="" />
+                        </div>
+                      </SwiperSlide>
+                    ))}
+
+                  </Swiper>
+                </div>
+                <br />
                 <div className="btn-container">
-                  {/* <Link to="/Agencies"><button><span>For Agencies</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link> */}
-                  {/* <Link to="/OurClientele"><button><span>For Brands</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link> */}
+                  <Link to="/OurClientele"><button><span>Show all Clients</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>
             </div>

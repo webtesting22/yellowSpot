@@ -310,6 +310,7 @@ const Inventory = () => {
                                                 </p>
                                             </a>
                                         </div>
+                                        <hr style={{ margin: "3px 0px" }} />
                                         <div style={{
                                             display: "flex", justifyContent: "space-between",
                                             alignItems: "center"
@@ -325,9 +326,7 @@ const Inventory = () => {
                                 </div>
                             </Col>
                         ))}
-                        <div style={{ textAlign: "center", marginTop: "20px" }}>
-                            <button onClick={handleModal} className="all-btn-stylings">Show all Inventories</button>
-                        </div>
+
                         <Modal title="Image Details" width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                             <Row>
                                 {filteredData && filteredData.map(item => (
@@ -356,6 +355,7 @@ const Inventory = () => {
                                                         </p>
                                                     </a>
                                                 </div>
+
                                                 <div style={{
                                                     display: "flex", justifyContent: "space-between",
                                                     alignItems: "center"
@@ -374,7 +374,9 @@ const Inventory = () => {
                             </Row>
                         </Modal>
                     </Row>
-
+                    <div style={{ textAlign: "center", marginTop: "20px" }}>
+                        <button onClick={handleModal} className="all-btn-stylings">Show all Inventories</button>
+                    </div>
 
 
                 </div>

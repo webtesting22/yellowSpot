@@ -214,10 +214,10 @@ const AboutUS = () => {
                                     across diverse platforms.
                                 </p>
                                 <div className="small-slite-padding"></div>
-                                <div className="btn-container d-block">
+                                {/* <div className="btn-container d-block">
                                     <Link to="/AboutUs"><button className="m-0"><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
 
-                                </div>
+                                </div> */}
                             </div>
                         </Col>
                         <Col lg={8}>
@@ -234,7 +234,7 @@ const AboutUS = () => {
                                 <p>Het Graphics, known as the industry leader in Ahmedabad city for its innovative ideas and extensive coverage, has successfully provided clients with a one-stop solution for outdoor advertising. Their extensive network of hoardings, gantries and signages makes creating awareness for your brand/product/service easier. With HET by their side, many national and local brands have advertised throughout the state of Gujarat.</p>
                                 <div className="small-slite-padding"></div>
                                 <div className="btn-container">
-                                    <Link to="/AboutUs"><button className="m-0" style={{ backgroundColor: "#FFED00" }}><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                                    <Link to="https://hetgraphics.com/" target="_blank"><button className="m-0" style={{ backgroundColor: "#FFED00" }}><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
 
                                 </div>
                             </div>
@@ -246,7 +246,7 @@ const AboutUS = () => {
                                 <p>Khushi Advertising, India’s leading ambient media agency, leverages its expertise and consummate skills to present the most effective campaigns with a distinct and long-lasting impact. With a presence in 22 cities, we are your one-stop solution for advertising in India’s 2700+ multiplex screens, 350+ malls, and 30+ airports. Our wide-spread reach across India and 300+ professionals enable us to be present at the right avenue at the right time to reach out to the right audience.</p>
                                 <div className="small-slite-padding"></div>
                                 <div className="btn-container d-block">
-                                    <Link to="/AboutUs"><button className="m-0"><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                                    <Link to="https://khushiadvertising.com/" target="_blank"><button className="m-0"><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
 
                                 </div>
                             </div>

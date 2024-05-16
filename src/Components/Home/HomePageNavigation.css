@@ -12,6 +12,9 @@ a{
     z-index: 555555555;
     padding: 30px 50px;
 }
+.logo-home{
+  width: 200px;
+}
 @media (max-width:600px){
     #home-page-header{
         position: absolute;
@@ -23,11 +26,12 @@ a{
         z-index: 555555555;
         padding: 30px 20px;
     }
+    .logo-home{
+      width: 150px;
+    }
 
 }
-.logo-home{
-    width: 150px;
-}
+
 .ant-drawer .ant-drawer-header {
     display: none;
 }
