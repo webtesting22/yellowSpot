@@ -153,7 +153,7 @@ const Inventory = () => {
                             >
                                 {imgMap.map((item, index) => (
                                     <SwiperSlide key={index}>
-                                        <img src={item.img} alt="" style={{ width: "100%", height: "100%", backgroundColor: "#FFED00", borderRadius: "50%" }} />
+                                        <img src={item.img} alt="Yellow-Spot Logo" style={{ width: "100%", height: "100%", backgroundColor: "#FFED00", borderRadius: "50%" }} />
                                     </SwiperSlide>
                                 ))}
 

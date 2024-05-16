@@ -48,7 +48,7 @@ const Home = () => {
         >
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-              <img src={Homepagefirst} alt="" />
+              <img src={Homepagefirst} alt="Yellow-Spot poster" />
             </div>
             <div className="image-overlay"></div>
             <div className="text-container-set">
@@ -80,7 +80,7 @@ const Home = () => {
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
 
-              <img src="https://images.unsplash.com/photo-1571769380537-2e0bf17dd263?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <img src="https://images.unsplash.com/photo-1571769380537-2e0bf17dd263?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yellow-Spot poster" />
             </div>
             <div className="image-overlay"></div>
             <div className="text-container-set four">
@@ -177,7 +177,7 @@ const Home = () => {
 
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-              <img src="https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <img src="https://images.unsplash.com/photo-1490529553037-4f4ed6f3f575?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yellow-Spot poster" />
             </div>
             <div className="image-overlay"></div>
             <div className="text-container-set">
@@ -195,7 +195,7 @@ const Home = () => {
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-              <img src="https://images.unsplash.com/photo-1582129165473-a878f105f3b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <img src="https://images.unsplash.com/photo-1582129165473-a878f105f3b8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Yellow-Spot poster" />
             </div>
             <div className="image-overlay"></div>
             <div className="text-container-set">
@@ -240,7 +240,7 @@ const Home = () => {
                 </div>
                 <br />
                 <div className="btn-container">
-                  <Link to="/OurClientele"><button><span>Show all Clients</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <Link to="/OurClientele"><button><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>
             </div>

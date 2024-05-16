@@ -61,7 +61,7 @@ const Navbar = () => {
           </div>
           <div className="website-identity">
             <div className="yellow-spot-logo">
-              <Link to="/"><img src={CombineLogo} alt="" style={{ width: "180px" }} /></Link>
+              <Link to="/"><img src={CombineLogo} alt="Yellow-Spot Logo" style={{ width: "180px" }} /></Link>
             </div>
           </div>
           <div className="right-side-links">
