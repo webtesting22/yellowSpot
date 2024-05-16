@@ -37,10 +37,10 @@ const Inventory = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalItem, setModalItem] = useState(null);
 
-    const showModal = (item) => {
-        setModalItem(item);
-        setIsModalOpen(true);
-    };
+    // Function to handle opening and closing of the modal
+    const handleModal = () => {
+        setIsModalOpen(!isModalOpen);
+    }
     const handleOk = () => {
         setIsModalOpen(false);
     };
@@ -136,10 +136,9 @@ const Inventory = () => {
         <>
 
             <section className=" main-container-edit container p-0" id="InventoryFilters">
-                {/* <div className="open-overlay"></div> */}
                 <div className="left-side-container">
                     <div className="pc-filter-btn container">
-                        <div style={{ display: "flex", alignItems: "center",width:"100%" }}>
+                        <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
                             <Swiper
                                 direction={'vertical'}
 
@@ -150,7 +149,7 @@ const Inventory = () => {
                                 modules={[Autoplay]}
                                 className="mySwiper"
                                 loop={true}
-                                style={{ height: "10vh",width:"10vh", margin: "0px" }}
+                                style={{ height: "10vh", width: "10vh", margin: "0px" }}
                             >
                                 {imgMap.map((item, index) => (
                                     <SwiperSlide key={index}>
@@ -159,11 +158,11 @@ const Inventory = () => {
                                 ))}
 
                             </Swiper>
-                            <div style={{marginTop:"-30px", marginLeft:"30px"}}>
+                            <div style={{ marginTop: "-30px", marginLeft: "30px" }}>
                                 <MagicHeading text="Filters" />
                             </div>
                         </div>
-                        <div className="small-slite-padding"></div>
+                        {/* <div className="small-slite-padding"></div> */}
                         <div className="filter-select">
                             <NamedSelectComponent
                                 options={mediaTypes.map(type => ({ label: type, value: type }))}
@@ -180,7 +179,7 @@ const Inventory = () => {
                             />
                         </div>
                     </div>
-                    <div className="slite-padding"></div>
+                    {/* <div className="slite-padding"></div> */}
                     {/* <div className="mobile-filter-btn">
                         <button className="filter-button" onClick={toggleDrawer}>Filter <i className='bx bx-filter-alt'></i></button>
                         <div ref={drawerRef} className={`filter-drawer ${showDrawer ? 'visible' : ''}`}>
@@ -280,71 +279,102 @@ const Inventory = () => {
                             </div>
                         </div>
                     </div> */}
-                    <br /><br />
+                    <br />
                 </div>
 
                 <div className="inventry-card-restucture">
-                    <Row style={{display:"flex",justifyContent:"center"}}>
-
-                        <Modal title="Image Details" footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                            {modalItem && (
-                                <div className="complete-card-design">
-                                    <div className="inside-card-data">
-                                        <div className="card-image-container">
-                                            <img src={modalItem.img} alt="" />
-                                        </div>
-                                        <div className="Content-info">
-                                            <DynamicCreateShape width={modalItem.width} height={modalItem.height} />
-                                        </div>
-                                    </div>
-                                    {/* <div className="location-details">
-                                        <p style={{ margin: "5px 0px" }}>{modalItem.Illu}</p>
-                                        <a
-                                            href="#"
-                                            onClick={() => handleLocationClick(modalItem.lat, modalItem.lng)}
-                                        >
-                                            <p style={{ margin: "0px" }}>
-                                                <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                &nbsp;<span>{modalItem.locations?.name}</span>
-                                            </p>
-                                        </a>
-                                    </div> */}
-                                </div>
-                            )}
-                        </Modal>
-                        {filteredData && filteredData.map(item => (
-                            <Col lg={8} key={item.id}>
+                    <Row style={{ display: "flex", justifyContent: "center" }}>
+                        {filteredData && filteredData.slice(0, 8).map(item => (
+                            <Col lg={6} key={item.id}>
                                 <div className="complete-card-design">
                                     <div className="inside-card-data">
                                         <div className="card-image-container">
                                             <img src={item.img} alt="" />
                                         </div>
-                                        <div className="Content-info">
-                                            <DynamicCreateShape width={item.width} height={item.height} />
-                                        </div>
                                     </div>
                                     <div className="location-details">
-                                        <p style={{ margin: "5px 0px" }}>
-                                            Illumination: {item.Illu ?
-                                                (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
-                                                : "No light"
-                                            }
-                                        </p>
-
-                                        <a
-                                            href="#"
-                                            onClick={() => handleLocationClick(item.lat, item.lng)}
-                                        >
-                                            <p style={{ margin: "0px" }}>
-                                                <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                &nbsp;<span>{item.locations?.name}</span>
+                                        <div style={{ width: "100%" }} className="location-content">
+                                            <p style={{ margin: "5px 0px" }}>
+                                                Illumination: {item.Illu ?
+                                                    (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
+                                                    : "No light"
+                                                }
                                             </p>
-                                        </a>
+                                            <a
+                                                href="#"
+                                                onClick={() => handleLocationClick(item.lat, item.lng)}
+                                            >
+                                                <p style={{ margin: "0px" }}>
+                                                    <img src={locationIcon} alt="" style={{ color: "white" }} />
+                                                    &nbsp;<span>{item.locations?.name}</span>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div style={{
+                                            display: "flex", justifyContent: "space-between",
+                                            alignItems: "center"
+                                        }}>
+                                            <div>
+                                                Dimensions
+                                            </div>
+                                            <div className="Content-info">
+                                                <DynamicCreateShape width={item.width} height={item.height} />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </Col>
                         ))}
+                        <div style={{ textAlign: "center", marginTop: "20px" }}>
+                            <button onClick={handleModal} className="all-btn-stylings">Show all Inventories</button>
+                        </div>
+                        <Modal title="Image Details" width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            <Row>
+                                {filteredData && filteredData.map(item => (
+                                    <Col lg={8} key={item.id}>
+                                        <div className="complete-card-design">
+                                            <div className="inside-card-data">
+                                                <div className="card-image-container">
+                                                    <img src={item.img} alt="" />
+                                                </div>
+                                            </div>
+                                            <div className="location-details">
+                                                <div style={{ width: "100%" }} className="location-content">
+                                                    <p style={{ margin: "5px 0px" }}>
+                                                        Illumination: {item.Illu ?
+                                                            (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
+                                                            : "No light"
+                                                        }
+                                                    </p>
+                                                    <a
+                                                        href="#"
+                                                        onClick={() => handleLocationClick(item.lat, item.lng)}
+                                                    >
+                                                        <p style={{ margin: "0px" }}>
+                                                            <img src={locationIcon} alt="" style={{ color: "white" }} />
+                                                            &nbsp;<span>{item.locations?.name}</span>
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div style={{
+                                                    display: "flex", justifyContent: "space-between",
+                                                    alignItems: "center"
+                                                }}>
+                                                    <div>
+                                                        Dimensions
+                                                    </div>
+                                                    <div className="Content-info">
+                                                        <DynamicCreateShape width={item.width} height={item.height} />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                ))}
+                            </Row>
+                        </Modal>
                     </Row>
+
 
 
                 </div>

@@ -1,6 +1,7 @@
 .inside-card-data {
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 .card-image-container{
     overflow: hidden;
@@ -9,7 +10,7 @@
     border-radius: 5px;
 }
 .card-image-container img{
-    width: 200px;
+    width: 100%;
     transform: scale(1.1);
     aspect-ratio: 3/2;
     padding-right: 10px;
@@ -26,7 +27,9 @@
 .Content-info{
     display: flex;
     justify-content: center;
-    width: 100%;
+    /* width: 100%; */
+    height: 100px;
+    /* padding: 10px; */
 }
 .complete-card-design{
     margin: 10px;
@@ -36,6 +39,15 @@
     color: white;
 }
 
+
+.location-content{
+    width: 100%;
+    /* padding-right: 10px; */
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
 .complete-card-design:hover{
     margin: 10px;
     padding: 10px;
@@ -62,10 +74,10 @@
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title{
     color: white;
 }
-.inventry-card-restucture{
+/* .inventry-card-restucture{
     height: 80vh;
     overflow: auto;
-}
+} */
 .pc-filter-btn h6{
     color: white;
     font-size: 30px;
@@ -84,4 +96,15 @@
         justify-content: space-between;
         flex-direction: column;
     }
+}
+.ant-modal-body{
+    height: 80vh;
+    overflow: auto;
+}
+.all-btn-stylings{
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #FFED00;
+    margin-top: 30px;
 }

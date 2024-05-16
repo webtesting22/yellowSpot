@@ -1,0 +1,32 @@
+.App {
+    position: relative;
+    height: 100%;
+  }
+  
+  .card {
+    position: sticky;
+    top: 50px;
+    width: 100%;
+    /* max-width: 500px; */
+    margin: 30px auto;
+    padding: 20px;
+    font-size: 24px;
+    color: white;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    /* height: 30vh; */
+  }
+  
+  .spacer {
+    margin-top: -10px;
+  }
+  
+  .class-inside-content{
+    display: flex;
+    width: 100%;
+  }
+  .services-image-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }

@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import { TypeAnimation } from "react-type-animation";
 import Footer from "../Footer/Footer";
-const OurClientele =()=>{
-    return(
+const OurClientele = () => {
+   
+    // const cardColors = ["#ff6347", "#6495ed", "#32cd32", "#ffa500", "#9370db"];
+    return (
         <>
-           <Navbar />
-            <HomePageNavigation/>
+            <Navbar />
+            <HomePageNavigation />
             <div className="section-padding"></div>
             <br />
             <div className="animated-text-about">
@@ -20,7 +22,7 @@ const OurClientele =()=>{
                     ]}
                     wrapper="h1"
                     speed={200}
-                    style={{ fontWeight: "300", fontSize: "45px",color: "#FFED00", textAlign: "start", margin: "0px" }}
+                    style={{ fontWeight: "300", fontSize: "45px", color: "#FFED00", textAlign: "start", margin: "0px" }}
                     // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
                     repeat={Infinity}
                 />
@@ -32,7 +34,8 @@ const OurClientele =()=>{
                     <span></span>
                 </div>
             </div>
-            <Footer/>
+          
+            <Footer />
         </>
     )
 }

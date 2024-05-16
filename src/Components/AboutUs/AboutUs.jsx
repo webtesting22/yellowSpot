@@ -299,7 +299,7 @@ const AboutUS = () => {
                                         <div className="founder-info">
                                             <div className="header-part">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
-                                                    <h4 style={{ fontSize: "20px" }}><span>{item.firstTitle}</span> {item.lastTitle}<span style={{ color: "white", fontSize: "15px", marginLeft: "5px" }}>( {item.Designation} )</span></h4>
+                                                    <h4 style={{ fontSize: "20px" }}><span>{item.firstTitle}</span> {item.lastTitle}<span style={{ color: "#ffffff9c", fontSize: "15px", marginLeft: "5px" }}>({item.Designation})</span></h4>
                                                 </div>
                                                 <div className="socials">
                                                     <i className='bx bxl-linkedin-square'></i>
