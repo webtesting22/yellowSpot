@@ -13,7 +13,7 @@ import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
 import { Row, Col } from "antd";
 import ClientLogos from './ClientLogosData';
-import Homepagefirst from "../Home/Homepage1.png"
+import Homepagefirst from "../Home/Homepage1.jpg"
 const Home = () => {
 
 

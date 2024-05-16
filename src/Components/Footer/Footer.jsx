@@ -25,7 +25,7 @@ const Footer = () => {
                         <Col lg={24}>
                             <div className="logo-set-and-social">
                                 <div className="Footer_Logo">
-                                    <Link to="/"><img src={FooterLogo} alt="" /></Link>
+                                    <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
                                 </div>
                                 <div className="social-content">
                                     <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>
