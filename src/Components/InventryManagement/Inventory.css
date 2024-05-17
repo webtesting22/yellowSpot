@@ -59,13 +59,14 @@
     color: rgb(255, 237, 0);
 }
 
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-content{
+:where(.css-1r287do).ant-modal .ant-modal-content{
     background-color: black;
 }
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title{
+:where(.css-1r287do).ant-modal .ant-modal-title{
     background-color: black;
+    color: white;
 }
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close{
+:where(.css-1r287do).ant-modal .ant-modal-close-x{
     color: white;
 }
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close:hover{
