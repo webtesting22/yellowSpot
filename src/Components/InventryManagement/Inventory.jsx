@@ -351,7 +351,7 @@ const Inventory = () => {
                                                     >
                                                         <p style={{ margin: "0px" }}>
                                                             <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                            &nbsp;<span>{item.locations?.name}</span>
+                                                            &nbsp;<span style={{ color: "white" }}>{item.locations?.name}</span>
                                                         </p>
                                                     </a>
                                                 </div>
