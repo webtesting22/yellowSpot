@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { TypeAnimation } from 'react-type-animation';
 import "./about.css"
-import khushiImage from "../AboutUs/khushi.png"
+import khushiImage from "../AboutUs/KhushiLogo.png"
 import hetgraphics from "../AboutUs/het-graphics.jpg"
 import { Row, Col } from "antd";
 import logo from "../AboutUs/logo1.svg"
