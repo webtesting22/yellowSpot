@@ -15,21 +15,6 @@ import { Row, Col } from "antd";
 import ClientLogos from './ClientLogosData';
 import Homepagefirst from "../Home/Homepage1.jpg"
 const Home = () => {
-
-
-
-  // const carousalImagers = [
-  //   {
-  //     image: "https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //     sliderHeading: "Hello Demo Heading"
-  //   },
-  //   {
-  //     image: "https://images.unsplash.com/photo-1593363725982-860117ff8b78?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  //   },
-  //   {
-  //     image: "https://images.unsplash.com/photo-1629005514669-70e8bbfcf917?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  //   }
-  // ]
   return (
     <>
       <div id="HomePage">

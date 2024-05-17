@@ -13,24 +13,6 @@ import HomePageNavigation from "../Home/HomePageNavigation";
 import MagicHeading from "../MagicHeading/MagicHeading";
 const AboutUS = () => {
 
-    // const sectionRef = useRef(null);
-    // const [isVisible, setIsVisible] = useState(false);
-
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver((entries) => {
-    //         entries.forEach((entry) => {
-    //             if (entry.isIntersecting) {
-    //                 setIsVisible(true);
-    //             }
-    //         });
-    //     });
-
-    //     observer.observe(sectionRef.current);
-
-    //     return () => {
-    //         observer.unobserve(sectionRef.current);
-    //     };
-    // }, []);
     const foudersDetails = [
         {
             Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -144,9 +126,7 @@ const AboutUS = () => {
             {/* <div className="slite-padding"></div> */}
             <div className="slite-padding"></div>
             <section>
-                {/* <div className="overlay-back-img">
-                    <img src="https://images.unsplash.com/photo-1599803654935-5b9d1c93578c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                </div> */}
+              
                 <div className="animated-text-about">
                     <TypeAnimation
                         sequence={[
@@ -221,10 +201,10 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={logo} alt="yellowspot_logo" className="HET_IMG_two" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up"/>
+                            <img src={logo} alt="yellowspot_logo" className="HET_IMG_two" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up" />
                         </Col>
                         <Col lg={8}>
-                            <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up"/>
+                            <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
                         </Col>
 
                         <Col lg={16}>
@@ -252,12 +232,11 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={khushiImage} alt="khushi_advertising_logo" className="HET_IMG_two" data-aos="fade-up"/>
+                            <img src={khushiImage} alt="khushi_advertising_logo" className="HET_IMG_two" data-aos="fade-up" />
                         </Col>
                     </Row>
                 </div>
                 {/* <br /> */}
-
                 <div className="co-founder-section container">
                     <MagicHeading text="Meet Our Team" />
                     {/* <div className="slite-padding"></div> */}
@@ -318,26 +297,7 @@ const AboutUS = () => {
                             ))}
 
                         </Row>
-                        {/* <Row className="w-100">
-                            {foudersDetails.map((item, index) => (
-                                <Col lg={12} key={index}>
-                                    <div className="founder-container">
-                                        <div className="founder-img-container">
-                                            <img src={item.Founderimage} alt="YellowSpotFounder" />
-                                        </div>
-
-                                        <div className="founder-info">
-                                            <i className='bx bxs-user-circle'></i><h4><span>{item.FounderName}</span> {item.FounderSecondName}</h4>
-                                        </div>
-                                        <div className="social-icons">
-
-                                        </div>
-                                    </div>
-                                </Col>
-                            ))}
-
-
-                        </Row> */}
+                        
                     </div>
                 </div>
 

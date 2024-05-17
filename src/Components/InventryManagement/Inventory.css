@@ -42,11 +42,6 @@
 
 .location-content{
     width: 100%;
-    /* padding-right: 10px; */
-    /* display: flex;
-    flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 .complete-card-design:hover{
     margin: 10px;
@@ -75,10 +70,7 @@
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title{
     color: white;
 }
-/* .inventry-card-restucture{
-    height: 80vh;
-    overflow: auto;
-} */
+
 .pc-filter-btn h6{
     color: white;
     font-size: 30px;
