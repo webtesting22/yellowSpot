@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 import img from "../InventryManagement/animatedImg.svg"
 import locationIcon from "../InventryManagement/LocationIcon.svg"
 import NamedSelectComponent from "../FilterSelect/NameSelectComponent";
-import { Row, Col } from 'antd'
+import { Row, Col,Image } from 'antd'
 import Navbar from "../Navbar/Navbar";
 import { Autoplay } from 'swiper/modules';
 import { TypeAnimation } from 'react-type-animation';
@@ -289,7 +289,7 @@ const Inventory = () => {
                                 <div className="complete-card-design">
                                     <div className="inside-card-data">
                                         <div className="card-image-container">
-                                            <img src={item.img} alt="" />
+                                            <Image src={item.img} alt="" />
                                         </div>
                                     </div>
                                     <div className="location-details">
@@ -334,7 +334,7 @@ const Inventory = () => {
                                         <div className="complete-card-design">
                                             <div className="inside-card-data">
                                                 <div className="card-image-container">
-                                                    <img src={item.img} alt="" />
+                                                    <Image src={item.img} alt="" />
                                                 </div>
                                             </div>
                                             <div className="location-details">
