@@ -155,7 +155,8 @@
 }
 
 .yellow-poster-insideone img {
-    width: 300px;
+    width: 200px;
+    padding: 10px;
     aspect-ratio: 3/2;
     object-fit: contain;
 }
