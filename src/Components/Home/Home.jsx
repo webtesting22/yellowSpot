@@ -14,6 +14,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Row, Col } from "antd";
 import ClientLogos from './ClientLogosData';
 import Homepagefirst from "../Home/Homepage1.jpg"
+// import DemoImage from "../Home/Demo.png"
 const Home = () => {
   return (
     <>

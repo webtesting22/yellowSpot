@@ -76,9 +76,9 @@ h1 {
     background-color: transparent;
     width: 50%;
     overflow: hidden;
-    background-size: cover;
+    background-size: 100%;
     transition: .5s;
-    background-image: url("https://images.unsplash.com/photo-1594808985790-98a065b97476?q=80&w=1901&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("../Home/cantilever.png");
 }
 
 .animated-hover-boxes .animated-boxes-two {
@@ -89,7 +89,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("https://images.unsplash.com/photo-1635873432087-50eba4c4392d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("../Home/unipole.png");
 }
 
 .animated-hover-boxes .animated-boxes-three {
@@ -98,7 +98,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("https://images.unsplash.com/photo-1576608583800-2dea5261c7ee?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("../Home/hoardings.png");
 }
 
 .animated-hover-boxes .animated-boxes-four {
@@ -107,7 +107,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("https://images.unsplash.com/photo-1560713467-0df025a92418?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("../Home/poleKiosk.png");
 }
 
 .animated-hover-boxes .animated-boxes-five {
@@ -117,9 +117,9 @@ h1 {
     height: 50vh;
     width: 100%;
     overflow: hidden;
-    background-size: cover;
+    background-size: 100%;
     transition: .5s;
-    background-image: url("https://images.unsplash.com/photo-1557858310-9052820906f7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("../Home/gantry.png");
 }
 
 .animated-hover-boxes .animated-boxes-one:hover {
