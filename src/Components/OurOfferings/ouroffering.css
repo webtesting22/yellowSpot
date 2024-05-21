@@ -159,7 +159,7 @@ h1 {
 .our-products .back-overlay {
     height: 50vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #00000099;
 }
 
 .content-box h4 {
