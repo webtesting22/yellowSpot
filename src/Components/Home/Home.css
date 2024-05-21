@@ -404,3 +404,17 @@
 .swiper-pagination-bullet-active{
     background-color: #FFED00
 }
+.content-container span{
+    font-size: 50px;
+    text-align: center;
+}
+.content-container h3{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+.content-container .contup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

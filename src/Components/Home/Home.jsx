@@ -1,13 +1,12 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination, FreeMode,Autoplay } from "swiper/modules";
+import { Mousewheel, Pagination, FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import HomePageNavigation from "./HomePageNavigation";
-import CounterAnimationComponent from "../CounterAnimationComponent/CounterAnimationComponent";
 import billboard from "../Home/iconsImages/billboard.png"
 import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
@@ -15,6 +14,7 @@ import { Row, Col } from "antd";
 import ClientLogos from './ClientLogosData';
 import Homepagefirst from "../Home/Homepage1.jpg"
 // import DemoImage from "../Home/Demo.png"
+import CountUp from 'react-countup';
 const Home = () => {
   return (
     <>
@@ -78,23 +78,43 @@ const Home = () => {
                   <div className="content-container">
                     <Row gutter={[16, 16]}>
                       <Col lg={6} md={12} >
-                        <div>
-                          <CounterAnimationComponent number="400" title="Premium Outdoor Sites in Ahmedabad" />
+                        <div className='contup'>
+                          <CountUp
+                            end={400}
+                            duration={20}
+                            suffix="+"
+                          />
+                          <h3>Premium Outdoor Sites in Ahmedabad</h3>
                         </div>
                       </Col>
                       <Col lg={6} md={12} >
-                        <div>
-                          <CounterAnimationComponent number="500" title="Daily Impressions" />
+                        <div className='contup'>
+                          <CountUp
+                            end={500}
+                            duration={20}
+                            suffix="+"
+                          />
+                          <h3>Daily Impressions</h3>
                         </div>
                       </Col>
                       <Col lg={6} md={12} >
-                        <div>
-                          <CounterAnimationComponent number="1000" title="Clients" />
+                        <div className='contup'>
+                          <CountUp
+                            end={1000}
+                            duration={20}
+                            suffix="+"
+                          />
+                          <h3>Clients</h3>
                         </div>
                       </Col>
                       <Col lg={6} md={12} >
-                        <div>
-                          <CounterAnimationComponent number="25" title="Years of Industry Experience" />
+                        <div className='contup'>
+                          <CountUp
+                            end={25}
+                            duration={20}
+                            suffix="+"
+                          />
+                          <h3>Years of Industry Experience </h3>
                         </div>
                       </Col>
                     </Row>
@@ -200,7 +220,7 @@ const Home = () => {
                       clickable: true,
                     }}
                     autoplay={{
-                      delay:2000,
+                      delay: 2000,
                       disableOnInteraction: false,
                     }}
                     breakpoints={{
@@ -216,7 +236,7 @@ const Home = () => {
                       },
                     }}
                     style={{ height: "30vh", padding: "10px 10px" }}
-                    modules={[FreeMode,Autoplay, Pagination]}
+                    modules={[FreeMode, Autoplay, Pagination]}
                     className="mySwiper"
                   >
                     {ClientLogos.map((item, index) => (
