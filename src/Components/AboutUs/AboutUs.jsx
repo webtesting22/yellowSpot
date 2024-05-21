@@ -274,8 +274,8 @@ const AboutUS = () => {
                         <Row>
                             {teamData.map((item, index) => (
                                 <Col lg={8}>
-                                    <div key={index}>
-                                        <div className="founder-info">
+                                    <div key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`} data-aos-duration="800">
+                                        <div className="founder-info" >
                                             <div className="header-part">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
                                                     <h4 style={{ fontSize: "20px" }}><span>{item.firstTitle}</span> {item.lastTitle}<span style={{ color: "#ffffff9c", fontSize: "15px", marginLeft: "5px" }}>({item.Designation})</span></h4>

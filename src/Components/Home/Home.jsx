@@ -200,7 +200,7 @@ const Home = () => {
                       clickable: true,
                     }}
                     autoplay={{
-                      delay: 2000,
+                      delay: 111000,
                       disableOnInteraction: false,
                     }}
                     breakpoints={{
