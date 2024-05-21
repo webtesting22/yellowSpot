@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination, FreeMode } from "swiper/modules";
+import { Mousewheel, Pagination, FreeMode,Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
@@ -195,8 +195,13 @@ const Home = () => {
                     slidesPerView={6}
                     spaceBetween={30}
                     freeMode={true}
+                    loop={true}
                     pagination={{
                       clickable: true,
+                    }}
+                    autoplay={{
+                      delay: 2000,
+                      disableOnInteraction: false,
                     }}
                     breakpoints={{
                       // Define breakpoints for different screen sizes
@@ -210,8 +215,8 @@ const Home = () => {
                         slidesPerView: 2 // For mobile devices
                       },
                     }}
-                    style={{ height: "20vh", padding: "10px 10px" }}
-                    modules={[FreeMode, Pagination]}
+                    style={{ height: "30vh", padding: "10px 10px" }}
+                    modules={[FreeMode,Autoplay, Pagination]}
                     className="mySwiper"
                   >
                     {ClientLogos.map((item, index) => (

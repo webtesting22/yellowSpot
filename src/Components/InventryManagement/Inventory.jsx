@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 import img from "../InventryManagement/animatedImg.svg"
 import locationIcon from "../InventryManagement/LocationIcon.svg"
 import NamedSelectComponent from "../FilterSelect/NameSelectComponent";
-import { Row, Col,Image } from 'antd'
+import { Row, Col, Image } from 'antd'
 import Navbar from "../Navbar/Navbar";
 import { Autoplay } from 'swiper/modules';
 import { TypeAnimation } from 'react-type-animation';
@@ -328,6 +328,7 @@ const Inventory = () => {
                         ))}
 
                         <Modal title="Image Details" width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            
                             <Row>
                                 {filteredData && filteredData.map(item => (
                                     <Col lg={8} key={item.id}>

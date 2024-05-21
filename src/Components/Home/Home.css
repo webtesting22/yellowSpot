@@ -401,3 +401,6 @@
     object-fit: contain;
     mix-blend-mode: screen;
 }
+.swiper-pagination-bullet-active{
+    background-color: #FFED00
+}
