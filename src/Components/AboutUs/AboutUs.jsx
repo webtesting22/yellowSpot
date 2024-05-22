@@ -2,8 +2,8 @@ import React, { useRef, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { TypeAnimation } from 'react-type-animation';
 import "./about.css"
-import khushiImage from "../AboutUs/KhushiLogo.png"
-import hetgraphics from "../AboutUs/het-graphics.jpg"
+import khushiImage from "../AboutUs/Khushi.png"
+import hetgraphics from "../AboutUs/Hetgraphics.png"
 import { Row, Col } from "antd";
 import logo from "../AboutUs/logo1.svg"
 import { Link } from "react-router-dom";
@@ -33,89 +33,100 @@ const AboutUS = () => {
         {
             Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             FounderName: "Pranay",
-            FounderSecondName: "Shah"
+            FounderSecondName: "Shah",
+            FounderDescription:[
+                {
+                    description:"Mr. Pranay Shah, a second-generation entrepreneur, joined his father's business in the then highly unorganized cinema advertising industry. Facing significant adversity, he encountered brands hesitant to experiment with this medium. However, with relentless perseverance, passion, and a vision to create a clutter-free, engaging platform for next-gen brands, he founded Khushi Advertising in 2004, starting with a small office in Ahmedabad. This vision led to a journey marked by unwavering dedication, team building, and total commitment to customers. "
+                },
+                {
+                    description:"He joined hands with Mr. Vishnu Telang in 2013 to scale Khushi Advertising to new height. Mr. Telang is a passionate man bringing in invaluable experience of nearly two decades in ambient media, He is credited with single-handedly building an ambient media agency into a market leader. He had been instrumental in building a team of more than 100+ professionals and establishing a pan India presence of this entity. He pioneered many path-breaking innovative concepts to create extraordinary campaigns which brands appreciated and cherished. He brings a wealth of marketing, organizational and innovative strengths to Khushi Advertising. He has brought in a long list of happy clients to Khushi Advertising and is constantly engaged in the endeavor of growing this business to reach higher pinnacles of success."
+                },
+                {
+                    description:"Both Mr. Pranay Shah & Vishnu Telang, constant quest for growth and new horizons sparked his interest in the OOH industry. By joining hands with Mr. Asit Shah, the founder of Het Graphics, he co-founded Yellow Spot, leveraging their combined expertise and strengths to drive greater success. He has also been leading initiatives with the municipal corporation and fellow OOH vendors, and continues to work collaboratively to elevate the OOH industry in Ahmedabad."
+                }
+            ]
 
         },
 
     ]
-    const teamData = [
-        {
-            firstTitle: "Brijesh",
-            lastTitle: "Vyas",
-            Designation: "Manager"
-        },
-        {
-            firstTitle: "Parimal",
-            lastTitle: "Modi",
-            Designation: "Manager"
-        },
-        {
-            firstTitle: "Rinku",
-            lastTitle: "Mitra",
-            Designation: "Commercial + Accounts",
-            role: "Maintaining master sheet (listing each inventory and what is displayed on it for how long), follow up for all outstanding payments and receivables "
-        },
-        {
-            firstTitle: "Vishal",
-            lastTitle: "Prajapati",
-            Designation: "Accounts",
-            role: "Generating invoices, all taxation-related tasks, entry from our software into tally, maintaining ledgers "
-        },
-        {
-            firstTitle: "Darshan",
-            lastTitle: "Rajgor",
-            Designation: "Commercial",
-            role: "BDFs into the software for sales entry, report generation for management purpose"
-        },
-        {
-            firstTitle: "Amit",
-            lastTitle: "Boliwal",
-            Designation: "Media Planner",
-            role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
-        },
-        {
-            firstTitle: "Bhumesh",
-            lastTitle: "Raval",
-            Designation: "Media Planner",
-            role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
-        },
-        {
-            firstTitle: "Sagar",
-            lastTitle: "Panchal",
-            Designation: "Media Planner",
-            role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
-        },
-        {
-            firstTitle: "Saurabh",
-            lastTitle: "Sharma",
-            Designation: "Sales",
-            role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
-        },
-        {
-            firstTitle: "Pankaj",
-            lastTitle: "Vyas",
-            Designation: "Sales",
-            role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
-        },
-        {
-            firstTitle: "Nirav",
-            lastTitle: "Shah",
-            Designation: "Sales",
-            role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
-        },
-        {
-            firstTitle: "Kevansh",
-            lastTitle: "Nayak",
-            Designation: "Operations",
-            role: "Click photos as soon as media is up, report and fix any issues on site such as lighting, electricity, etc, make client presentations of executed sites"
-        },
-        {
-            firstTitle: "Vipul",
-            lastTitle: "Desai",
-            Designation: "Operations",
-            role: "Click photos as soon as media is up, report and fix any issues on site such as lighting, electricity, etc, make client presentations of executed sites"
-        },
-    ]
+    // const teamData = [
+    //     {
+    //         firstTitle: "Brijesh",
+    //         lastTitle: "Vyas",
+    //         Designation: "Manager"
+    //     },
+    //     {
+    //         firstTitle: "Parimal",
+    //         lastTitle: "Modi",
+    //         Designation: "Manager"
+    //     },
+    //     {
+    //         firstTitle: "Rinku",
+    //         lastTitle: "Mitra",
+    //         Designation: "Commercial + Accounts",
+    //         role: "Maintaining master sheet (listing each inventory and what is displayed on it for how long), follow up for all outstanding payments and receivables "
+    //     },
+    //     {
+    //         firstTitle: "Vishal",
+    //         lastTitle: "Prajapati",
+    //         Designation: "Accounts",
+    //         role: "Generating invoices, all taxation-related tasks, entry from our software into tally, maintaining ledgers "
+    //     },
+    //     {
+    //         firstTitle: "Darshan",
+    //         lastTitle: "Rajgor",
+    //         Designation: "Commercial",
+    //         role: "BDFs into the software for sales entry, report generation for management purpose"
+    //     },
+    //     {
+    //         firstTitle: "Amit",
+    //         lastTitle: "Boliwal",
+    //         Designation: "Media Planner",
+    //         role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
+    //     },
+    //     {
+    //         firstTitle: "Bhumesh",
+    //         lastTitle: "Raval",
+    //         Designation: "Media Planner",
+    //         role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
+    //     },
+    //     {
+    //         firstTitle: "Sagar",
+    //         lastTitle: "Panchal",
+    //         Designation: "Media Planner",
+    //         role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
+    //     },
+    //     {
+    //         firstTitle: "Saurabh",
+    //         lastTitle: "Sharma",
+    //         Designation: "Sales",
+    //         role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
+    //     },
+    //     {
+    //         firstTitle: "Pankaj",
+    //         lastTitle: "Vyas",
+    //         Designation: "Sales",
+    //         role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
+    //     },
+    //     {
+    //         firstTitle: "Nirav",
+    //         lastTitle: "Shah",
+    //         Designation: "Sales",
+    //         role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
+    //     },
+    //     {
+    //         firstTitle: "Kevansh",
+    //         lastTitle: "Nayak",
+    //         Designation: "Operations",
+    //         role: "Click photos as soon as media is up, report and fix any issues on site such as lighting, electricity, etc, make client presentations of executed sites"
+    //     },
+    //     {
+    //         firstTitle: "Vipul",
+    //         lastTitle: "Desai",
+    //         Designation: "Operations",
+    //         role: "Click photos as soon as media is up, report and fix any issues on site such as lighting, electricity, etc, make client presentations of executed sites"
+    //     },
+    // ]
     return (
 
         <>
@@ -157,7 +168,7 @@ const AboutUS = () => {
                     <MagicHeading text="We are development experts on all technologies & platforms" />
                     {/* <br /> */}
                     <br /><br />
-                    <div className="container yellow-color-back">
+                    {/* <div className="container yellow-color-back">
 
 
 
@@ -176,7 +187,7 @@ const AboutUS = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
                 <br /><br />
@@ -201,7 +212,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={logo} alt="yellowspot_logo" className="HET_IMG_two" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up" />
+                            <img src={logo} alt="yellowspot_logo" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up" />
                         </Col>
                         <Col lg={8}>
                             <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
@@ -232,7 +243,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={khushiImage} alt="khushi_advertising_logo" className="HET_IMG_two" data-aos="fade-up" />
+                            <img src={khushiImage} alt="khushi_advertising_logo" className="KhushiImg" data-aos="fade-up" />
                         </Col>
                     </Row>
                 </div>
@@ -271,7 +282,7 @@ const AboutUS = () => {
 
                         </Row>
                         {/* <br /><br /> */}
-                        <Row>
+                        {/* <Row>
                             {teamData.map((item, index) => (
                                 <Col lg={8}>
                                     <div key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`} data-aos-duration="800">
@@ -285,10 +296,10 @@ const AboutUS = () => {
                                                     <i className='bx bxl-twitter' ></i>
                                                 </div>
                                             </div>
-                                            {/* <div> */}
-                                            {/* <p style={{ color: "white",fontSize:"20px" }}></p> */}
+                                            <div>
+                                            <p style={{ color: "white",fontSize:"20px" }}></p>
                                             <p >{item.role}</p>
-                                            {/* </div> */}
+                                            </div>
                                         </div>
 
                                     </div>
@@ -296,7 +307,7 @@ const AboutUS = () => {
                                 </Col>
                             ))}
 
-                        </Row>
+                        </Row> */}
                         
                     </div>
                 </div>

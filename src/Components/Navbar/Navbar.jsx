@@ -68,11 +68,13 @@ const Navbar = () => {
             <div className="container">
               <div className="right-side-ul">
                 <div className="d-flex animation-class" style={{ alignItems: "center" }}>
-                  <div className="left-side" data-aos="fade-left"
-                    data-aos-duration="1000" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/Agencies">Agencies</Link></span></div>
-                  <div className="line"><div></div></div>
-                  <div className="right-side" data-aos="fade-right"
+                <div className="right-side" data-aos="fade-right"
                     data-aos-duration="1000" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="/OurOfferings">Our Offerings</Link></span></div>
+                    <div className="line"><div></div></div>
+                  <div className="left-side" data-aos="fade-left"
+                    data-aos-duration="1000" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/ContactUs">ContactUs</Link></span></div>
+                
+                  
                 </div>
 
 

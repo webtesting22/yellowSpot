@@ -108,7 +108,7 @@
 }
 
 .parent-comapny-content p {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     color: rgb(198, 198, 198);
     font-family: "Barlow Condensed", sans-serif;
@@ -258,7 +258,15 @@
 
 }
 
+.KhushiImg,
+.HET_IMG{
+    padding: 20px;
+}
 @media (max-width:900px) {
+    .KhushiImg,
+.HET_IMG{
+    padding: 0px;
+}
     .founder-info {
         padding: 20px 20px;
         margin-bottom: 10px;

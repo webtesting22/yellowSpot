@@ -7,7 +7,7 @@ import Home from "./Components/Home/Home";
 // import Services from "./Components/Services/Services";
 import Inventory from "./Components/InventryManagement/Inventory";
 import AboutUS from "./Components/AboutUs/AboutUs";
-import Agencies from "./Components/Agencies/Agencies";
+import ContactUs from "./Components/ContactUs/ContactUs";
 import OurOfferings from "./Components/OurOfferings/OurOfferings";
 import Footer from "./Components/Footer/Footer";
 import BackToTop from "./Components/BackTotop";
@@ -23,7 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Inventory" element={<Inventory />} />
             <Route path="/AboutUS" element={<AboutUS />} />
-            <Route path="/Agencies" element={<Agencies />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
             <Route path="/OurOfferings" element={<OurOfferings />} />
             <Route path="/Footer" element={<Footer />} />
             <Route path="/DynamicCreateShape" element={<DynamicCreateShape />} />

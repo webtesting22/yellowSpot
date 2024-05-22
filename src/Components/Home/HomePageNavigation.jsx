@@ -16,6 +16,7 @@ import vector6 from "../Home/iconsImages/Vector6.svg"
 import vector7 from "../Home/iconsImages/Vector7.svg"
 import vector8 from "../Home/iconsImages/Vector8.svg"
 import CombineLogo from "../Navbar/CombineLogo.jpg"
+import Contact from "../Home/iconsImages/ContactUs.svg"
 const HomePageNavigation = () => {
     const [open, setOpen] = useState(false);
     const [placement, setPlacement] = useState('right');
@@ -62,9 +63,9 @@ const HomePageNavigation = () => {
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00",opacity:"1" }} />
                             <ul className="home-menu-ul">
                                 <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" />About&nbsp;US <span></span></li></Link>
-                                <Link to="/Agencies"><li className="flip-animate" ><img src={vector3} alt="" />Agencies<span></span></li></Link>
                                 <Link to="/OurOfferings"><li className="flip-animate" ><img src={vector7} alt="" />Our Offerings<span></span></li></Link>
                                 <Link to="/OurClientele"><li className="flip-animate" ><img src={vector1} alt="" />Our Clientele<span></span></li></Link>
+                                <Link to="/ContactUs"><li className="flip-animate" ><img src={Contact} alt="" />ContactUs<span></span></li></Link>
                             </ul>
                         </div>
                         <div className="slite-padding"></div>

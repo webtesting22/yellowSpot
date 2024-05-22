@@ -159,7 +159,7 @@ const Inventory = () => {
 
                             </Swiper>
                             <div style={{ marginTop: "-30px", marginLeft: "30px" }}>
-                                <MagicHeading text="Filters" />
+                                <MagicHeading text="Our Product" />
                             </div>
                         </div>
                         {/* <div className="small-slite-padding"></div> */}
@@ -294,12 +294,7 @@ const Inventory = () => {
                                     </div>
                                     <div className="location-details">
                                         <div style={{ width: "100%" }} className="location-content">
-                                            <p style={{ margin: "5px 0px" }}>
-                                                Illumination: {item.Illu ?
-                                                    (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
-                                                    : "No light"
-                                                }
-                                            </p>
+                                            <br />
                                             <a
                                                 href="#"
                                                 onClick={() => handleLocationClick(item.lat, item.lng)}
@@ -322,13 +317,20 @@ const Inventory = () => {
                                                 <DynamicCreateShape width={item.width} height={item.height} />
                                             </div>
                                         </div>
+                                        
                                     </div>
+                                    <p style={{ margin: "5px 0px" }}>
+                                            Illumination: {item.Illu ?
+                                                (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
+                                                : "No light"
+                                            }
+                                        </p>
                                 </div>
                             </Col>
                         ))}
 
                         <Modal title="Image Details" width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                            
+
                             <Row>
                                 {filteredData && filteredData.map(item => (
                                     <Col lg={8} key={item.id}>

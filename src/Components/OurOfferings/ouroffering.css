@@ -76,9 +76,9 @@ h1 {
     background-color: transparent;
     width: 50%;
     overflow: hidden;
-    background-size: 100%;
+    background-size: cover;
     transition: .5s;
-    background-image: url("../Home/cantilever.png");
+    background-image: url("../Home/Banners/Cantilever.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-two {
@@ -89,7 +89,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/unipole.png");
+    background-image: url("../Home/Banners/unipole.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-three {
@@ -117,9 +117,9 @@ h1 {
     height: 50vh;
     width: 100%;
     overflow: hidden;
-    background-size: 100%;
+    background-size: cover;
     transition: .5s;
-    background-image: url("../Home/gantry.png");
+    background-image: url("../Home/Banners/gantry.png");
 }
 
 .animated-hover-boxes .animated-boxes-one:hover {
