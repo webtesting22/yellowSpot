@@ -89,7 +89,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/Banners/unipole.jpeg");
+    background-image: url("../Home/unipole.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-three {
@@ -98,7 +98,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/hoardings.png");
+    background-image: url("../Home/Banners/hoarding.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-four {
@@ -107,7 +107,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/poleKiosk.png");
+    background-image: url("../Home/Banners/polekiosk.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-five {
@@ -191,7 +191,13 @@ h1 {
 .services-card-content{
     padding: 10px;
 }
-
+.animated-hover-boxes .animated-boxes-one,
+.animated-hover-boxes .animated-boxes-two,
+.animated-hover-boxes .animated-boxes-three,
+.animated-hover-boxes .animated-boxes-four,
+.animated-hover-boxes .animated-boxes-five {
+    border: 2px solid black;
+}
 @media (max-width:600px) {
     .content-box button {
         border: none;
