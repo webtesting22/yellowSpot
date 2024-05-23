@@ -14,6 +14,7 @@ import BackToTop from "./Components/BackTotop";
 import DynamicCreateShape from "./Components/DynamicCreateShape/DynamicCreateShape";
 import OurClientele from "./Components/OurClients/OurClientele";
 import "../src/index.css"
+import AnimatedCoverPage from "./Components/animatedCoverPage/animatedCoverPage";
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ function App() {
             <Route path="/Footer" element={<Footer />} />
             <Route path="/DynamicCreateShape" element={<DynamicCreateShape />} />
             <Route path="/OurClientele" element={<OurClientele />} />
+            <Route path="/AnimatedCoverPage" element={<AnimatedCoverPage />} />
           </Routes>
       </div>
       <BackToTop/>

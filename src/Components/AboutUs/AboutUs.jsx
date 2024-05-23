@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
-import { TypeAnimation } from 'react-type-animation';
 import "./about.css"
 import khushiImage from "../AboutUs/Khushi.png"
 import hetgraphics from "../AboutUs/Hetgraphics.png"
@@ -11,6 +10,7 @@ import billboard from "../Home/iconsImages/billboard.png"
 import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import MagicHeading from "../MagicHeading/MagicHeading";
+import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 const AboutUS = () => {
 
     const foudersDetails = [
@@ -49,84 +49,7 @@ const AboutUS = () => {
         },
 
     ]
-    // const teamData = [
-    //     {
-    //         firstTitle: "Brijesh",
-    //         lastTitle: "Vyas",
-    //         Designation: "Manager"
-    //     },
-    //     {
-    //         firstTitle: "Parimal",
-    //         lastTitle: "Modi",
-    //         Designation: "Manager"
-    //     },
-    //     {
-    //         firstTitle: "Rinku",
-    //         lastTitle: "Mitra",
-    //         Designation: "Commercial + Accounts",
-    //         role: "Maintaining master sheet (listing each inventory and what is displayed on it for how long), follow up for all outstanding payments and receivables "
-    //     },
-    //     {
-    //         firstTitle: "Vishal",
-    //         lastTitle: "Prajapati",
-    //         Designation: "Accounts",
-    //         role: "Generating invoices, all taxation-related tasks, entry from our software into tally, maintaining ledgers "
-    //     },
-    //     {
-    //         firstTitle: "Darshan",
-    //         lastTitle: "Rajgor",
-    //         Designation: "Commercial",
-    //         role: "BDFs into the software for sales entry, report generation for management purpose"
-    //     },
-    //     {
-    //         firstTitle: "Amit",
-    //         lastTitle: "Boliwal",
-    //         Designation: "Media Planner",
-    //         role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
-    //     },
-    //     {
-    //         firstTitle: "Bhumesh",
-    //         lastTitle: "Raval",
-    //         Designation: "Media Planner",
-    //         role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
-    //     },
-    //     {
-    //         firstTitle: "Sagar",
-    //         lastTitle: "Panchal",
-    //         Designation: "Media Planner",
-    //         role: "Make media plans based on requirements sent by sales, respond to all queries on mail and make media plans for them (mainly agencies, new queries and other vendors), generate BDFs for closed deals"
-    //     },
-    //     {
-    //         firstTitle: "Saurabh",
-    //         lastTitle: "Sharma",
-    //         Designation: "Sales",
-    //         role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
-    //     },
-    //     {
-    //         firstTitle: "Pankaj",
-    //         lastTitle: "Vyas",
-    //         Designation: "Sales",
-    //         role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
-    //     },
-    //     {
-    //         firstTitle: "Nirav",
-    //         lastTitle: "Shah",
-    //         Designation: "Sales",
-    //         role: "Maintaining relations existing clients and bringing regular business from them, reaching out to potential clients from leads generated, make BDFs once deal is closed "
-    //     },
-    //     {
-    //         firstTitle: "Kevansh",
-    //         lastTitle: "Nayak",
-    //         Designation: "Operations",
-    //         role: "Click photos as soon as media is up, report and fix any issues on site such as lighting, electricity, etc, make client presentations of executed sites"
-    //     },
-    //     {
-    //         firstTitle: "Vipul",
-    //         lastTitle: "Desai",
-    //         Designation: "Operations",
-    //         role: "Click photos as soon as media is up, report and fix any issues on site such as lighting, electricity, etc, make client presentations of executed sites"
-    //     },
-    // ]
+
     return (
 
         <>
@@ -138,29 +61,7 @@ const AboutUS = () => {
             <div className="slite-padding"></div>
             <section>
               
-                <div className="animated-text-about">
-                    <TypeAnimation
-                        sequence={[
-                            // Same substring at the start will only be typed out once, initially
-                            'YELLOWSPOT  ',
-                            6000, // wait 1s before replacing "Mice" with "Hamsters"
-
-                        ]}
-                        wrapper="h1"
-                        speed={200}
-                        style={{ fontWeight: "300", color: "#FFED00", fontSize: "45px", textAlign: "start", margin: "20px 0px" }}
-                        // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
-                        repeat={Infinity}
-                    />
-                    <p>Make Your Brand Tower Above: Billboard Excellence, Tailored for You</p>
-                    <div className="slite-padding"></div>
-                    <div>
-                        <a href="#parent-company"> <button className="animated-scroll-down-btn">Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button></a>
-
-                        <span></span>
-                    </div>
-                </div>
-
+                <AnimatedCoverPage/>
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
                     {/* <h1 className={`${isVisible ? "section-heading " : ""}`}
                         >We are development experts on <br /> all technologies & platforms</h1>
@@ -168,26 +69,7 @@ const AboutUS = () => {
                     <MagicHeading text="We are development experts on all technologies & platforms" />
                     {/* <br /> */}
                     <br /><br />
-                    {/* <div className="container yellow-color-back">
-
-
-
-                        <div className="yellow-poster-insidetwo">
-                            <img src={logo} alt="" />
-                        </div>
-                        <div className="yellow-poster-insideone">
-                            <h4>A JOIN VENTURE OF</h4>
-                            <div className="small-slite-padding"></div>
-                            <div className="yellow-poster-insideLogo">
-                                <div>
-                                    <img src={hetgraphics} alt="" />
-                                </div>
-                                <div>
-                                    <img src={khushiImage} alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
+                   
 
                 </div>
                 <br /><br />

@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import { Row, Col } from "antd";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import MagicHeading from "../MagicHeading/MagicHeading";
-import {ClientDataLogos,DirectClient} from "./ContactUsClientData";
+import { ClientDataLogos, DirectClient } from "./ContactUsClientData";
 const ContactUs = () => {
 
     return (

@@ -112,297 +112,297 @@ import RaviDesaiSignature from "../ContactUs/DirectClients/RaviDesaiSignature.pn
 const DirectClient = [
     {
         clientImg: wonder_masala,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://wondermasala.com/",
         ClientName: "wonder masala"
     },
     {
         clientImg: DawaatRice,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.daawat.com/",
         ClientName: "Dawaat Rice "
     },
     {
         clientImg: JioMart,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.jiomart.com/",
         ClientName: "Jio Mart"
     },
     {
         clientImg: Palladium,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.palladiumahmedabad.com/",
         ClientName: "Palladium"
     },
     {
         clientImg: Tiecon,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://tiecon.org/",
         ClientName: "Tiecon"
     },
     {
         clientImg: Realme,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.realme.com/in/",
         ClientName: "Realme"
     },
     {
         clientImg: Haier,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.haier.com/in/",
         ClientName: "Realme"
     },
     {
         clientImg: Cera,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.cera-india.com/",
         ClientName: "Cera"
     },
     {
         clientImg: WetNJoy,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.wetnjoy.in/",
         ClientName: "Wet N Joy"
     },
     {
         clientImg: Imagicaa,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.imagicaaworld.com/",
         ClientName: "Imagicaa"
     },
     {
         clientImg: GIHED,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://credaiahmedabad.org/",
         ClientName: "GIHED"
     },
     {
         clientImg: LIBFExpo,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://euroeximbank.com/media-events/libf-expo-2024",
         ClientName: "LIBF Expo"
     },
     {
         clientImg: BankofBaroda,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.bankofbaroda.in/",
         ClientName: "Bank of Baroda"
     },
     {
         clientImg: ADCBank,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://adcbank.in/",
         ClientName: "ADC Bank"
     },
     {
         clientImg: GSCLogo,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://gscbank.co.in/",
         ClientName: "GSC"
     },
     {
         clientImg: KalupurBank,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.kalupurbank.com/",
         ClientName: "Kalupur Bank"
     },
     {
         clientImg: JadBlue,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://jadeblue.com/",
         ClientName: "JadBlue"
     },
     {
         clientImg: Asopalav,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.asopalav.com/",
         ClientName: "Asopalav"
     },
     {
         clientImg: JustInTime,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://justintime.in/",
         ClientName: "Just In Time"
     },
     {
         clientImg: TitanEyePlus,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.titaneyeplus.com/",
         ClientName: "Titan Eye Plus"
     },
     {
         clientImg: RKumar,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.rkumar.in/",
         ClientName: "R Kumar"
     },
     {
         clientImg: SalEducaton,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.sal.edu.in/",
         ClientName: "Sal Educaton"
     },
     {
         clientImg: KarnavatUniversity,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://karnavatiuniversity.edu.in/",
         ClientName: "Karnavat University"
     },
     {
         clientImg: Allen,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.allen.ac.in/",
         ClientName: "Allen"
     },
     {
         clientImg: Unacademy,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://unacademy.com/",
         ClientName: "Unacademy"
     },
     {
         clientImg: ParulUniversity,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://paruluniversity.ac.in/",
         ClientName: "Parul University"
     },
     {
         clientImg: AhmedabadUni,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://ahduni.edu.in/",
         ClientName: "Ahmedabad University"
     },
     {
         clientImg: SilverOakCollege,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://silveroakuni.ac.in/",
         ClientName: "Silver Oak College"
     },
     {
         clientImg: Physicswallah,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.pw.live/",
         ClientName: "Physics Wallah"
     },
     {
         clientImg: PDEU,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.pdpu.ac.in/",
         ClientName: "PDEU"
     },
     {
         clientImg: EDII,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.ediindia.org/",
         ClientName: "EDII"
     },
     {
         clientImg: ShantAsiatcSchool,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://shantiasiaticahmedabad.com/",
         ClientName: "Shant Asiatic School"
     },
     {
         clientImg: AppleGlobalSchool,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://appleglobal.in/",
         ClientName: "Apple Global School"
     },
     {
         clientImg: AnandNiketan,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://anandniketan.org/",
         ClientName: "Anand Niketan"
     },
     {
         clientImg: GayanJyotInsttute,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.gyanjyot.co.in/",
         ClientName: "Gayan Jyot Institute"
     },
     {
         clientImg: AbzoMotors,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://abzomotors.com/",
         ClientName: "Abzo Motors"
     },
     {
         clientImg: OnidaAC,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.onida.com/air-conditioner",
         ClientName: "Onida AC"
     },
     {
         clientImg: ACCKO,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.acko.com/",
         ClientName: "ACCKO"
     },
     {
         clientImg: GMSwitch,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.gmmodular.com/",
         ClientName: "GM Switch"
     },
     {
         clientImg: Fybros,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.fybros.com/",
         ClientName: "Fybros"
     },
     {
         clientImg: DivyaBhaskar,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.divyabhaskar.co.in/",
         ClientName: "Divya Bhaskar"
     },
     {
         clientImg: GodTMT,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.godtmt.com/",
         ClientName: "God TMT"
     },
     {
         clientImg: WingsHospital,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.wingshospitals.com/",
         ClientName: "Wings Hospital"
     },
     {
         clientImg: NeubergSupratech,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://neubergsupratech.com/",
         ClientName: "Neuberg Supratech"
     },
     {
         clientImg: JivrajMehtaHealth,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://jivrajhealthcare.org/",
         ClientName: "Jivraj Mehta Health"
     },
     {
         clientImg: Zinzuwadia,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.zinzuwadiajewellers.com/",
         ClientName: "Zinzuwadia"
     },
     {
         clientImg: KalamandirJewelers,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.kalamandirjewellers.com/",
         ClientName: "Kalamandir Jewelers"
     },
     {
         clientImg: SwagatGroup,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.swagatgroup.in/",
         ClientName: "Swagat Group"
     },
     {
         clientImg: SavvyGroup,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.savvygroup.in/",
         ClientName: "Savvy Group"
     },
     {
         clientImg: AshimaGroup,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://ashima.in/",
         ClientName: "Ashima Group"
     },
     {
         clientImg: ConsteraRealty,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://consterarealty.com/",
         ClientName: "Constera Realty"
     },
     {
         clientImg: ArvindLimited,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.arvind.com/",
         ClientName: "Arvind Limited"
     },
     {
         clientImg: ShaktInfrastructure,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://shaktiinfrastructure.in/",
         ClientName: "Shakt Infrastructure"
     },
     {
         clientImg: KavishaGroup,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://kavishacorp.com/",
         ClientName: "Kavisha Group"
     },
     {
         clientImg: ShaligramGroup,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.shaligramgroup.in/",
         ClientName: "Shaligram Group"
     },
     {
         clientImg: ShivamBuilders,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://www.shivambuilders.in/",
         ClientName: "Shivam Builders"
     },
     {
         clientImg: UniqueInfraspace,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://uniqueinfraspace.com/",
         ClientName: "Unique Infraspace"
     },
     {
         clientImg: RitBuildspace,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "",
         ClientName: "Rit Buildspace"
     },
     {
         clientImg: RaviDesaiSignature,
-        clientWebLink: "https://connectww.net/service-details/Mg==",
+        clientWebLink: "https://ravidesai.co/",
         ClientName: "Ravi Desai Signature"
     }
     
