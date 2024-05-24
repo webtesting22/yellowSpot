@@ -78,7 +78,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/Banners/Cantilever.jpeg");
+    background-image: url("../Home/Banners/cantilever.jpeg");
     background-position: center;
 }
 
@@ -101,7 +101,7 @@ h1 {
     background-size: cover;
     transition: .5s;
     /* background-position: center; */
-    background-image: url("../Home/Banners/hoarding.jpeg");
+    background-image: url("../Home/Banners/hoardings.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-four {
@@ -124,7 +124,7 @@ h1 {
     background-size: cover;
     transition: .5s;
     background-position: center;
-    background-image: url("../Home/Banners/gantry.png");
+    background-image: url("../Home/Banners/gantry.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-one:hover {
@@ -133,7 +133,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/Banners/Cantilever.jpeg");
+    background-image: url("../Home/Banners/cantilever.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-two:hover {
@@ -149,7 +149,7 @@ h1 {
     width: 50%;
     overflow: hidden;
     background-size: cover;
-    background-image: url("../Home/Banners/hoarding.jpeg");
+    background-image: url("../Home/Banners/hoardings.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-four:hover {
