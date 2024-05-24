@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./about.css"
-// import KhushiImage from "../AboutUs/Khushi.png"
 import hetgraphics from "../AboutUs/Hetgraphics.png"
+import khushiLogo from "./khushiLogo.png"
 import { Row, Col } from "antd";
 import logo from "../AboutUs/logo1.svg"
 import { Link } from "react-router-dom";
@@ -11,6 +11,8 @@ import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import MagicHeading from "../MagicHeading/MagicHeading";
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
+import { Image } from 'antd';
+import GalleryImages from "./galleryImages/GalleryImagesData";
 const AboutUS = () => {
 
     const foudersDetails = [
@@ -93,11 +95,11 @@ const AboutUS = () => {
                         <Col lg={8}>
                             <img src={logo} alt="yellowspot_logo" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up" />
                         </Col>
-                        <hr style={{border:"1px solid white", opacity:"0.7", width:"100%"}}/>
+                        <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
                         <Col lg={8}>
                             <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
                         </Col>
-                        
+
                         <Col lg={16}>
                             <div className="parent-comapny-content first" data-aos="fade-up">
                                 <h4><span>HET Graphics</span> Total Outdoor Solutions</h4>
@@ -110,7 +112,7 @@ const AboutUS = () => {
                                 </div>
                             </div>
                         </Col>
-                        <hr style={{border:"1px solid white", opacity:"0.7", width:"100%"}}/>
+                        <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
                         <Col lg={16}>
                             <div className="parent-comapny-content second" data-aos="fade-up">
                                 <h4><span>Khushi</span> Advertising</h4>
@@ -124,11 +126,24 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            {/* <img src={KhushiImage} alt="khushi_advertising_logo" className="KhushiImg" data-aos="fade-up" /> */}
+                            <img src={khushiLogo} alt="khushi_advertising_logo" className="KhushiImg" data-aos="fade-up" />
                         </Col>
                     </Row>
                 </div>
                 {/* <br /> */}
+
+                {/* <div className="imageGallery container">
+
+                    {GalleryImages.map((item, index) => (
+                        <div key={index} className="img-container">
+                            <Image
+                                style={{ width: "100%" }}
+                                src={item.img}
+                            />
+                        </div>
+                    ))}
+
+                </div> */}
                 <div className="co-founder-section container">
                     <MagicHeading text="Meet Our Team" />
                     {/* <div className="slite-padding"></div> */}

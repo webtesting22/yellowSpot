@@ -184,8 +184,19 @@
     padding: 20px;
 }
 
+/* .imageGallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.imageGallery .img-container{
+    width: 33%;
+}
 
-
+.imageGallery img{
+   width: 300px;
+   height: 300px;
+} */
 @media (max-width:900px) {
     .parent-comapny-content h4 {
         font-size: 40px;
