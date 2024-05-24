@@ -138,7 +138,7 @@ const Home = () => {
                   <div className="content-box">
                     <h4>Gantry</h4>
                     <div className="small-slite-padding"></div>
-                    <button>Yellow Spot</button>
+                    {/* <button>Yellow Spot</button> */}
                   </div>
                 </div>
                 <div className="twoslidesContainer">
@@ -147,7 +147,7 @@ const Home = () => {
                     <div className="content-box">
                       <h4>Cantilever</h4>
                       <div className="small-slite-padding"></div>
-                      <button>Yellow Spot</button>
+                      {/* <button>Yellow Spot</button> */}
                     </div>
                   </div>
                   <div className="animated-boxes-two">
@@ -155,7 +155,7 @@ const Home = () => {
                     <div className="content-box">
                       <h4>Unipole</h4>
                       <div className="small-slite-padding"></div>
-                      <button>Yellow Spot</button>
+                      {/* <button>Yellow Spot</button> */}
                     </div>
                   </div>
                 </div>
@@ -165,7 +165,7 @@ const Home = () => {
                     <div className="content-box">
                       <h4>Hoardings</h4>
                       <div className="small-slite-padding"></div>
-                      <button>Yellow Spot</button>
+                      {/* <button>Yellow Spot</button> */}
                     </div>
                   </div>
                   <div className="animated-boxes-four">
@@ -173,7 +173,7 @@ const Home = () => {
                     <div className="content-box">
                       <h4>Pole Kiosks</h4>
                       <div className="small-slite-padding"></div>
-                      <button>Yellow Spot</button>
+                      {/* <button>Yellow Spot</button> */}
                     </div>
                   </div>
                 </div>
