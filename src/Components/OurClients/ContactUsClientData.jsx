@@ -49,6 +49,7 @@ const ClientDataLogos = [
         ClientName: "Connect OOH"
     },
 ]
+import Vivo from "../OurClients/DirectClients/vivoLogo.png"
 import Oppo from "../OurClients/DirectClients/oppoLogo.png"
 import wonder_masala from "../OurClients/DirectClients/wonder_masala.svg"
 import DawaatRice from "../OurClients/DirectClients/DawaatRice.png"
@@ -110,6 +111,11 @@ import UniqueInfraspace from "../OurClients/DirectClients/UniqueInfraspace.webp"
 import RitBuildspace from "../OurClients/DirectClients/RitBuildspace.jpg"
 import RaviDesaiSignature from "../OurClients/DirectClients/RaviDesaiSignature.png"
 const DirectClient = [
+    {
+        clientImg: Vivo,
+        clientWebLink: "https://www.vivo.com/in",
+        ClientName: "Vivo"
+    },
     {
         clientImg: Oppo,
         clientWebLink: "https://www.oppo.com/",

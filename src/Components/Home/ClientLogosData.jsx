@@ -4,7 +4,7 @@ import AdaniGrp from "../Home/ClientsLogo/AdaniGroupLogo.png"
 import RelienceD from "../Home/ClientsLogo/RelienceDLogo.svg"
 import AdityaBirla from "../Home/ClientsLogo/aditya-birla-group-logo.jpg"
 import Oppo from "../OurClients/DirectClients/oppoLogo.png"
-import Vivo from "../Home/ClientsLogo/VivoLogo.jpg"
+import Vivo from "../OurClients/DirectClients/vivoLogo.png"
 import TanishqLogo from "../Home/ClientsLogo/TanishqLogo.svg"
 import kalyanLogo from "../Home/ClientsLogo/kalyanLogo.svg"
 const ClientLogos = [
