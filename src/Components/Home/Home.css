@@ -439,7 +439,8 @@
     color: white;
     height: 100%;
     width: 100%;
-    background: black;
+    background: transparent;
+    backdrop-filter: blur(10px);
     opacity: 0;
     display: flex;
     justify-content: center;
