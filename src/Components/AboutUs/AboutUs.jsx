@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./about.css"
-import khushiImage from "../AboutUs/Khushi.png"
+// import khushiImage from "../AboutUs/Khushi.png"
 import hetgraphics from "../AboutUs/Hetgraphics.png"
 import { Row, Col } from "antd";
 import logo from "../AboutUs/logo1.svg"
@@ -125,7 +125,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={khushiImage} alt="khushi_advertising_logo" className="KhushiImg" data-aos="fade-up" />
+                            {/* <img src={khushiImage} alt="khushi_advertising_logo" className="KhushiImg" data-aos="fade-up" /> */}
                         </Col>
                     </Row>
                 </div>
