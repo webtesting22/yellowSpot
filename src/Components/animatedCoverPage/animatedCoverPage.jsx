@@ -2,6 +2,9 @@ import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import "./animatedCoverPage.css"
 const AnimatedCoverPage = () => {
+    const handleScrollDown = () => {
+        window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+    };
     return (
         <>
             <div className="animated-text-about">
@@ -21,7 +24,7 @@ const AnimatedCoverPage = () => {
                 <p>Make Your Brand Tower Above: Billboard Excellence, Tailored for You</p>
                 <div className="slite-padding"></div>
                 <div>
-                    <a href="#parent-company"> <button className="animated-scroll-down-btn">Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button></a>
+                   <button className="animated-scroll-down-btn"  onClick={handleScrollDown}>Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button>
 
                     <span></span>
                 </div>
