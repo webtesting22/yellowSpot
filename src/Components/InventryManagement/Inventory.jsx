@@ -341,13 +341,9 @@ const Inventory = () => {
                                                 </div>
                                             </div>
                                             <div className="location-details">
+                                            <br />
                                                 <div style={{ width: "100%" }} className="location-content">
-                                                    <p style={{ margin: "5px 0px" }}>
-                                                        Illumination: {item.Illu ?
-                                                            (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
-                                                            : "No light"
-                                                        }
-                                                    </p>
+                                                   
                                                     <a
                                                         href="#"
                                                         onClick={() => handleLocationClick(item.lat, item.lng)}
@@ -370,6 +366,12 @@ const Inventory = () => {
                                                         <DynamicCreateShape width={item.width} height={item.height} />
                                                     </div>
                                                 </div>
+                                                <p style={{ margin: "5px 0px" }}>
+                                                        Illumination: {item.Illu ?
+                                                            (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
+                                                            : "No light"
+                                                        }
+                                                    </p>
                                             </div>
                                         </div>
                                     </Col>

@@ -45,40 +45,43 @@ const Navbar = () => {
     <>
       <header className="header" id="header">
         <div className="main-nav-container">
-          <div className="left-side-links">
-            <div className="container">
-              <div className="left-side-ul">
-                <div className="d-flex animation-class" style={{ alignItems: "center" }}>
-                  <div className="left-side" data-aos="fade-left"
-                    data-aos-duration="1000" onMouseEnter={handleLeftHover} onMouseLeave={handleHoverOut}><span><Link to="/AboutUS">ABOUT US</Link> </span></div>
-                  <div className="line"><div></div></div>
-                  <div className="right-side" data-aos="fade-right"
-                    data-aos-duration="1000" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/OurClientele">Our clientele</Link></span></div>
-                </div>
-
-              </div>
-            </div>
-          </div>
           <div className="website-identity">
             <div className="yellow-spot-logo">
               <Link to="/"><img src={CombineLogo} alt="Yellow-Spot Logo" style={{ width: "180px" }} /></Link>
             </div>
           </div>
-          <div className="right-side-links">
-            <div className="container">
-              <div className="right-side-ul">
-                <div className="d-flex animation-class" style={{ alignItems: "center" }}>
-                <div className="right-side" data-aos="fade-right"
-                    data-aos-duration="1000" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/OurOfferings">Our Offerings</Link></span></div>
+          <div style={{display:"flex"}}>
+            <div className="left-side-links">
+              <div className="container">
+                <div className="left-side-ul">
+                  <div className="d-flex animation-class" style={{ alignItems: "center" }}>
+                    <div className="left-side" data-aos="fade-left"
+                      data-aos-duration="1000" onMouseEnter={handleLeftHover} onMouseLeave={handleHoverOut}><span><Link to="/AboutUS">ABOUT US</Link> </span></div>
                     <div className="line"><div></div></div>
-                  <div className="left-side" data-aos="fade-left"
-                    data-aos-duration="1000" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="/ContactUs">ContactUs</Link></span></div>
-                
-                  
+                    <div className="right-side" data-aos="fade-right"
+                      data-aos-duration="1000" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/OurClientele">Our clientele</Link></span></div>
+                  </div>
+
                 </div>
+              </div>
+            </div>
+
+            <div className="right-side-links">
+              <div className="container">
+                <div className="right-side-ul">
+                  <div className="d-flex animation-class" style={{ alignItems: "center" }}>
+                    <div className="right-side" data-aos="fade-right"
+                      data-aos-duration="1000" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/OurOfferings">Our Offerings</Link></span></div>
+                    <div className="line"><div></div></div>
+                    <div className="left-side" data-aos="fade-left"
+                      data-aos-duration="1000" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="/ContactUs">ContactUs</Link></span></div>
+
+
+                  </div>
 
 
 
+                </div>
               </div>
             </div>
           </div>

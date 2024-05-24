@@ -68,20 +68,20 @@ const AboutUS = () => {
                     <br /> */}
                     {/* <MagicHeading text="We are development experts on all technologies & platforms" /> */}
                     {/* <br /> */}
-                    <br /><br />
+                    {/* <br /><br /> */}
 
 
                 </div>
-                <br /><br />
+                {/* <br /><br /> */}
                 <div className="parent-Company-info container" >
                     <Row>
                         <Col lg={16}>
                             <div className="parent-comapny-content second" data-aos="fade-up">
                                 <h4><span>Yellow</span>Spot</h4>
                                 {/* <br /> */}
-                                <p>YellowSpot emerged as a collaborative effort between Het Graphics and Khushi Advertising. Our strategic alliance brings together two industry leaders, establishing one of the most formidable outdoor media houses in Gujarat. 
-We offer over 400 premium outdoor media inventory throughout the city of Ahmedabad, 99% back-lit, located in high-traffic locations, strategically placed in every neighborhood. 
-Our motivation is to provide comprehensive and holistic 360-degree marketing solutions to our local, national and international clients across diverse platforms.
+                                <p>YellowSpot emerged as a collaborative effort between Het Graphics and Khushi Advertising. Our strategic alliance brings together two industry leaders, establishing one of the most formidable outdoor media houses in Gujarat.
+                                    We offer over 400 premium outdoor media inventory throughout the city of Ahmedabad, 99% back-lit, located in high-traffic locations, strategically placed in every neighborhood.
+                                    Our motivation is to provide comprehensive and holistic 360-degree marketing solutions to our local, national and international clients across diverse platforms.
                                 </p>
                                 <div className="small-slite-padding"></div>
                                 {/* <div className="btn-container d-block">
@@ -93,10 +93,11 @@ Our motivation is to provide comprehensive and holistic 360-degree marketing sol
                         <Col lg={8}>
                             <img src={logo} alt="yellowspot_logo" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up" />
                         </Col>
+                        <hr style={{border:"1px solid white", opacity:"0.7", width:"100%"}}/>
                         <Col lg={8}>
                             <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
                         </Col>
-
+                        
                         <Col lg={16}>
                             <div className="parent-comapny-content first" data-aos="fade-up">
                                 <h4><span>HET Graphics</span> Total Outdoor Solutions</h4>
@@ -109,6 +110,7 @@ Our motivation is to provide comprehensive and holistic 360-degree marketing sol
                                 </div>
                             </div>
                         </Col>
+                        <hr style={{border:"1px solid white", opacity:"0.7", width:"100%"}}/>
                         <Col lg={16}>
                             <div className="parent-comapny-content second" data-aos="fade-up">
                                 <h4><span>Khushi</span> Advertising</h4>

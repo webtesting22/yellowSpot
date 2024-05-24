@@ -56,9 +56,9 @@
 .left-side span a,
 .right-side span a{
   font-family: "Barlow Condensed", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
-  color: rgb(236, 236, 236);
+  color: rgb(255, 255, 255);
   letter-spacing: 2px;
   text-transform:uppercase;
   cursor: pointer;

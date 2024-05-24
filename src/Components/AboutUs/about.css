@@ -13,7 +13,7 @@
     object-fit: contain; */
     border-radius: 20px;
     display: flex;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .parent-comapny-content h4 {
@@ -91,7 +91,7 @@
 }
 
 .parent-Company-info .ant-row .ant-col {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -184,7 +184,26 @@
     padding: 20px;
 }
 
+
+
 @media (max-width:900px) {
+    .parent-comapny-content h4 {
+        font-size: 40px;
+        color: white;
+        font-family: "Barlow Condensed", sans-serif;
+        margin: 30px 0px;
+    }
+    
+    
+.parent-Company-info img {
+    width: 70%;
+    margin: auto;
+    /* padding: 4rem; */
+    /* aspect-ratio: 3/2;
+    object-fit: contain; */
+    border-radius: 20px;
+    display: flex;
+}
     .KhushiImg,
 .HET_IMG{
     padding: 0px;
@@ -224,7 +243,7 @@
     }
 
     .parent-Company-info .ant-row .ant-col {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         display: flex;
         align-items: center;
         width: 100%;
