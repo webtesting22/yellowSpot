@@ -133,7 +133,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/Banners/unipole.jpeg");
+    background-image: url("../Home/Banners/cantilever.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-two:hover {
