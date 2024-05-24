@@ -281,10 +281,12 @@
     font-size: 45px;
     color: #ffed00;
     text-align: center;
+    
+    margin-bottom: 30px;
 }
 
 .main-content-container h1 span {
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     font-weight: 500;
     font-family: "Barlow Condensed", sans-serif;
@@ -384,10 +386,9 @@
 }
 
 .text-container-set p {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-family: "Barlow Condensed", sans-serif;
-    letter-spacing: 5px;
 }
 
 .home-page-client-logo {
@@ -401,31 +402,38 @@
     object-fit: contain;
     mix-blend-mode: screen;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background-color: #FFED00
 }
-.content-container span{
-    font-size: 50px;
+
+.content-container span {
+    font-size: 40px;
     text-align: center;
 }
-.content-container h3{
+
+.content-container h3 {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
 }
-.content-container .contup{
+
+.content-container .contup {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.writeUpContent p{
+
+.writeUpContent p {
     text-align: center;
+    padding: 0px 20px;
 }
+
 .animated-boxes-one .writeUpContent,
 .animated-boxes-two .writeUpContent,
 .animated-boxes-three .writeUpContent,
 .animated-boxes-four .writeUpContent,
-.animated-boxes-five .writeUpContent{
+.animated-boxes-five .writeUpContent {
     position: absolute;
     z-index: 55555555555555555555555555555555555555;
     color: white;
@@ -438,11 +446,12 @@
     align-items: center;
     transition: .5s;
 }
+
 .animated-boxes-one:hover .writeUpContent,
 .animated-boxes-two:hover .writeUpContent,
 .animated-boxes-three:hover .writeUpContent,
 .animated-boxes-four:hover .writeUpContent,
-.animated-boxes-five:hover .writeUpContent{
+.animated-boxes-five:hover .writeUpContent {
     opacity: 1;
     transition: .5s;
     cursor: pointer;
