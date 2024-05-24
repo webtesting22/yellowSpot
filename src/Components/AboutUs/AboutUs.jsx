@@ -34,15 +34,15 @@ const AboutUS = () => {
             Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             FounderName: "Pranay",
             FounderSecondName: "Shah",
-            FounderDescription:[
+            FounderDescription: [
                 {
-                    description:"Mr. Pranay Shah, a second-generation entrepreneur, joined his father's business in the then highly unorganized cinema advertising industry. Facing significant adversity, he encountered brands hesitant to experiment with this medium. However, with relentless perseverance, passion, and a vision to create a clutter-free, engaging platform for next-gen brands, he founded Khushi Advertising in 2004, starting with a small office in Ahmedabad. This vision led to a journey marked by unwavering dedication, team building, and total commitment to customers. "
+                    description: "Mr. Pranay Shah, a second-generation entrepreneur, joined his father's business in the then highly unorganized cinema advertising industry. Facing significant adversity, he encountered brands hesitant to experiment with this medium. However, with relentless perseverance, passion, and a vision to create a clutter-free, engaging platform for next-gen brands, he founded Khushi Advertising in 2004, starting with a small office in Ahmedabad. This vision led to a journey marked by unwavering dedication, team building, and total commitment to customers. "
                 },
                 {
-                    description:"He joined hands with Mr. Vishnu Telang in 2013 to scale Khushi Advertising to new height. Mr. Telang is a passionate man bringing in invaluable experience of nearly two decades in ambient media, He is credited with single-handedly building an ambient media agency into a market leader. He had been instrumental in building a team of more than 100+ professionals and establishing a pan India presence of this entity. He pioneered many path-breaking innovative concepts to create extraordinary campaigns which brands appreciated and cherished. He brings a wealth of marketing, organizational and innovative strengths to Khushi Advertising. He has brought in a long list of happy clients to Khushi Advertising and is constantly engaged in the endeavor of growing this business to reach higher pinnacles of success."
+                    description: "He joined hands with Mr. Vishnu Telang in 2013 to scale Khushi Advertising to new height. Mr. Telang is a passionate man bringing in invaluable experience of nearly two decades in ambient media, He is credited with single-handedly building an ambient media agency into a market leader. He had been instrumental in building a team of more than 100+ professionals and establishing a pan India presence of this entity. He pioneered many path-breaking innovative concepts to create extraordinary campaigns which brands appreciated and cherished. He brings a wealth of marketing, organizational and innovative strengths to Khushi Advertising. He has brought in a long list of happy clients to Khushi Advertising and is constantly engaged in the endeavor of growing this business to reach higher pinnacles of success."
                 },
                 {
-                    description:"Both Mr. Pranay Shah & Vishnu Telang, constant quest for growth and new horizons sparked his interest in the OOH industry. By joining hands with Mr. Asit Shah, the founder of Het Graphics, he co-founded Yellow Spot, leveraging their combined expertise and strengths to drive greater success. He has also been leading initiatives with the municipal corporation and fellow OOH vendors, and continues to work collaboratively to elevate the OOH industry in Ahmedabad."
+                    description: "Both Mr. Pranay Shah & Vishnu Telang, constant quest for growth and new horizons sparked his interest in the OOH industry. By joining hands with Mr. Asit Shah, the founder of Het Graphics, he co-founded Yellow Spot, leveraging their combined expertise and strengths to drive greater success. He has also been leading initiatives with the municipal corporation and fellow OOH vendors, and continues to work collaboratively to elevate the OOH industry in Ahmedabad."
                 }
             ]
 
@@ -60,16 +60,16 @@ const AboutUS = () => {
             {/* <div className="slite-padding"></div> */}
             <div className="slite-padding"></div>
             <section>
-              
-                <AnimatedCoverPage/>
+
+                <AnimatedCoverPage />
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
                     {/* <h1 className={`${isVisible ? "section-heading " : ""}`}
                         >We are development experts on <br /> all technologies & platforms</h1>
                     <br /> */}
-                    <MagicHeading text="We are development experts on all technologies & platforms" />
+                    {/* <MagicHeading text="We are development experts on all technologies & platforms" /> */}
                     {/* <br /> */}
                     <br /><br />
-                   
+
 
                 </div>
                 <br /><br />
@@ -79,12 +79,9 @@ const AboutUS = () => {
                             <div className="parent-comapny-content second" data-aos="fade-up">
                                 <h4><span>Yellow</span>Spot</h4>
                                 {/* <br /> */}
-                                <p>YellowSpot emerged as a collaborative effort between Khushi Advertising and
-                                    Het Graphics. Our strategic alliance brings together two industry leaders,
-                                    establishing one of the most formidable media houses in Gujarat. The
-                                    motivation behind the collaboration is to provide comprehensive and holistic
-                                    360-degree marketing solutions to our local, national and international clients
-                                    across diverse platforms.
+                                <p>YellowSpot emerged as a collaborative effort between Het Graphics and Khushi Advertising. Our strategic alliance brings together two industry leaders, establishing one of the most formidable outdoor media houses in Gujarat.
+                                    We offer over 400 premium outdoor media inventory throughout the city of Ahmedabad, located in high-traffic locations, strategically placed in every neighborhood.
+                                    Our motivation is to provide comprehensive and holistic 360-degree marketing solutions to our local, national and international clients across diverse platforms.
                                 </p>
                                 <div className="small-slite-padding"></div>
                                 {/* <div className="btn-container d-block">
@@ -190,7 +187,7 @@ const AboutUS = () => {
                             ))}
 
                         </Row> */}
-                        
+
                     </div>
                 </div>
 

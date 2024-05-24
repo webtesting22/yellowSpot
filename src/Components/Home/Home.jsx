@@ -134,46 +134,60 @@ const Home = () => {
             <div className="our-products">
               <div className="animated-hover-boxes">
                 <div className="animated-boxes-five">
+                <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
                     <h4>Gantry</h4>
                     <div className="small-slite-padding"></div>
-                    {/* <button>Yellow Spot</button> */}
                   </div>
                 </div>
                 <div className="twoslidesContainer">
                   <div className="animated-boxes-one">
+                    <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
                       <h4>Cantilever</h4>
                       <div className="small-slite-padding"></div>
-                      {/* <button>Yellow Spot</button> */}
+
                     </div>
                   </div>
                   <div className="animated-boxes-two">
+                    <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
                       <h4>Unipole</h4>
                       <div className="small-slite-padding"></div>
-                      {/* <button>Yellow Spot</button> */}
+
                     </div>
                   </div>
                 </div>
                 <div className="twoslidesContainer">
                   <div className="animated-boxes-three">
+                    <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
                       <h4>Hoardings</h4>
                       <div className="small-slite-padding"></div>
-                      {/* <button>Yellow Spot</button> */}
+
                     </div>
                   </div>
                   <div className="animated-boxes-four">
+                    <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
                       <h4>Pole Kiosks</h4>
                       <div className="small-slite-padding"></div>
-                      {/* <button>Yellow Spot</button> */}
+
                     </div>
                   </div>
                 </div>

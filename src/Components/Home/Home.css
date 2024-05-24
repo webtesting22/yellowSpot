@@ -418,3 +418,32 @@
     justify-content: center;
     flex-direction: column;
 }
+.writeUpContent p{
+    text-align: center;
+}
+.animated-boxes-one .writeUpContent,
+.animated-boxes-two .writeUpContent,
+.animated-boxes-three .writeUpContent,
+.animated-boxes-four .writeUpContent,
+.animated-boxes-five .writeUpContent{
+    position: absolute;
+    z-index: 55555555555555555555555555555555555555;
+    color: white;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.animated-boxes-one:hover .writeUpContent,
+.animated-boxes-two:hover .writeUpContent,
+.animated-boxes-three:hover .writeUpContent,
+.animated-boxes-four:hover .writeUpContent,
+.animated-boxes-five:hover .writeUpContent{
+    opacity: 1;
+    transition: .5s;
+    cursor: pointer;
+}
