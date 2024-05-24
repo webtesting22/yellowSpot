@@ -91,7 +91,7 @@ h1 {
     background-size: cover;
     transition: .5s;
     background-position: center;
-    background-image: url("../Home/unipole.jpeg");
+    background-image: url("../Home/Banners/unipole.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-three {
@@ -141,7 +141,7 @@ h1 {
     width: 50%;
     overflow: hidden;
     background-size: cover;
-    background-image: url("../Home/unipole.jpeg");
+    background-image: url("../Home/Banners/unipole.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-three:hover {
