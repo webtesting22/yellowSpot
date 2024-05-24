@@ -17,7 +17,7 @@ import vector7 from "../Home/iconsImages/Vector7.svg"
 import vector8 from "../Home/iconsImages/Vector8.svg"
 import CombineLogo from "../Navbar/CombineLogo.jpg"
 import Contact from "../Home/iconsImages/ContactUs.svg"
-const HomePageNavigation = () => {
+const HomePageNavigation = ( ) => {
     const [open, setOpen] = useState(false);
     const [placement, setPlacement] = useState('right');
 
@@ -35,8 +35,7 @@ const HomePageNavigation = () => {
     };
     const onClose = () => {
         setOpen(false);
-    };
-    return (
+    };    return (
         <>
             <section id="home-page-header">
 

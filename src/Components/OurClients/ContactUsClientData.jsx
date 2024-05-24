@@ -49,7 +49,7 @@ const ClientDataLogos = [
         ClientName: "Connect OOH"
     },
 ]
-
+import Oppo from "../OurClients/DirectClients/oppoLogo.png"
 import wonder_masala from "../OurClients/DirectClients/wonder_masala.svg"
 import DawaatRice from "../OurClients/DirectClients/DawaatRice.png"
 import JioMart from "../OurClients/DirectClients/JioMart.svg"
@@ -110,6 +110,11 @@ import UniqueInfraspace from "../OurClients/DirectClients/UniqueInfraspace.webp"
 import RitBuildspace from "../OurClients/DirectClients/RitBuildspace.jpg"
 import RaviDesaiSignature from "../OurClients/DirectClients/RaviDesaiSignature.png"
 const DirectClient = [
+    {
+        clientImg: Oppo,
+        clientWebLink: "https://www.oppo.com/",
+        ClientName: "Oppo"
+    },
     {
         clientImg: wonder_masala,
         clientWebLink: "https://wondermasala.com/",

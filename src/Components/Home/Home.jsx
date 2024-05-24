@@ -18,6 +18,7 @@ import offering from "../Home/Banners/OurOffering.png"
 import client from "../Home/Banners/OurClients.png"
 // import DemoImage from "../Home/Demo.png"
 import CountUp from 'react-countup';
+import Combinelogo from "../Navbar/CombineLogo.jpg"
 const Home = () => {
   return (
     <>
@@ -42,22 +43,23 @@ const Home = () => {
             <div className="image-overlay"></div>
             <div className="text-container-set">
               <div className="text-container second">
-                <div>
-                  <TypeAnimation
+                <div style={{display:"flex",justifyContent:"center",marginBottom:"10px"}}>
+                  <img src={Combinelogo} style={{width:"250px"}} alt="" />
+                  {/* <TypeAnimation
                     sequence={[
-                      // Same substring at the start will only be typed out once, initially
+                      Same substring at the start will only be typed out once, initially
                       'YELLOWSPOT  ',
-                      6000, // wait 1s before replacing "Mice" with "Hamsters"
+                      6000, wait 1s before replacing "Mice" with "Hamsters"
 
                     ]}
                     wrapper="h1"
                     speed={200}
                     style={{ fontWeight: "300", fontSize: "60px", margin: "20px 0px", color: "#FFED00" }}
-                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                   
                     repeat={Infinity}
-                  />
+                  /> */}
                 </div>
-                <p>As the city’s largest media planner and advertising solution provider</p>
+                <p>Your Art, Our Canvas</p>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
                   <Link to="/AboutUs"><button><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>

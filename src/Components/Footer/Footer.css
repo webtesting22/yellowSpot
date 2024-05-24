@@ -4,9 +4,12 @@
     height: 100%;
 }
 .Footer_Logo img{
-    width: 150px;
+    width: 60%;
     margin: auto;
    
+}
+.Footer_Logo{
+    width: 50%;
 }
 
 .scrollToTopButton {
@@ -116,6 +119,11 @@
 }
 
 @media (max-width:700px){
+    .Footer_Logo img{
+        width: 150px;
+        margin: auto;
+       
+    }
     .footer .ant-row .ant-col{
         padding: 0px 20px;
         width: 100%;
