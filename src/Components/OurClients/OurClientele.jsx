@@ -7,6 +7,7 @@ import { Row, Col } from "antd";
 import MagicHeading from "../MagicHeading/MagicHeading";
 import { ClientDataLogos, DirectClient } from "../OurClients/ContactUsClientData";
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
+import "./OurClients.css"
 const OurClientele = () => {
 
     // const cardColors = ["#ff6347", "#6495ed", "#32cd32", "#ffa500", "#9370db"];
