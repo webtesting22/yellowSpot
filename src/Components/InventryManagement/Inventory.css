@@ -104,6 +104,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.location-details{
+    height: 30vh;
+}
 @media (max-width:769px){
     .pc-filter-btn{
         display: flex;
