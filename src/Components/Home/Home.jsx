@@ -210,7 +210,7 @@ const Home = () => {
                     </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Gantry</h4>
+                      <h4>Cantilever</h4>
                       <div className="small-slite-padding"></div>
                     </div>
                   </div>
@@ -222,7 +222,7 @@ const Home = () => {
                     </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Cantilever</h4>
+                      <h4>Unipole</h4>
                       <div className="small-slite-padding"></div>
 
                     </div>
@@ -233,7 +233,7 @@ const Home = () => {
                     </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Unipole</h4>
+                      <h4> Hoardings</h4>
                       <div className="small-slite-padding"></div>
 
                     </div>
@@ -246,7 +246,7 @@ const Home = () => {
                     </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Hoardings</h4>
+                      <h4> Pole Kiosks</h4>
                       <div className="small-slite-padding"></div>
 
                     </div>
@@ -257,7 +257,7 @@ const Home = () => {
                     </div>
                     <div className="back-overlay"></div>
                     <div className="content-box">
-                      <h4>Pole Kiosks</h4>
+                      <h4> LEDs</h4>
                       <div className="small-slite-padding"></div>
 
                     </div>
