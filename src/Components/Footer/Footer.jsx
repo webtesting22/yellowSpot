@@ -37,7 +37,7 @@ const Footer = () => {
 
                     </Row>
                     <hr style={{ opacity: "1" }} />
-                    <p>@2024 <a href="https://www.outleadsolutions.com/" style={{ color: "#FFED00" }}>Outlead solution.</a> All rights reserved.</p>
+                    <p>@2024 <a href="https://www.outleadsolutions.com/" target="_blank" style={{ color: "#FFED00" }}>Outlead solution.</a> All rights reserved.</p>
                 </div>
             </section>
         </>
