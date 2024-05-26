@@ -2,16 +2,17 @@
     display: flex;
     align-items: center;
     height: 100%;
+    /* width: 100%; */
 }
 .Footer_Logo img{
     width: 60%;
     margin: auto;
    
 }
-.Footer_Logo{
-    width: 50%;
-}
+.Footer_Logo a{
+    display: flex;
 
+}
 .scrollToTopButton {
     position: fixed;
     bottom: 20px;
@@ -78,7 +79,7 @@
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 300;
     letter-spacing: 3px;
-    font-size: 90px;
+    font-size: 75px;
     transition: .5s;
 }
 .ContactusHeading h1:hover i{
@@ -99,7 +100,7 @@
 .logo-set-and-social .social-content img{
     margin: 0px 10px;
     height: 30px;
-    width: 25px;
+    width:27px;
     cursor: pointer;
     transform: translatey(0px);
     transition: .5s;
@@ -110,17 +111,25 @@
 .logo-set-and-social .social-content img:hover{
     margin: 0px 10px;
     height: 30px;
-    width: 25px;
+    width: 27px;
     cursor: pointer;
     transform: translatey(-5px);
     transition: .5s;
     /* border: 1px solid #FFED00; */
     /* padding: 5px; */
 }
-
+.topHeadingStyle{
+    display: flex;
+    justify-content: space-between;
+}
 @media (max-width:700px){
+    .topHeadingStyle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
     .Footer_Logo img{
-        width: 150px;
+        width: 100%;
         margin: auto;
        
     }
@@ -130,7 +139,7 @@
     }
     .logo-set-and-social{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
         align-items: center;
     }

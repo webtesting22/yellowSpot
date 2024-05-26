@@ -15,18 +15,21 @@ const Footer = () => {
 
             <section className="footer">
                 <div className=" slite-padding container">
+                    <div className="topHeadingStyle">
                     <div className="ContactusHeading container">
                         <p style={{ textAlign: "start" }}>Ready to work together?</p>
                         <h1>Get In Touch <i className='bx bxs-right-top-arrow-circle'></i></h1>
+                    </div>
+                    <div className="Footer_Logo">
+                                    <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
+                                </div>
                     </div>
                     <div className="slite-padding"></div>
                     <hr style={{ opacity: "1" }} />
                     <Row className="w-100">
                         <Col lg={24}>
                             <div className="logo-set-and-social">
-                                <div className="Footer_Logo">
-                                    <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
-                                </div>
+                               
                                 <div className="social-content">
                                     <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>
                                     <img src={twitterImg} alt="" />

@@ -90,7 +90,7 @@ const AboutUS = () => {
 
                         <Col lg={16}>
                             <div className="parent-comapny-content first" data-aos="fade-up">
-                                <h4><span>HET Graphics</span> Total Outdoor Solutions</h4>
+                                <h4><span>HET </span>Graphics</h4>
                                 {/* <br /> */}
                                 <p>Het Graphics, known as the industry leader in Ahmedabad city for its innovative ideas and extensive coverage, has successfully provided clients with a one-stop solution for outdoor advertising. Their extensive network of hoardings, gantries and signages makes creating awareness for your brand/product/service easier. With HET by their side, many national and local brands have advertised throughout the state of Gujarat.</p>
                                 <div className="small-slite-padding"></div>

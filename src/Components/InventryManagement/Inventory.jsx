@@ -354,7 +354,7 @@ const Inventory = () => {
                                                         </p>
                                                     </a>
                                                 </div>
-
+                                                <hr style={{ margin: "3px 0px" }} />
                                                 <div style={{
                                                     display: "flex", justifyContent: "space-between",
                                                     alignItems: "center"
