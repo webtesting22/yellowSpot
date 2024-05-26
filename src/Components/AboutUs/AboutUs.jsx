@@ -58,12 +58,13 @@ const AboutUS = () => {
         <>
             <Navbar />
             <HomePageNavigation />
-            <div className="slite-padding"></div>
+            {/* <div className="slite-padding"></div>
             <br />
-            <div className="slite-padding"></div>
+            <div className="slite-padding"></div> */}
             <section>
 
                 <AnimatedCoverPage />
+                <br /><br />
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
                 </div>
                 {/* <br /><br /> */}

@@ -5,8 +5,8 @@
     z-index: 666;
     width: 100%;
     padding: 18px 0px;
-    background: black;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: transparent;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
     
 }
 .main-nav-container {
@@ -21,7 +21,7 @@
 
 .main-nav-container .left-side-links,
 .main-nav-container .right-side-links {
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   /* border-radius: 2px; */
   padding: 2px;
 

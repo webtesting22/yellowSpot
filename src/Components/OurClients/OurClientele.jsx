@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import { TypeAnimation } from "react-type-animation";
@@ -16,11 +16,12 @@ const OurClientele = () => {
         <>
             <Navbar />
             <HomePageNavigation />
-            <div className="section-padding"></div>
-            <br />
+            {/* <div className="section-padding"></div>
+            <br /> */}
 
             <section>
                 <AnimatedCoverPage/>
+                <br /><br />
                 <div className="container">
 
                     <SwiperHeadingIcon headingText="OUR CLIENTELE"/>

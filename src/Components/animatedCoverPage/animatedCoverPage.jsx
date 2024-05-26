@@ -1,13 +1,17 @@
 import React from "react";
 import { TypeAnimation } from 'react-type-animation';
 import "./animatedCoverPage.css"
-const AnimatedCoverPage = () => {
+import BackPicture from "./Picture1.png"
+const AnimatedCoverPage = ({backgroundImage}) => {
     const handleScrollDown = () => {
         window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
     };
     return (
         <>
             <div className="animated-text-about">
+                <div className="textbackAnimation">
+                    <img src={BackPicture} alt="" style={{height:"100vh",width:"100%"}}/>
+                </div>
                 <TypeAnimation
                     sequence={[
                         // Same substring at the start will only be typed out once, initially
@@ -24,7 +28,7 @@ const AnimatedCoverPage = () => {
                 <p>Make Your Brand Tower Above: Billboard Excellence, Tailored for You</p>
                 <div className="slite-padding"></div>
                 <div>
-                   <button className="animated-scroll-down-btn"  onClick={handleScrollDown}>Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button>
+                    <button className="animated-scroll-down-btn" onClick={handleScrollDown}>Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button>
 
                     <span></span>
                 </div>

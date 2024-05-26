@@ -8,6 +8,7 @@ import Inventory from "../InventryManagement/Inventory";
 import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import AnimatedCards from "../AnimationScrollingCard/AnimationCards";
+import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 const OurOfferings = () => {
 
   
@@ -15,30 +16,10 @@ const OurOfferings = () => {
         <>
             <Navbar />
             <HomePageNavigation />
-            <div className="section-padding"></div>
-            <br />
-            <div className="animated-text-about">
-                <TypeAnimation
-                    sequence={[
-                        // Same substring at the start will only be typed out once, initially
-                        'YELLOWSPOT  ',
-                        6000, // wait 1s before replacing "Mice" with "Hamsters"
-
-                    ]}
-                    wrapper="h1"
-                    speed={200}
-                    style={{ fontWeight: "300", fontSize: "45px", color: "#FFED00", textAlign: "start", margin: "0px" }}
-                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
-                    repeat={Infinity}
-                />
-                <p>Stand Tall, Be Seen: Amplify Your Message with Our Billboard Solutions</p>
-                <div className="slite-padding"></div>
-                <div>
-                    <a href="#serviceCard"> <button className="animated-scroll-down-btn">Scroll Down <br /><i className='bx bxs-chevron-down' ></i></button></a>
-
-                    <span></span>
-                </div>
-            </div>
+            {/* <div className="section-padding"></div>
+            <br /> */}
+            <AnimatedCoverPage/>
+            <br /><br />
             <section id="serviceCard" className="container">
 
             <SwiperHeadingIcon headingText="Our Services" />
