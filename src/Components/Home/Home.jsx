@@ -10,7 +10,7 @@ import HomePageNavigation from "./HomePageNavigation";
 import billboard from "../Home/iconsImages/billboard.png"
 import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
-import { Row, Col,Drawer } from "antd";
+import { Row, Col, Drawer } from "antd";
 import ClientLogos from './ClientLogosData';
 import Homepagefirst from "../Home/Homepage1.jpg"
 import Industy from "../Home/Banners/OurEgency.png"
@@ -55,7 +55,7 @@ const Home = () => {
       <div id="HomePage">
         <section id="home-page-header">
 
-          <Link to="/"> <img src={CombineLogo} alt="Yellow-Spot Logo" className="logo-home" style={{opacity:"0"}}/></Link>
+          <Link to="/"> <img src={CombineLogo} alt="Yellow-Spot Logo" className="logo-home" style={{ opacity: "0" }} /></Link>
           <button className="menu-btn" onClick={showDrawer}>
             <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
               {drawerVisible ? <CloseOutlined /> : <MenuOutlined />}
@@ -334,7 +334,7 @@ const Home = () => {
                     {ClientLogos.map((item, index) => (
                       <SwiperSlide style={{ display: "flex" }}>
                         <div key={index} className='home-page-client-logo'>
-                          <img src={item.img} alt="" />
+                          <img src={item.img} alt="" style={{width:"100%", aspectRatio:"3/2", objectFit:"contain"}}/>
                         </div>
                       </SwiperSlide>
                     ))}
