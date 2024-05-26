@@ -8,6 +8,7 @@ import MagicHeading from "../MagicHeading/MagicHeading";
 import { ClientDataLogos, DirectClient } from "../OurClients/ContactUsClientData";
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 import "./OurClients.css"
+import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
 const OurClientele = () => {
 
     // const cardColors = ["#ff6347", "#6495ed", "#32cd32", "#ffa500", "#9370db"];
@@ -22,7 +23,7 @@ const OurClientele = () => {
                 <AnimatedCoverPage/>
                 <div className="container">
 
-                    <MagicHeading text="Our Agency Clientele" />
+                    <SwiperHeadingIcon headingText="OUR CLIENTELE"/>
                 </div>
 
                 <br /><br />
@@ -58,8 +59,7 @@ const OurClientele = () => {
                 </div>
                 <br /><br />
                 <div className="container">
-
-                    <MagicHeading text="Our Direct Clientele" />
+                        <SwiperHeadingIcon headingText="Our Direct Clientele"/>
                 </div>
 
                 <br /><br />

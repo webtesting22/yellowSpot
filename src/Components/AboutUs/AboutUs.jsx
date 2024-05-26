@@ -13,6 +13,7 @@ import MagicHeading from "../MagicHeading/MagicHeading";
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 import { Image } from 'antd';
 import GalleryImages from "./galleryImages/GalleryImagesData";
+import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
 const AboutUS = () => {
 
     const foudersDetails = [
@@ -59,20 +60,11 @@ const AboutUS = () => {
             <HomePageNavigation />
             <div className="slite-padding"></div>
             <br />
-            {/* <div className="slite-padding"></div> */}
             <div className="slite-padding"></div>
             <section>
 
                 <AnimatedCoverPage />
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
-                    {/* <h1 className={`${isVisible ? "section-heading " : ""}`}
-                        >We are development experts on <br /> all technologies & platforms</h1>
-                    <br /> */}
-                    {/* <MagicHeading text="We are development experts on all technologies & platforms" /> */}
-                    {/* <br /> */}
-                    {/* <br /><br /> */}
-
-
                 </div>
                 {/* <br /><br /> */}
                 <div className="parent-Company-info container" >
@@ -86,10 +78,6 @@ const AboutUS = () => {
                                     Our motivation is to provide comprehensive and holistic 360-degree marketing solutions to our local, national and international clients across diverse platforms.
                                 </p>
                                 <div className="small-slite-padding"></div>
-                                {/* <div className="btn-container d-block">
-                                    <Link to="/AboutUs"><button className="m-0"><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-
-                                </div> */}
                             </div>
                         </Col>
                         <Col lg={8}>
@@ -130,23 +118,9 @@ const AboutUS = () => {
                         </Col>
                     </Row>
                 </div>
-                {/* <br /> */}
-
-                {/* <div className="imageGallery container">
-
-                    {GalleryImages.map((item, index) => (
-                        <div key={index} className="img-container">
-                            <Image
-                                style={{ width: "100%" }}
-                                src={item.img}
-                            />
-                        </div>
-                    ))}
-
-                </div> */}
+                <br /><br />
                 <div className="co-founder-section container">
-                    <MagicHeading text="Meet Our Team" />
-                    {/* <div className="slite-padding"></div> */}
+                    <SwiperHeadingIcon headingText="Meet Our Team" />
                     <br /><br />
                     <div>
                         <Row>
@@ -177,34 +151,7 @@ const AboutUS = () => {
                             ))}
 
                         </Row>
-                        {/* <br /><br /> */}
-                        {/* <Row>
-                            {teamData.map((item, index) => (
-                                <Col lg={8}>
-                                    <div key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`} data-aos-duration="800">
-                                        <div className="founder-info" >
-                                            <div className="header-part">
-                                                <div style={{ display: "flex", alignItems: "center" }}>
-                                                    <h4 style={{ fontSize: "20px" }}><span>{item.firstTitle}</span> {item.lastTitle}<span style={{ color: "#ffffff9c", fontSize: "15px", marginLeft: "5px" }}>({item.Designation})</span></h4>
-                                                </div>
-                                                <div className="socials">
-                                                    <i className='bx bxl-linkedin-square'></i>
-                                                    <i className='bx bxl-twitter' ></i>
-                                                </div>
-                                            </div>
-                                            <div>
-                                            <p style={{ color: "white",fontSize:"20px" }}></p>
-                                            <p >{item.role}</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </Col>
-                            ))}
-
-                        </Row> */}
-
+                       
                     </div>
                 </div>
 

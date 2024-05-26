@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { Card, Row, Col } from 'antd';
-
 import { TypeAnimation } from 'react-type-animation';
 import "./ouroffering.css"
+import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
 import Inventory from "../InventryManagement/Inventory";
 import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
-import MagicHeading from "../MagicHeading/MagicHeading";
 import AnimatedCards from "../AnimationScrollingCard/AnimationCards";
 const OurOfferings = () => {
 
-    
+  
     return (
         <>
             <Navbar />
@@ -41,10 +40,11 @@ const OurOfferings = () => {
                 </div>
             </div>
             <section id="serviceCard" className="container">
-                <MagicHeading text="Our Services" />
+
+            <SwiperHeadingIcon headingText="Our Services" />
                 <br />
                 <div className="container p-0">
-                    <AnimatedCards/>
+                    <AnimatedCards />
                     {/* <div className="section-padding"></div>
                     <h1 className="services-heading">Our Services</h1>
                     <div className="section-padding"></div> */}
