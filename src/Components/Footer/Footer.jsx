@@ -27,6 +27,8 @@ const Footer = () => {
                     <div className="slite-padding"></div>
                     <hr style={{ opacity: "1" }} />
                     <Row className="w-100">
+                        {/* <Col lg={12}>
+                        </Col> */}
                         <Col lg={24}>
                             <div className="logo-set-and-social">
                                

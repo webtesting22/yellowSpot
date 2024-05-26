@@ -1,4 +1,3 @@
-
 h1 {
     color: white;
 }
@@ -66,7 +65,8 @@ h1 {
 .animated-hover-boxes .animated-boxes-two,
 .animated-hover-boxes .animated-boxes-three,
 .animated-hover-boxes .animated-boxes-four,
-.animated-hover-boxes .animated-boxes-five {
+.animated-hover-boxes .animated-boxes-five,
+.animated-hover-boxes .animated-boxes-six {
     display: flex;
     position: relative;
     height: 50vh;
@@ -127,6 +127,15 @@ h1 {
     background-image: url("../Home/Banners/gantry.jpeg");
 }
 
+.animated-hover-boxes .animated-boxes-six {
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    transition: .5s;
+    background-image: url("../Home/Banners/polekiosk.jpeg");
+}
+
 .animated-hover-boxes .animated-boxes-one:hover {
     background-color: transparent;
     width: 50%;
@@ -161,6 +170,15 @@ h1 {
     background-image: url("../Home/Banners/polekiosk.jpeg");
 }
 
+.animated-hover-boxes .animated-boxes-six:hover {
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+    transition: .5s;
+    background-image: url("../Home/Banners/polekiosk.jpeg");
+}
+
 .our-products .back-overlay {
     height: 50vh;
     width: 100%;
@@ -189,20 +207,27 @@ h1 {
     height: 50vh;
 }
 
-.serviceCard .ant-row .ant-col{
+.serviceCard .ant-row .ant-col {
     padding: 10px;
-   
+
 }
-.services-card-content{
+
+.services-card-content {
     padding: 10px;
 }
+
+
 .animated-hover-boxes .animated-boxes-one,
 .animated-hover-boxes .animated-boxes-two,
 .animated-hover-boxes .animated-boxes-three,
 .animated-hover-boxes .animated-boxes-four,
-.animated-hover-boxes .animated-boxes-five {
+.animated-hover-boxes .animated-boxes-five,
+.animated-hover-boxes .animated-boxes-six 
+{
+
     border: 2px solid black;
 }
+
 @media (max-width:600px) {
     .content-box button {
         border: none;
@@ -248,7 +273,8 @@ h1 {
     .animated-hover-boxes .animated-boxes-two,
     .animated-hover-boxes .animated-boxes-three,
     .animated-hover-boxes .animated-boxes-four,
-    .animated-hover-boxes .animated-boxes-five {
+    .animated-hover-boxes .animated-boxes-five,
+    .animated-hover-boxes .animated-boxes-six {
         display: flex;
         position: relative;
         height: 33vh;

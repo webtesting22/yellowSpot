@@ -433,7 +433,8 @@
 .animated-boxes-two .writeUpContent,
 .animated-boxes-three .writeUpContent,
 .animated-boxes-four .writeUpContent,
-.animated-boxes-five .writeUpContent {
+.animated-boxes-five .writeUpContent,
+.animated-boxes-six .writeUpContent {
     position: absolute;
     z-index: 55555555555555555555555555555555555555;
     color: white;
@@ -452,8 +453,22 @@
 .animated-boxes-two:hover .writeUpContent,
 .animated-boxes-three:hover .writeUpContent,
 .animated-boxes-four:hover .writeUpContent,
-.animated-boxes-five:hover .writeUpContent {
+.animated-boxes-five:hover .writeUpContent,
+.animated-boxes-six:hover .writeUpContent {
     opacity: 1;
     transition: .5s;
     cursor: pointer;
+}
+
+.topTwoBoxes{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+}
+@media (max-width:600px){
+    .topTwoBoxes{
+        display: flex;
+        height: 33vh;
+        width: 100%;
+    }
 }

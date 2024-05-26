@@ -118,19 +118,7 @@ const Home = () => {
               <div className="text-container second">
                 <div style={{ display: "flex", justifyContent: "center", marginBottom: "10px" }}>
                   <img src={Combinelogo} style={{ width: "250px" }} alt="" />
-                  {/* <TypeAnimation
-                    sequence={[
-                      Same substring at the start will only be typed out once, initially
-                      'YELLOWSPOT  ',
-                      6000, wait 1s before replacing "Mice" with "Hamsters"
-
-                    ]}
-                    wrapper="h1"
-                    speed={200}
-                    style={{ fontWeight: "300", fontSize: "60px", margin: "20px 0px", color: "#FFED00" }}
-                   
-                    repeat={Infinity}
-                  /> */}
+                 
                 </div>
                 <p>Your Art, Our Canvas</p>
                 <div className="slite-padding"></div>
@@ -199,23 +187,32 @@ const Home = () => {
                   </div>
 
                 </div>
-                {/* <div className="btn-container">
-                  <button>View More<span></span></button>
-                </div> */}
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="our-products">
               <div className="animated-hover-boxes">
-                <div className="animated-boxes-five">
-                  <div className='writeUpContent'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                <div className='topTwoBoxes'> 
+                  <div className="animated-boxes-five">
+                    <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
+                    <div className="back-overlay"></div>
+                    <div className="content-box">
+                      <h4>Gantry</h4>
+                      <div className="small-slite-padding"></div>
+                    </div>
                   </div>
-                  <div className="back-overlay"></div>
-                  <div className="content-box">
-                    <h4>Gantry</h4>
-                    <div className="small-slite-padding"></div>
+                  <div className='animated-boxes-six'>
+                    <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
+                    <div className="back-overlay"></div>
+                    <div className="content-box">
+                      <h4>Gantry</h4>
+                      <div className="small-slite-padding"></div>
+                    </div>
                   </div>
                 </div>
                 <div className="twoslidesContainer">
@@ -334,7 +331,7 @@ const Home = () => {
                     {ClientLogos.map((item, index) => (
                       <SwiperSlide style={{ display: "flex" }}>
                         <div key={index} className='home-page-client-logo'>
-                          <img src={item.img} alt="" style={{width:"100%", aspectRatio:"3/2", objectFit:"contain"}}/>
+                          <img src={item.img} alt="" style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
                         </div>
                       </SwiperSlide>
                     ))}
