@@ -78,7 +78,7 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/Banners/second1.jpeg");
+    background-image: url("../Home/Banners/unipole.jpeg");
     background-position: center;
 }
 
@@ -90,8 +90,8 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-position: center;
-    background-image: url("../Home/Banners/unipole.jpeg");
+    /* background-position: center; */
+    background-image: url("../Home/Banners/hoardings.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-three {
@@ -101,7 +101,7 @@ h1 {
     background-size: cover;
     transition: .5s;
     /* background-position: center; */
-    background-image: url("../Home/Banners/hoardings.jpeg");
+    background-image: url("../Home/Banners/polekiosk.jpeg");
 }
 
 .animated-hover-boxes .animated-boxes-four {
@@ -133,10 +133,10 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-image: url("../Home/Banners/polekiosk.jpeg");
+    background-image: url("../Home/Banners/second1.jpeg");
 }
 
-.animated-hover-boxes .animated-boxes-one:hover {
+/* .animated-hover-boxes .animated-boxes-one:hover {
     background-color: transparent;
     width: 50%;
     overflow: hidden;
@@ -177,7 +177,7 @@ h1 {
     background-size: cover;
     transition: .5s;
     background-image: url("../Home/Banners/polekiosk.jpeg");
-}
+} */
 
 .our-products .back-overlay {
     height: 50vh;

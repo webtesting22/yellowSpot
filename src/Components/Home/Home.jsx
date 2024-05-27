@@ -12,7 +12,7 @@ import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
 import { Row, Col, Drawer } from "antd";
 import ClientLogos from './ClientLogosData';
-import Homepagefirst from "../Home/Homepage1.jpg"
+import Homepagefirst from "../animatedCoverPage/Picture1.png"
 import Industy from "../Home/Banners/OurEgency.png"
 import offering from "../Home/Banners/OurOffering.png"
 import client from "../Home/Banners/OurClients.png"
