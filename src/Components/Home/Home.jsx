@@ -118,7 +118,7 @@ const Home = () => {
               <div className="text-container second">
                 <div style={{ display: "flex", justifyContent: "center", marginBottom: "10px" }}>
                   <img src={Combinelogo} style={{ width: "250px" }} alt="" />
-                 
+
                 </div>
                 <p>Your Art, Our Canvas</p>
                 <div className="slite-padding"></div>
@@ -193,18 +193,18 @@ const Home = () => {
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="our-products">
               <div className="animated-hover-boxes">
-                <div className='topTwoBoxes'> 
-                  <div className="animated-boxes-five">
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4>Gantry</h4>
-                      <div className="small-slite-padding"></div>
-                    </div>
+                {/* <div className='topTwoBoxes'>  */}
+                <div className="animated-boxes-five">
+                  <div className='writeUpContent'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
                   </div>
-                  {/* <div className='animated-boxes-six'>
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4>Gantry</h4>
+                    <div className="small-slite-padding"></div>
+                  </div>
+                </div>
+                {/* <div className='animated-boxes-six'>
                     <div className='writeUpContent'>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
                     </div>
@@ -214,68 +214,68 @@ const Home = () => {
                       <div className="small-slite-padding"></div>
                     </div>
                   </div> */}
+                {/* </div> */}
+                {/* <div className="twoslidesContainer"> */}
+                <div className='animated-boxes-six'>
+                  <div className='writeUpContent'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                  </div>
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4>Cantilever</h4>
+                    <div className="small-slite-padding"></div>
+                  </div>
                 </div>
-                <div className="twoslidesContainer">
-                   <div className='animated-boxes-six'>
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4>Cantilever</h4>
-                      <div className="small-slite-padding"></div>
-                    </div>
+                <div className="animated-boxes-one">
+                  <div className='writeUpContent'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
                   </div>
-                  <div className="animated-boxes-one">
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4>Unipole</h4>
-                      <div className="small-slite-padding"></div>
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4>Unipole</h4>
+                    <div className="small-slite-padding"></div>
 
-                    </div>
                   </div>
-                  <div className="animated-boxes-two">
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4> Hoardings</h4>
-                      <div className="small-slite-padding"></div>
+                </div>
+                <div className="animated-boxes-two">
+                  <div className='writeUpContent'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                  </div>
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4> Hoardings</h4>
+                    <div className="small-slite-padding"></div>
 
-                    </div>
                   </div>
+                </div>
                 {/* </div>
                 <div className="twoslidesContainer"> */}
-                  <div className="animated-boxes-three">
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4> Pole Kiosks</h4>
-                      <div className="small-slite-padding"></div>
-
-                    </div>
+                <div className="animated-boxes-three">
+                  <div className='writeUpContent'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
                   </div>
-                  <div className="animated-boxes-four">
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4> LEDs</h4>
-                      <div className="small-slite-padding"></div>
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4> Pole Kiosks</h4>
+                    <div className="small-slite-padding"></div>
 
-                    </div>
                   </div>
                 </div>
+                <div className="animated-boxes-four">
+                  <div className='writeUpContent'>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                  </div>
+                  <div className="back-overlay"></div>
+                  <div className="content-box">
+                    <h4> LEDs</h4>
+                    <div className="small-slite-padding"></div>
 
-
+                  </div>
+                </div>
               </div>
+
+
+              {/* </div> */}
 
             </div>
           </SwiperSlide>

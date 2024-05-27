@@ -70,12 +70,12 @@ h1 {
     display: flex;
     position: relative;
     height: 50vh;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .animated-hover-boxes .animated-boxes-one {
     background-color: transparent;
-    
+    width: 20%;
     overflow: hidden;
     background-size: cover;
     transition: .5s;
@@ -87,7 +87,7 @@ h1 {
     background-color: transparent;
     /* margin: 20px; */
     /* height: 70vh; */
-    
+    width: 20%;
     overflow: hidden;
     background-size: cover;
     transition: .5s;
@@ -97,7 +97,7 @@ h1 {
 
 .animated-hover-boxes .animated-boxes-three {
     background-color: transparent;
-    
+    width: 20%;
     overflow: hidden;
     background-size: cover;
     transition: .5s;
@@ -107,10 +107,11 @@ h1 {
 
 .animated-hover-boxes .animated-boxes-four {
     background-color: transparent;
-    
+    width: 20%;
     overflow: hidden;
     background-size: cover;
     transition: .5s;
+    height: 50vh;
     /* background-position: center; */
     background-image: url("../Home/Banners/polekiosk.jpeg");
 }
@@ -130,55 +131,12 @@ h1 {
 
 .animated-hover-boxes .animated-boxes-six {
     background-color: transparent;
-    width: 100%;
+    width: 20%;
     overflow: hidden;
     background-size: cover;
     transition: .5s;
     background-image: url("../Home/Banners/second1.jpeg");
 }
-
-/* .animated-hover-boxes .animated-boxes-one:hover {
-    background-color: transparent;
-    width: 50%;
-    overflow: hidden;
-    background-size: cover;
-    transition: .5s;
-    background-image: url("../Home/Banners/second1.jpeg");
-}
-
-.animated-hover-boxes .animated-boxes-two:hover {
-    background-color: transparent;
-    width: 50%;
-    overflow: hidden;
-    background-size: cover;
-    background-image: url("../Home/Banners/unipole.jpeg");
-}
-
-.animated-hover-boxes .animated-boxes-three:hover {
-    background-color: transparent;
-    width: 50%;
-    overflow: hidden;
-    background-size: cover;
-    background-image: url("../Home/Banners/hoardings.jpeg");
-}
-
-.animated-hover-boxes .animated-boxes-four:hover {
-    background-color: transparent;
-    width: 50%;
-    overflow: hidden;
-    background-size: cover;
-    transition: .5s;
-    background-image: url("../Home/Banners/polekiosk.jpeg");
-}
-
-.animated-hover-boxes .animated-boxes-six:hover {
-    background-color: transparent;
-    width: 100%;
-    overflow: hidden;
-    background-size: cover;
-    transition: .5s;
-    background-image: url("../Home/Banners/polekiosk.jpeg");
-} */
 
 .our-products .back-overlay {
     height: 50vh;
@@ -242,7 +200,8 @@ h1 {
     .animated-hover-boxes {
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
 
     .content-box h4 {
@@ -270,25 +229,30 @@ h1 {
         justify-content: center;
         flex-direction: column;
     }
-
+    .animated-hover-boxes .animated-boxes-five{
+        height: 30vh;
+    }
     .animated-hover-boxes .animated-boxes-one,
     .animated-hover-boxes .animated-boxes-two,
     .animated-hover-boxes .animated-boxes-three,
-    .animated-hover-boxes .animated-boxes-four,
-    .animated-hover-boxes .animated-boxes-five,
+
     .animated-hover-boxes .animated-boxes-six {
         display: flex;
         position: relative;
-        height: 33vh;
+        height: 25vh;
+        width: 50%;
     }
-
-    .animated-hover-boxes .animated-boxes-one:hover,
+    .animated-hover-boxes .animated-boxes-four{
+        width: 100%;
+        height: 20vh;
+    }
+    /* .animated-hover-boxes .animated-boxes-one:hover,
     .animated-hover-boxes .animated-boxes-two:hover,
     .animated-hover-boxes .animated-boxes-three:hover,
     .animated-hover-boxes .animated-boxes-four:hover {
         display: flex;
         position: relative;
         height: 33vh;
-    }
+    } */
 
 }
