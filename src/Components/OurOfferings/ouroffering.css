@@ -70,11 +70,12 @@ h1 {
     display: flex;
     position: relative;
     height: 50vh;
+    width: 100%;
 }
 
 .animated-hover-boxes .animated-boxes-one {
     background-color: transparent;
-    width: 50%;
+    
     overflow: hidden;
     background-size: cover;
     transition: .5s;
@@ -86,7 +87,7 @@ h1 {
     background-color: transparent;
     /* margin: 20px; */
     /* height: 70vh; */
-    width: 50%;
+    
     overflow: hidden;
     background-size: cover;
     transition: .5s;
@@ -96,7 +97,7 @@ h1 {
 
 .animated-hover-boxes .animated-boxes-three {
     background-color: transparent;
-    width: 50%;
+    
     overflow: hidden;
     background-size: cover;
     transition: .5s;
@@ -106,7 +107,7 @@ h1 {
 
 .animated-hover-boxes .animated-boxes-four {
     background-color: transparent;
-    width: 50%;
+    
     overflow: hidden;
     background-size: cover;
     transition: .5s;
@@ -203,7 +204,7 @@ h1 {
 
 .twoslidesContainer {
     display: flex;
-    width: 50%;
+    width: 100%;
     height: 50vh;
 }
 
@@ -255,7 +256,8 @@ h1 {
     .twoslidesContainer {
         display: flex;
         width: 100%;
-        height: 33vh;
+        height: 70vh;
+        flex-direction: column;
     }
 
     .animated-hover-boxes .content-box {

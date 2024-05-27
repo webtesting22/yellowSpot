@@ -3,7 +3,9 @@ import "./animation.css"
 import ResearchBasePlanning from "./21.png"
 import CampaignMonitoring from "./22.png"
 import CreativeDesigns from "./23.png"
-import MediaBuying from "./24.png"
+// import MediaBuying from "./24.png"
+import Campion from "./25.png"
+import MediaBuying from "./26.png"
 const AnimatedCards = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -30,7 +32,7 @@ const AnimatedCards = () => {
             cardDescription: "Whether it be 3D-backed designs, moving elements, or cutouts, we have got it all! Just come to us with your product and let us help you bring the best creative designs to your audiences."
         },
         {
-            cardImage: CreativeDesigns,
+            cardImage: Campion,
             cardHeading: "Campaign Monitoring ",
             cardNormalHeading: "& Evaluation",
             cardDescription: "We are among the most result-oriented OOH agencies that help you implement your campaigns with ease and stand by to keep a check on the impressions and evaluate your campaign performance. It is also our standard practice to provide you with real-time GPS photographs of your campaign."

@@ -468,7 +468,7 @@
 @media (max-width:600px){
     .topTwoBoxes{
         display: flex;
-        height: 33vh;
+        height: 30vh;
         width: 100%;
     }
 }

@@ -204,7 +204,19 @@ const Home = () => {
                       <div className="small-slite-padding"></div>
                     </div>
                   </div>
-                  <div className='animated-boxes-six'>
+                  {/* <div className='animated-boxes-six'>
+                    <div className='writeUpContent'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    </div>
+                    <div className="back-overlay"></div>
+                    <div className="content-box">
+                      <h4>Cantilever</h4>
+                      <div className="small-slite-padding"></div>
+                    </div>
+                  </div> */}
+                </div>
+                <div className="twoslidesContainer">
+                   <div className='animated-boxes-six'>
                     <div className='writeUpContent'>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
                     </div>
@@ -214,8 +226,6 @@ const Home = () => {
                       <div className="small-slite-padding"></div>
                     </div>
                   </div>
-                </div>
-                <div className="twoslidesContainer">
                   <div className="animated-boxes-one">
                     <div className='writeUpContent'>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
@@ -238,8 +248,8 @@ const Home = () => {
 
                     </div>
                   </div>
-                </div>
-                <div className="twoslidesContainer">
+                {/* </div>
+                <div className="twoslidesContainer"> */}
                   <div className="animated-boxes-three">
                     <div className='writeUpContent'>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>

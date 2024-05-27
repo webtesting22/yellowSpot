@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./about.css"
-import hetgraphics from "../AboutUs/Hetgraphics.png"
+import hetgraphics from "./hetFinal.png"
 import khushiLogo from "./khushiLogo.png"
 import { Row, Col } from "antd";
 import logo from "../AboutUs/logo1.svg"
@@ -39,13 +39,13 @@ const AboutUS = () => {
             FounderSecondName: "Shah",
             FounderDescription: [
                 {
-                    description: "Mr. Pranay Shah, a second-generation entrepreneur, joined his father's business in the then highly unorganized cinema advertising industry. Facing significant adversity, he encountered brands hesitant to experiment with this medium. However, with relentless perseverance, passion, and a vision to create a clutter-free, engaging platform for next-gen brands, he founded Khushi Advertising in 2004, starting with a small office in Ahmedabad. This vision led to a journey marked by unwavering dedication, team building, and total commitment to customers. "
+                    description: "Mr. Pranay Shah, a second-generation entrepreneur, joined his father's business in the then highly unorganized cinema advertising industry. Facing significant adversity, he encountered brands hesitant to experiment with this medium. However, with relentless perseverance and a vision to create a clutter-free, engaging platform for next-gen brands, he founded Khushi Advertising in 2004, starting with a small office in Ahmedabad. This journey was marked by unwavering dedication, team building, and total commitment to customers. "
                 },
                 {
-                    description: "He joined hands with Mr. Vishnu Telang in 2013 to scale Khushi Advertising to new height. Mr. Telang is a passionate man bringing in invaluable experience of nearly two decades in ambient media, He is credited with single-handedly building an ambient media agency into a market leader. He had been instrumental in building a team of more than 100+ professionals and establishing a pan India presence of this entity. He pioneered many path-breaking innovative concepts to create extraordinary campaigns which brands appreciated and cherished. He brings a wealth of marketing, organizational and innovative strengths to Khushi Advertising. He has brought in a long list of happy clients to Khushi Advertising and is constantly engaged in the endeavor of growing this business to reach higher pinnacles of success."
+                    description: "In 2013, he joined hands with Mr. Vishnu Telang, who brought invaluable experience from nearly two decades in ambient media. Mr. Telang single-handedly built an ambient media agency into a market leader, pioneering innovative concepts and establishing a pan-India presence. His wealth of marketing, organizational, and innovative strengths, along with a long list of happy clients, has propelled Khushi Advertising to new heights."
                 },
                 {
-                    description: "Both Mr. Pranay Shah & Vishnu Telang, constant quest for growth and new horizons sparked his interest in the OOH industry. By joining hands with Mr. Asit Shah, the founder of Het Graphics, he co-founded Yellow Spot, leveraging their combined expertise and strengths to drive greater success. He has also been leading initiatives with the municipal corporation and fellow OOH vendors, and continues to work collaboratively to elevate the OOH industry in Ahmedabad."
+                    description: "Their constant quest for growth sparked interest in the OOH industry, leading them to co-found Yellow Spot with Mr. Asit Shah, founder of Het Graphics. Leveraging their combined expertise, they continue to drive success and elevate the OOH industry in Ahmedabad through initiatives with the municipal corporation and fellow vendors."
                 }
             ]
 
