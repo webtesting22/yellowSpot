@@ -93,7 +93,11 @@ const AboutUS = () => {
                             <div className="parent-comapny-content first" data-aos="fade-up">
                                 <h4><span>HET </span>Graphics</h4>
                                 {/* <br /> */}
-                                <p>Het Graphics, known as the industry leader in Ahmedabad city for its innovative ideas and extensive coverage, has successfully provided clients with a one-stop solution for outdoor advertising. Their extensive network of hoardings, gantries and signages makes creating awareness for your brand/product/service easier. With HET by their side, many national and local brands have advertised throughout the state of Gujarat.</p>
+                                <p>Het Graphics started its business in the outdoor media industry in year 2000 and is known for its innovations and ideas in the industry. We started our journey by introducing Pole Kiosks in the city of Ahmedabad. Currently, we provide several billboards media options such as Gantries, Unipoles, large-format Hoardings, Cantilever, Pole Kiosks and LEDs.
+                                </p>
+                                <p>With 99% of our media being back-lit and a 100% of them located in the most premium and high-traffic locations of Ahmedabad city, we are the leading outdoor media provider with 400+ media inventory options. Our web of billboards is spread through out the Ahmedabad city. Our media inventory can be found in cluster-free zones and are visible at direct eye-level making it inescapable to notice while commuting.</p>
+                                <p>Het Graphics has been successfully providing one stop solution in outdoor advertising to all its local, national and international clientele. With our strong media planning team, we have accomplished multiple successful outdoor campaigns throughout the state of Gujarat.</p>
+                                <p>Currently, we deal with all our clientele through our baby company Yellow Spot. YellowSpot emerged as a collaborative effort between Het Graphics and Khushi Advertising. Our strategic alliance brings together two industry leaders, establishing one of Gujarat's most formidable outdoor media houses. Find our more about us on Yellow Spot (link).</p>
                                 <div className="small-slite-padding"></div>
                                 <div className="btn-container">
                                     <Link to="https://hetgraphics.com/" target="_blank"><button className="m-0" style={{ backgroundColor: "#FFED00" }}><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
@@ -152,7 +156,7 @@ const AboutUS = () => {
                             ))}
 
                         </Row>
-                       
+
                     </div>
                 </div>
 
