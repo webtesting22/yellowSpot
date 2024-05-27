@@ -4,7 +4,7 @@ import "./about.css"
 import hetgraphics from "./hetFinal.png"
 import khushiLogo from "./khushiLogo.png"
 import { Row, Col } from "antd";
-import logo from "../AboutUs/logo1.svg"
+import YelloSpot from "../AboutUs/yellowspotLogo.png"
 import { Link } from "react-router-dom";
 import billboard from "../Home/iconsImages/billboard.png"
 import Footer from "../Footer/Footer";
@@ -82,7 +82,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={logo} alt="yellowspot_logo" style={{ backgroundColor: "#FFED00", padding: "10px" }} data-aos="fade-up" />
+                            <img src={YelloSpot} alt="yellowspot_logo" data-aos="fade-up" />
                         </Col>
                         <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
                         <Col lg={8}>

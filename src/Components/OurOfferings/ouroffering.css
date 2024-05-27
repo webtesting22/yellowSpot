@@ -134,6 +134,7 @@ h1 {
     width: 20%;
     overflow: hidden;
     background-size: cover;
+    background-position: center;
     transition: .5s;
     background-image: url("../Home/Banners/second1.jpeg");
 }
