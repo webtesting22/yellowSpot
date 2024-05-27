@@ -424,10 +424,6 @@
     flex-direction: column;
 }
 
-.writeUpContent p {
-    text-align: center;
-    padding: 0px 20px;
-}
 
 .animated-boxes-one .writeUpContent,
 .animated-boxes-two .writeUpContent,
@@ -465,7 +461,30 @@
     width: 100%;
     height: 50vh;
 }
+.doubleImageContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.animated-boxes-five .writeUpContent p{
+   width: 70%;
+}
+.writeUpContent p{
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
 @media (max-width:600px){
+    .animated-boxes-five .writeUpContent p{
+        width: 90%;
+       
+     }
+     .writeUpContent p{
+         font-size: 12px;
+         text-align: center;
+     }
     .topTwoBoxes{
         display: flex;
         height: 30vh;

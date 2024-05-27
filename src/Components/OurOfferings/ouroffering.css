@@ -113,7 +113,7 @@ h1 {
     transition: .5s;
     height: 50vh;
     background-position: center;
-    background-image: url("../Home/Banners/1.png");
+    background-image: url("../Home/Banners/LEDFinal.png");
 }
 
 .animated-hover-boxes .animated-boxes-five {
@@ -125,8 +125,8 @@ h1 {
     overflow: hidden;
     background-size: cover;
     transition: .5s;
-    background-position: center;
-    background-image: url("../Home/Banners/gantryFinal.png");
+    /* background-position: center;
+    background-image: url("../Home/Banners/gantryFinal.png"); */
 }
 
 .animated-hover-boxes .animated-boxes-six {

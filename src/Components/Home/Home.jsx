@@ -31,6 +31,8 @@ import vector7 from "../Home/iconsImages/Vector7.svg"
 import vector8 from "../Home/iconsImages/Vector8.svg"
 import CombineLogo from "../Navbar/CombineLogo.jpg"
 import Contact from "../Home/iconsImages/ContactUs.svg"
+import img1 from "../Home/Banners/Final1.png"
+import img2 from "../Home/Banners/Final2.png"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -116,7 +118,6 @@ const Home = () => {
             <div className="image-overlay"></div>
             <div className="text-container-set">
               <div className="text-container second">
-          
                 <p>Your Art, Our Canvas</p>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
@@ -192,8 +193,19 @@ const Home = () => {
               <div className="animated-hover-boxes">
                 {/* <div className='topTwoBoxes'>  */}
                 <div className="animated-boxes-five">
+                  <div className='doubleImageContainer'>
+                    <div style={{
+                      display: "flex",
+                      zIndex: "-1",
+                      /* position: absolute; */
+                      width: "100%"
+                    }}>
+                      <img src={img1} alt="" style={{border:"2px solid black", borderBottom:"none"}}/>
+                      <img src={img2} alt="" style={{border:"2px solid black",borderBottom:"none"}}/>
+                    </div>
+                  </div>
                   <div className='writeUpContent'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    <p>Our gantries represent the latest and most premium innovation in Ahmedabad's outdoor advertising industry. Designed to advertise to both sides of traffic, these large-format, high-impact, overhead billboards inevitably capture the attention of commuters from a distance. Strategically placed in the centre of high-traffic roads and areas, at direct eye level, our gantries ensure maximum visibility and reach to a masses.</p>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -215,7 +227,7 @@ const Home = () => {
                 {/* <div className="twoslidesContainer"> */}
                 <div className='animated-boxes-six'>
                   <div className='writeUpContent'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    <p>Similar to gantries, cantilevers are overhead billboards placed right in the center of high-traffic roads. Positioned at direct eye level, our cantilevers are impossible to miss for both commuters and pedestrians.</p>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -225,7 +237,7 @@ const Home = () => {
                 </div>
                 <div className="animated-boxes-one">
                   <div className='writeUpContent'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    <p>Standing on a single pole, unipoles offer high aesthetic value and convey an elevated brand image. Our unipoles are strategically placed at direct eye level in high-traffic areas, with the sole purpose to avoid clusters and grab eyeballs</p>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -236,7 +248,7 @@ const Home = () => {
                 </div>
                 <div className="animated-boxes-two">
                   <div className='writeUpContent'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    <p>These traditional billboards come in medium to large sizes and are supported by multiple poles. Our hoardings are planned to position in a way that provides direct visibility to moving traffic, avoids clusters with other advertisements and ensures clear vision</p>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -249,7 +261,7 @@ const Home = () => {
                 <div className="twoslidesContainer"> */}
                 <div className="animated-boxes-three">
                   <div className='writeUpContent'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    <p>As pioneers in introducing Pole Kiosks to Ahmedabad, we offer these small-format billboards which are perfect for branding your products and enhancing brand recognition among a broad audience.</p>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -260,7 +272,7 @@ const Home = () => {
                 </div>
                 <div className="animated-boxes-four">
                   <div className='writeUpContent'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
+                    <p>Digital billboards are the up and coming form of outdoor media. With our established LEDs in the top clubs and premier malls of Ahmedabad, get access to premium and large audience. </p>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
