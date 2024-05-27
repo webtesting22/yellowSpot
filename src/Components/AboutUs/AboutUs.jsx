@@ -82,7 +82,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={YelloSpot} alt="yellowspot_logo" data-aos="fade-up" />
+                            <img src={YelloSpot} alt="yellowspot_logo" className="yellowSpotImg" data-aos="fade-up" />
                         </Col>
                         <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
                         <Col lg={8}>

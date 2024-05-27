@@ -8,12 +8,17 @@
 
 .parent-Company-info img {
     width: 100%;
-    padding: 2rem;
+    /* padding: 2rem; */
     /* aspect-ratio: 3/2;
     object-fit: contain; */
     border-radius: 20px;
     display: flex;
     /* margin: auto; */
+}
+.HET_IMG,
+.KhushiImg,
+.yellowSpotImg{
+    padding: 2rem;
 }
 
 .parent-comapny-content h4 {
@@ -198,6 +203,11 @@
    height: 300px;
 } */
 @media (max-width:900px) {
+    .HET_IMG,
+.KhushiImg,
+.yellowSpotImg{
+    padding: 1rem;
+}
     .parent-comapny-content h4 {
         font-size: 40px;
         color: white;
@@ -209,7 +219,7 @@
 .parent-Company-info img {
     width: 70%;
     margin: auto;
-    padding: 1rem;
+    /* padding: 1rem; */
     /* aspect-ratio: 3/2;
     object-fit: contain; */
     border-radius: 20px;

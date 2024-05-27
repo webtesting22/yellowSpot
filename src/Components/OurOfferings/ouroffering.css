@@ -112,8 +112,8 @@ h1 {
     background-size: cover;
     transition: .5s;
     height: 50vh;
-    /* background-position: center; */
-    background-image: url("../Home/Banners/polekiosk.jpeg");
+    background-position: center;
+    background-image: url("../Home/Banners/1.png");
 }
 
 .animated-hover-boxes .animated-boxes-five {
@@ -126,7 +126,7 @@ h1 {
     background-size: cover;
     transition: .5s;
     background-position: center;
-    background-image: url("../Home/Banners/gantry.jpeg");
+    background-image: url("../Home/Banners/gantryFinal.png");
 }
 
 .animated-hover-boxes .animated-boxes-six {
@@ -136,7 +136,7 @@ h1 {
     background-size: cover;
     background-position: center;
     transition: .5s;
-    background-image: url("../Home/Banners/second1.jpeg");
+    background-image: url("../Home/Banners/cantilever.png");
 }
 
 .our-products .back-overlay {

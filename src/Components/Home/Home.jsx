@@ -116,10 +116,7 @@ const Home = () => {
             <div className="image-overlay"></div>
             <div className="text-container-set">
               <div className="text-container second">
-                {/* <div style={{ display: "flex", justifyContent: "center", marginBottom: "10px" }}>
-                  <img src={Combinelogo} style={{ width: "250px" }} alt="" />
-
-                </div> */}
+          
                 <p>Your Art, Our Canvas</p>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
