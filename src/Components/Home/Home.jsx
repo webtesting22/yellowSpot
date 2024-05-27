@@ -140,8 +140,8 @@ const Home = () => {
                   <h1><span><span style={{ color: "#FFED00" }}>industry</span> experience</span></h1>
                   <div className="slite-padding"></div>
                   <div className="content-container">
-                    <Row gutter={[16, 16]}>
-                      <Col lg={6} md={12} >
+                    <Row gutter={[16, 16]} style={{display:"flex",justifyContent:"center"}}>
+                      <Col lg={4} md={12} >
                         <div className='contup'>
                           <CountUp
                             end={400}
@@ -151,7 +151,7 @@ const Home = () => {
                           <h3>Premium Outdoor Sites in Ahmedabad</h3>
                         </div>
                       </Col>
-                      <Col lg={6} md={12} >
+                      <Col lg={4} md={12} >
                         <div className='contup'>
                           <CountUp
                             end={500}
@@ -161,7 +161,7 @@ const Home = () => {
                           <h3>Daily Impressions</h3>
                         </div>
                       </Col>
-                      <Col lg={6} md={12} >
+                      <Col lg={4} md={12} >
                         <div className='contup'>
                           <CountUp
                             end={1000}
@@ -171,7 +171,7 @@ const Home = () => {
                           <h3>Clients</h3>
                         </div>
                       </Col>
-                      <Col lg={6} md={12} >
+                      <Col lg={4} md={12} >
                         <div className='contup'>
                           <CountUp
                             end={25}
@@ -179,6 +179,16 @@ const Home = () => {
                             suffix="+"
                           />
                           <h3>Years of Industry Experience </h3>
+                        </div>
+                      </Col>
+                      <Col lg={4} md={12} >
+                        <div className='contup'>
+                          <CountUp
+                            end={99}
+                            duration={20}
+                            suffix="%"
+                          />
+                          <h3> Backlit Media</h3>
                         </div>
                       </Col>
                     </Row>
