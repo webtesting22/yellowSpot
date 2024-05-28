@@ -36,7 +36,7 @@ const OurClientele = () => {
                                     <div className="maincard">
                                         <div className="flip-card">
                                             <div className="flip-card-inner">
-                                                <div className="flip-card-front">
+                                                <div className="flip-card-front" style={{backgroundColor:`${item.Backcolor}`}}>
                                                     <div className="clientImgContainer">
                                                         <img src={item.clientImg} alt="" />
                                                     </div>

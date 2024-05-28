@@ -1,72 +1,80 @@
-import Kinetic_ from "../OurClients/AgencyLogos/Kinetic_.svg"
-import Posterscope from "../OurClients/AgencyLogos/Posterscope.png"
+import Kinetic_ from "../OurClients/AgencyLogos/kineticLogo.jfif"
+import Posterscope from "../OurClients/AgencyLogos/posterscope.svg"
 import madison from "../OurClients/AgencyLogos/madison.png"
 import Rapport from "../OurClients/AgencyLogos/Rapport.svg"
 import OAP from "../OurClients/AgencyLogos/OAP.png"
 import Laqshya from "../OurClients/AgencyLogos/Laqshya.png"
 import coralMedia from "../OurClients/AgencyLogos/coralMedia.webp"
-import connectooh from "../OurClients/AgencyLogos/connectooh.png"
+import connectooh from "../OurClients/AgencyLogos/ConnectoohLogo.avif"
 
 const ClientDataLogos = [
     {
         clientImg: Kinetic_,
         clientWebLink: "https://kineticww.com/",
-        ClientName: "Kinetc/Group"
+        ClientName: "Kinetc/Group",
+        Backcolor:"white"
     },
     {
         clientImg: Posterscope,
         clientWebLink: "https://www.posterscope.com/",
-        ClientName: "Posterscope"
+        ClientName: "Posterscope",
+        Backcolor:"white"
     },
     {
         clientImg: madison,
         clientWebLink: "https://www.madisonindia.com/business-unit/MOMS",
-        ClientName: "MOMS/Madison"
+        ClientName: "MOMS/Madison",
+        Backcolor:"white"
     },
     {
         clientImg: Rapport,
         clientWebLink: "https://rapportww.com",
-        ClientName: "Rapport"
+        ClientName: "Rapport",
+        Backcolor:"white"
     },
     {
         clientImg: OAP,
         clientWebLink: "http://www.oapindia.com/",
-        ClientName: "OAP/Outdoor Advertsing Professionals"
+        ClientName: "OAP/Outdoor Advertsing Professionals",
+        Backcolor:"white"
     },
     {
         clientImg: Laqshya,
         clientWebLink: "https://www.laqshyagroup.com/ooh.html",
-        ClientName: "Laqshya Media Group"
+        ClientName: "Laqshya Media Group",
+        Backcolor:"white"
     },
     {
         clientImg: coralMedia,
         clientWebLink: "https://coralmedia.co.in/",
-        ClientName: "Coral Media"
+        ClientName: "Coral Media",
+        Backcolor:"white"
     },
     {
         clientImg: connectooh,
         clientWebLink: "https://connectww.net/service-details/Mg==",
-        ClientName: "Connect OOH"
+        ClientName: "Connect OOH",
+        Backcolor:"white"
     },
 ]
 import Vivo from "../OurClients/DirectClients/vivoLogo.png"
 import Oppo from "../OurClients/DirectClients/oppoLogo.png"
 import wonder_masala from "../OurClients/DirectClients/wonder_masala.svg"
 import DawaatRice from "../OurClients/DirectClients/DawaatRice.png"
-import JioMart from "../OurClients/DirectClients/JioMart.svg"
+import JioMart from "../OurClients/DirectClients/jiomart.webp"
 import Palladium from "../OurClients/DirectClients/Palladium.png"
 import Tiecon from "../OurClients/DirectClients/Tiecon.jpg"
 import Realme from "../OurClients/DirectClients/Realme.jpg"
-import Haier from "../OurClients/DirectClients/Haier.webp"
+import Haier from "../OurClients/DirectClients/HaierLogo.png"
 import Cera from "../OurClients/DirectClients/Cera.gif"
 import WetNJoy from "../OurClients/DirectClients/WetNJoy.webp"
 import Imagicaa from "../OurClients/DirectClients/Imagicaa.svg"
 import GIHED from "../OurClients/DirectClients/GIHED.png"
 import LIBFExpo from "../OurClients/DirectClients/LIBFExpo.svg"
-import BankofBaroda from "../OurClients/DirectClients/BankofBaroda.svg"
+import BankofBaroda from "../OurClients/DirectClients/BOBLogo.png"
 import ADCBank from "../OurClients/DirectClients/ADCBank.jpg"
 import GSCLogo from "../OurClients/DirectClients/GSCLogo.jpg"
-import KalupurBank from "../OurClients/DirectClients/KalupurBank.jpg"
+import KalupurBank from "../OurClients/DirectClients/kalupurBank.jfif"
 import JadBlue from "../OurClients/DirectClients/JadBlue.webp"
 import Asopalav from "../OurClients/DirectClients/Asopalav.webp"
 import JustInTime from "../OurClients/DirectClients/JustInTime.avif"
@@ -80,7 +88,7 @@ import ParulUniversity from "../OurClients/DirectClients/ParulUniversity.webp"
 import AhmedabadUni from "../OurClients/DirectClients/AhmedabadUni.webp"
 import SilverOakCollege from "../OurClients/DirectClients/SilverOakCollege.webp"
 import Physicswallah from "../OurClients/DirectClients/Physicswallah.webp"
-import PDEU from "../OurClients/DirectClients/PDEU.png"
+import PDEU from "../OurClients/DirectClients/PDEULogo.png"
 import EDII from "../OurClients/DirectClients/EDII.webp"
 import ShantAsiatcSchool from "../OurClients/DirectClients/ShantAsiatcSchool.png"
 import AppleGlobalSchool from "../OurClients/DirectClients/AppleGlobal.jpg"
@@ -104,7 +112,7 @@ import AshimaGroup from "../OurClients/DirectClients/AshimaGroup.png"
 import ConsteraRealty from "../OurClients/DirectClients/ConsteraRealty.png"
 import ArvindLimited from "../OurClients/DirectClients/ArvindLimited.svg"
 import ShaktInfrastructure from "../OurClients/DirectClients/ShaktInfrastructure.jfif"
-import KavishaGroup from "../OurClients/DirectClients/KavishaGroup.png"
+import KavishaGroup from "../OurClients/DirectClients/KavishaGrp.png"
 import ShaligramGroup from "../OurClients/DirectClients/ShaligramGroup.webp"
 import ShivamBuilders from "../OurClients/DirectClients/ShivamBuilders.png"
 import UniqueInfraspace from "../OurClients/DirectClients/UniqueInfraspace.webp"
@@ -140,7 +148,7 @@ const DirectClient = [
         clientImg: JioMart,
         clientWebLink: "https://www.jiomart.com/",
         ClientName: "Jio Mart",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
 
     },
     {
@@ -165,7 +173,7 @@ const DirectClient = [
         clientImg: Haier,
         clientWebLink: "https://www.haier.com/in/",
         ClientName: "Haier",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: Cera,
@@ -183,7 +191,7 @@ const DirectClient = [
         clientImg: Imagicaa,
         clientWebLink: "https://www.imagicaaworld.com/",
         ClientName: "Imagicaa",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: GIHED,
@@ -201,7 +209,7 @@ const DirectClient = [
         clientImg: BankofBaroda,
         clientWebLink: "https://www.bankofbaroda.in/",
         ClientName: "Bank of Baroda",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: ADCBank,
@@ -261,7 +269,7 @@ const DirectClient = [
         clientImg: KarnavatUniversity,
         clientWebLink: "https://karnavatiuniversity.edu.in/",
         ClientName: "Karnavat University",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: Allen,
@@ -279,13 +287,13 @@ const DirectClient = [
         clientImg: ParulUniversity,
         clientWebLink: "https://paruluniversity.ac.in/",
         ClientName: "Parul University",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: AhmedabadUni,
         clientWebLink: "https://ahduni.edu.in/",
         ClientName: "Ahmedabad University",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: SilverOakCollege,
@@ -303,13 +311,13 @@ const DirectClient = [
         clientImg: PDEU,
         clientWebLink: "https://www.pdpu.ac.in/",
         ClientName: "PDEU",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: EDII,
         clientWebLink: "https://www.ediindia.org/",
         ClientName: "EDII",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: ShantAsiatcSchool,
@@ -321,7 +329,7 @@ const DirectClient = [
         clientImg: AppleGlobalSchool,
         clientWebLink: "https://appleglobal.in/",
         ClientName: "Apple Global School",
-        // Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: AnandNiketan,
@@ -333,7 +341,7 @@ const DirectClient = [
         clientImg: GayanJyotInsttute,
         clientWebLink: "https://www.gyanjyot.co.in/",
         ClientName: "Gayan Jyot Institute",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: AbzoMotors,
@@ -393,7 +401,7 @@ const DirectClient = [
         clientImg: JivrajMehtaHealth,
         clientWebLink: "https://jivrajhealthcare.org/",
         ClientName: "Jivraj Mehta Health",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: Zinzuwadia,
@@ -417,7 +425,7 @@ const DirectClient = [
         clientImg: SavvyGroup,
         clientWebLink: "https://www.savvygroup.in/",
         ClientName: "Savvy Group",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: AshimaGroup,
@@ -429,7 +437,7 @@ const DirectClient = [
         clientImg: ConsteraRealty,
         clientWebLink: "https://consterarealty.com/",
         ClientName: "Constera Realty",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: ArvindLimited,
@@ -447,7 +455,7 @@ const DirectClient = [
         clientImg: KavishaGroup,
         clientWebLink: "https://kavishacorp.com/",
         ClientName: "Kavisha Group",
-        Backcolor:"#FFEC00"
+        Backcolor:"white"
     },
     {
         clientImg: ShaligramGroup,
