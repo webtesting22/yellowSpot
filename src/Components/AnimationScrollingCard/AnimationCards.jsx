@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./animation.css"
 import ResearchBasePlanning from "./21.png"
 import CampaignMonitoring from "./22.png"
-import CreativeDesigns from "./23.png"
+import CreativeDesigns from "./evaluation.png"
 // import MediaBuying from "./24.png"
 import Campion from "./25.png"
 import MediaBuying from "./26.png"
@@ -26,7 +26,7 @@ const AnimatedCards = () => {
             cardDescription: "Our aim is not to just sell our media but to maximise your target audience reach. With an extensive understanding of the target audience and consumer behaviour, our team guides you to create the ideal campaign for maximum impressions by conducting in-depth market & product research."
         },
         {
-            cardImage: CampaignMonitoring,
+            cardImage: CreativeDesigns,
             cardHeading: "Creative Designs &",
             cardNormalHeading: " Seamless Execution",
             cardDescription: "Whether it be 3D-backed designs, moving elements, or cutouts, we have got it all! Just come to us with your product and let us help you bring the best creative designs to your audiences."
