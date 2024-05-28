@@ -312,7 +312,7 @@ const Inventory = () => {
                                                     onClick={() => handleLocationClick(item.lat, item.lng)}
                                                 >
 
-                                                    <p style={{ margin: "0px" }}>
+                                                    <p style={{ margin: "0px",color: "white",fontFamily: '"Barlow Condensed", sans-serif' }}>
                                                         <img src={locationIcon} alt="" style={{ color: "white" }} />
                                                         &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
                                                     </p>
@@ -326,7 +326,7 @@ const Inventory = () => {
                                             display: "flex", justifyContent: "space-between",
                                             alignItems: "center"
                                         }}>
-                                            <div>
+                                            <div style={{fontFamily: '"Barlow Condensed", sans-serif'}}>
                                                 Dimensions
                                             </div>
                                             <div className="Content-info">
@@ -335,7 +335,7 @@ const Inventory = () => {
                                         </div>
 
                                     </div>
-                                    <p style={{ margin: "5px 0px" }}>
+                                    <p style={{ margin: "5px 0px",fontFamily: '"Barlow Condensed", sans-serif' }}>
                                         Illumination: {item.Illu ?
                                             (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
                                             : "No light"
@@ -364,7 +364,7 @@ const Inventory = () => {
                                                             href="#"
                                                             onClick={() => handleLocationClick(item.lat, item.lng)}
                                                         >
-                                                            <p style={{ margin: "0px", color: "white" }}>
+                                                            <p style={{ margin: "0px", color: "white",fontFamily: '"Barlow Condensed", sans-serif' }}>
                                                                 <img src={locationIcon} alt="" style={{ color: "white" }} />
                                                                 &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
                                                             </p>

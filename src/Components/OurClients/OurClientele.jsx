@@ -20,11 +20,11 @@ const OurClientele = () => {
             <br /> */}
 
             <section>
-                <AnimatedCoverPage/>
+                <AnimatedCoverPage />
                 <br /><br />
                 <div className="container">
 
-                    <SwiperHeadingIcon headingText="OUR CLIENTELE"/>
+                    <SwiperHeadingIcon headingText="OUR AGENCY CLIENTELE" />
                 </div>
 
                 <br /><br />
@@ -60,37 +60,40 @@ const OurClientele = () => {
                 </div>
                 <br /><br />
                 <div className="container">
-                        <SwiperHeadingIcon headingText="Our Direct Clientele"/>
+                    <SwiperHeadingIcon headingText="OUR CONSUMER CLIENTELE" />
                 </div>
 
                 <br /><br />
                 <div className="container DirectLogo">
                     <div className="row">
-                        {DirectClient.map((item, index) => (
-                            <div className="col-lg-2 col-md-4 col-sm-8" lg={6} md={8} key={index}>
-                                <a href={item.clientWebLink} target="_blank" className="card-link">
-                                    <div className="maincard">
-                                        <div className="flip-card">
-                                            <div className="flip-card-inner">
-                                                <div className="flip-card-front">
-                                                    <div className="clientImgContainer">
-                                                        <img src={item.clientImg} alt="" />
+                        {DirectClient
+                            .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
+                            .map((item, index) => (
+                                <div className="col-lg-2 col-md-4 col-sm-8" lg={6} md={8} key={index}>
+                                    <a href={item.clientWebLink} target="_blank" className="card-link">
+                                        <div className="maincard">
+                                            <div className="flip-card">
+                                                <div className="flip-card-inner">
+                                                    <div className="flip-card-front">
+                                                        <div className="clientImgContainer">
+                                                            <img src={item.clientImg} alt="" />
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="flip-card-back">
-                                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                                                        <i class='bx bx-link' ></i>
-                                                        <div style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
-                                                            {item.ClientName}
+                                                    <div className="flip-card-back">
+                                                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+                                                            <i className='bx bx-link'></i>
+                                                            <div style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
+                                                                {item.ClientName}
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </div>
-                        ))}
+                                    </a>
+                                </div>
+                            ))}
+
 
                     </div>
                 </div>
