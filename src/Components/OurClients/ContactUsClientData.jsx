@@ -140,122 +140,146 @@ const DirectClient = [
         clientImg: JioMart,
         clientWebLink: "https://www.jiomart.com/",
         ClientName: "Jio Mart",
+        Backcolor:"#FFEC00"
 
     },
     {
         clientImg: Palladium,
         clientWebLink: "https://www.palladiumahmedabad.com/",
-        ClientName: "Palladium"
+        ClientName: "Palladium",
+        Backcolor:"white"
     },
     {
         clientImg: Tiecon,
         clientWebLink: "https://tiecon.org/",
-        ClientName: "Tiecon"
+        ClientName: "Tiecon",
+        Backcolor:"white"
     },
     {
         clientImg: Realme,
         clientWebLink: "https://www.realme.com/in/",
-        ClientName: "Realme"
+        ClientName: "Realme",
+        Backcolor:"white"
     },
     {
         clientImg: Haier,
         clientWebLink: "https://www.haier.com/in/",
-        ClientName: "Realme"
+        ClientName: "Haier",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: Cera,
         clientWebLink: "https://www.cera-india.com/",
-        ClientName: "Cera"
+        ClientName: "Cera",
+        Backcolor:"white"
     },
     {
         clientImg: WetNJoy,
         clientWebLink: "https://www.wetnjoy.in/",
-        ClientName: "Wet N Joy"
+        ClientName: "Wet N Joy",
+        Backcolor:"white"
     },
     {
         clientImg: Imagicaa,
         clientWebLink: "https://www.imagicaaworld.com/",
-        ClientName: "Imagicaa"
+        ClientName: "Imagicaa",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: GIHED,
         clientWebLink: "https://credaiahmedabad.org/",
-        ClientName: "GIHED"
+        ClientName: "GIHED",
+        Backcolor:"white"
     },
     {
         clientImg: LIBFExpo,
         clientWebLink: "https://euroeximbank.com/media-events/libf-expo-2024",
-        ClientName: "LIBF Expo"
+        ClientName: "LIBF Expo",
+        Backcolor:"white"
     },
     {
         clientImg: BankofBaroda,
         clientWebLink: "https://www.bankofbaroda.in/",
-        ClientName: "Bank of Baroda"
+        ClientName: "Bank of Baroda",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: ADCBank,
         clientWebLink: "https://adcbank.in/",
-        ClientName: "ADC Bank"
+        ClientName: "ADC Bank",
+        Backcolor:"white"
     },
     {
         clientImg: GSCLogo,
         clientWebLink: "https://gscbank.co.in/",
-        ClientName: "GSC"
+        ClientName: "GSC",
+        Backcolor:"white"
     },
     {
         clientImg: KalupurBank,
         clientWebLink: "https://www.kalupurbank.com/",
-        ClientName: "Kalupur Bank"
+        ClientName: "Kalupur Bank",
+        Backcolor:"white"
     },
     {
         clientImg: JadBlue,
         clientWebLink: "https://jadeblue.com/",
-        ClientName: "JadBlue"
+        ClientName: "JadBlue",
+        Backcolor:"white"
     },
     {
         clientImg: Asopalav,
         clientWebLink: "https://www.asopalav.com/",
-        ClientName: "Asopalav"
+        ClientName: "Asopalav",
+        Backcolor:"white"
     },
     {
         clientImg: JustInTime,
         clientWebLink: "https://justintime.in/",
-        ClientName: "Just In Time"
+        ClientName: "Just In Time",
+        Backcolor:"white"
     },
     {
         clientImg: TitanEyePlus,
         clientWebLink: "https://www.titaneyeplus.com/",
-        ClientName: "Titan Eye Plus"
+        ClientName: "Titan Eye Plus",
+        Backcolor:"white"
     },
     {
         clientImg: RKumar,
         clientWebLink: "https://www.rkumar.in/",
-        ClientName: "R Kumar"
+        ClientName: "R Kumar",
+        Backcolor:"white"
     },
     {
         clientImg: SalEducaton,
         clientWebLink: "https://www.sal.edu.in/",
-        ClientName: "Sal Educaton"
+        ClientName: "Sal Educaton",
+        Backcolor:"white"
     },
     {
         clientImg: KarnavatUniversity,
         clientWebLink: "https://karnavatiuniversity.edu.in/",
-        ClientName: "Karnavat University"
+        ClientName: "Karnavat University",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: Allen,
         clientWebLink: "https://www.allen.ac.in/",
-        ClientName: "Allen"
+        ClientName: "Allen",
+        Backcolor:"white"
     },
     {
         clientImg: Unacademy,
         clientWebLink: "https://unacademy.com/",
-        ClientName: "Unacademy"
+        ClientName: "Unacademy",
+        Backcolor:"white"
     },
     {
         clientImg: ParulUniversity,
         clientWebLink: "https://paruluniversity.ac.in/",
-        ClientName: "Parul University"
+        ClientName: "Parul University",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: AhmedabadUni,
@@ -266,42 +290,50 @@ const DirectClient = [
     {
         clientImg: SilverOakCollege,
         clientWebLink: "https://silveroakuni.ac.in/",
-        ClientName: "Silver Oak College"
+        ClientName: "Silver Oak College",
+        Backcolor:"white"
     },
     {
         clientImg: Physicswallah,
         clientWebLink: "https://www.pw.live/",
-        ClientName: "Physics Wallah"
+        ClientName: "Physics Wallah",
+        Backcolor:"white"
     },
     {
         clientImg: PDEU,
         clientWebLink: "https://www.pdpu.ac.in/",
-        ClientName: "PDEU"
+        ClientName: "PDEU",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: EDII,
         clientWebLink: "https://www.ediindia.org/",
-        ClientName: "EDII"
+        ClientName: "EDII",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: ShantAsiatcSchool,
         clientWebLink: "https://shantiasiaticahmedabad.com/",
-        ClientName: "Shant Asiatic School"
+        ClientName: "Shant Asiatic School",
+        Backcolor:"white"
     },
     {
         clientImg: AppleGlobalSchool,
         clientWebLink: "https://appleglobal.in/",
-        ClientName: "Apple Global School"
+        ClientName: "Apple Global School",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: AnandNiketan,
         clientWebLink: "https://anandniketan.org/",
-        ClientName: "Anand Niketan"
+        ClientName: "Anand Niketan",
+        Backcolor:"white"
     },
     {
         clientImg: GayanJyotInsttute,
         clientWebLink: "https://www.gyanjyot.co.in/",
-        ClientName: "Gayan Jyot Institute"
+        ClientName: "Gayan Jyot Institute",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: AbzoMotors,
@@ -312,117 +344,140 @@ const DirectClient = [
     {
         clientImg: OnidaAC,
         clientWebLink: "https://www.onida.com/air-conditioner",
-        ClientName: "Onida AC"
+        ClientName: "Onida AC",
+        Backcolor:"white"
     },
     {
         clientImg: ACCKO,
         clientWebLink: "https://www.acko.com/",
-        ClientName: "ACCKO"
+        ClientName: "ACCKO",
+        Backcolor:"white"
     },
     {
         clientImg: GMSwitch,
         clientWebLink: "https://www.gmmodular.com/",
-        ClientName: "GM Switch"
+        ClientName: "GM Switch",
+        Backcolor:"white"
     },
     {
         clientImg: Fybros,
         clientWebLink: "https://www.fybros.com/",
-        ClientName: "Fybros"
+        ClientName: "Fybros",
+        Backcolor:"white"
     },
     {
         clientImg: DivyaBhaskar,
         clientWebLink: "https://www.divyabhaskar.co.in/",
-        ClientName: "Divya Bhaskar"
+        ClientName: "Divya Bhaskar",
+        Backcolor:"white"
     },
     {
         clientImg: GodTMT,
         clientWebLink: "https://www.godtmt.com/",
-        ClientName: "God TMT"
+        ClientName: "God TMT",
+        Backcolor:"white"
     },
     {
         clientImg: WingsHospital,
         clientWebLink: "https://www.wingshospitals.com/",
-        ClientName: "Wings Hospital"
+        ClientName: "Wings Hospital",
+        Backcolor:"white"
     },
     {
         clientImg: NeubergSupratech,
         clientWebLink: "https://neubergsupratech.com/",
-        ClientName: "Neuberg Supratech"
+        ClientName: "Neuberg Supratech",
+        Backcolor:"white"
     },
     {
         clientImg: JivrajMehtaHealth,
         clientWebLink: "https://jivrajhealthcare.org/",
-        ClientName: "Jivraj Mehta Health"
+        ClientName: "Jivraj Mehta Health",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: Zinzuwadia,
         clientWebLink: "https://www.zinzuwadiajewellers.com/",
-        ClientName: "Zinzuwadia"
+        ClientName: "Zinzuwadia",
+        Backcolor:"white"
     },
     {
         clientImg: KalamandirJewelers,
         clientWebLink: "https://www.kalamandirjewellers.com/",
-        ClientName: "Kalamandir Jewelers"
+        ClientName: "Kalamandir Jewelers",
+        Backcolor:"white"
     },
     {
         clientImg: SwagatGroup,
         clientWebLink: "https://www.swagatgroup.in/",
-        ClientName: "Swagat Group"
+        ClientName: "Swagat Group",
+        Backcolor:"white"
     },
     {
         clientImg: SavvyGroup,
         clientWebLink: "https://www.savvygroup.in/",
-        ClientName: "Savvy Group"
+        ClientName: "Savvy Group",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: AshimaGroup,
         clientWebLink: "https://ashima.in/",
-        ClientName: "Ashima Group"
+        ClientName: "Ashima Group",
+        Backcolor:"white"
     },
     {
         clientImg: ConsteraRealty,
         clientWebLink: "https://consterarealty.com/",
-        ClientName: "Constera Realty"
+        ClientName: "Constera Realty",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: ArvindLimited,
         clientWebLink: "https://www.arvind.com/",
-        ClientName: "Arvind Limited"
+        ClientName: "Arvind Limited",
+        Backcolor:"white"
     },
     {
         clientImg: ShaktInfrastructure,
         clientWebLink: "https://shaktiinfrastructure.in/",
-        ClientName: "Shakt Infrastructure"
+        ClientName: "Shakt Infrastructure",
+        Backcolor:"white"
     },
     {
         clientImg: KavishaGroup,
         clientWebLink: "https://kavishacorp.com/",
-        ClientName: "Kavisha Group"
+        ClientName: "Kavisha Group",
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: ShaligramGroup,
         clientWebLink: "https://www.shaligramgroup.in/",
-        ClientName: "Shaligram Group"
+        ClientName: "Shaligram Group",
+        Backcolor:"white"
     },
     {
         clientImg: ShivamBuilders,
         clientWebLink: "https://www.shivambuilders.in/",
-        ClientName: "Shivam Builders"
+        ClientName: "Shivam Builders",
+        Backcolor:"white"
     },
     {
         clientImg: UniqueInfraspace,
         clientWebLink: "https://uniqueinfraspace.com/",
-        ClientName: "Unique Infraspace"
+        ClientName: "Unique Infraspace",
+        Backcolor:"white"
     },
     {
         clientImg: RitBuildspace,
         clientWebLink: "",
-        ClientName: "Rit Buildspace"
+        ClientName: "Rit Buildspace",
+        Backcolor:"white"
     },
     {
         clientImg: RaviDesaiSignature,
         clientWebLink: "https://ravidesai.co/",
-        ClientName: "Ravi Desai Signature"
+        ClientName: "Ravi Desai Signature",
+        Backcolor:"white"
     }
     
 
