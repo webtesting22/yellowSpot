@@ -92,7 +92,16 @@
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title{
     color: white;
 }
-
+:where(.css-j9bb5n).ant-modal .ant-modal-content{
+    background-color: black;
+}
+:where(.css-j9bb5n).ant-modal .ant-modal-title{
+    background-color: black;
+    color: white;
+}
+:where(.css-j9bb5n).ant-modal .ant-modal-close{
+    color: white;
+}
 .pc-filter-btn h6{
     color: white;
     font-size: 30px;
