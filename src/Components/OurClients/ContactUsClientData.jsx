@@ -110,31 +110,37 @@ import ShivamBuilders from "../OurClients/DirectClients/ShivamBuilders.png"
 import UniqueInfraspace from "../OurClients/DirectClients/UniqueInfraspace.webp"
 import RitBuildspace from "../OurClients/DirectClients/RitBuildspace.jpg"
 import RaviDesaiSignature from "../OurClients/DirectClients/RaviDesaiSignature.png"
+import { color } from "framer-motion"
 const DirectClient = [
     {
         clientImg: Vivo,
         clientWebLink: "https://www.vivo.com/in",
-        ClientName: "Vivo"
+        ClientName: "Vivo",
+        Backcolor:"white"
     },
     {
         clientImg: Oppo,
         clientWebLink: "https://www.oppo.com/",
-        ClientName: "Oppo"
+        ClientName: "Oppo",
+        Backcolor:"white"
     },
     {
         clientImg: wonder_masala,
         clientWebLink: "https://wondermasala.com/",
-        ClientName: "wonder masala"
+        ClientName: "wonder masala",
+        Backcolor:"white"
     },
     {
         clientImg: DawaatRice,
         clientWebLink: "https://www.daawat.com/",
-        ClientName: "Dawaat Rice "
+        ClientName: "Dawaat Rice ",
+        Backcolor:"white"
     },
     {
         clientImg: JioMart,
         clientWebLink: "https://www.jiomart.com/",
-        ClientName: "Jio Mart"
+        ClientName: "Jio Mart",
+
     },
     {
         clientImg: Palladium,
@@ -254,7 +260,8 @@ const DirectClient = [
     {
         clientImg: AhmedabadUni,
         clientWebLink: "https://ahduni.edu.in/",
-        ClientName: "Ahmedabad University"
+        ClientName: "Ahmedabad University",
+        Backcolor:"yellow"
     },
     {
         clientImg: SilverOakCollege,
@@ -299,7 +306,8 @@ const DirectClient = [
     {
         clientImg: AbzoMotors,
         clientWebLink: "https://abzomotors.com/",
-        ClientName: "Abzo Motors"
+        ClientName: "Abzo Motors",
+        Backcolor:"white"
     },
     {
         clientImg: OnidaAC,
