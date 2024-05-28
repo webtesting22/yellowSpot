@@ -3,13 +3,15 @@
     width: 100%;
     flex-direction: column;
 }
-.card-image-container{
+
+.card-image-container {
     overflow: hidden;
     width: 100%;
     height: 100%;
     border-radius: 5px;
 }
-.card-image-container img{
+
+.card-image-container img {
     width: 100%;
     transform: scale(1.1);
     aspect-ratio: 3/2;
@@ -18,119 +20,145 @@
     /* object-fit: contain; */
 
 }
-.inventry-card-restucture a{
+
+.inventry-card-restucture a {
     color: white;
 }
-.inventry-card-restucture a:hover{
+
+.inventry-card-restucture a:hover {
     color: rgb(255, 237, 0);
 }
-.Content-info{
+
+.Content-info {
     display: flex;
     justify-content: center;
     /* width: 100%; */
     height: 115px;
     /* padding: 10px; */
 }
-.complete-card-design{
+
+.complete-card-design {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color:rgb(49, 51, 53) ;
+    background-color: rgb(49, 51, 53);
     color: white;
 }
 
 
-.location-content{
+.location-content {
     width: 100%;
 }
-.complete-card-design:hover{
+
+.complete-card-design:hover {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color:rgb(49, 51, 53) ;
-    color: rgb(255, 237, 0);
-}
-.complete-card-design:hover a{
+    background-color: rgb(49, 51, 53);
     color: rgb(255, 237, 0);
 }
 
-:where(.css-1r287do).ant-modal .ant-modal-content{
+.complete-card-design:hover a {
+    color: rgb(255, 237, 0);
+}
+
+:where(.css-1r287do).ant-modal .ant-modal-content {
     background-color: black;
 }
-:where(.css-17seli4).ant-modal .ant-modal-content{
+
+:where(.css-17seli4).ant-modal .ant-modal-content {
     background-color: black;
 }
-:where(.css-17seli4).ant-modal .ant-modal-title{
+
+:where(.css-17seli4).ant-modal .ant-modal-title {
     background-color: black;
 }
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-content{
+
+:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-content {
     background-color: black;
 }
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title{
-    background-color: black;
-    color: white;
-}
-:where(.css-17seli4).ant-modal .ant-modal-close-x{
-    color: white;
-}
-:where(.css-17seli4).ant-modal .ant-modal-title{
-    color: white;
-}
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close-x{
-    color: white;
-}
-:where(.css-1r287do).ant-modal .ant-modal-title{
+
+:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title {
     background-color: black;
     color: white;
 }
-:where(.css-1r287do).ant-modal .ant-modal-close-x{
+
+:where(.css-17seli4).ant-modal .ant-modal-close-x {
     color: white;
 }
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close:hover{
+
+:where(.css-17seli4).ant-modal .ant-modal-title {
     color: white;
 }
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title{
+
+:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close-x {
     color: white;
 }
-:where(.css-j9bb5n).ant-modal .ant-modal-content{
+
+:where(.css-1r287do).ant-modal .ant-modal-title {
+    background-color: black;
+    color: white;
+}
+
+:where(.css-1r287do).ant-modal .ant-modal-close-x {
+    color: white;
+}
+
+:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close:hover {
+    color: white;
+}
+
+:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title {
+    color: white;
+}
+
+:where(.css-j9bb5n).ant-modal .ant-modal-content {
     background-color: black;
 }
-:where(.css-j9bb5n).ant-modal .ant-modal-title{
+
+:where(.css-j9bb5n).ant-modal .ant-modal-title {
     background-color: black;
     color: white;
 }
-:where(.css-j9bb5n).ant-modal .ant-modal-close{
+
+:where(.css-j9bb5n).ant-modal .ant-modal-close {
     color: white;
 }
-.pc-filter-btn h6{
+
+.pc-filter-btn h6 {
     color: white;
     font-size: 30px;
     margin: 0px;
     margin-left: 20px;
 }
-.pc-filter-btn{
+
+.pc-filter-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 /* .location-details{
     height: 30vh;
     
 } */
-@media (max-width:769px){
-    .pc-filter-btn{
+@media (max-width:769px) {
+    .pc-filter-btn {
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
     }
 }
-.ant-modal-body{
+
+.ant-modal-body {
     height: 80vh;
     overflow: auto;
 }
-.all-btn-stylings{
+
+.all-btn-stylings {
     border: none;
+    font-family: "Barlow Condensed", sans-serif;
     padding: 7px 20px;
     border-radius: 5px;
     background-color: #FFED00;

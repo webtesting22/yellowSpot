@@ -15,9 +15,10 @@
     display: flex;
     /* margin: auto; */
 }
+
 .HET_IMG,
 .KhushiImg,
-.yellowSpotImg{
+.yellowSpotImg {
     padding: 2rem;
 }
 
@@ -136,7 +137,8 @@
 .founder-info h4 span {
     color: #FFED00;
 }
-.co-founder-section p{
+
+.co-founder-section p {
     margin-top: 10px;
     margin-bottom: 0px;
     color: rgb(198, 198, 198);
@@ -161,6 +163,7 @@
     margin: 0px 10px;
     cursor: pointer;
 }
+
 .founder-info:hover .socials i {
     font-size: 20px;
     /* width: 300px; */
@@ -170,10 +173,11 @@
 }
 
 
-.header-part{
+.header-part {
     display: flex;
     justify-content: space-between;
 }
+
 .founder-info {
     padding: 20px 20px;
     margin-bottom: 10px;
@@ -182,12 +186,12 @@
     border-radius: 10px;
     display: flex;
     /* justify-content: space-between; */
-   flex-direction: column;
+    flex-direction: column;
 
 }
 
 .KhushiImg,
-.HET_IMG{
+.HET_IMG {
     padding: 20px;
 }
 
@@ -205,32 +209,33 @@
    height: 300px;
 } */
 @media (max-width:900px) {
+    #KhushiImg {
+        padding: 3rem 0rem;
+    }
     .HET_IMG,
-.KhushiImg,
-.yellowSpotImg{
-    padding: 1rem;
-}
+    .KhushiImg,
+    .yellowSpotImg {
+        padding: 0rem;
+    }
+
     .parent-comapny-content h4 {
         font-size: 40px;
         color: white;
         font-family: "Barlow Condensed", sans-serif;
         margin: 30px 0px;
     }
-    
-    
-.parent-Company-info img {
-    width: 70%;
-    margin: auto;
-    /* padding: 1rem; */
-    /* aspect-ratio: 3/2;
+
+
+    .parent-Company-info img {
+        width: 70%;
+        margin: auto;
+        /* padding: 1rem; */
+        /* aspect-ratio: 3/2;
     object-fit: contain; */
-    border-radius: 20px;
-    display: flex;
-}
-    .KhushiImg,
-.HET_IMG{
-    padding: 0px;
-}
+        border-radius: 20px;
+        display: flex;
+    }
+
     .founder-info {
         padding: 20px 20px;
         margin-bottom: 10px;
@@ -239,8 +244,8 @@
         border-radius: 10px;
         display: flex;
         /* justify-content: space-between; */
-       flex-direction: column;
-    
+        flex-direction: column;
+
     }
 
     .co-founder-section .ant-row .ant-col {

@@ -120,7 +120,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={khushiLogo} alt="khushi_advertising_logo" className="KhushiImg" data-aos="fade-up" />
+                            <img src={khushiLogo} alt="khushi_advertising_logo" className="KhushiImg" id="KhushiImg" data-aos="fade-up" />
                         </Col>
                     </Row>
                 </div>

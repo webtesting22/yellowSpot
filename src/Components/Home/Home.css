@@ -383,6 +383,7 @@
 .second .btn-container button {
     margin: 0px 20px;
     background-color: #FFED00;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 /* 
@@ -485,10 +486,12 @@
 
 .animated-boxes-five .writeUpContent p {
     width: 70%;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 .writeUpContent p {
     font-size: 15px;
+    font-family: "Barlow Condensed", sans-serif;
     padding: 10px;
     text-align: center;
 }
