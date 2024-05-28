@@ -18,8 +18,18 @@ import { Row, Col, Image } from 'antd'
 import Navbar from "../Navbar/Navbar";
 import { Autoplay } from 'swiper/modules';
 import { TypeAnimation } from 'react-type-animation';
-import { Button, Modal } from 'antd';
+import { Button, Modal, Tooltip } from 'antd';
 import MagicHeading from "../MagicHeading/MagicHeading";
+
+
+const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+        return text.substring(0, maxLength) + '...';
+    }
+    return text;
+};
+
+
 const Inventory = () => {
     const [showDrawer, setShowDrawer] = useState(false);
     const drawerRef = useRef(null);
@@ -132,6 +142,7 @@ const Inventory = () => {
         },
 
     ]
+
     return (
         <>
 
@@ -295,15 +306,20 @@ const Inventory = () => {
                                     <div className="location-details">
                                         <div style={{ width: "100%" }} className="location-content">
                                             <br />
-                                            <a
-                                                href="#"
-                                                onClick={() => handleLocationClick(item.lat, item.lng)}
-                                            >
-                                                <p style={{ margin: "0px" }}>
-                                                    <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                    &nbsp;<span>{item.locations?.name}</span>
-                                                </p>
-                                            </a>
+                                            <Tooltip title={item.locations?.name}>
+                                                <a
+                                                    href="#"
+                                                    onClick={() => handleLocationClick(item.lat, item.lng)}
+                                                >
+
+                                                    <p style={{ margin: "0px" }}>
+                                                        <img src={locationIcon} alt="" style={{ color: "white" }} />
+                                                        &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
+                                                    </p>
+
+                                                </a>
+                                            </Tooltip>
+
                                         </div>
                                         <hr style={{ margin: "3px 0px" }} />
                                         <div style={{
@@ -317,14 +333,14 @@ const Inventory = () => {
                                                 <DynamicCreateShape width={item.width} height={item.height} />
                                             </div>
                                         </div>
-                                        
+
                                     </div>
                                     <p style={{ margin: "5px 0px" }}>
-                                            Illumination: {item.Illu ?
-                                                (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
-                                                : "No light"
-                                            }
-                                        </p>
+                                        Illumination: {item.Illu ?
+                                            (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
+                                            : "No light"
+                                        }
+                                    </p>
                                 </div>
                             </Col>
                         ))}
@@ -341,18 +357,19 @@ const Inventory = () => {
                                                 </div>
                                             </div>
                                             <div className="location-details">
-                                            <br />
+                                                <br />
                                                 <div style={{ width: "100%" }} className="location-content">
-                                                   
-                                                    <a
-                                                        href="#"
-                                                        onClick={() => handleLocationClick(item.lat, item.lng)}
-                                                    >
-                                                        <p style={{ margin: "0px" }}>
-                                                            <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                            &nbsp;<span style={{ color: "white" }}>{item.locations?.name}</span>
-                                                        </p>
-                                                    </a>
+                                                    <Tooltip title={item.locations?.name}>
+                                                        <a
+                                                            href="#"
+                                                            onClick={() => handleLocationClick(item.lat, item.lng)}
+                                                        >
+                                                            <p style={{ margin: "0px", color: "white" }}>
+                                                                <img src={locationIcon} alt="" style={{ color: "white" }} />
+                                                                &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
+                                                            </p>
+                                                        </a>
+                                                    </Tooltip>
                                                 </div>
                                                 <hr style={{ margin: "3px 0px" }} />
                                                 <div style={{
@@ -367,11 +384,11 @@ const Inventory = () => {
                                                     </div>
                                                 </div>
                                                 <p style={{ margin: "5px 0px" }}>
-                                                        Illumination: {item.Illu ?
-                                                            (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
-                                                            : "No light"
-                                                        }
-                                                    </p>
+                                                    Illumination: {item.Illu ?
+                                                        (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
+                                                        : "No light"
+                                                    }
+                                                </p>
                                             </div>
                                         </div>
                                     </Col>
