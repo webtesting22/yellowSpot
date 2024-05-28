@@ -261,7 +261,7 @@ const DirectClient = [
         clientImg: AhmedabadUni,
         clientWebLink: "https://ahduni.edu.in/",
         ClientName: "Ahmedabad University",
-        Backcolor:"yellow"
+        Backcolor:"#FFEC00"
     },
     {
         clientImg: SilverOakCollege,
