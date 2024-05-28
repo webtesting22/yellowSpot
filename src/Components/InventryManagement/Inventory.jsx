@@ -312,7 +312,7 @@ const Inventory = () => {
                                                     onClick={() => handleLocationClick(item.lat, item.lng)}
                                                 >
 
-                                                    <p style={{ margin: "0px",color: "white",fontFamily: '"Barlow Condensed", sans-serif' }}>
+                                                    <p style={{ margin: "0px", color: "white", fontFamily: '"Barlow Condensed", sans-serif' }}>
                                                         <img src={locationIcon} alt="" style={{ color: "white" }} />
                                                         &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
                                                     </p>
@@ -326,7 +326,7 @@ const Inventory = () => {
                                             display: "flex", justifyContent: "space-between",
                                             alignItems: "center"
                                         }}>
-                                            <div style={{fontFamily: '"Barlow Condensed", sans-serif'}}>
+                                            <div style={{ fontFamily: '"Barlow Condensed", sans-serif' }}>
                                                 Dimensions
                                             </div>
                                             <div className="Content-info">
@@ -335,7 +335,7 @@ const Inventory = () => {
                                         </div>
 
                                     </div>
-                                    <p style={{ margin: "5px 0px",fontFamily: '"Barlow Condensed", sans-serif' }}>
+                                    <p style={{ margin: "5px 0px", fontFamily: '"Barlow Condensed", sans-serif' }}>
                                         Illumination: {item.Illu ?
                                             (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
                                             : "No light"
@@ -345,8 +345,22 @@ const Inventory = () => {
                             </Col>
                         ))}
 
-                        <Modal title="Image Details" width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-
+                        <Modal title="Inventory Details" width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            <div className="filter-select">
+                                <NamedSelectComponent
+                                    options={mediaTypes.map(type => ({ label: type, value: type }))}
+                                    title="Type"
+                                    selectedItems={selectedItemsOnType}
+                                    setSelectedItems={setSelectedItemsOnType}
+                                />
+                                <div className="small-slite-padding"></div>
+                                <NamedSelectComponent
+                                    options={areas.map(area => ({ label: area, value: area }))}
+                                    title="Area"
+                                    selectedItems={selectedItemsOnArea}
+                                    setSelectedItems={setSelectedItemsOnArea}
+                                />
+                            </div>
                             <Row>
                                 {filteredData && filteredData.map(item => (
                                     <Col lg={8} key={item.id}>
@@ -364,7 +378,7 @@ const Inventory = () => {
                                                             href="#"
                                                             onClick={() => handleLocationClick(item.lat, item.lng)}
                                                         >
-                                                            <p style={{ margin: "0px", color: "white",fontFamily: '"Barlow Condensed", sans-serif' }}>
+                                                            <p style={{ margin: "0px", color: "white", fontFamily: '"Barlow Condensed", sans-serif' }}>
                                                                 <img src={locationIcon} alt="" style={{ color: "white" }} />
                                                                 &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
                                                             </p>
