@@ -33,6 +33,11 @@ import CombineLogo from "../Navbar/CombineLogo.jpg"
 import Contact from "../Home/iconsImages/ContactUs.svg"
 import img1 from "../Home/Banners/Final1.png"
 import img2 from "../Home/Banners/Final2.png"
+import OutDoor from "./icons/outDoor.png"
+import Impressions from "./icons/experience.png"
+import Clients from "./icons/Clients.png"
+import Experience from "./icons/experience.png"
+import Media from "./icons/media.png"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -129,7 +134,6 @@ const Home = () => {
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-
               <img src={Industy} alt="Yellow-Spot poster" />
             </div>
             <div className="image-overlay"></div>
@@ -140,9 +144,12 @@ const Home = () => {
                   <h1><span><span style={{ color: "#FFED00" }}>industry</span> experience</span></h1>
                   <div className="slite-padding"></div>
                   <div className="content-container">
-                    <Row gutter={[16, 16]} style={{display:"flex",justifyContent:"center"}}>
+                    <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center" }}>
                       <Col lg={4} md={12} >
                         <div className='contup'>
+                          <div>
+                            <img src={OutDoor} alt="" />
+                          </div>
                           <CountUp
                             end={400}
                             duration={20}
@@ -153,6 +160,9 @@ const Home = () => {
                       </Col>
                       <Col lg={4} md={12} >
                         <div className='contup'>
+                          <div>
+                            <img src={Impressions} alt="" />
+                          </div>
                           <CountUp
                             end={500}
                             duration={20}
@@ -163,6 +173,9 @@ const Home = () => {
                       </Col>
                       <Col lg={4} md={12} >
                         <div className='contup'>
+                          <div>
+                            <img src={Clients} alt="" />
+                          </div>
                           <CountUp
                             end={1000}
                             duration={20}
@@ -173,6 +186,9 @@ const Home = () => {
                       </Col>
                       <Col lg={4} md={12} >
                         <div className='contup'>
+                          <div>
+                            <img src={Experience} alt="" />
+                          </div>
                           <CountUp
                             end={25}
                             duration={20}
@@ -183,6 +199,9 @@ const Home = () => {
                       </Col>
                       <Col lg={4} md={12} >
                         <div className='contup'>
+                          <div>
+                            <img src={Media} alt="" />
+                          </div>
                           <CountUp
                             end={99}
                             duration={20}
@@ -210,8 +229,8 @@ const Home = () => {
                       /* position: absolute; */
                       width: "100%"
                     }}>
-                      <img src={img1} alt="" style={{border:"2px solid black", borderBottom:"none"}}/>
-                      <img src={img2} alt="" style={{border:"2px solid black",borderBottom:"none"}}/>
+                      <img src={img1} alt="" style={{ border: "2px solid black", borderBottom: "none" }} />
+                      <img src={img2} alt="" style={{ border: "2px solid black", borderBottom: "none" }} />
                     </div>
                   </div>
                   <div className='writeUpContent'>
@@ -307,7 +326,7 @@ const Home = () => {
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
-                  <h1>Our Offerings</h1>
+                  <h1><span style={{ color: "#FFED00" }}>Our</span> Offerings</h1>
                 </div>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
@@ -325,7 +344,7 @@ const Home = () => {
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
-                  <h1>Our Key Clients</h1>
+                  <h1><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
                 </div>
                 <div className="slite-padding"></div>
                 <div className="clients-logo-home-container">
