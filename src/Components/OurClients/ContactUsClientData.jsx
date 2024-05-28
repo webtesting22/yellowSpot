@@ -83,7 +83,7 @@ import Physicswallah from "../OurClients/DirectClients/Physicswallah.webp"
 import PDEU from "../OurClients/DirectClients/PDEU.png"
 import EDII from "../OurClients/DirectClients/EDII.webp"
 import ShantAsiatcSchool from "../OurClients/DirectClients/ShantAsiatcSchool.png"
-import AppleGlobalSchool from "../OurClients/DirectClients/AppleGlobalSchool.svg"
+import AppleGlobalSchool from "../OurClients/DirectClients/AppleGlobal.jpg"
 import AnandNiketan from "../OurClients/DirectClients/AnandNiketan.png"
 import GayanJyotInsttute from "../OurClients/DirectClients/GayanJyotInsttute.webp"
 import AbzoMotors from "../OurClients/DirectClients/AbzoMotors.png"
@@ -321,7 +321,7 @@ const DirectClient = [
         clientImg: AppleGlobalSchool,
         clientWebLink: "https://appleglobal.in/",
         ClientName: "Apple Global School",
-        Backcolor:"#FFEC00"
+        // Backcolor:"#FFEC00"
     },
     {
         clientImg: AnandNiketan,

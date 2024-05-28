@@ -12,9 +12,9 @@ import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
 import { Row, Col, Drawer } from "antd";
 import ClientLogos from './ClientLogosData';
-import Homepagefirst from "../animatedCoverPage/Picture1.png"
+import Homepagefirst from "./mainPage.png"
 import Industy from "../Home/Banners/OurEgency.png"
-import offering from "../Home/Banners/OurOffering.png"
+import offering from "../Home/Banners/28.png"
 import client from "../Home/Banners/OurClients.png"
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 // import DemoImage from "../Home/Demo.png"
