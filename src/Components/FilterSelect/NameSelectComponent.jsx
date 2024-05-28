@@ -40,7 +40,7 @@ function NamedSelectComponent({ title, selectedItems, setSelectedItems, options 
         <div className="stikycontainer-style">
             <div className="named-select-filter" ref={selectFilterRef} onClick={() => setShowOptions(!showOptions)}>
                 <div ><p id="dropdown-title">{title}</p></div>
-                <div style={{ display: "flex", alignItems: "center", gap: "1.6rem" }}>
+                <div style={{ display: "flex", alignItems: "center" }}>
                     <div className="named-select-filter-name">{selectedItems.length}&nbsp;selected</div>
                     {
                         showOptions ? <AiFillCaretUp style={{ color: 'gray' }} /> : <AiFillCaretDown />

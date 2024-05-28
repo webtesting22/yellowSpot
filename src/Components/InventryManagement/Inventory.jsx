@@ -345,7 +345,8 @@ const Inventory = () => {
                             </Col>
                         ))}
 
-                        <Modal title="Inventory Details" width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                        <Modal title={<>
+                        <h6>Inventory Details</h6>
                             <div className="filter-select">
                                 <NamedSelectComponent
                                     options={mediaTypes.map(type => ({ label: type, value: type }))}
@@ -361,6 +362,8 @@ const Inventory = () => {
                                     setSelectedItems={setSelectedItemsOnArea}
                                 />
                             </div>
+                        </>} width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+
                             <Row>
                                 {filteredData && filteredData.map(item => (
                                     <Col lg={8} key={item.id}>
