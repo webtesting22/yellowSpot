@@ -122,7 +122,19 @@
     display: flex;
     justify-content: space-between;
 }
+.middleOnceContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.middleOnceContainer .ContactContent{
+    width: 100%;
+}
 @media (max-width:700px){
+    .middleOnceContainer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
     .topHeadingStyle{
         display: flex;
         flex-direction: column;

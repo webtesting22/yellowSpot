@@ -16,13 +16,13 @@ const Footer = () => {
             <section className="footer">
                 <div className=" slite-padding container">
                     <div className="topHeadingStyle">
-                    <div className="ContactusHeading container">
-                        <p style={{ textAlign: "start" }}>Ready to work together?</p>
-                        <h1>Get In Touch <i className='bx bxs-right-top-arrow-circle'></i></h1>
-                    </div>
-                    <div className="Footer_Logo">
-                                    <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
-                                </div>
+                        <div className="ContactusHeading container">
+                            <p style={{ textAlign: "start" }}>Ready to work together?</p>
+                            <h1>Get In Touch <i className='bx bxs-right-top-arrow-circle'></i></h1>
+                        </div>
+                        <div className="Footer_Logo">
+                            <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
+                        </div>
                     </div>
                     <div className="slite-padding"></div>
                     <hr style={{ opacity: "1" }} />
@@ -30,12 +30,22 @@ const Footer = () => {
                         {/* <Col lg={12}>
                         </Col> */}
                         <Col lg={24}>
-                            <div className="logo-set-and-social">
-                               
-                                <div className="social-content">
-                                    <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>
-                                    <img src={twitterImg} alt="" />
-                                    <img src={LinkedinImg} alt="" />
+                            <div className="middleOnceContainer">
+                                <div className="ContactContent">
+                                    <ul>
+                                        <li><span>Phone:</span> <a href="tel:+91 93242 44444">+91 93242 44444</a></li>
+                                        <li><span>Email:</span> <a href="mailto:sales@yellowspot.on">sales@yellowspot.on</a></li>
+                                        {/* <li><span>Website:</span> https:yellow-spot.vercel.app/</li> */}
+                                        <li><span>Adress:</span> 4th floor, 12, Magnet corporate park, Thaltej, Ahmedabad, Gujrat, 380054</li>
+                                    </ul>
+                                </div>
+                                <div className="logo-set-and-social">
+
+                                    <div className="social-content">
+                                        <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>
+                                        <img src={twitterImg} alt="" />
+                                        <img src={LinkedinImg} alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </Col>
