@@ -133,10 +133,10 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
-            <div className="image-container">
+            {/* <div className="image-container">
               <img src={Industy} alt="Yellow-Spot poster" />
-            </div>
-            <div className="image-overlay" style={{backgroundColor: "rgb(39 39 39 / 76%)"}}></div>
+            </div> */}
+            <div className="image-overlay" ></div>
             <div className="text-container-set four" id='textContainerset'>
               <div className="text-container" id='textContainer'>
                 <div className="main-content-container">
