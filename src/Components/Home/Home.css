@@ -218,19 +218,20 @@
 .text-container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     margin: auto;
 }
 
-@media (min-width:1300px) and (max-width:3000px){
+@media (min-width:1300px) and (max-width:3000px) {
     .text-container {
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 90%;
         margin: auto;
     }
-    
+
 }
+
 @media (max-width:600px) {
     .btn-container a {
         margin: 10px 0px;
@@ -438,14 +439,15 @@
     flex-direction: column;
 }
 
-.content-container .contup img{
+.content-container .contup img {
     width: 65%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
     display: flex;
     margin: auto;
 }
-.content-container .contup div{
+
+.content-container .contup div {
     background-color: #FFED00;
     height: 70px;
     width: 70px;
@@ -454,8 +456,8 @@
 
 }
 
-@media(max-width:769px)
-{
+@media(max-width:769px) {
+
     /* .content-container .contup img{
         width: 65%;
         aspect-ratio: 1 / 1;
@@ -464,16 +466,18 @@
         margin: auto;
         display: none;
     } */
-    .content-container .contup div{
+    .content-container .contup div {
         background-color: #FFED00;
         height: 70px;
         width: 70px;
         margin: auto;
         border-radius: 50%;
         display: none;
-    
+
     }
-}.animated-boxes-one .writeUpContent,
+}
+
+.animated-boxes-one .writeUpContent,
 .animated-boxes-two .writeUpContent,
 .animated-boxes-three .writeUpContent,
 .animated-boxes-four .writeUpContent,
