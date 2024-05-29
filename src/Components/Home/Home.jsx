@@ -123,7 +123,7 @@ const Home = () => {
             <div className="image-overlay"></div>
             <div className="text-container-set">
               <div className="text-container second">
-                <p>Your Art, Our Canvas</p>
+                <p ><span style={{color:"black",backgroundColor:"#ffed00",padding:"0px 20px"}}>Your Art, Our Canvas</span></p>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
                   <Link to="/AboutUs"><button><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
