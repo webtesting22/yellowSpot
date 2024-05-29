@@ -137,7 +137,7 @@ const Home = () => {
               <img src={Industy} alt="Yellow-Spot poster" />
             </div>
             <div className="image-overlay" style={{backgroundColor: "rgb(39 39 39 / 76%)"}}></div>
-            <div className="text-container-set four">
+            <div className="text-container-set four" id='textContainerset'>
               <div className="text-container" id='textContainer'>
                 <div className="main-content-container">
                   {/* <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} /> */}
@@ -342,7 +342,7 @@ const Home = () => {
             <div className="image-container">
               <img src={client} alt="Yellow-Spot poster" />
             </div>
-            <div className="image-overlay"></div>
+            <div className="image-overlay" style={{backgroundColor:"#000000a3"}}></div>
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
