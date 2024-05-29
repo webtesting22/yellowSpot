@@ -15,7 +15,7 @@ import ClientLogos from './ClientLogosData';
 import Homepagefirst from "./mainPage.png"
 import Industy from "../Home/Banners/OurEgency.png"
 import offering from "../Home/Banners/28.png"
-import client from "../Home/Banners/OurClients.png"
+import client from "../Home/Banners/KeyClients.png"
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 // import DemoImage from "../Home/Demo.png"
 import CountUp from 'react-countup';
@@ -136,31 +136,31 @@ const Home = () => {
             <div className="image-container">
               <img src={Industy} alt="Yellow-Spot poster" />
             </div>
-            <div className="image-overlay"></div>
+            <div className="image-overlay" style={{backgroundColor: "rgb(39 39 39 / 76%)"}}></div>
             <div className="text-container-set four">
-              <div className="text-container">
+              <div className="text-container" id='textContainer'>
                 <div className="main-content-container">
                   {/* <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} /> */}
-                  <h1><span><span style={{ color: "#FFED00" }}>industry</span> experience</span></h1>
-                  <div className="slite-padding"></div>
+                  {/* <h1><span><span style={{ color: "#FFED00" }}>industry</span> experience</span></h1>
+                  <div className="slite-padding"></div> */}
                   <div className="content-container">
                     <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center" }}>
-                      <Col lg={4} md={12} >
+                      <Col lg={8} md={12} >
                         <div className='contup'>
-                          
-                            <div>
-                              <img src={OutDoor} alt="" />
-                            </div>
-                            <CountUp
-                              end={400}
-                              duration={20}
-                              suffix="+"
-                            />
-                         
+
+                          <div>
+                            <img src={OutDoor} alt="" />
+                          </div>
+                          <CountUp
+                            end={400}
+                            duration={20}
+                            suffix="+"
+                          />
+
                           <h3>Premium Outdoor Sites in Ahmedabad</h3>
                         </div>
                       </Col>
-                      <Col lg={4} md={12} >
+                      <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Impressions} alt="" />
@@ -173,7 +173,7 @@ const Home = () => {
                           <h3>Daily Impressions</h3>
                         </div>
                       </Col>
-                      <Col lg={4} md={12} >
+                      <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Clients} alt="" />
@@ -186,7 +186,7 @@ const Home = () => {
                           <h3>Clients</h3>
                         </div>
                       </Col>
-                      <Col lg={4} md={12} >
+                      <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Experience} alt="" />
@@ -199,7 +199,7 @@ const Home = () => {
                           <h3>Years of Industry Experience </h3>
                         </div>
                       </Col>
-                      <Col lg={4} md={12} >
+                      <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Media} alt="" />

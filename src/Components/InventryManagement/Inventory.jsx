@@ -346,7 +346,7 @@ const Inventory = () => {
                         ))}
 
                         <Modal title={<>
-                        <h6>Inventory Details</h6>
+                            <h6>Inventory Details</h6>
                             <div className="filter-select">
                                 <NamedSelectComponent
                                     options={mediaTypes.map(type => ({ label: type, value: type }))}
