@@ -454,7 +454,26 @@
 
 }
 
-.animated-boxes-one .writeUpContent,
+@media(max-width:769px)
+{
+    /* .content-container .contup img{
+        width: 65%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        display: flex;
+        margin: auto;
+        display: none;
+    } */
+    .content-container .contup div{
+        background-color: #FFED00;
+        height: 70px;
+        width: 70px;
+        margin: auto;
+        border-radius: 50%;
+        display: none;
+    
+    }
+}.animated-boxes-one .writeUpContent,
 .animated-boxes-two .writeUpContent,
 .animated-boxes-three .writeUpContent,
 .animated-boxes-four .writeUpContent,

@@ -147,14 +147,16 @@ const Home = () => {
                     <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center" }}>
                       <Col lg={4} md={12} >
                         <div className='contup'>
-                          <div>
-                            <img src={OutDoor} alt="" />
-                          </div>
-                          <CountUp
-                            end={400}
-                            duration={20}
-                            suffix="+"
-                          />
+                          
+                            <div>
+                              <img src={OutDoor} alt="" />
+                            </div>
+                            <CountUp
+                              end={400}
+                              duration={20}
+                              suffix="+"
+                            />
+                         
                           <h3>Premium Outdoor Sites in Ahmedabad</h3>
                         </div>
                       </Col>
