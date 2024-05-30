@@ -232,7 +232,7 @@ h1 {
     }
 
     .animated-hover-boxes .animated-boxes-five {
-        height: 30vh;
+        height: 15vh;
         width: 100%;
     }
 
@@ -243,13 +243,13 @@ h1 {
     .animated-hover-boxes .animated-boxes-six {
         display: flex;
         position: relative;
-        height: 18vh;
+        height: 19vh;
         width: 50%;
     }
 
     .animated-hover-boxes .animated-boxes-four {
         width: 100%;
-        height: 25vh;
+        height: 30vh;
     }
 
     /* .animated-hover-boxes .animated-boxes-one:hover,

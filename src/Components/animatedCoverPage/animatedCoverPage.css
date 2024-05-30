@@ -1,4 +1,3 @@
-
 .animated-text-about {
     height: 100vh;
     width: 100%;
@@ -26,12 +25,51 @@
     text-align: center;
     font-family: "Barlow Condensed", sans-serif;
 }
-.textbackAnimation{
+
+.textbackAnimation {
     position: absolute;
     width: 100%;
     opacity: 0.2;
 }
+
+#MobileFreidly {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.textbackAnimation img {
+    height: 100vh;
+    width: 100%;
+}
+
 @media (max-width:700px) {
+    .textbackAnimation{
+        position: static;
+        opacity: 1;
+    }
+    .textbackAnimation img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #MobileFreidly {
+        display: none;
+    }
+
+    .animated-text-about {
+        margin-top: 15vh;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* padding-bottom: 2rem; */
+    }
+
     .animated-text-about P {
         color: white;
         letter-spacing: 0px;
