@@ -1,4 +1,4 @@
-// import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import { TypeAnimation } from "react-type-animation";
@@ -10,7 +10,17 @@ import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 import "./OurClients.css"
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
 const OurClientele = () => {
+    const [selectedCategory, setSelectedCategory] = useState("");
 
+    const handleCategoryChange = (event) => {
+        setSelectedCategory(event.target.value);
+    };
+
+    const categories = [...new Set(ClientDataLogos.map(item => item.Category))].filter(Boolean);
+
+    const filteredClientData = selectedCategory
+        ? ClientDataLogos.filter(item => item.Category === selectedCategory)
+        : ClientDataLogos;
     // const cardColors = ["#ff6347", "#6495ed", "#32cd32", "#ffa500", "#9370db"];
     return (
         <>
@@ -29,34 +39,45 @@ const OurClientele = () => {
 
                 <br /><br />
                 <div className="container AgencyLogo">
-                    <Row>
-                        {ClientDataLogos.map((item, index) => (
-                            <Col lg={6} md={8} key={index}>
-                                <a href={item.clientWebLink} target="_blank" className="card-link">
-                                    <div className="maincard">
-                                        <div className="flip-card">
-                                            <div className="flip-card-inner">
-                                                <div className="flip-card-front" style={{backgroundColor:`${item.Backcolor}`}}>
-                                                    <div className="clientImgContainer">
-                                                        <img src={item.clientImg} alt="" />
+                    <div>
+                        <div className="categoryFilter">
+                            <select onChange={handleCategoryChange} value={selectedCategory}>
+                                <option value="">All</option>
+                                {categories.map((category, index) => (
+                                    <option key={index} value={category}>
+                                        {category}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                        <Row>
+                            {filteredClientData.map((item, index) => (
+                                <Col lg={6} md={8} key={index}>
+                                    <a href={item.clientWebLink} target="_blank" className="card-link">
+                                        <div className="maincard">
+                                            <div className="flip-card">
+                                                <div className="flip-card-inner">
+                                                    <div className="flip-card-front" style={{ backgroundColor: `${item.Backcolor}` }}>
+                                                        <div className="clientImgContainer">
+                                                            <img src={item.clientImg} alt={item.ClientName} />
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div className="flip-card-back">
-                                                    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                                                        <i class='bx bx-link' ></i>
-                                                        <div style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
-                                                            {item.ClientName}
+                                                    <div className="flip-card-back">
+                                                        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+                                                            <i className='bx bx-link'></i>
+                                                            <div style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
+                                                                {item.ClientName}
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </a>
-                            </Col>
-                        ))}
-
-                    </Row>
+                                    </a>
+                                </Col>
+                            ))}
+                        </Row>
+                    </div>
                 </div>
                 <br /><br />
                 <div className="container">
@@ -74,7 +95,7 @@ const OurClientele = () => {
                                         <div className="maincard">
                                             <div className="flip-card">
                                                 <div className="flip-card-inner">
-                                                    <div className="flip-card-front" style={{backgroundColor:`${item.Backcolor}`}}>
+                                                    <div className="flip-card-front" style={{ backgroundColor: `${item.Backcolor}` }}>
                                                         <div className="clientImgContainer">
                                                             <img src={item.clientImg} alt="" />
                                                         </div>

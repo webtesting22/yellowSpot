@@ -183,8 +183,7 @@ h1 {
 .animated-hover-boxes .animated-boxes-three,
 .animated-hover-boxes .animated-boxes-four,
 .animated-hover-boxes .animated-boxes-five,
-.animated-hover-boxes .animated-boxes-six 
-{
+.animated-hover-boxes .animated-boxes-six {
 
     border: 2px solid black;
 }
@@ -231,9 +230,12 @@ h1 {
         justify-content: center;
         flex-direction: column;
     }
-    .animated-hover-boxes .animated-boxes-five{
+
+    .animated-hover-boxes .animated-boxes-five {
         height: 30vh;
+        width: 100%;
     }
+
     .animated-hover-boxes .animated-boxes-one,
     .animated-hover-boxes .animated-boxes-two,
     .animated-hover-boxes .animated-boxes-three,
@@ -241,13 +243,15 @@ h1 {
     .animated-hover-boxes .animated-boxes-six {
         display: flex;
         position: relative;
-        height: 25vh;
+        height: 18vh;
         width: 50%;
     }
-    .animated-hover-boxes .animated-boxes-four{
+
+    .animated-hover-boxes .animated-boxes-four {
         width: 100%;
-        height: 20vh;
+        height: 25vh;
     }
+
     /* .animated-hover-boxes .animated-boxes-one:hover,
     .animated-hover-boxes .animated-boxes-two:hover,
     .animated-hover-boxes .animated-boxes-three:hover,
