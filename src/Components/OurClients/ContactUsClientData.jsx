@@ -279,229 +279,268 @@ const DirectClient = [
         clientImg: CORDELIACRUISES,
         clientWebLink: "https://www.cordeliacruises.com/",
         ClientName: "CORDELIA CRUISES",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: COLORS,
         clientWebLink: "https://www.colorstv.com/",
         ClientName: "COLORS",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Media & Entertainment"
     },
     {
         clientImg: COKE,
         clientWebLink: "https://www.coca-cola.com/us/en",
         ClientName: "COKE",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: CLUB07,
         clientWebLink: "https://ecubeweb.clubo7.com/",
         ClientName: "CLUB07",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: CLOSEUP,
         clientWebLink: "https://www.close-up.com/in/home.html",
         ClientName: "CLOSEUP",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: CITROENCARS,
         clientWebLink: "https://www.citroen.in/",
         ClientName: "CITROEN CARS",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Automobiles"
     },
     {
         clientImg: CITIZENWATCHES,
         clientWebLink: "https://www.citizenwatches.co.in/",
         ClientName: "CITIZEN WATCHES",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: CINEPOLIS,
         clientWebLink: "https://cinepolisindia.com/",
         ClientName: "CINEPOLIS",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Media & Entertainment"
     },
     {
         clientImg: CENTRALBANK,
         clientWebLink: "https://www.centralbankofindia.co.in/en",
         ClientName: "CENTRAL BANK OF INDIA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
+
     },
     {
         clientImg: CARZSPA,
         clientWebLink: "https://www.carzspa.com/",
         ClientName: "CARZSPA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Automobiles"
     },
     {
         clientImg: CARTECHONDA,
         clientWebLink: "https://www.cartechonda.com/",
         ClientName: "CARTEC HONDA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Automobiles"
     },
     {
         clientImg: CARRIERMIDEA,
         clientWebLink: "https://carriermideaindia.com/",
         ClientName: "CARRIER MIDEA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: CAREERLINEEDUCATION,
         clientWebLink: "https://careerline.org/",
         ClientName: "CAREERLINE EDUCATION FOUNDATION",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: CAMPAOLA,
         clientWebLink: "https://campa-cola.in/",
         ClientName: "CAMPA COLA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: CADBURY,
         clientWebLink: "https://www.cadbury.co.uk/",
         ClientName: "CADBURY",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: CDAC,
         clientWebLink: "https://www.cdac.in/",
         ClientName: "C-DAC",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: BUMBLE,
         clientWebLink: "https://bumble.com/en-in/",
         ClientName: "BUMBLE",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"E-commerce"
     },
     {
         clientImg: BOURNVITA,
         clientWebLink: "",
         ClientName: "BOURNVITA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: BOUNCEUPAHMEDABAD,
         clientWebLink: "https://www.bounceup.in/pages/ahmedabad-bounceup",
         ClientName: "BOUNCE UP AHMEDABAD",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: BOSCH,
         clientWebLink: "https://www.bosch.in/",
         ClientName: "BOSCH",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: BMW,
         clientWebLink: "https://www.bmw-gallopsautohaus.in/",
         ClientName: "BMW",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Automobiles"
     },
     {
         clientImg: BILSSWATERPARK,
         clientWebLink: "https://www.blissaquaworldresort.com/prices",
         ClientName: "BILSS WATER PARK",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: BHAGIRATHGROUP,
         clientWebLink: "https://bhagirathgroup.com/",
         ClientName: "BHAGIRATH GROUP",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: BERGERSILK,
         clientWebLink: "https://www.bergerpaints.com/",
         ClientName: "BERGER SILK",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: BANDHANBANK,
         clientWebLink: "https://bandhanbank.com/",
         ClientName: "BANDHAN BANK",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: BAKERIGROUP,
         clientWebLink: "https://bakeri.com/",
         ClientName: "BAKERI GROUP",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: BAJAJMUTUALFUND,
         clientWebLink: "https://www.bajajamc.com/",
         ClientName: "BAJAJ MUTUAL FUND",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: BAJAJALLIANZ,
         clientWebLink: "https://www.bajajallianz.com/",
         ClientName: "BAJAJ ALLIANZ",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance "
     },
     {
         clientImg: BSAFAL,
         clientWebLink: "https://bsafal.com/",
         ClientName: "B SAFAL",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: AYAANIDIAMOND,
         clientWebLink: "https://ayaanidiamonds.com/",
         ClientName: "AYAANI DIAMOND",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: AXISBANK,
         clientWebLink: "https://www.axisbank.com/",
         ClientName: "AXIS BANK",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: AVOCAB,
         clientWebLink: "https://www.avocab.com/",
         ClientName: "AVOCAB",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: AVIRATINFRASTRUCTURE,
         clientWebLink: "https://www.aviratgroup.com/",
         ClientName: "AVIRAT INFRASTRUCTURE PVT LTD",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: AURITADIAMONDS,
         clientWebLink: "https://auritadiamonds.com/",
         ClientName: "AURITA DIAMONDS",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: ASTRALPIPES,
         clientWebLink: "https://www.astralpipes.com/",
         ClientName: "ASTRAL PIPES",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: ASTRALBATHWEAR,
         clientWebLink: "https://astralbathware.com/",
         ClientName: "ASTRAL BATHWEAR",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: ASHIRVADFOUNDATION,
         clientWebLink: "https://ashirvadfoundation.org/",
         ClientName: "ASHIRVAD FOUNDATION",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: ARJUNGROUP,
         clientWebLink: "https://thearjungroup.com/",
         ClientName: "ARJUN GROUP",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: ARISTABUILDCON,
