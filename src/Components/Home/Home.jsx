@@ -147,19 +147,18 @@ const Home = () => {
                   <div className="slite-padding"></div> */}
                   <div className="content-container">
                     <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center" }}>
-                      <Col lg={8} md={12} >
+                     
+                    <Col lg={8} md={12} >
                         <div className='contup'>
-
                           <div>
-                            <img src={OutDoor} alt="" />
+                            <img src={Experience} alt="" />
                           </div>
                           <CountUp
-                            end={400}
+                            end={25}
                             duration={20}
                             suffix="+"
                           />
-
-                          <h3>Premium Outdoor Sites in Ahmedabad</h3>
+                          <h3>Years of Industry Experience </h3>
                         </div>
                       </Col>
                       <Col lg={8} md={12} >
@@ -190,15 +189,17 @@ const Home = () => {
                       </Col>
                       <Col lg={8} md={12} >
                         <div className='contup'>
+
                           <div>
-                            <img src={Experience} alt="" />
+                            <img src={OutDoor} alt="" />
                           </div>
                           <CountUp
-                            end={25}
+                            end={400}
                             duration={20}
                             suffix="+"
                           />
-                          <h3>Years of Industry Experience </h3>
+
+                          <h3>Premium Outdoor Sites in Ahmedabad</h3>
                         </div>
                       </Col>
                       <Col lg={8} md={12} >
