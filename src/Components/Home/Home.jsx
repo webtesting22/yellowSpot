@@ -12,7 +12,7 @@ import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
 import { Row, Col, Drawer } from "antd";
 import ClientLogos from './ClientLogosData';
-import Homepagefirst from "./mainPage.png"
+import Homepagefirst from "../MobileHome/new.png"
 import Industy from "../Home/Banners/OurEgency.png"
 import offering from "../Home/Banners/28.png"
 import client from "../Home/Banners/KeyClients.png"
@@ -38,6 +38,7 @@ import Impressions from "./icons/experience.png"
 import Clients from "./icons/Clients.png"
 import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
+import MobileHero from '../MobileHome/MobileHero';
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -399,6 +400,9 @@ const Home = () => {
 
 
         </Swiper>
+      </div>
+      <div id='MobileOnly'>
+        <MobileHero />
       </div>
     </>
 

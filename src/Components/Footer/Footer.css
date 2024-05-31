@@ -29,7 +29,7 @@
     border-radius: 50%;
     font-size: 30px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 5000000000000000;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     animation: moveUpDown 1s infinite alternate;
