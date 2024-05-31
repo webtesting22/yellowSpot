@@ -39,6 +39,7 @@ import Clients from "./icons/Clients.png"
 import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
 import MobileHero from '../MobileHome/MobileHero';
+import countersBack from "./Banners/countersBack.png"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -134,10 +135,10 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide style={{ height: "100vh" }}>
-            {/* <div className="image-container">
-              <img src={Industy} alt="Yellow-Spot poster" />
-            </div> */}
-            <div className="image-overlay" ></div>
+            <div className="image-container">
+              <img src={countersBack} alt="Yellow-Spot poster" />
+            </div>
+            <div className="image-overlay" style={{ backgroundColor: "rgb(0 0 0 / 65%)" }}></div>
             <div className="text-container-set four" id='textContainerset'>
               <div className="text-container" id='textContainer'>
                 <div className="main-content-container">
@@ -325,7 +326,7 @@ const Home = () => {
             <div className="image-container">
               <img src={offering} alt="Yellow-Spot poster" />
             </div>
-            <div className="image-overlay"></div>
+            <div className="image-overlay" style={{ backgroundColor: "#00000075" }}></div>
             <div className="text-container-set">
               <div className="text-container second">
                 <div>

@@ -90,7 +90,7 @@ const OurClientele = () => {
                         {DirectClient
                             .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
                             .map((item, index) => (
-                                <div className="col-lg-2 col-md-4 col-sm-8" lg={6} md={8} key={index}>
+                                <div className="col-lg-2 col-md-4 col-sm-8" key={index}>
                                     <a href={item.clientWebLink} target="_blank" className="card-link">
                                         <div className="maincard">
                                             <div className="flip-card">

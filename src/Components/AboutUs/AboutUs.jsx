@@ -14,6 +14,7 @@ import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 import { Image } from 'antd';
 import GalleryImages from "./galleryImages/GalleryImagesData";
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
+import AboutUsBanner from "./AboutUsBanner.png"
 const AboutUS = () => {
 
     const foudersDetails = [
@@ -61,12 +62,10 @@ const AboutUS = () => {
         <>
             <Navbar />
             <HomePageNavigation />
-            {/* <div className="slite-padding"></div>
-            <br />
-            <div className="slite-padding"></div> */}
+
             <section>
 
-                <AnimatedCoverPage />
+                <AnimatedCoverPage  backgroundImage={AboutUsBanner}/>
                 <br /><br />
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
                 </div>

@@ -19,6 +19,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import ourOffering from "./ourOffering.png"
+import OurClients from "./OurClients.png"
+import CounterBack from "./CounterBack.png"
 const MobileHero = () => {
     return (
         <>
@@ -26,9 +29,14 @@ const MobileHero = () => {
                 <div className="image-container">
                     <img src={homepageImg} alt="Yellow-Spot poster" />
                 </div>
-                <div>
-                    <div className="content-container">
-                        <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+                <div style={{border:"2px solid black"}}>
+
+                    {/* <div className="image-overlay"></div> */}
+                    <div className="content-container" style={{ padding:"0px", position: "relative", }} >
+                        <div className="image-container" style={{ position: "absolute", }}>
+                            <img src={CounterBack} alt="Yellow-Spot poster" />
+                        </div>
+                        <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "auto" }}>
                             <Col lg={8} md={12} >
                                 <div className='contup'>
 
@@ -111,8 +119,8 @@ const MobileHero = () => {
                                             width: "100%",
                                             flexDirection: "column"
                                         }}>
-                                            <img src={img1} alt="" style={{ border: "2px solid white", borderBottom: "none" }} />
-                                            <img src={img2} alt="" style={{ border: "2px solid white", borderBottom: "none" }} />
+                                            <img src={img1} alt="" style={{ border: "1px solid black", borderBottom: "none" }} />
+                                            <img src={img2} alt="" style={{ border: "1px solid black", borderBottom: "none" }} />
                                         </div>
                                     </div>
                                     <div className='writeUpContent'>
@@ -168,8 +176,6 @@ const MobileHero = () => {
 
                                     </div>
                                 </div>
-                                {/* </div>
-                <div className="twoslidesContainer"> */}
                                 <div className="animated-boxes-three">
                                     <div className='writeUpContent'>
                                         <p>As pioneers in introducing Pole Kiosks to Ahmedabad, we offer these small-format billboards which are perfect for branding your products and enhancing brand recognition among a broad audience.</p>
@@ -200,12 +206,12 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", border: "4px solid white" }}>
+                <div style={{ position: "relative", border: "1px solid black" }}>
                     <div className="image-container">
-                        <img src={offering} alt="Yellow-Spot poster" />
+                        <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
                     <div className="image-overlay"></div>
-                    <div className="text-container-set">
+                    <div className="text-container-set" style={{ position: "absolute", bottom: "10px" }}>
                         <div className="text-container second">
                             <div>
                                 <h1><span style={{ color: "#FFED00" }}>Our</span> Offerings</h1>
@@ -218,16 +224,13 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", overflow: "hidden", border: "4px solid white" }}>
-                    <div className="image-container" style={{ position: "absolute", zIndex: "-1" }}>
-                        <img src={client} alt="Yellow-Spot poster" />
+                <div style={{ position: "relative", overflow: "hidden", border: "1px solid black" }}>
+                    <div className="image-container" >
+                        <img src={OurClients} alt="Yellow-Spot poster" />
                     </div>
-                    {/* <div className="image-overlay" style={{ backgroundColor: "#000000a3" }}></div> */}
-                    <div className="text-container-set">
+                    <div className="text-container-set" style={{ position: "absolute", bottom: "30%" }}>
                         <div className="text-container second">
-                            <div style={{ paddingTop: "30px" }}>
-                                <h1><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
-                            </div>
+
                             <div className="slite-padding"></div>
                             <div className="clients-logo-home-container">
                                 <Swiper
@@ -254,7 +257,7 @@ const MobileHero = () => {
                                             slidesPerView: 2 // For mobile devices
                                         },
                                     }}
-                                    style={{ height: "30vh", padding: "10px 10px" }}
+                                    style={{ height: "14vh", padding: "10px 10px" }}
                                     modules={[FreeMode, Autoplay, Pagination]}
                                     className="mySwiper"
                                 >
@@ -268,14 +271,24 @@ const MobileHero = () => {
 
                                 </Swiper>
                             </div>
-                            <br />
-                            <div className="btn-container">
-                                <Link to="/OurClientele"><button><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
-                            </div>
+
+                        </div>
+                    </div>
+                    <div style={{ position: "absolute", width: "100%", zIndex: "4", bottom: "0px", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
+                        <div style={{ paddingTop: "2px" }}>
+                            <h1 style={{ textAlign: "center", margin: "0px" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
+                        </div>
+                        <div className="btn-container" style={{ margin: "auto" }}>
+                            <Link to="/OurClientele"><button style={{
+                                margin: "20px 20px",
+                                backgroundColor: "#FFED00",
+                                fontFamily: '"Barlow Condensed", sans-serif'
+                            }}><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
                         </div>
                     </div>
                 </div>
-            </section>
+
+            </section >
         </>
     )
 }

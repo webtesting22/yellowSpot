@@ -189,15 +189,17 @@ h1 {
 }
 
 @media (max-width:600px) {
-    .animated-hover-boxes .animated-boxes-one,
-.animated-hover-boxes .animated-boxes-two,
-.animated-hover-boxes .animated-boxes-three,
-.animated-hover-boxes .animated-boxes-four,
-.animated-hover-boxes .animated-boxes-five,
-.animated-hover-boxes .animated-boxes-six {
 
-    border: 2px solid rgb(255, 255, 255);
-}
+    .animated-hover-boxes .animated-boxes-one,
+    .animated-hover-boxes .animated-boxes-two,
+    .animated-hover-boxes .animated-boxes-three,
+    .animated-hover-boxes .animated-boxes-four,
+    .animated-hover-boxes .animated-boxes-five,
+    .animated-hover-boxes .animated-boxes-six {
+
+        border: 1px solid black;
+    }
+
     .content-box button {
         border: none;
         padding: 3px 10px;
@@ -218,8 +220,8 @@ h1 {
         color: white;
         font-family: "Barlow Condensed", sans-serif;
         letter-spacing: 3px;
-        font-weight: 400;
-        font-size: 40px;
+        font-weight: 600;
+        font-size: 2rem;
     }
 
     .twoslidesContainer {
