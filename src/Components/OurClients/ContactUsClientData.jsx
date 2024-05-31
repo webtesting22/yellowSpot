@@ -546,97 +546,113 @@ const DirectClient = [
         clientImg: ARISTABUILDCON,
         clientWebLink: "https://aristabuildcon.com/",
         ClientName: "ARISTA BUILDCON",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: APOLLOHOSPITALS,
         clientWebLink: "https://www.apollohospitals.com/hospital/ahmedabad/",
         ClientName: "APOLLO HOSPITALS INTERNATIONAL LIMITED",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: AMUL,
         clientWebLink: "https://amul.com/",
         ClientName: "AMUL",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: AMARNATHPROJECTS,
         clientWebLink: "https://www.amarnathprojects.com/",
         ClientName: "AMARNATH PROJECTS",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: AISHWARYA,
         clientWebLink: "https://www.aishwaryadesignstudio.com/",
         ClientName: "AISHWARYA SAREE",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: AIRTEL,
         clientWebLink: "https://www.airtel.in/",
         ClientName: "AIRTEL",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Telecom"
     },
     {
         clientImg: AECC,
         clientWebLink: "https://www.aeccglobal.in/",
         ClientName: "AECC",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Media & Entertainment"
     },
     {
         clientImg: ADITYABIRLA,
         clientWebLink: "https://www.adityabirla.com/",
         ClientName: "ADITYABIRLA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: ADDORGROUP,
         clientWebLink: "https://addorgroup.com/index.html",
         ClientName: "ADDOR GROUP",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: ADANIREALTY,
         clientWebLink: "https://www.adanirealty.com/",
         ClientName: "ADANI REALTY",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: ADANIFORTUNE,
         clientWebLink: "https://adanienterprises.com/businesses/edible-oil-and-foods",
         ClientName: "ADANI FORTUNE",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: ADANICREATION,
         clientWebLink: "https://adanicreations.com/",
         ClientName: "ADANI CREATION",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: AAVALIIPL,
         clientWebLink: "https://aavaligroups.com/",
         ClientName: "AAVALI IPL",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: AARYANDEVELOPERS,
         clientWebLink: "https://aaryandevelopers.in/",
         ClientName: "AARYAN DEVELOPERS",
-        Backcolor: "rgb(255, 237, 0)"
+        Backcolor: "rgb(255, 237, 0)",
+        Category:"Infrastructure"
     },
     {
         clientImg: AARYABHUMI,
         clientWebLink: "https://aaryabhumi.com/",
         ClientName: "AARYABHUMI DEVELOPERS LLP",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: AAKASH,
         clientWebLink: "https://iacst.aakash.ac.in/",
         ClientName: "AAKASH",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: AAGAM,
@@ -648,87 +664,101 @@ const DirectClient = [
         clientImg: AACA,
         clientWebLink: "https://aaca.org.au/",
         ClientName: "AACA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: AShridhar,
         clientWebLink: "https://ashridhar.com/",
         ClientName: "A SHIRDHAR",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
 
     },
     {
         clientImg: Oppo,
         clientWebLink: "https://www.oppo.com/",
         ClientName: "Oppo",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Telecom"
     },
     {
         clientImg: wonder_masala,
         clientWebLink: "https://wondermasala.com/",
         ClientName: "wonder masala",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: DawaatRice,
         clientWebLink: "https://www.daawat.com/",
         ClientName: "Dawaat Rice ",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"FMCG"
     },
     {
         clientImg: JioMart,
         clientWebLink: "https://www.jiomart.com/",
         ClientName: "Jio Mart",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"E-commerce "
 
     },
     {
         clientImg: Palladium,
         clientWebLink: "https://www.palladiumahmedabad.com/",
         ClientName: "Palladium",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: Tiecon,
         clientWebLink: "https://tiecon.org/",
         ClientName: "Tiecon",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: Realme,
         clientWebLink: "https://www.realme.com/in/",
         ClientName: "Realme",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Telecom"
     },
     {
         clientImg: Haier,
         clientWebLink: "https://www.haier.com/in/",
         ClientName: "Haier",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Telecom"
     },
     {
         clientImg: Cera,
         clientWebLink: "https://www.cera-india.com/",
         ClientName: "Cera",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: WetNJoy,
         clientWebLink: "https://www.wetnjoy.in/",
         ClientName: "Wet N Joy",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: Imagicaa,
         clientWebLink: "https://www.imagicaaworld.com/",
         ClientName: "Imagicaa",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: GIHED,
         clientWebLink: "https://credaiahmedabad.org/",
         ClientName: "GIHED",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Media & Entertainment"
     },
     // {
     //     clientImg: LIBFExpo,
@@ -740,67 +770,78 @@ const DirectClient = [
         clientImg: BankofBaroda,
         clientWebLink: "https://www.bankofbaroda.in/",
         ClientName: "Bank of Baroda",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: ADCBank,
         clientWebLink: "https://adcbank.in/",
         ClientName: "ADC Bank",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: GSCLogo,
         clientWebLink: "https://gscbank.co.in/",
         ClientName: "GSC Bank",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: KalupurBank,
         clientWebLink: "https://www.kalupurbank.com/",
         ClientName: "Kalupur Bank",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"BFSI - Banking, Financial Services, Insurance "
     },
     {
         clientImg: JadBlue,
         clientWebLink: "https://jadeblue.com/",
         ClientName: "JADE BLUE",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: Asopalav,
         clientWebLink: "https://www.asopalav.com/",
         ClientName: "Asopalav",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: JustInTime,
         clientWebLink: "https://justintime.in/",
         ClientName: "Just In Time",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: TitanEyePlus,
         clientWebLink: "https://www.titaneyeplus.com/",
         ClientName: "Titan Eye Plus",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: RKumar,
         clientWebLink: "https://www.rkumar.in/",
         ClientName: "R Kumar",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: SalEducaton,
         clientWebLink: "https://www.sal.edu.in/",
         ClientName: "Sal Educaton",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: KarnavatUniversity,
         clientWebLink: "https://karnavatiuniversity.edu.in/",
         ClientName: "Karnavati University",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: Allen,
@@ -812,55 +853,64 @@ const DirectClient = [
         clientImg: Unacademy,
         clientWebLink: "https://unacademy.com/",
         ClientName: "Unacademy",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: ParulUniversity,
         clientWebLink: "https://paruluniversity.ac.in/",
         ClientName: "Parul University",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: AhmedabadUni,
         clientWebLink: "https://ahduni.edu.in/",
         ClientName: "Ahmedabad University",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: SilverOakCollege,
         clientWebLink: "https://silveroakuni.ac.in/",
         ClientName: "Silver oak university",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: Physicswallah,
         clientWebLink: "https://www.pw.live/",
         ClientName: "Physics Wallah",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: PDEU,
         clientWebLink: "https://www.pdpu.ac.in/",
         ClientName: "PDEU",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: EDII,
         clientWebLink: "https://www.ediindia.org/",
         ClientName: "EDII",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: ShantAsiatcSchool,
         clientWebLink: "https://shantiasiaticahmedabad.com/",
         ClientName: "Shant Asiatic School",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: AppleGlobalSchool,
         clientWebLink: "https://appleglobal.in/",
         ClientName: "Apple Global School",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: AnandNiketan,
