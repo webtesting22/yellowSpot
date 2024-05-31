@@ -197,79 +197,83 @@ import DRAPESHOPEE from "./DirectClients/DRAPESHOPEE.png"
 import DTIAUTOMATION from "./DirectClients/DTIAUTOMATION.png"
 import DYSON from "./DirectClients/DYSON.png"
 const DirectClient = [
-    {
-        clientImg: DYSON,
-        clientWebLink: "https://www.edugoabroad.com/",
-        ClientName: "EDUGO ABROAD",
-        Backcolor: "white",
-        Category: "hospital"
-
-    },
+   
     {
         clientImg: DYSON,
         clientWebLink: "https://www.dyson.in/",
         ClientName: "DYSON",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: DTIAUTOMATION,
         clientWebLink: "https://dtiautomation.com/",
         ClientName: "DTI AUTOMATION PVT LTD",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: DRAPESHOPEE,
         clientWebLink: "http://www.drapeshoppe.in/",
         ClientName: "DRAPESHOPEE",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: DELHIINSTITUTE,
         clientWebLink: "https://dics.co/",
         ClientName: "DELHI INSTITUTE FOR CIVIL SERVICES",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Education"
     },
     {
         clientImg: DEEPBUILDER,
         clientWebLink: "https://www.deepgroup1980.com/",
         ClientName: "DEEP BUILDER",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Infrastructure"
     },
     {
         clientImg: DECATHLON,
         clientWebLink: "https://www.decathlon.in/",
         ClientName: "DECATHLON",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: DBCORPLTD,
         clientWebLink: "https://www.dbcorpltd.com/",
         ClientName: "DB CORP LTD",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Media & Entertainment"
     },
     {
         clientImg: DANNYJIGAR,
         clientWebLink: "",
         ClientName: "DANNY JIGAR - MOVIE",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Media & Entertainment"
     },
     {
         clientImg: CRYOWELLNESS,
         clientWebLink: "https://www.cryo-wellness.co.uk/",
         ClientName: "CRYO WELLNESS",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Hospitality"
     },
     {
         clientImg: CROMA,
         clientWebLink: "https://www.croma.com/",
         ClientName: "CROMA",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Consumer Durables"
     },
     {
         clientImg: CRAFTROOTS,
         clientWebLink: "https://www.craftroots.com/",
         ClientName: "CRAFTROOTS",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category:"Lifestyle"
     },
     {
         clientImg: CORDELIACRUISES,

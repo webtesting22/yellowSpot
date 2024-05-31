@@ -139,6 +139,9 @@
 }
 
 .co-founder-section p {
+    text-align: justify;
+    word-break: break-word;
+    hyphens: auto;
     margin-top: 10px;
     margin-bottom: 0px;
     color: rgb(198, 198, 198);

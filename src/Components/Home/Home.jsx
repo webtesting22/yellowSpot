@@ -17,7 +17,6 @@ import Industy from "../Home/Banners/OurEgency.png"
 import offering from "../Home/Banners/28.png"
 import client from "../Home/Banners/KeyClients.png"
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
-// import DemoImage from "../Home/Demo.png"
 import CountUp from 'react-countup';
 import Combinelogo from "../Navbar/CombineLogo.jpg"
 import LinkdinImg from "../Home/iconsImages/Vector.svg"
@@ -79,7 +78,6 @@ const Home = () => {
             onClose={onCloseDrawer}
             visible={drawerVisible}
             footer={null}
-
           >
             <div>
               <div className="container-heading">
@@ -147,8 +145,8 @@ const Home = () => {
                   <div className="slite-padding"></div> */}
                   <div className="content-container">
                     <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center" }}>
-                     
-                    <Col lg={8} md={12} >
+
+                      <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Experience} alt="" />
