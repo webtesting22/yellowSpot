@@ -21,35 +21,34 @@ import "swiper/css";
 import "swiper/css/pagination";
 import ourOffering from "./ourOffering.png"
 import OurClients from "./OurClients.png"
-import CounterBack from "./CounterBack.png"
+import CounterBack from "../Home/Banners/countersBack.png"
 const MobileHero = () => {
     return (
         <>
             <section>
-                <div className="image-container">
+                <div className="image-container" style={{ borderBottom: "1px solid black" }}>
                     <img src={homepageImg} alt="Yellow-Spot poster" />
                 </div>
-                <div style={{border:"2px solid black"}}>
+                <div style={{ border: "1px solid black" }}>
 
                     {/* <div className="image-overlay"></div> */}
-                    <div className="content-container" style={{ padding:"0px", position: "relative", }} >
+                    <div className="content-container" style={{ padding: "0px", position: "relative", borderBottom: "2px solid black" }} >
                         <div className="image-container" style={{ position: "absolute", }}>
                             <img src={CounterBack} alt="Yellow-Spot poster" />
                         </div>
                         <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "auto" }}>
+
                             <Col lg={8} md={12} >
                                 <div className='contup'>
-
                                     <div>
-                                        <img src={OutDoor} alt="" />
+                                        <img src={Experience} alt="" />
                                     </div>
                                     <CountUp
-                                        end={400}
+                                        end={25}
                                         duration={20}
                                         suffix="+"
                                     />
-
-                                    <h3>Premium Outdoor Sites in Ahmedabad</h3>
+                                    <h3>Years of Industry Experience </h3>
                                 </div>
                             </Col>
                             <Col lg={8} md={12} >
@@ -80,15 +79,17 @@ const MobileHero = () => {
                             </Col>
                             <Col lg={8} md={12} >
                                 <div className='contup'>
+
                                     <div>
-                                        <img src={Experience} alt="" />
+                                        <img src={OutDoor} alt="" />
                                     </div>
                                     <CountUp
-                                        end={25}
+                                        end={400}
                                         duration={20}
                                         suffix="+"
                                     />
-                                    <h3>Years of Industry Experience </h3>
+
+                                    <h3>Premium Outdoor Sites in Ahmedabad</h3>
                                 </div>
                             </Col>
                             <Col lg={8} md={12} >

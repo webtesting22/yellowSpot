@@ -316,8 +316,8 @@
         display: flex;
         justify-content: center;
         align-items: start;
-        width: 50%;
-        margin: 20px 0px;
+        width: 25%;
+        margin: 5px 0px;
 
     }
 
@@ -567,6 +567,19 @@
 }
 
 @media(max-width:769px) {
+    .content-container span {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .content-container h3 {
+        font-weight: 400;
+        font-size: 0.8rem;
+        text-align: center;
+        /* color: rgb(255, 255, 255); */
+        font-family: "Barlow Condensed", sans-serif;
+    
+    }
+    
     .content-container .contup {
         padding: 80px 40px;
         display: flex;
@@ -643,8 +656,8 @@
 
     .content-container .contup div {
         background-color: #FFED00;
-        height: 70px;
-        width: 70px;
+        height: 40px;
+        width: 40px;
         margin: auto;
         border-radius: 50%;
         display: flex;
@@ -655,8 +668,8 @@
     .content-container .contup:hover div {
         background-color: #FFED00;
         ;
-        height: 70px;
-        width: 70px;
+        height: 40px;
+        width: 40px;
         margin: auto;
         border-radius: 50%;
         display: flex;

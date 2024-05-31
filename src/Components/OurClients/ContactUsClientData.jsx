@@ -131,7 +131,7 @@ import { BiCategory } from "react-icons/bi"
 import AShridhar from "./DirectClients/AShridhar.png"
 import AACA from "./DirectClients/AACA.png"
 import AAGAM from "./DirectClients/AAGAM AVENUE.png"
-import AAKASH from "./DirectClients/AAKASH.png"
+import AAKASH from "./DirectClients/Akash.svg"
 import AARYABHUMI from "./DirectClients/AARYABHUMIDev.png"
 import AARYANDEVELOPERS from "./DirectClients/AARYANDEVELOPERS.png"
 import AAVALIIPL from "./DirectClients/AAVALIIPL.webp"
@@ -581,7 +581,7 @@ const DirectClient = [
         clientImg: AARYANDEVELOPERS,
         clientWebLink: "https://aaryandevelopers.in/",
         ClientName: "AARYAN DEVELOPERS",
-        Backcolor: "white"
+        Backcolor: "rgb(255, 237, 0)"
     },
     {
         clientImg: AARYABHUMI,
