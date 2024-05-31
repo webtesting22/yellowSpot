@@ -16,18 +16,16 @@ const OurClientele = () => {
         setSelectedCategory(event.target.value);
     };
 
-    const categories = [...new Set(ClientDataLogos.map(item => item.Category))].filter(Boolean);
+    const categories = [...new Set(DirectClient.map(item => item.Category))].filter(Boolean);
 
     const filteredClientData = selectedCategory
-        ? ClientDataLogos.filter(item => item.Category === selectedCategory)
-        : ClientDataLogos;
+        ? DirectClient.filter(item => item.Category === selectedCategory)
+        : DirectClient;
     // const cardColors = ["#ff6347", "#6495ed", "#32cd32", "#ffa500", "#9370db"];
     return (
         <>
             <Navbar />
             <HomePageNavigation />
-            {/* <div className="section-padding"></div>
-            <br /> */}
 
             <section>
                 <AnimatedCoverPage />
@@ -40,18 +38,8 @@ const OurClientele = () => {
                 <br /><br />
                 <div className="container AgencyLogo">
                     <div>
-                        <div className="categoryFilter">
-                            <select onChange={handleCategoryChange} value={selectedCategory}>
-                                <option value="">All</option>
-                                {categories.map((category, index) => (
-                                    <option key={index} value={category}>
-                                        {category}
-                                    </option>
-                                ))}
-                            </select>
-                        </div>
                         <Row>
-                            {filteredClientData.map((item, index) => (
+                            {ClientDataLogos.map((item, index) => (
                                 <Col lg={6} md={8} key={index}>
                                     <a href={item.clientWebLink} target="_blank" className="card-link">
                                         <div className="maincard">
@@ -84,10 +72,22 @@ const OurClientele = () => {
                     <SwiperHeadingIcon headingText="OUR CONSUMER CLIENTELE" />
                 </div>
 
-                <br /><br />
+                <br />
                 <div className="container DirectLogo">
+                    <div className="categoryFilter">
+                        <select onChange={handleCategoryChange} value={selectedCategory} style={{width:"150px",padding:"5px 0px",borderRadius:"5px"}}>
+                            <option value="">All</option>
+                            {categories.map((category, index) => (
+                                <option key={index} value={category}>
+                                    {category}
+                                </option>
+                            ))}
+                        </select>
+                    </div>
+                    <br />
+                    <br />
                     <div className="row">
-                        {DirectClient
+                        {filteredClientData
                             .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
                             .map((item, index) => (
                                 <div className="col-lg-2 col-md-4 col-sm-8" key={index}>

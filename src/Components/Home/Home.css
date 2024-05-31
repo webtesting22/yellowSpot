@@ -540,8 +540,8 @@
 
 .content-container .contup div {
     background-color: #FFED00;
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     margin: auto;
     border-radius: 50%;
 
@@ -549,8 +549,8 @@
 
 .content-container .contup:hover div {
     background-color: #FFED00;
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
     margin: auto;
     border-radius: 50%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -558,7 +558,7 @@
 
 @media (min-width:1300px) and (max-width:3000px) {
     .content-container .contup {
-        padding: 80px 40px;
+        padding: 60px 20px;
         display: flex;
         transition: .5s;
         justify-content: center;

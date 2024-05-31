@@ -90,7 +90,7 @@ import TitanEyePlus from "../OurClients/DirectClients/TitanEyePlus.png"
 import RKumar from "../OurClients/DirectClients/RKumar.png"
 import SalEducaton from "../OurClients/DirectClients/SalEducaton.png"
 import KarnavatUniversity from "../OurClients/DirectClients/KarnavatUniversity.webp"
-import Allen from "../OurClients/DirectClients/Allen.jpg"
+import Allen from "../OurClients/DirectClients/Allen.png"
 import Unacademy from "../OurClients/DirectClients/Unacademy.svg"
 import ParulUniversity from "../OurClients/DirectClients/paralUni.png"
 import AhmedabadUni from "../OurClients/DirectClients/AhmedabadUni.webp"
@@ -108,7 +108,7 @@ import ACCKO from "../OurClients/DirectClients/ACCKO.jpg"
 import GMSwitch from "../OurClients/DirectClients/GMSwitch.svg"
 import Fybros from "../OurClients/DirectClients/Fybros.png"
 import DivyaBhaskar from "../OurClients/DirectClients/DivyaBhaskar.jpg"
-import GodTMT from "../OurClients/DirectClients/GodTMT.jfif"
+import GodTMT from "../OurClients/DirectClients/GODTMT.png"
 import WingsHospital from "../OurClients/DirectClients/WingsHospital.png"
 import NeubergSupratech from "../OurClients/DirectClients/NeubergSupratech.png"
 import JivrajMehtaHealth from "../OurClients/DirectClients/JivrajMehtaHealth.png"
@@ -121,9 +121,9 @@ import ConsteraRealty from "../OurClients/DirectClients/ConsteraRealty.png"
 import ArvindLimited from "../OurClients/DirectClients/ArvindLimited.svg"
 import ShaktInfrastructure from "../OurClients/DirectClients/ShaktInfrastructure.jfif"
 import KavishaGroup from "../OurClients/DirectClients/KavishaGrp.png"
-import ShaligramGroup from "../OurClients/DirectClients/ShaligramGroup.webp"
+import ShaligramGroup from "../OurClients/DirectClients/shaligramGroup.png"
 import ShivamBuilders from "../OurClients/DirectClients/ShivamBuilders.png"
-import UniqueInfraspace from "../OurClients/DirectClients/UniqueInfraspace.webp"
+import UniqueInfraspace from "../OurClients/DirectClients/UniqueInfraspace.jpg"
 import RitBuildspace from "../OurClients/DirectClients/RitBuildspace.jpg"
 import RaviDesaiSignature from "../OurClients/DirectClients/RaviDesaiSignature.png"
 import { color } from "framer-motion"
@@ -201,7 +201,9 @@ const DirectClient = [
         clientImg: DYSON,
         clientWebLink: "https://www.edugoabroad.com/",
         ClientName: "EDUGO ABROAD",
-        Backcolor: "white"
+        Backcolor: "white",
+        Category: "hospital"
+
     },
     {
         clientImg: DYSON,
@@ -685,12 +687,12 @@ const DirectClient = [
         ClientName: "GIHED",
         Backcolor: "white"
     },
-    {
-        clientImg: LIBFExpo,
-        clientWebLink: "https://euroeximbank.com/media-events/libf-expo-2024",
-        ClientName: "LIBF Expo",
-        Backcolor: "white"
-    },
+    // {
+    //     clientImg: LIBFExpo,
+    //     clientWebLink: "https://euroeximbank.com/media-events/libf-expo-2024",
+    //     ClientName: "LIBF Expo",
+    //     Backcolor: "white"
+    // },
     {
         clientImg: BankofBaroda,
         clientWebLink: "https://www.bankofbaroda.in/",
@@ -706,7 +708,7 @@ const DirectClient = [
     {
         clientImg: GSCLogo,
         clientWebLink: "https://gscbank.co.in/",
-        ClientName: "GSC",
+        ClientName: "GSC Bank",
         Backcolor: "white"
     },
     {
@@ -718,7 +720,7 @@ const DirectClient = [
     {
         clientImg: JadBlue,
         clientWebLink: "https://jadeblue.com/",
-        ClientName: "JadBlue",
+        ClientName: "JADE BLUE",
         Backcolor: "white"
     },
     {
@@ -754,7 +756,7 @@ const DirectClient = [
     {
         clientImg: KarnavatUniversity,
         clientWebLink: "https://karnavatiuniversity.edu.in/",
-        ClientName: "Karnavat University",
+        ClientName: "Karnavati University",
         Backcolor: "white"
     },
     {
@@ -784,7 +786,7 @@ const DirectClient = [
     {
         clientImg: SilverOakCollege,
         clientWebLink: "https://silveroakuni.ac.in/",
-        ClientName: "Silver Oak College",
+        ClientName: "Silver oak university",
         Backcolor: "white"
     },
     {
@@ -844,7 +846,7 @@ const DirectClient = [
     {
         clientImg: ACCKO,
         clientWebLink: "https://www.acko.com/",
-        ClientName: "ACCKO",
+        ClientName: "ACKO",
         Backcolor: "white"
     },
     {
@@ -886,7 +888,7 @@ const DirectClient = [
     {
         clientImg: JivrajMehtaHealth,
         clientWebLink: "https://jivrajhealthcare.org/",
-        ClientName: "Jivraj Mehta Health",
+        ClientName: "Dr Jivraj Mehta sarak Health foundation",
         Backcolor: "white"
     },
     {
@@ -931,12 +933,12 @@ const DirectClient = [
         ClientName: "Arvind Limited",
         Backcolor: "white"
     },
-    {
-        clientImg: ShaktInfrastructure,
-        clientWebLink: "https://shaktiinfrastructure.in/",
-        ClientName: "Shakt Infrastructure",
-        Backcolor: "white"
-    },
+    // {
+    //     clientImg: ShaktInfrastructure,
+    //     clientWebLink: "https://shaktiinfrastructure.in/",
+    //     ClientName: "Shakt Infrastructure",
+    //     Backcolor: "white"
+    // },
     {
         clientImg: KavishaGroup,
         clientWebLink: "https://kavishacorp.com/",
@@ -964,7 +966,7 @@ const DirectClient = [
     {
         clientImg: RitBuildspace,
         clientWebLink: "",
-        ClientName: "Rit Buildspace",
+        ClientName: "riti Buildspace",
         Backcolor: "white"
     },
     {
