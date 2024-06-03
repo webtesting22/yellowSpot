@@ -9,6 +9,10 @@ import { ClientDataLogos, DirectClient } from "../OurClients/ContactUsClientData
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 import "./OurClients.css"
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
+const capitalizeEachWord = (string) => {
+    return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+};
+
 const OurClientele = () => {
     const [selectedCategory, setSelectedCategory] = useState("");
 
@@ -16,11 +20,16 @@ const OurClientele = () => {
         setSelectedCategory(event.target.value);
     };
 
-    const categories = [...new Set(DirectClient.map(item => item.Category))].filter(Boolean);
+    // Get unique categories
+    const categories = [...new Set(DirectClient.map(item => item.Category).filter(Boolean))];
 
+    // Filter clients based on selected category
     const filteredClientData = selectedCategory
         ? DirectClient.filter(item => item.Category === selectedCategory)
         : DirectClient;
+
+    // Get unique client data
+    const uniqueClientData = [...new Map(filteredClientData.map(item => [item.ClientName, item])).values()];
     // const cardColors = ["#ff6347", "#6495ed", "#32cd32", "#ffa500", "#9370db"];
     return (
         <>
@@ -75,7 +84,7 @@ const OurClientele = () => {
                 <br />
                 <div className="container DirectLogo">
                     <div className="categoryFilter">
-                        <select onChange={handleCategoryChange} value={selectedCategory} style={{width:"150px",padding:"5px 0px",borderRadius:"5px"}}>
+                        <select onChange={handleCategoryChange} value={selectedCategory} style={{ width: "150px", padding: "5px 0px", borderRadius: "5px" }}>
                             <option value="">All</option>
                             {categories.map((category, index) => (
                                 <option key={index} value={category}>
@@ -87,7 +96,7 @@ const OurClientele = () => {
                     <br />
                     <br />
                     <div className="row">
-                        {filteredClientData
+                        {uniqueClientData
                             .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
                             .map((item, index) => (
                                 <div className="col-lg-2 col-md-4 col-sm-8" key={index}>
@@ -104,7 +113,7 @@ const OurClientele = () => {
                                                         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                                                             <i className='bx bx-link'></i>
                                                             <div style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
-                                                                {item.ClientName}
+                                                            {capitalizeEachWord(item.ClientName)}
                                                             </div>
                                                         </div>
                                                     </div>
