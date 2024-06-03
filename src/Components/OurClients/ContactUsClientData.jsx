@@ -470,7 +470,7 @@ const DirectClient = [
         clientWebLink: "https://www.bajajallianz.com/",
         ClientName: "BAJAJ ALLIANZ",
         Backcolor: "white",
-        Category: "BFSI - Banking, Financial Services, Insurance "
+        Category: "BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: BSAFAL,
@@ -701,7 +701,7 @@ const DirectClient = [
         clientWebLink: "https://www.jiomart.com/",
         ClientName: "Jio Mart",
         Backcolor: "white",
-        Category: "E-commerce "
+        Category: "E-commerce"
 
     },
     {
@@ -792,7 +792,7 @@ const DirectClient = [
         clientWebLink: "https://www.kalupurbank.com/",
         ClientName: "Kalupur Bank",
         Backcolor: "white",
-        Category: "BFSI - Banking, Financial Services, Insurance "
+        Category: "BFSI - Banking, Financial Services, Insurance"
     },
     {
         clientImg: JadBlue,
@@ -945,7 +945,7 @@ const DirectClient = [
         clientWebLink: "https://www.acko.com/",
         ClientName: "ACKO",
         Backcolor: "white",
-        Category: "E-commerce "
+        Category: "E-commerce"
     },
     {
         clientImg: GMSwitch,
