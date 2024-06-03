@@ -196,8 +196,182 @@ import DELHIINSTITUTE from "./DirectClients/DELHIINSTITUTE.jpg"
 import DRAPESHOPEE from "./DirectClients/DRAPESHOPEE.png"
 import DTIAUTOMATION from "./DirectClients/DTIAUTOMATION.png"
 import DYSON from "./DirectClients/DYSON.png"
+import EDUGOABROAD from "./DirectClients/EDUGOABROAD.jfif"
+import ELECONENGINEERING from "./DirectClients/ELECONENGINEERING.png"
+import ENAMOR from "./DirectClients/ENAMOR.jpg"
+import ESAFSMALL from "./DirectClients/ESAFSMALL.png"
+import EUROKIDS from "./DirectClients/EUROKIDS.jpg"
+import EYECAREHOSPITAL from "./DirectClients/EYECAREHOSPITAL.png"
+import FSTUDIO from "./DirectClients/FSTUDIO.png"
+import FABINDIA from "./DirectClients/FABINDIA.png"
+import FASHIONEDITINDIA from "./DirectClients/FASHIONEDITINDIA.png"
+import FICCIFLO from "./DirectClients/FICCIFLO.png"
+import FIREBOLTT from "./DirectClients/FIRE-BOLTT.webp"
+import FORTUNESELECT from "./DirectClients/FORTUNESELECT.png"
+import FOURSEASONS from "./DirectClients/FOUR SEASONS.png"
+import FUTURESOLUTIONS from "./DirectClients/FUTURE-SOLUTIONS.png"
+import GALAINFRASTRUCTURE from "./DirectClients/GALAINFRASTRUCTURE.jpg"
+import GANDHINAGARUNIVERSITY from "./DirectClients/GANDHINAGARUNIVERSITY.jpg"
+import GANESHGROUP from "./DirectClients/GANESHGROUP.png"
+import GANESHINFRA from "./DirectClients/GANESHINFRA.jfif"
+import GAURAVVANTAGUJARATIAWARDS from "./DirectClients/GAURAVVANTA-GUJARATI-AWARDS.jfif"
+import GCCI from "./DirectClients/GCCI.webp"
 const DirectClient = [
+    {
+        clientImg: GCCI,
+        clientWebLink: "https://www.gujaratchamber.org/",
+        ClientName: "GCCI",
+        Backcolor: "white",
+        Category: "Govt Sector"
+    },
+    {
+        clientImg: GAURAVVANTAGUJARATIAWARDS,
+        clientWebLink: "https://www.gyanjyot.co.in/",
+        ClientName: "GAYAN JYOT INSTITUTE",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: GAURAVVANTAGUJARATIAWARDS,
+        // clientWebLink: "https://ganeshinfra.com/",
+        ClientName: "GAURAVVANTA GUJARATI AWARDS",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: GANESHINFRA,
+        clientWebLink: "https://ganeshinfra.com/",
+        ClientName: "GANESH INFRA",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: GANESHGROUP,
+        clientWebLink: "https://ganeshgroup.co/",
+        ClientName: "GANESH GROUP",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: GANDHINAGARUNIVERSITY,
+        clientWebLink: "https://www.gandhinagaruni.ac.in/",
+        ClientName: "GANDHINAGAR UNIVERSITY",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: GALAINFRASTRUCTURE,
+        clientWebLink: "https://galainfra.com/",
+        ClientName: "GALA INFRASTRUCTURE",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: FUTURESOLUTIONS,
+        clientWebLink: "https://www.futuresoluindia.com/",
+        ClientName: "FUTURE SOLUTIONS",
+        Backcolor: "white",
+        Category: "Consumer Durables"
+    },
+    {
+        clientImg: FOURSEASONS,
+        clientWebLink: "https://www.fourseasons.com/",
+        ClientName: "FOUR SEASONS",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: FORTUNESELECT,
+        clientWebLink: "https://www.fortunehotels.in/",
+        ClientName: "FORTUNE SELECT",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: FIREBOLTT,
+        clientWebLink: "https://www.fireboltt.com/",
+        ClientName: "FIRE-BOLTT",
+        Backcolor: "white",
+        Category: "Consumer Durables"
+    },
+    {
+        clientImg: FICCIFLO,
+        clientWebLink: "https://www.ficciflo.com/",
+        ClientName: "FICCI FLO",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: FASHIONEDITINDIA,
+        clientWebLink: "https://fashioneditindia.com/",
+        ClientName: "FASHION EDIT INDIA",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    // {
+    //     clientImg: FABINDIA,
+    //     clientWebLink: "https://www.fabindia.com/",
+    //     ClientName: "FAKTH MAHILAO MATE OOH",
+    //     Backcolor: "white",
+    //     Category: "Lifestyle"
+    // },
+    {
+        clientImg: FABINDIA,
+        clientWebLink: "https://www.fabindia.com/",
+        ClientName: "FABINDIA",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
 
+    {
+        clientImg: FSTUDIO,
+        clientWebLink: "https://fstudio.in/",
+        ClientName: "F STUDIO",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: EYECAREHOSPITAL,
+        clientWebLink: "https://www.eyecarehospital.org/",
+        ClientName: "EYE CARE HOSPITAL AHMEDABAD",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: EUROKIDS,
+        clientWebLink: "https://www.eurokidsindia.com/",
+        ClientName: "EURO KIDS",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: ESAFSMALL,
+        clientWebLink: "https://www.esafbank.com/",
+        ClientName: "ESAF SMALL FINANCE BANK",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: ENAMOR,
+        clientWebLink: "https://www.enamor.co.in/",
+        ClientName: "ENAMOR",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: ELECONENGINEERING,
+        clientWebLink: "https://www.elecon.com/",
+        ClientName: "ELECON ENGINEERING COMPANY LIMITED",
+        Backcolor: "white",
+        Category: "Consumer Durables"
+    },
+    {
+        clientImg: EDUGOABROAD,
+        clientWebLink: "https://www.edugoabroad.com/",
+        ClientName: "EDUGO ABROAD",
+        Backcolor: "white",
+        Category: "Education"
+    },
     {
         clientImg: DYSON,
         clientWebLink: "https://www.dyson.in/",
