@@ -14,8 +14,8 @@ import { Row, Col, Drawer } from "antd";
 import ClientLogos from './ClientLogosData';
 import Homepagefirst from "../MobileHome/new.png"
 import Industy from "../Home/Banners/OurEgency.png"
-import offering from "../Home/Banners/28.png"
-import client from "../Home/Banners/KeyClients.png"
+import offering from "../Home/Banners/OfferingHome.png"
+import client from "../Home/Banners/clienteleHome.png"
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import CountUp from 'react-countup';
 import Combinelogo from "../Navbar/CombineLogo.jpg"

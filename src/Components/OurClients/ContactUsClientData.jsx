@@ -216,7 +216,63 @@ import GANESHGROUP from "./DirectClients/GANESHGROUP.png"
 import GANESHINFRA from "./DirectClients/GANESHINFRA.jfif"
 import GAURAVVANTAGUJARATIAWARDS from "./DirectClients/GAURAVVANTA-GUJARATI-AWARDS.jfif"
 import GCCI from "./DirectClients/GCCI.webp"
+import GERMANTMX from "./DirectClients/GERMAN-TMX.png"
+import GHARWAKHRIFURNITURE from "./DirectClients/GHARWAKHRI-FURNITURE.jpg"
+import GLOBALREACHOVERSEASEDUCATION from "./DirectClients/GLOBAL-REACH-OVERSEAS-EDUCATION.jfif"
+import GOLDISOLAR from "./DirectClients/GOLDI-SOLAR.png"
+import GOOGLE from "./DirectClients/GOOGLE.webp"
+import GOYALCO from "./DirectClients/GOYAL-CO.jpg"
+import GREENFIBER from "./DirectClients/GREEN-FIBER.webp"
 const DirectClient = [
+    {
+        clientImg: GREENFIBER,
+        clientWebLink: "https://greenfibre.com/",
+        ClientName: "GREEN FIBER",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: GOYALCO,
+        clientWebLink: "https://goyalco.com/",
+        ClientName: "GOYAL & CO",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: GOOGLE,
+        clientWebLink: "https://www.google.co.in/",
+        ClientName: "GOOGLE",
+        Backcolor: "white",
+        Category: "E-commerce"
+    },
+    {
+        clientImg: GOLDISOLAR,
+        clientWebLink: "https://goldisolar.com/",
+        ClientName: "GOLDI SOLAR",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: GLOBALREACHOVERSEASEDUCATION,
+        clientWebLink: "https://www.globalreach.in/",
+        ClientName: "GLOBAL REACH OVERSEAS EDUCATION",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: GHARWAKHRIFURNITURE,
+        clientWebLink: "https://www.gharwakhri.com/",
+        ClientName: "GHARWAKHRI FURNITURE",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: GERMANTMX,
+        clientWebLink: "https://www.germantmx.com/",
+        ClientName: "GERMAN TMX",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
     {
         clientImg: GCCI,
         clientWebLink: "https://www.gujaratchamber.org/",
@@ -224,13 +280,13 @@ const DirectClient = [
         Backcolor: "white",
         Category: "Govt Sector"
     },
-    {
-        clientImg: GAURAVVANTAGUJARATIAWARDS,
-        clientWebLink: "https://www.gyanjyot.co.in/",
-        ClientName: "GAYAN JYOT INSTITUTE",
-        Backcolor: "white",
-        Category: "Education"
-    },
+    // {
+    //     clientImg: GAURAVVANTAGUJARATIAWARDS,
+    //     clientWebLink: "https://www.gyanjyot.co.in/",
+    //     ClientName: "GAYAN JYOT INSTITUTE",
+    //     Backcolor: "white",
+    //     Category: "Education"
+    // },
     {
         clientImg: GAURAVVANTAGUJARATIAWARDS,
         // clientWebLink: "https://ganeshinfra.com/",
