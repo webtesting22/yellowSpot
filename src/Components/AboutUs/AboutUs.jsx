@@ -136,7 +136,7 @@ const AboutUS = () => {
                                         <div className="founder-info">
                                             <div className="header-part">
                                                 <div style={{ display: "flex", alignItems: "center" }}>
-                                                    <h4 style={{ fontSize: "30px" }}><span>{founder.FounderName}</span> {founder.FounderSecondName}</h4>
+                                                    <h4 style={{ fontSize: "40px" }}><span>{founder.FounderName}</span> {founder.FounderSecondName}</h4>
                                                 </div>
                                                 <div className="socials">
                                                     <i className='bx bxl-linkedin-square'></i>
