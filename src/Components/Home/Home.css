@@ -558,11 +558,13 @@
 
 @media (min-width:1300px) and (max-width:3000px) {
     .content-container .contup {
-        padding: 60px 20px;
+        padding: 5px 0px;
         display: flex;
         transition: .5s;
         justify-content: center;
         flex-direction: column;
+        margin: 20px 0px;
+        /* height: 300px; */
     }
 }
 
@@ -581,12 +583,12 @@
     }
     
     .content-container .contup {
-        padding: 80px 40px;
+        padding: 5px 0px;
         display: flex;
         transition: .5s;
         justify-content: center;
         flex-direction: column;
-        color: white;
+        margin: 20px 0px;
     }
 
     .content-container .contup:hover span,

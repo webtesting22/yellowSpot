@@ -38,7 +38,7 @@ import Clients from "./icons/Clients.png"
 import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
 import MobileHero from '../MobileHome/MobileHero';
-import countersBack from "./Banners/countersBack.png"
+import countersBack from "../Home/countersBack.png"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -64,7 +64,7 @@ const Home = () => {
         <section id="home-page-header">
 
           <Link to="/"> <img src={CombineLogo} alt="Yellow-Spot Logo" className="logo-home" style={{ opacity: "0" }} /></Link>
-          <button className="menu-btn" onClick={showDrawer}>
+          <button className="menu-btn" onClick={showDrawer} style={{ backgroundColor: "black" }}>
             <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
               {drawerVisible ? <CloseOutlined /> : <MenuOutlined />}
             </span>
@@ -146,7 +146,7 @@ const Home = () => {
                   <div className="content-container">
                     <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center" }}>
 
-                      <Col lg={8} md={12} >
+                      <Col lg={12} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Experience} alt="" />
@@ -156,7 +156,22 @@ const Home = () => {
                             duration={20}
                             suffix="+"
                           />
-                          <h3>Years of Industry Experience </h3>
+                          <h3>Years of Industry <br /> Experience </h3>
+                        </div>
+                      </Col>
+                      <Col lg={12} md={12} >
+                        <div className='contup'>
+
+                          <div>
+                            <img src={OutDoor} alt="" />
+                          </div>
+                          <CountUp
+                            end={400}
+                            duration={20}
+                            suffix="+"
+                          />
+
+                          <h3>Premium Outdoor Sites <br /> in Ahmedabad</h3>
                         </div>
                       </Col>
                       <Col lg={8} md={12} >
@@ -185,21 +200,7 @@ const Home = () => {
                           <h3>Clients</h3>
                         </div>
                       </Col>
-                      <Col lg={8} md={12} >
-                        <div className='contup'>
-
-                          <div>
-                            <img src={OutDoor} alt="" />
-                          </div>
-                          <CountUp
-                            end={400}
-                            duration={20}
-                            suffix="+"
-                          />
-
-                          <h3>Premium Outdoor Sites in Ahmedabad</h3>
-                        </div>
-                      </Col>
+                      
                       <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
