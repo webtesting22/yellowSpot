@@ -8,7 +8,7 @@ import HomePageNavigation from "../Home/HomePageNavigation";
 import MagicHeading from "../MagicHeading/MagicHeading";
 import { ClientDataLogos, DirectClient } from "../OurClients/ContactUsClientData";
 import DemoImage from "../Navbar/CombineLogo.jpg"
-import ContactUsBack from "./ContactUsBack.jpeg"
+import ContactUsBack from "./ContactUsBack1.png"
 const ContactUs = () => {
 
     return (
@@ -18,9 +18,9 @@ const ContactUs = () => {
             {/* <div className="section_padding"></div>
             <div className="section_padding"></div>
             <br /> */}
-                <section className="contactUsSection">
-                    <img src={ContactUsBack} alt=""  style={{width:"100%"}}/>
-                </section>
+            <section className="contactUsSection">
+                <img src={ContactUsBack} alt="" style={{ width: "100%" }} />
+            </section>
             {/* <section id="contactUssection">
                 <div className="container twoColumsContainer">
                     <div className="leftSideColumn">

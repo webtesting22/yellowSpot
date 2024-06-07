@@ -12,6 +12,7 @@ import img2 from "../Home/Banners/Final2.png"
 import offering from "../Home/Banners/28.png"
 import { Link } from "react-router-dom";
 import billboard from "../Home/iconsImages/billboard.png"
+import BackLightICon from "../Home/icons/BackLight.png"
 // import Clients from "..Home/icons/Clients.png"
 import client from "../Home/Banners/KeyClients.png"
 import ClientLogos from '../Home/ClientLogosData';
@@ -20,7 +21,7 @@ import { Mousewheel, Pagination, FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import ourOffering from "../Home/offeringFinal.jpg"
-import OurClients from "../Home/Banners/clienteleHome.png"
+import OurClients from "./clientHome.png"
 import CounterBack from "../Home/countersBack.png"
 const MobileHero = () => {
     return (
@@ -38,7 +39,7 @@ const MobileHero = () => {
                         </div>
                         <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "auto" }}>
 
-                            <Col lg={8} md={12} >
+                            <Col lg={8} md={12} style={{ display: "flex", justifyContent: "end" }}>
                                 <div className='contup'>
                                     <div>
                                         <img src={Experience} alt="" />
@@ -51,7 +52,7 @@ const MobileHero = () => {
                                     <h3>Years of Industry Experience </h3>
                                 </div>
                             </Col>
-                            <Col lg={8} md={12} >
+                            <Col lg={8} md={12} style={{ display: "flex", justifyContent: "start" }}>
                                 <div className='contup'>
                                     <div>
                                         <img src={Impressions} alt="" />
@@ -95,7 +96,7 @@ const MobileHero = () => {
                             <Col lg={8} md={12} >
                                 <div className='contup'>
                                     <div>
-                                        <img src={Media} alt="" />
+                                        <img src={BackLightICon} alt="" />
                                     </div>
                                     <CountUp
                                         end={99}
@@ -207,7 +208,7 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", border: "2px solid white"}}>
+                <div style={{ position: "relative", border: "2px solid white" }}>
                     <div className="image-container">
                         <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
@@ -226,7 +227,7 @@ const MobileHero = () => {
                     </div>
                 </div>
                 <div style={{ position: "relative", overflow: "hidden", border: "2px solid white" }}>
-                    <div style={{position:"relative"}}>
+                    <div style={{ position: "relative" }}>
                         <div className="image-container" >
                             <img src={OurClients} alt="Yellow-Spot poster" />
                         </div>
@@ -256,7 +257,7 @@ const MobileHero = () => {
                                                 slidesPerView: 3// For tablets
                                             },
                                             300: {
-                                                slidesPerView: 2 // For mobile devices
+                                                slidesPerView: 3 // For mobile devices
                                             },
                                         }}
                                         style={{ height: "14vh", padding: "0px 10px" }}

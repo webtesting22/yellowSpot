@@ -133,7 +133,7 @@ import AACA from "./DirectClients/AACA.png"
 import AAGAM from "./DirectClients/AAGAM AVENUE.png"
 import AAKASH from "./DirectClients/Akash.svg"
 import AARYABHUMI from "./DirectClients/AARYABHUMIDev.png"
-import AARYANDEVELOPERS from "./DirectClients/AARYANDEVELOPERS.png"
+import AARYANDEVELOPERS from "./DirectClients/AaryanDeveloper.jfif"
 import AAVALIIPL from "./DirectClients/AAVALIIPL.webp"
 import ADANICREATION from "./DirectClients/ADANICREATION.png"
 import ADANIFORTUNE from "./DirectClients/ADANIFORTUNE.jpg"
@@ -224,8 +224,247 @@ import GOOGLE from "./DirectClients/GOOGLE.webp"
 import GOYALCO from "./DirectClients/GOYAL-CO.jpg"
 import GREENFIBER from "./DirectClients/GREEN-FIBER.webp"
 import GUJARATLITERATUREFESTIVAL from "./DirectClients/GUJARAT-LITERATURE-FESTIVAL.png"
+import GULABOIL from "./DirectClients/GULAB-OIL.png"
+import HAVELLS from "./DirectClients/HAVELLS.png"
+import HAVMOR from "./DirectClients/HAVMOR.png"
+import HDFCMUTUALFUND from "./DirectClients/HDFC-MUTUAL-FUND.png"
+import HEROFINCORP from "./DirectClients/HERO-FINCORP.png"
+import hocookiChen from "./DirectClients/hocookiChen.png"
+import HOCCOICECREAM from "./DirectClients/HOCCO-ICE-CREAM.png"
+import HUMANFOUNDATION from "./DirectClients/HUMANFOUNDATION.png"
+import HYUNDAIMOTORS from "./DirectClients/HYUNDAI-MOTORS.png"
+import ICCWORLD from "./DirectClients/ICC-WORLD.png"
+import ICONRMC from "./DirectClients/ICON-RMC.png"
+import IDEALGROUPAHMEDABAD from "./DirectClients/IDEAL-GROUP-AHMEDABAD.png"
+import INDIANPLUMBINGASSOCIATION from "./DirectClients/INDIAN-PLUMBING-ASSOCIATION.png"
+import INDIGO from "./DirectClients/INDIGO.png"
+import INDRASHILUNIVERSITY from "./DirectClients/INDRASHIL-UNIVERSITY.png"
+import IRASVALUXURY from "./DirectClients/IRASVA-LUXURY.png"
+import JACKNJONES from "./DirectClients/JACK-N-JONES.png"
+import JAGATMOVIE from "./DirectClients/JAGAT-MOVIE.jpg"
+import JAISHREEKRISHMOVIE from "./DirectClients/JAI-SHREE -KRISH-MOVIE.jpg"
+import JBSACADEMY from "./DirectClients/JBS-ACADEMY.png"
+import JEEP from "./DirectClients/JEEP.png"
+import JSWPAINTS from "./DirectClients/JSW-PAINTS.jfif"
+import KDHOSPITAL from "./DirectClients/KD-HOSPITAL.jfif"
+import KBZAVERI from "./DirectClients/K.B.-ZAVERI.jpg"
+import KASUMBOMOVIE from "./DirectClients/KASUMBO-MOVIE.jfif"
+import KITCHENEXPRESS from "./DirectClients/KITCHEN-EXPRESS.png"
+import KKJEWELS from "./DirectClients/KK-JEWELS.png"
+import KOHINOOROPTICAL from "./DirectClients/KOHINOOR-OPTICAL.svg"
 const DirectClient = [
+    {
+        clientImg: KOHINOOROPTICAL,
+        clientWebLink: "https://kohinoorindia.co.in/",
+        ClientName: "KOHINOOR RICE",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: KOHINOOROPTICAL,
+        clientWebLink: "https://www.kohinooroptics.com/",
+        ClientName: "KOHINOOR OPTICAL",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: KKJEWELS,
+        clientWebLink: "https://kkjewels.com/",
+        ClientName: "KK JEWELS",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: KITCHENEXPRESS,
+        clientWebLink: "https://www.kxol.in/",
+        ClientName: "KITCHEN EXPRESS",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: KASUMBOMOVIE,
+        clientWebLink: "",
+        ClientName: "KIARA SPACE VENTURES LLP",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: KASUMBOMOVIE,
+        clientWebLink: "",
+        ClientName: "KASUMBO MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: KBZAVERI,
+        clientWebLink: "https://www.kbzaveree.com/",
+        ClientName: "K.B. ZAVERI",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: KDHOSPITAL,
+        clientWebLink: "https://kdhospital.co.in/",
+        ClientName: "K D HOSPITAL",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: JSWPAINTS,
+        clientWebLink: "https://www.jswpaints.in/",
+        ClientName: "JSW PAINTS",
+        Backcolor: "white",
+        Category: "Consumer Durables"
+    },
+    {
+        clientImg: JEEP,
+        clientWebLink: "https://www.jeep-india.com/",
+        ClientName: "JEEP",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: JBSACADEMY,
+        clientWebLink: "https://jbsacademy.com/",
+        ClientName: "JBS ACADEMY",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: JAISHREEKRISHMOVIE,
+        clientWebLink: "",
+        ClientName: "JAI SHREE KRISH MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: JAGATMOVIE,
+        clientWebLink: "",
+        ClientName: "JAGAT MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: JACKNJONES,
+        clientWebLink: "https://www.jackjones.in/",
+        ClientName: "JACK N JONES",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
 
+    {
+        clientImg: IRASVALUXURY,
+        clientWebLink: "https://www.irasva.com/",
+        ClientName: "IRASVA LUXURY DIAMOND JEWELRY",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: INDRASHILUNIVERSITY,
+        clientWebLink: "https://indrashiluniversity.nopaperforms.com/",
+        ClientName: "INDRASHIL UNIVERSITY",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: INDIGO,
+        clientWebLink: "https://www.goindigo.in/",
+        ClientName: "INDIGO",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: INDIANPLUMBINGASSOCIATION,
+        clientWebLink: "https://indianplumbing.org/",
+        ClientName: "INDIAN PLUMBING ASSOCIATION",
+        Backcolor: "white",
+        Category: "Govt Sector"
+    },
+    {
+        clientImg: IDEALGROUPAHMEDABAD,
+        clientWebLink: "https://www.ideal.in/",
+        ClientName: "IDEAL GROUP AHMEDABAD",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: ICONRMC,
+        clientWebLink: "https://www.iconrmc.com/",
+        ClientName: "ICON RMC",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: ICCWORLD,
+        clientWebLink: "https://www.icc-cricket.com/",
+        ClientName: "ICC WORLD CUP 2023",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: HYUNDAIMOTORS,
+        clientWebLink: "https://www.hyundai.com/",
+        ClientName: "HYUNDAI MOTORS",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: HUMANFOUNDATION,
+        clientWebLink: "https://www.humanfoundation.in/",
+        ClientName: "HUMAN FOUNDATION",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: HOCCOICECREAM,
+        clientWebLink: "https://www.hocco.in/",
+        ClientName: "HOCCO ICECREAM",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: hocookiChen,
+        clientWebLink: "https://www.1944.in/",
+        ClientName: "HOCCO ICE CREAM - 1944",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: HEROFINCORP,
+        clientWebLink: "https://www.herofincorp.com/",
+        ClientName: "HERO FINCORP",
+        Backcolor: "white",
+        Category: "BFSI - Banking, Financial Services, Insurance"
+    },
+
+    {
+        clientImg: HDFCMUTUALFUND,
+        clientWebLink: "https://www.hdfcfund.com/",
+        ClientName: "HDFC MUTUAL FUND",
+        Backcolor: "white",
+        Category: "BFSI - Banking, Financial Services, Insurance"
+    },
+    {
+        clientImg: HAVMOR,
+        clientWebLink: "https://www.havmor.com/",
+        ClientName: "HAVMOR",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: HAVELLS,
+        clientWebLink: "https://havells.com/",
+        ClientName: "HAVELLS",
+        Backcolor: "white",
+        Category: "Consumer Durables"
+    },
+    {
+        clientImg: GULABOIL,
+        clientWebLink: "https://shopgulab.com/",
+        ClientName: "GULAB OIL",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
     {
         clientImg: GUJARATLITERATUREFESTIVAL,
         clientWebLink: "https://gujlitfest.org/",
@@ -876,7 +1115,7 @@ const DirectClient = [
         clientImg: AARYANDEVELOPERS,
         clientWebLink: "https://aaryandevelopers.in/",
         ClientName: "AARYAN DEVELOPERS",
-        Backcolor: "rgb(255, 237, 0)",
+        Backcolor: "white",
         Category: "Infrastructure"
     },
     {

@@ -37,6 +37,7 @@ import Impressions from "./icons/experience.png"
 import Clients from "./icons/Clients.png"
 import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
+import BackLightMedia from "./icons/BackLight.png"
 import MobileHero from '../MobileHome/MobileHero';
 import countersBack from "../Home/countersBack.png"
 import OurOfficetry from "./offeringFinal.jpg"
@@ -194,7 +195,7 @@ const Home = () => {
                             <img src={Clients} alt="" />
                           </div>
                           <CountUp
-                            end={1000}
+                            end={500}
                             duration={20}
                             suffix="+"
                           />
@@ -205,7 +206,7 @@ const Home = () => {
                       <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
-                            <img src={Media} alt="" />
+                            <img src={BackLightMedia} alt="" />
                           </div>
                           <CountUp
                             end={99}
@@ -335,8 +336,8 @@ const Home = () => {
                 </div>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
-                  <Link to="/OurOfferings"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-                  <Link to="/OurOfferings"><button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <Link to="/OurOfferings#OurProducts"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <Link to="/OurOfferings#OurServices"><button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>
             </div>

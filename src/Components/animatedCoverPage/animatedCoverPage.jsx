@@ -12,12 +12,12 @@ const AnimatedCoverPage = ({ backgroundImage }) => {
                 <div className="textbackAnimation">
                     <img src={backgroundImage} alt="" />
                 </div>
-                <div id="MobileFreidly">
+                {/* <div id="MobileFreidly">
                     <TypeAnimation
                         sequence={[
-                            // Same substring at the start will only be typed out once, initially
+                            
                             'YELLOWSPOT  ',
-                            6000, // wait 1s before replacing "Mice" with "Hamsters"
+                            6000, 
 
                         ]}
                         wrapper="h1"
@@ -33,7 +33,7 @@ const AnimatedCoverPage = ({ backgroundImage }) => {
 
                         <span></span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )
