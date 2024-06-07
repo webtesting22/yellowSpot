@@ -50,7 +50,7 @@ const OurClientele = () => {
                     <div>
                         <Row>
                             {ClientDataLogos.map((item, index) => (
-                                <Col lg={4} md={8} key={index}>
+                                <Col lg={4} md={8} sm={12} key={index} id="ColSet">
                                     <a href={item.clientWebLink} target="_blank" className="card-link">
                                         <div className="maincard">
                                             <div className="flip-card">
@@ -96,11 +96,11 @@ const OurClientele = () => {
                     </div>
                     <br />
                     <br />
-                    <div className="row">
+                    <Row>
                         {uniqueClientData
                             .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
                             .map((item, index) => (
-                                <div className="col-lg-2 col-md-4 col-sm-8" key={index}>
+                                <Col lg={4} md={8} sm={12} key={index} id="DirectClients">
                                     <a href={item.clientWebLink} target="_blank" className="card-link">
                                         <div className="maincard">
                                             <div className="flip-card">
@@ -122,11 +122,11 @@ const OurClientele = () => {
                                             </div>
                                         </div>
                                     </a>
-                                </div>
+                                </Col>
                             ))}
 
 
-                    </div>
+                    </Row>
                 </div>
             </section>
             <Footer />
