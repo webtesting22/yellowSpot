@@ -50,7 +50,7 @@ const OurClientele = () => {
                     <div>
                         <Row>
                             {ClientDataLogos.map((item, index) => (
-                                <Col lg={6} md={8} key={index}>
+                                <Col lg={4} md={8} key={index}>
                                     <a href={item.clientWebLink} target="_blank" className="card-link">
                                         <div className="maincard">
                                             <div className="flip-card">
