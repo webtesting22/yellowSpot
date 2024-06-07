@@ -78,7 +78,7 @@ const OurClientele = () => {
                     </div>
                 </div>
                 <br /><br />
-                <div className="container" style={{ position: "sticky", top: "0%", zIndex:"2",paddingTop:"20px",paddingBottom:"5px",backgroundColor:"black" }}>
+                <div className="container" style={{ position: "sticky", top: "0%", zIndex: "2", paddingTop: "20px", paddingBottom: "5px", backgroundColor: "black" }}>
                     <SwiperHeadingIcon headingText="OUR CONSUMER CLIENTELE" />
                     <br />
                     <div className="categoryFilter">
@@ -95,11 +95,11 @@ const OurClientele = () => {
 
                 <br />
                 <div className="container DirectLogo" >
-                    
+
                     <br />
                     <br />
-                    <div>
-                        <Row style={{zIndex:"1"}}>
+                    <div >
+                        <Row style={{ zIndex: "1" }}>
                             {uniqueClientData
                                 .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
                                 .map((item, index) => (

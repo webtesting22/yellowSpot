@@ -26,13 +26,13 @@ const MobileHero = () => {
     return (
         <>
             <section>
-                <div className="image-container" style={{ borderBottom: "1px solid black" }}>
+                <div className="image-container" style={{ borderBottom: "2px solid white" }}>
                     <img src={homepageImg} alt="Yellow-Spot poster" />
                 </div>
-                <div style={{ border: "1px solid black" }}>
+                <div>
 
                     {/* <div className="image-overlay"></div> */}
-                    <div className="content-container" style={{ padding: "0px", position: "relative", borderBottom: "2px solid black" }} >
+                    <div className="content-container" style={{ padding: "0px", position: "relative", borderBottom: "2px solid white" }} >
                         <div className="image-container" style={{ position: "absolute", }}>
                             <img src={CounterBack} alt="Yellow-Spot poster" />
                         </div>
@@ -207,12 +207,12 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", border: "1px solid black" }}>
+                <div style={{ position: "relative", border: "2px solid white"}}>
                     <div className="image-container">
                         <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
                     <div className="image-overlay"></div>
-                    <div className="text-container-set" style={{ position: "absolute", bottom: "10px" }}>
+                    <div className="text-container-set">
                         <div className="text-container second">
                             <div>
                                 <h1><span style={{ color: "#FFED00" }}>Our</span> Offerings</h1>
@@ -225,58 +225,60 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", overflow: "hidden", border: "1px solid black" }}>
-                    <div className="image-container" >
-                        <img src={OurClients} alt="Yellow-Spot poster" />
-                    </div>
-                    <div className="text-container-set" style={{ position: "absolute", bottom: "30%" }}>
-                        <div className="text-container second">
+                <div style={{ position: "relative", overflow: "hidden", border: "2px solid white" }}>
+                    <div style={{position:"relative"}}>
+                        <div className="image-container" >
+                            <img src={OurClients} alt="Yellow-Spot poster" />
+                        </div>
+                        <div className="text-container-set" style={{ position: "absolute", bottom: "0%" }}>
+                            <div className="text-container second">
 
-                            <div className="slite-padding"></div>
-                            <div className="clients-logo-home-container">
-                                <Swiper
-                                    slidesPerView={6}
-                                    spaceBetween={30}
-                                    freeMode={true}
-                                    loop={true}
-                                    pagination={{
-                                        clickable: true,
-                                    }}
-                                    autoplay={{
-                                        delay: 2000,
-                                        disableOnInteraction: false,
-                                    }}
-                                    breakpoints={{
-                                        // Define breakpoints for different screen sizes
-                                        1100: {
-                                            slidesPerView: 6
-                                        },
-                                        768: {
-                                            slidesPerView: 3// For tablets
-                                        },
-                                        300: {
-                                            slidesPerView: 2 // For mobile devices
-                                        },
-                                    }}
-                                    style={{ height: "14vh", padding: "10px 10px" }}
-                                    modules={[FreeMode, Autoplay, Pagination]}
-                                    className="mySwiper"
-                                >
-                                    {ClientLogos.map((item, index) => (
-                                        <SwiperSlide style={{ display: "flex" }}>
-                                            <div key={index} className='home-page-client-logo'>
-                                                <img src={item.img} alt="" style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
-                                            </div>
-                                        </SwiperSlide>
-                                    ))}
+                                <div className="slite-padding"></div>
+                                <div className="clients-logo-home-container">
+                                    <Swiper
+                                        slidesPerView={6}
+                                        spaceBetween={30}
+                                        freeMode={true}
+                                        loop={true}
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        // autoplay={{
+                                        //     delay: 2000,
+                                        //     disableOnInteraction: false,
+                                        // }}
+                                        breakpoints={{
+                                            // Define breakpoints for different screen sizes
+                                            1100: {
+                                                slidesPerView: 6
+                                            },
+                                            768: {
+                                                slidesPerView: 3// For tablets
+                                            },
+                                            300: {
+                                                slidesPerView: 2 // For mobile devices
+                                            },
+                                        }}
+                                        style={{ height: "14vh", padding: "0px 10px" }}
+                                        modules={[FreeMode, Pagination]}
+                                        className="mySwiper"
+                                    >
+                                        {ClientLogos.map((item, index) => (
+                                            <SwiperSlide style={{ display: "flex" }}>
+                                                <div key={index} className='home-page-client-logo'>
+                                                    <img src={item.img} alt="" style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
+                                                </div>
+                                            </SwiperSlide>
+                                        ))}
 
-                                </Swiper>
+                                    </Swiper>
+                                </div>
+
                             </div>
-
                         </div>
                     </div>
-                    <div style={{position:"absolute",bottom:"0px",  width: "100%", zIndex: "4", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
-                        <div style={{ paddingTop: "2px"}}>
+                    <div style={{ width: "100%", zIndex: "4", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
+                        <div style={{ paddingTop: "2px" }}>
                             <h1 style={{ textAlign: "center", margin: "0px" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
                         </div>
                         <div className="btn-container" style={{ margin: "auto" }}>
