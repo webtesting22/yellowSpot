@@ -33,7 +33,7 @@ const MobileHero = () => {
 
                     {/* <div className="image-overlay"></div> */}
                     <div className="content-container" style={{ padding: "0px", position: "relative", borderBottom: "2px solid black" }} >
-                        <div className="image-container" style={{ position: "absolute", }}>
+                        <div className="image-container" >
                             <img src={CounterBack} alt="Yellow-Spot poster" />
                         </div>
                         <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "auto" }}>
@@ -275,7 +275,7 @@ const MobileHero = () => {
 
                         </div>
                     </div>
-                    <div style={{ position: "absolute", width: "100%", zIndex: "4", bottom: "0px", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
+                    <div style={{ width: "100%", zIndex: "4",marginTop:"50px", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
                         <div style={{ paddingTop: "2px" }}>
                             <h1 style={{ textAlign: "center", margin: "0px" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
                         </div>

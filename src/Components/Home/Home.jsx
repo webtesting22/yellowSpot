@@ -377,7 +377,7 @@ const Home = () => {
                         slidesPerView: 2 // For mobile devices
                       },
                     }}
-                    style={{ height: "30vh", padding: "10px 10px" }}
+                    style={{ height: "20vh", padding: "10px 10px" }}
                     modules={[FreeMode, Autoplay, Pagination]}
                     className="mySwiper"
                   >
