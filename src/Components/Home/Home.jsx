@@ -38,8 +38,8 @@ import Clients from "./icons/Clients.png"
 import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
 import MobileHero from '../MobileHome/MobileHero';
-import countersBack from "../Home/Banners/countertry.png"
-import OurOfficetry from "./Banners/homeOffringBack.jpg"
+import countersBack from "../Home/countersBack.png"
+import OurOfficetry from "./ourOfferingfnal.jpg"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -201,7 +201,7 @@ const Home = () => {
                           <h3>Clients</h3>
                         </div>
                       </Col>
-                      
+
                       <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
