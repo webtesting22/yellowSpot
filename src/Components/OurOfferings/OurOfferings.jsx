@@ -9,7 +9,7 @@ import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import AnimatedCards from "../AnimationScrollingCard/AnimationCards";
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
-import offering from "../Home/Banners/OfferingHome.png"
+import offering from "../AboutUs/AboutUsBanner.png"
 const OurOfferings = () => {
 
 

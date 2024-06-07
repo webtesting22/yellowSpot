@@ -275,7 +275,7 @@ const MobileHero = () => {
 
                         </div>
                     </div>
-                    <div style={{ width: "100%", zIndex: "4",marginTop:"50px", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
+                    <div style={{ width: "100%", zIndex: "4", marginTop: "50px", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
                         <div style={{ paddingTop: "2px" }}>
                             <h1 style={{ textAlign: "center", margin: "0px" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
                         </div>
