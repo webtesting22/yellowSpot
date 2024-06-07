@@ -27,6 +27,7 @@
 .ContactContent ul li,
 .ContactContent ul li a{
   line-height: 30px;
+  font-size: 20px;
   color: white;
   font-family: "Barlow Condensed", sans-serif;
 }

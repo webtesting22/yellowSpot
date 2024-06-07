@@ -21,7 +21,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import ourOffering from "../Home/Banners/OfferingHome.png"
 import OurClients from "../Home/Banners/clienteleHome.png"
-import CounterBack from "../Home/Banners/countersBack.png"
+import CounterBack from "../Home/countersBack.png"
 const MobileHero = () => {
     return (
         <>
