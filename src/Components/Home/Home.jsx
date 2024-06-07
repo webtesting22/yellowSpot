@@ -38,7 +38,8 @@ import Clients from "./icons/Clients.png"
 import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
 import MobileHero from '../MobileHome/MobileHero';
-import countersBack from "../Home/countersBack.png"
+import countersBack from "../Home/Banners/countertry.png"
+import OurOfficetry from "./Banners/homeOffringBack.jpg"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -324,7 +325,7 @@ const Home = () => {
 
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
-              <img src={offering} alt="Yellow-Spot poster" />
+              <img src={OurOfficetry} alt="Yellow-Spot poster" />
             </div>
             <div className="image-overlay" style={{ backgroundColor: "#00000075" }}></div>
             <div className="text-container-set">

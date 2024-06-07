@@ -9,20 +9,21 @@ import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import AnimatedCards from "../AnimationScrollingCard/AnimationCards";
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
+import offering from "../Home/Banners/OfferingHome.png"
 const OurOfferings = () => {
 
-  
+
     return (
         <>
             <Navbar />
             <HomePageNavigation />
             {/* <div className="section-padding"></div>
             <br /> */}
-            <AnimatedCoverPage/>
+            <AnimatedCoverPage backgroundImage={offering}/>
             <br /><br />
             <section id="serviceCard" className="container">
 
-            <SwiperHeadingIcon headingText="Our Services" />
+                <SwiperHeadingIcon headingText="Our Services" />
                 <br />
                 <div className="container p-0">
                     <AnimatedCards />
