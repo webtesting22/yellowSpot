@@ -223,7 +223,31 @@ import GOLDISOLAR from "./DirectClients/GOLDI-SOLAR.png"
 import GOOGLE from "./DirectClients/GOOGLE.webp"
 import GOYALCO from "./DirectClients/GOYAL-CO.jpg"
 import GREENFIBER from "./DirectClients/GREEN-FIBER.webp"
+import GUJARATLITERATUREFESTIVAL from "./DirectClients/GUJARAT-LITERATURE-FESTIVAL.png"
+import GUJARATMAILNEWSPAPER from "./DirectClients/GUJARAT-MAIL-NEWSPAPER.png"
+import GUJARATTOURISM from "./DirectClients/GUJARAT-TOURISM.png"
 const DirectClient = [
+    {
+        clientImg: GUJARATTOURISM,
+        clientWebLink: "https://www.gujarattourism.com/",
+        ClientName: "GUJARAT TOURISM ",
+        Backcolor: "white",
+        Category: "Govt Sector"
+    },
+    {
+        clientImg: GUJARATMAILNEWSPAPER,
+        clientWebLink: "https://gujaratmail.in/",
+        ClientName: "GUJARAT MAIL NEWSPAPER",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: GUJARATLITERATUREFESTIVAL,
+        clientWebLink: "https://gujlitfest.org/",
+        ClientName: "GUJARAT LITERATURE FESTIVAL",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
     {
         clientImg: GREENFIBER,
         clientWebLink: "https://greenfibre.com/",
