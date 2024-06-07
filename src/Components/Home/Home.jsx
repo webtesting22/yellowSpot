@@ -15,7 +15,7 @@ import ClientLogos from './ClientLogosData';
 import Homepagefirst from "../MobileHome/new.png"
 import Industy from "../Home/Banners/OurEgency.png"
 import offering from "../Home/Banners/OfferingHome.png"
-import client from "../Home/Banners/clienteleHome.png"
+import client from "../Home/LogosBack.png"
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import CountUp from 'react-countup';
 import Combinelogo from "../Navbar/CombineLogo.jpg"
@@ -39,7 +39,7 @@ import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
 import MobileHero from '../MobileHome/MobileHero';
 import countersBack from "../Home/countersBack.png"
-import OurOfficetry from "./ourOfferingfnal.jpg"
+import OurOfficetry from "./offeringFinal.jpg"
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');

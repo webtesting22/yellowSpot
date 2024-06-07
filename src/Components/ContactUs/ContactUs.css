@@ -42,6 +42,9 @@
     display: flex;
     flex-direction: column;
   }
+  .contactUsSection{
+    padding-top: 6rem;
+  }
   .twoColumsContainer .rightSideColumn,
   .twoColumsContainer .leftSideColumn{
     width: 100%;

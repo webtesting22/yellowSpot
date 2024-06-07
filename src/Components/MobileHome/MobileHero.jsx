@@ -19,7 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import ourOffering from "../Home/Banners/OfferingHome.png"
+import ourOffering from "../Home/offeringFinal.jpg"
 import OurClients from "../Home/Banners/clienteleHome.png"
 import CounterBack from "../Home/countersBack.png"
 const MobileHero = () => {

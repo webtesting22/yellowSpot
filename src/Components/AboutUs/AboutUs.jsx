@@ -15,6 +15,7 @@ import { Image } from 'antd';
 import GalleryImages from "./galleryImages/GalleryImagesData";
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
 import AboutUsBanner from "./AboutUsBanner.png"
+import Homepagefirst from "../MobileHome/new.png"
 const AboutUS = () => {
 
     const foudersDetails = [
@@ -65,7 +66,7 @@ const AboutUS = () => {
 
             <section>
 
-                <AnimatedCoverPage  backgroundImage={AboutUsBanner}/>
+                <AnimatedCoverPage backgroundImage={Homepagefirst} />
                 <br /><br />
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
                 </div>
