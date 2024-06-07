@@ -38,7 +38,7 @@ const OurClientele = () => {
             <HomePageNavigation />
 
             <section>
-                <AnimatedCoverPage backgroundImage={client}/>
+                <AnimatedCoverPage backgroundImage={client} />
                 <br /><br />
                 <div className="container">
 
@@ -114,7 +114,7 @@ const OurClientele = () => {
                                                         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                                                             <i className='bx bx-link'></i>
                                                             <div style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
-                                                            {capitalizeEachWord(item.ClientName)}
+                                                                {capitalizeEachWord(item.ClientName)}
                                                             </div>
                                                         </div>
                                                     </div>
