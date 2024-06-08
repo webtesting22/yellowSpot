@@ -46,6 +46,10 @@
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+.card-link,
+.client-name {
+    text-transform: uppercase;
+}
 
 .flip-card-front,
 .flip-card-back {
