@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="topHeadingStyle">
                         <div className="ContactusHeading container">
                             <p style={{ textAlign: "start" }}>Ready to work together?</p>
-                            <h1>Get In Touch <i className='bx bxs-right-top-arrow-circle'></i></h1>
+                            <h1>Get In Touch </h1>
                         </div>
                         <div className="Footer_Logo">
                             <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
