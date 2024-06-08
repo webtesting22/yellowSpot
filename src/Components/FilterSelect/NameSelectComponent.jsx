@@ -50,8 +50,8 @@ function NamedSelectComponent({ title, selectedItems, setSelectedItems, options 
                     <div className="named-select-filter-options" onClick={(e) => e.stopPropagation()}>
                         <div style={{ color: "#0dbaff", fontSize: "12px", cursor: "pointer", margin: "10px 0px" }} onClick={handleClearAll}>Clear All</div>
                         {options?.map(option => (
-                            <div key={option.value} className="option-container">
-                                <label className="option-label" style={{display:"flex",justifyContent:"space-between", alignItems:"center"}}>
+                            <div key={option.value} className="option-container" style={{margin:"5px 0px"}}>
+                                <label className="option-label" style={{display:"flex",justifyContent:"space-between", alignItems:"center",width:"100%"}}>
                                     <p className="options-style" style={{margin:"0px"}}>{option.label}</p>
                                     <Checkbox
                                         onChange={() => handleCheckboxChange(option.value)}
