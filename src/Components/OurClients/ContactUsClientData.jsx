@@ -5,7 +5,7 @@ import Rapport from "../OurClients/AgencyLogos/Rapport.svg"
 import OAP from "../OurClients/AgencyLogos/OAP.png"
 import Laqshya from "../OurClients/AgencyLogos/Laqshya.png"
 import coralMedia from "../OurClients/AgencyLogos/coralMedia.webp"
-import connectooh from "../OurClients/AgencyLogos/ConnectoohLogo.avif"
+import connectooh from "../OurClients/AgencyLogos/ConnectoohLogo.jpg"
 
 const ClientDataLogos = [
     {
