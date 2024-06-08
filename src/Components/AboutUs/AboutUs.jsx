@@ -15,7 +15,7 @@ import { Image } from 'antd';
 import GalleryImages from "./galleryImages/GalleryImagesData";
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
 import AboutUsBanner from "./AboutUsBanner.png"
-import Homepagefirst from "../MobileHome/new.png"
+import Homepagefirst from "./aboutUsGraphics.png"
 const AboutUS = () => {
 
     const foudersDetails = [
