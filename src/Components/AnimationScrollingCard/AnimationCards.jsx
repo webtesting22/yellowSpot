@@ -43,8 +43,8 @@ const AnimatedCards = () => {
             cardNormalHeading: "Several Platforms",
             cardDescription: "For a successful and holistic marketing campaign, we have selected some of the best media platforms (outdoor, digital, cinema, social, print, radio, television, etc.) for you. As an aggregator, we recommend other vendors’ sites and have tie-ups with agencies that are best-in-town to provide you with the best strategic plan based on your budgetary requirements."
         }
-      
-       
+
+
 
     ]
     // const cardColors = ["rgb(49, 51, 53)", "rgb(49, 51, 53)", "rgb(49, 51, 53)", "rgb(49, 51, 53)"];
@@ -52,27 +52,30 @@ const AnimatedCards = () => {
         <>
             <div className="App">
                 <div className="cards-container" style={{ top: `${50 - scrollPosition}px` }}>
-                    {servicesCards.map((item, index) => (
-                        <div
-                            key={index}
-                            className="card"
-                            style={{
-                                backgroundColor: "rgb(36, 36, 36)",
-                                zIndex: servicesCards.length + index,
-                                top: `${50 + index * 20}px`,
-                            }}
-                        >
-                            <div className="class-inside-content">
-                                <div className="services-image-container">
-                                    <img src={item.cardImage} alt="YellowSpot-services-image" style={{ width: "100%" }} />
-                                </div>
-                                <div className="animated-card-content-info">
-                                    <h4><span>{item.cardHeading}</span>{item.cardNormalHeading}</h4>
-                                    <p>{item.cardDescription}</p>
+                    {servicesCards.map((item, index) => {
+                        const isLastCard = index === servicesCards.length - 1;
+                        return (
+                            <div
+                                key={index}
+                                className="card"
+                                style={{
+                                    backgroundColor: "rgb(36, 36, 36)",
+                                    zIndex: servicesCards.length + index,
+                                    top: isLastCard ? `${50 + index * 20}px` : `${50 + index * 20 - scrollPosition}px`,
+                                }}
+                            >
+                                <div className="class-inside-content">
+                                    <div className="services-image-container">
+                                        <img src={item.cardImage} alt="YellowSpot-services-image" style={{ width: "100%" }} />
+                                    </div>
+                                    <div className="animated-card-content-info">
+                                        <h4><span>{item.cardHeading}</span>{item.cardNormalHeading}</h4>
+                                        <p>{item.cardDescription}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
                 {/* <div className="spacer" style={{ height: `${60 * cardColors.length}vh` }}></div> */}
             </div>
