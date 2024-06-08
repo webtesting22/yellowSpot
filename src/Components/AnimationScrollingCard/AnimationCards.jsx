@@ -60,8 +60,9 @@ const AnimatedCards = () => {
                                 className="card"
                                 style={{
                                     backgroundColor: "rgb(36, 36, 36)",
-                                    zIndex: servicesCards.length + index,
-                                    top: isLastCard ? `${50 + index * 20}px` : `${50 + index * 20 - scrollPosition}px`,
+                                    top: `${50 + index * 20}px`,
+                                    width: isLastCard ? '100%' : '100%',
+                                    margin: isLastCard ? '0 auto' : '0', // Center the last card
                                 }}
                             >
                                 <div className="class-inside-content">
@@ -77,6 +78,7 @@ const AnimatedCards = () => {
                         );
                     })}
                 </div>
+
                 {/* <div className="spacer" style={{ height: `${60 * cardColors.length}vh` }}></div> */}
             </div>
         </>
