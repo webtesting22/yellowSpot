@@ -82,15 +82,18 @@ const OurClientele = () => {
                     <SwiperHeadingIcon headingText="OUR CONSUMER CLIENTELE" />
                     <br />
                     <div className="categoryFilter">
-                        <select onChange={handleCategoryChange} value={selectedCategory} >
+                        <select onChange={handleCategoryChange} value={selectedCategory}>
                             <option value="">All</option>
-                            {categories.map((category, index) => (
-                                <option key={index} value={category}>
-                                    {category}
-                                </option>
-                            ))}
+                            {categories
+                                .sort((a, b) => a.localeCompare(b)) // Sort the categories alphabetically
+                                .map((category, index) => (
+                                    <option key={index} value={category}>
+                                        {category}
+                                    </option>
+                                ))}
                         </select>
                     </div>
+
                 </div>
 
                 <br />
@@ -100,33 +103,33 @@ const OurClientele = () => {
                     <br />
                     <div >
                         <Row style={{ zIndex: "1" }}>
-                        {uniqueClientData
-    .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
-    .map((item, index) => (
-        <Col lg={4} md={8} sm={12} key={index} id="DirectClients">
-            <a href={item.clientWebLink} target="_blank" className="card-link">
-                <div className="maincard">
-                    <div className="flip-card">
-                        <div className="flip-card-inner">
-                            <div className="flip-card-front" style={{ backgroundColor: `${item.Backcolor}` }}>
-                                <div className="clientImgContainer">
-                                    <img src={item.clientImg} alt="" />
-                                </div>
-                            </div>
-                            <div className="flip-card-back">
-                                <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
-                                    <i className='bx bx-link'></i>
-                                    <div className="client-name" style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
-                                        {capitalizeEachWord(item.ClientName)}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </Col>
-    ))}
+                            {uniqueClientData
+                                .sort((a, b) => a.ClientName.localeCompare(b.ClientName)) // Sort the array alphabetically by ClientName
+                                .map((item, index) => (
+                                    <Col lg={4} md={8} sm={12} key={index} id="DirectClients">
+                                        <a href={item.clientWebLink} target="_blank" className="card-link">
+                                            <div className="maincard">
+                                                <div className="flip-card">
+                                                    <div className="flip-card-inner">
+                                                        <div className="flip-card-front" style={{ backgroundColor: `${item.Backcolor}` }}>
+                                                            <div className="clientImgContainer">
+                                                                <img src={item.clientImg} alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="flip-card-back">
+                                                            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+                                                                <i className='bx bx-link'></i>
+                                                                <div className="client-name" style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
+                                                                    {capitalizeEachWord(item.ClientName)}
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </Col>
+                                ))}
 
 
 
