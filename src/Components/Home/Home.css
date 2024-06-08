@@ -531,7 +531,7 @@
 }
 
 .content-container .contup img {
-    width: 80%;
+    width: 60%;
     aspect-ratio: 1 / 1;
     object-fit: contain;
     display: flex;
