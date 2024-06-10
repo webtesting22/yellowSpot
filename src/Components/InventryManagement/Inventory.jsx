@@ -47,6 +47,12 @@ const Inventory = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalItem, setModalItem] = useState(null);
 
+    const [selectedMediaType, setSelectedMediaType] = useState(null);
+    const [filteredAreas, setFilteredAreas] = useState([]);
+    const [selectedArea, setSelectedArea] = useState(null);
+    const [filteredMediaTypes, setFilteredMediaTypes] = useState([]);
+
+
     // Function to handle opening and closing of the modal
     const handleModal = () => {
         setIsModalOpen(!isModalOpen);
@@ -79,7 +85,7 @@ const Inventory = () => {
     };
     useEffect(() => {
         const fetchData = async () => {
-            console.log("hello", import.meta.env)
+            console.log("hello", import.meta.env);
             try {
                 const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/inventoryManagement/v2`);
                 if (!response.ok) {
@@ -99,11 +105,6 @@ const Inventory = () => {
         };
 
         fetchData();
-
-        // Cleanup function to cancel fetch request if component unmounts or if useEffect is called again
-        return () => {
-            // Any cleanup code here if needed
-        };
     }, []);
 
     const handleLocationClick = (lat, lng) => {
@@ -143,6 +144,29 @@ const Inventory = () => {
         },
 
     ]
+    useEffect(() => {
+        if (selectedMediaType) {
+            const filtered = data.allInv
+                .filter(item => item.typeOfMedia.name === selectedMediaType)
+                .map(item => item.locations?.Area);
+            setFilteredAreas(Array.from(new Set(filtered)));
+        } else {
+            setFilteredAreas(areas);
+        }
+    }, [selectedMediaType, data, areas]);
+
+    useEffect(() => {
+        if (selectedArea) {
+            const filtered = data.allInv
+                .filter(item => item.locations?.Area === selectedArea)
+                .map(item => item.typeOfMedia.name);
+            setFilteredMediaTypes(Array.from(new Set(filtered)));
+        } else {
+            setFilteredMediaTypes(mediaTypes);
+        }
+    }, [selectedArea, data, mediaTypes]);
+
+
     const sortedMediaTypes = mediaTypes.sort((a, b) => a.localeCompare(b));
     const sortedAreas = areas.sort((a, b) => a.localeCompare(b));
     return (
@@ -190,7 +214,7 @@ const Inventory = () => {
                                 selectedItems={selectedItemsOnArea}
                                 setSelectedItems={setSelectedItemsOnArea}
                             /> */}
-                            <NamedSelectComponent
+                            {/* <NamedSelectComponent
                                 options={sortedMediaTypes.map(type => ({ label: type, value: type }))}
                                 title="Type"
                                 selectedItems={selectedItemsOnType}
@@ -202,7 +226,39 @@ const Inventory = () => {
                                 title="Area"
                                 selectedItems={selectedItemsOnArea}
                                 setSelectedItems={setSelectedItemsOnArea}
+                            /> */}
+                            <NamedSelectComponent
+                                options={filteredMediaTypes.map(type => ({ label: type, value: type }))}
+                                title="Type"
+                                selectedItems={selectedItemsOnType}
+                                setSelectedItems={(items) => {
+                                    setSelectedItemsOnType(items);
+                                    if (items.length > 0) {
+                                        setSelectedMediaType(items[0]);
+                                    } else {
+                                        setSelectedMediaType(null);
+                                    }
+                                }}
+                                disabled={filteredMediaTypes.length === 0}
                             />
+                            <div className="small-slite-padding"></div>
+                            <NamedSelectComponent
+                                options={filteredAreas.map(area => ({ label: area, value: area }))}
+                                title="Area"
+                                selectedItems={selectedItemsOnArea}
+                                setSelectedItems={(items) => {
+                                    setSelectedItemsOnArea(items);
+                                    if (items.length > 0) {
+                                        setSelectedArea(items[0]);
+                                    } else {
+                                        setSelectedArea(null);
+                                    }
+                                }}
+                                disabled={filteredAreas.length === 0}
+                            />
+
+
+
                         </div>
                     </div>
                     {/* <div className="slite-padding"></div> */}
@@ -329,7 +385,7 @@ const Inventory = () => {
 
                                                     <p style={{ margin: "0px", color: "white", fontFamily: '"Barlow Condensed", sans-serif' }}>
                                                         <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                        &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
+                                                        &nbsp;<span>{truncateText(item.locations?.name, 40)}</span>
                                                     </p>
 
                                                 </a>
