@@ -252,7 +252,271 @@ import KASUMBOMOVIE from "./DirectClients/KASUMBO-MOVIE.jfif"
 import KITCHENEXPRESS from "./DirectClients/KITCHEN-EXPRESS.png"
 import KKJEWELS from "./DirectClients/KK-JEWELS.png"
 import KOHINOOROPTICAL from "./DirectClients/KOHINOOR-OPTICAL.svg"
+import KUTCHEXPRESSMOVIE from "./DirectClients/KUTCH-EXPRESSMOVIE.webp"
+import LAKIROMOVIE from "./DirectClients/LAKIRO-MOVIE.jpeg"
+import LENDINGKART from "./DirectClients/LENDINGKART.jfif"
+import LIBERTYCAREERACADEMY from "./DirectClients/LIBERTY CAREER-ACADEMY.png"
+import LONGINESWATCHES from "./DirectClients/LONGINES-WATCHES.png"
+import LOUISEPHILIPPE from "./DirectClients/LOUISE-PHILIPPE.jpg"
+import LIC from "./DirectClients/LIC.png"
+import LUIRE from "./DirectClients/LUIRE.avif"
+import LYCKABUILDERS from "./DirectClients/LYCKA-BUILDERS.jfif"
+import MAKEMYTRIP from "./DirectClients/MAKE-0MY-TRIP.svg"
+import MALABARGOLD from "./DirectClients/MALABAR-GOLD.jpg"
+import MANUBHAIZAVERI from "./DirectClients/MANUBHAI-ZAVERI.jfif"
+import MARIGOLDHOSPITAL from "./DirectClients/MARIGOLD-HOSPITAL.jpg"
+import MARUTI360 from "./DirectClients/MARUTI-360.png"
+import MARUTINEXA from "./DirectClients/MARUTI-NEXA.png"
+import MATTERMOTOR from "./DirectClients/MATTER-MOTOR.avif"
+import MAXFASHION from "./DirectClients/MAX-FASHION.png"
+import MEESHOCOM from "./DirectClients/MEESHO-COM.png"
+import MIABYTANISHQ from "./DirectClients/MIA-BY-TANISHQ.png"
+import MILAPCOSMETICS from "./DirectClients/MILAP-COSMETICS.webp"
+import MILKBASKET from "./DirectClients/MILK-BASKET.jfif"
+import MISSIONIMPOSSIBLE from "./DirectClients/MISSION-IMPOSSIBLE.jfif"
+import MONARKUNIVERSITY from "./DirectClients/MONARK-UNIVERSITY.png"
+import MONTECARLO from "./DirectClients/MONTE-CARLO.avif"
+import MOVADOWATCH from "./DirectClients/MOVADO-WATCH.png"
+import MUKTAA2CINEMA from "./DirectClients/MUKTA-A2-CINEMA.jpg"
+import NAMASTEGUJARATNEWSPAPER from "./DirectClients/NAMASTE-GUJARAT-NEWSPAPER.jpg"
+import NARAYANAHOSPITAL from "./DirectClients/NARAYANA-HOSPITAL.png"
+import NAVRANGSISHU from "./DirectClients/NAVRANG-SISHU.png"
+import NESTERRA from "./DirectClients/NESTERRA.png"
+import NEWS18 from "./DirectClients/NEWS-18.png"
+import NEXONEVTATA from "./DirectClients/NEXON-EV-TATA.jpg"
+import NIMBANATURECURE from "./DirectClients/NIMBA-NATURE-CURE.jfif"
 const DirectClient = [
+    {
+        clientImg: NIMBANATURECURE,
+        clientWebLink: "https://www.nimba.in/",
+        ClientName: "NIMBA NATURE CURE",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: NEXONEVTATA,
+        clientWebLink: "https://ev.tatamotors.com/nexon/ev/",
+        ClientName: "NEXON EV TATA",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: NEWS18,
+        clientWebLink: "https://www.news18.com/",
+        ClientName: "NEWS 18",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: NESTERRA,
+        clientWebLink: "https://www.nesterra.com/",
+        ClientName: "NESTERRA",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: NAVRANGSISHU,
+        clientWebLink: "http://www.shishuviharindia.com/",
+        ClientName: "NAVRANG SISHU VIHAR SCHOOL",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: NARAYANAHOSPITAL,
+        clientWebLink: "https://www.narayanahealth.org/",
+        ClientName: "NARAYANA HOSPITAL",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: NAMASTEGUJARATNEWSPAPER,
+        clientWebLink: "http://www.namastegujarat.co.nz/",
+        ClientName: "NAMASTE GUJARAT NEWSPAPER",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: MUKTAA2CINEMA,
+        clientWebLink: "",
+        ClientName: "MUKTA A2 CINEMA",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: MOVADOWATCH,
+        clientWebLink: "https://www.movado.com/us/en/shop-watches/shop-all-watches/",
+        ClientName: "MOVADO WATCH",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: MONTECARLO,
+        clientWebLink: "https://www.montecarlo.in/",
+        ClientName: "MONTE CARLO",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: MONARKUNIVERSITY,
+        clientWebLink: "https://monarkuni.ac.in/",
+        ClientName: "MONARK UNIVERSITY",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: MISSIONIMPOSSIBLE,
+        clientWebLink: "",
+        ClientName: "MISSION IMPOSSIBLE MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: MILKBASKET,
+        clientWebLink: "https://milkbasket.com/",
+        ClientName: "MILK BASKET",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: MILAPCOSMETICS,
+        clientWebLink: "https://www.milapcosmetics.com/",
+        ClientName: "MILAP COSMETICS",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: MIABYTANISHQ,
+        clientWebLink: "https://www.miabytanishq.com/",
+        ClientName: "MIA BY TANISHQ",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: MEESHOCOM,
+        clientWebLink: "https://www.meesho.com/",
+        ClientName: "MEESHO.COM",
+        Backcolor: "white",
+        Category: "E-commerce"
+    },
+    {
+        clientImg: MAXFASHION,
+        clientWebLink: "https://www.maxfashion.in/in/en/",
+        ClientName: "MAX FASHION",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: MATTERMOTOR,
+        clientWebLink: "https://www.matter.in/",
+        ClientName: "MATTER MOTOR",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: MARUTINEXA,
+        clientWebLink: "https://www.nexaexperience.com/",
+        ClientName: "MARUTI NEXA",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: MARUTI360,
+        clientWebLink: "https://www.maruti360.com/",
+        ClientName: "MARUTI 360",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: MARIGOLDHOSPITAL,
+        clientWebLink: "https://www.marigoldhospitals.com/",
+        ClientName: "MARIGOLD HOSPITAL",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: MANUBHAIZAVERI,
+        clientWebLink: "https://www.manubhaizaveri.com/",
+        ClientName: "MANUBHAI ZAVERI",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: MALABARGOLD,
+        clientWebLink: "https://www.malabargoldanddiamonds.com/diamond-jewellery.html",
+        ClientName: "MALABAR GOLD - DIAMOND",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: MAKEMYTRIP,
+        clientWebLink: "MAKE MY TRIP",
+        ClientName: "MAKE MY TRIP",
+        Backcolor: "white",
+        Category: "E-commerce"
+    },
+    {
+        clientImg: LYCKABUILDERS,
+        clientWebLink: "",
+        ClientName: "LYCKA BUILDERS",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: LUIRE,
+        clientWebLink: "https://luire.in/",
+        ClientName: "LUIRE",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: LOUISEPHILIPPE,
+        clientWebLink: "https://louisphilippe.abfrl.in/",
+        ClientName: "LOUISE PHILIPPE",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: LONGINESWATCHES,
+        clientWebLink: "https://www.longines.com/en-in",
+        ClientName: "LONGINES WATCHES",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: LIC,
+        clientWebLink: "https://licindia.in/",
+        ClientName: "LIC",
+        Backcolor: "white",
+        Category: "BFSI - Banking, Financial Services, Insurance"
+    },
+    {
+        clientImg: LIBERTYCAREERACADEMY,
+        clientWebLink: "https://www.libertygroup.in/",
+        ClientName: "LIBERTY CAREER ACADEMY",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: LENDINGKART,
+        clientWebLink: "https://www.lendingkart.com/",
+        ClientName: "LENDINGKART",
+        Backcolor: "white",
+        Category: "BFSI - Banking, Financial Services, Insurance"
+    },
+    {
+        clientImg: LAKIROMOVIE,
+        clientWebLink: "",
+        ClientName: "LAKIRO MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: KUTCHEXPRESSMOVIE,
+        clientWebLink: "",
+        ClientName: "KUTCH EXPRESS MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
     {
         clientImg: KOHINOOROPTICAL,
         clientWebLink: "https://kohinoorindia.co.in/",
