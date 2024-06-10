@@ -22,7 +22,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import ourOffering from "../Home/offeringFinal.jpg"
 import OurClients from "./clientHome.png"
-import CounterBack from "../Home/countersBack.png"
+import CounterBack from "../Home/CountersBackFinal.png"
 const MobileHero = () => {
     return (
         <>

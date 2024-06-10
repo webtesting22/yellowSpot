@@ -105,6 +105,7 @@ const Inventory = () => {
             // Any cleanup code here if needed
         };
     }, []);
+
     const handleLocationClick = (lat, lng) => {
         console.log("Latitude:", lat);
         console.log("Longitude:", lng);
@@ -190,18 +191,18 @@ const Inventory = () => {
                                 setSelectedItems={setSelectedItemsOnArea}
                             /> */}
                             <NamedSelectComponent
-    options={sortedMediaTypes.map(type => ({ label: type, value: type }))}
-    title="Type"
-    selectedItems={selectedItemsOnType}
-    setSelectedItems={setSelectedItemsOnType}
-/>
-<div className="small-slite-padding"></div>
-<NamedSelectComponent
-    options={sortedAreas.map(area => ({ label: area, value: area }))}
-    title="Area"
-    selectedItems={selectedItemsOnArea}
-    setSelectedItems={setSelectedItemsOnArea}
-/>
+                                options={sortedMediaTypes.map(type => ({ label: type, value: type }))}
+                                title="Type"
+                                selectedItems={selectedItemsOnType}
+                                setSelectedItems={setSelectedItemsOnType}
+                            />
+                            <div className="small-slite-padding"></div>
+                            <NamedSelectComponent
+                                options={sortedAreas.map(area => ({ label: area, value: area }))}
+                                title="Area"
+                                selectedItems={selectedItemsOnArea}
+                                setSelectedItems={setSelectedItemsOnArea}
+                            />
                         </div>
                     </div>
                     {/* <div className="slite-padding"></div> */}

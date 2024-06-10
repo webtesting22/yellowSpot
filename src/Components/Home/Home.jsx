@@ -39,7 +39,7 @@ import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
 import BackLightMedia from "./icons/BackLight.png"
 import MobileHero from '../MobileHome/MobileHero';
-import countersBack from "../Home/countersBack.png"
+import countersBack from "../Home/CountersBackFinal.png"
 import OurOfficetry from "./offeringFinal.jpg"
 const Home = () => {
   const [open, setOpen] = useState(false);
