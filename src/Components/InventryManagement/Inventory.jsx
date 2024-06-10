@@ -419,19 +419,35 @@ const Inventory = () => {
                         <Modal title={<>
                             <h6>Inventory Details</h6>
                             <div className="filter-select">
-                                <NamedSelectComponent
-                                    options={mediaTypes.map(type => ({ label: type, value: type }))}
-                                    title="Type"
-                                    selectedItems={selectedItemsOnType}
-                                    setSelectedItems={setSelectedItemsOnType}
-                                />
-                                <div className="small-slite-padding"></div>
-                                <NamedSelectComponent
-                                    options={areas.map(area => ({ label: area, value: area }))}
-                                    title="Area"
-                                    selectedItems={selectedItemsOnArea}
-                                    setSelectedItems={setSelectedItemsOnArea}
-                                />
+                            <NamedSelectComponent
+                                options={filteredMediaTypes.map(type => ({ label: type, value: type }))}
+                                title="Type"
+                                selectedItems={selectedItemsOnType}
+                                setSelectedItems={(items) => {
+                                    setSelectedItemsOnType(items);
+                                    if (items.length > 0) {
+                                        setSelectedMediaType(items[0]);
+                                    } else {
+                                        setSelectedMediaType(null);
+                                    }
+                                }}
+                                disabled={filteredMediaTypes.length === 0}
+                            />
+                            <div className="small-slite-padding"></div>
+                            <NamedSelectComponent
+                                options={filteredAreas.map(area => ({ label: area, value: area }))}
+                                title="Area"
+                                selectedItems={selectedItemsOnArea}
+                                setSelectedItems={(items) => {
+                                    setSelectedItemsOnArea(items);
+                                    if (items.length > 0) {
+                                        setSelectedArea(items[0]);
+                                    } else {
+                                        setSelectedArea(null);
+                                    }
+                                }}
+                                disabled={filteredAreas.length === 0}
+                            />
                             </div>
                         </>} width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
 
