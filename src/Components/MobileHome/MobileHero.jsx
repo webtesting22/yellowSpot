@@ -23,6 +23,7 @@ import "swiper/css/pagination";
 import ourOffering from "../Home/offeringFinal.jpg"
 import OurClients from "./clientHome.png"
 import CounterBack from "../Home/CountersBackFinal.png"
+import "./mobilecss.css"
 const MobileHero = () => {
     return (
         <>
@@ -37,8 +38,8 @@ const MobileHero = () => {
                         <div className="image-container" style={{ position: "absolute", }}>
                             <img src={CounterBack} alt="Yellow-Spot poster" />
                         </div>
-                        <div className="image-overlay" style={{backgroundColor: "rgb(39 39 39 / 76%)"}}></div>
-                        <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "auto" }}>
+                        <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 76%)" }}></div>
+                        <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "space-around", padding: "3px 0px", width: "100%", margin: "auto" }}>
 
                             <Col lg={8} md={12} style={{ display: "flex", justifyContent: "end" }}>
                                 <div className='contup'>
@@ -51,6 +52,21 @@ const MobileHero = () => {
                                         suffix="+"
                                     />
                                     <h3>Years of Industry Experience </h3>
+                                </div>
+                            </Col>
+                            <Col lg={8} md={12} >
+                                <div className='contup'>
+
+                                    <div>
+                                        <img src={OutDoor} alt="" />
+                                    </div>
+                                    <CountUp
+                                        end={400}
+                                        duration={20}
+                                        suffix="+"
+                                    />
+
+                                    <h3>Premium Outdoor Sites in Ahmedabad</h3>
                                 </div>
                             </Col>
                             <Col lg={8} md={12} style={{ display: "flex", justifyContent: "start" }}>
@@ -79,21 +95,7 @@ const MobileHero = () => {
                                     <h3>Clients</h3>
                                 </div>
                             </Col>
-                            <Col lg={8} md={12} >
-                                <div className='contup'>
 
-                                    <div>
-                                        <img src={OutDoor} alt="" />
-                                    </div>
-                                    <CountUp
-                                        end={400}
-                                        duration={20}
-                                        suffix="+"
-                                    />
-
-                                    <h3>Premium Outdoor Sites in Ahmedabad</h3>
-                                </div>
-                            </Col>
                             <Col lg={8} md={12} >
                                 <div className='contup'>
                                     <div>
@@ -214,10 +216,10 @@ const MobileHero = () => {
                         <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
                     <div className="image-overlay"></div>
-                    <div className="text-container-set">
-                        <div className="text-container second">
+                    <div className="text-container-set" style={{ position: "absolute", bottom: "5px" }}>
+                        <div className="text-container second" style={{ display: "flex", alignItems: "center", justifyContent: "space-around", padding: "0px 5px" }}>
                             <div>
-                                <h1><span style={{ color: "#FFED00" }}>Our</span> Offerings</h1>
+                                <h1 style={{ fontSize: "25px" }}><span style={{ color: "#FFED00", fontSize: "25px" }}>Our</span> Offerings</h1>
                             </div>
                             <div className="slite-padding"></div>
                             <div className="btn-container">
@@ -232,65 +234,68 @@ const MobileHero = () => {
                         <div className="image-container" >
                             <img src={OurClients} alt="Yellow-Spot poster" />
                         </div>
-                        <div className="text-container-set" style={{ position: "absolute", bottom: "0%" }}>
-                            <div className="text-container second">
+                        <div>
+                            <div className="text-container-set" style={{ position: "absolute", bottom: "40px" }} >
+                                <div className="text-container second">
 
-                                <div className="slite-padding"></div>
-                                <div className="clients-logo-home-container">
-                                    <Swiper
-                                        slidesPerView={6}
-                                        spaceBetween={30}
-                                        freeMode={true}
-                                        loop={true}
-                                        pagination={{
-                                            clickable: true,
-                                        }}
-                                        autoplay={{
-                                            delay: 2000,
-                                            disableOnInteraction: false,
-                                        }}
-                                        breakpoints={{
-                                            // Define breakpoints for different screen sizes
-                                            1100: {
-                                                slidesPerView: 6
-                                            },
-                                            768: {
-                                                slidesPerView: 3// For tablets
-                                            },
-                                            300: {
-                                                slidesPerView: 3 // For mobile devices
-                                            },
-                                        }}
-                                        style={{ height: "14vh", padding: "0px 10px" }}
-                                        modules={[FreeMode, Pagination]}
-                                        className="mySwiper"
-                                    >
-                                        {ClientLogos.map((item, index) => (
-                                            <SwiperSlide style={{ display: "flex" }}>
-                                                <div key={index} className='home-page-client-logo'>
-                                                    <img src={item.img} alt="" style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
-                                                </div>
-                                            </SwiperSlide>
-                                        ))}
+                                    <div className="slite-padding"></div>
+                                    <div className="clients-logo-home-container">
+                                        <Swiper
+                                            slidesPerView={6}
+                                            spaceBetween={30}
+                                            freeMode={true}
+                                            loop={true}
+                                            pagination={{
+                                                clickable: true,
+                                            }}
+                                            autoplay={{
+                                                delay: 2000,
+                                                disableOnInteraction: false,
+                                            }}
+                                            breakpoints={{
+                                                // Define breakpoints for different screen sizes
+                                                1100: {
+                                                    slidesPerView: 6
+                                                },
+                                                768: {
+                                                    slidesPerView: 3// For tablets
+                                                },
+                                                300: {
+                                                    slidesPerView: 3 // For mobile devices
+                                                },
+                                            }}
+                                            style={{ height: "10vh", padding: "0px 10px" }}
+                                            modules={[FreeMode, Pagination]}
+                                            className="mySwiper"
+                                        >
+                                            {ClientLogos.map((item, index) => (
+                                                <SwiperSlide style={{ display: "flex" }}>
+                                                    <div key={index} className='home-page-client-logo'>
+                                                        <img src={item.img} alt="" style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
+                                                    </div>
+                                                </SwiperSlide>
+                                            ))}
 
-                                    </Swiper>
+                                        </Swiper>
+                                    </div>
+
                                 </div>
-
+                            </div>
+                            <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "0px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
+                                <div style={{ paddingTop: "2px" }}>
+                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", fontFamily: '"Barlow Condensed", sans-serif' }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
+                                </div>
+                                <div className="btn-container" style={{ margin: "0px 10px" }}>
+                                    <Link to="/OurClientele"><button style={{
+                                        margin: "5px 0px",
+                                        backgroundColor: "#FFED00",
+                                        fontFamily: '"Barlow Condensed", sans-serif'
+                                    }}><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div style={{ width: "100%", zIndex: "4", display: "flex", flexDirection: "column", justifyContent: "center", margin: "auto" }}>
-                        <div style={{ paddingTop: "2px" }}>
-                            <h1 style={{ textAlign: "center", margin: "0px" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
-                        </div>
-                        <div className="btn-container" style={{ margin: "auto" }}>
-                            <Link to="/OurClientele"><button style={{
-                                margin: "20px 20px",
-                                backgroundColor: "#FFED00",
-                                fontFamily: '"Barlow Condensed", sans-serif'
-                            }}><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
-                        </div>
-                    </div>
+
                 </div>
 
             </section >

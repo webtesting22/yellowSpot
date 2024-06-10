@@ -1,0 +1,8 @@
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    height: 4px ;
+    width: 4px;
+    /* position: absolute;
+    z-index: 500000;
+    bottom: -5px; */
+    /* margin-top: 20px; */
+}

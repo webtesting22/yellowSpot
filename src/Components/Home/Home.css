@@ -264,13 +264,13 @@
 @media (max-width:600px) {
     .btn-container button {
         border: none;
-        margin: 30px 0px;
+        margin: 0px 0px;
         display: flex;
         align-items: center;
-        padding: 8px 30px;
+        padding: 4px 0px;
         position: relative;
-        height: 40px;
-        width: 140px;
+        height: 32px;
+        width: 90px;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -281,7 +281,7 @@
     }
 
     .btn-container a {
-        margin: 10px 0px;
+        margin: 0px 0px;
     }
 
     .home-page-slider img {
@@ -318,7 +318,7 @@
         justify-content: center;
         align-items: start;
         width: 25%;
-        margin: 5px 0px;
+        margin: 0px 0px;
 
     }
 
@@ -448,6 +448,7 @@
         justify-content: center;
         /* flex-direction: column; */
         margin: auto;
+        margin: 0px;
     }
 
     .second .btn-container button {
@@ -570,12 +571,18 @@
 }
 
 @media(max-width:769px) {
+    .second .btn-container button {
+        margin: 0px 5px;
+        background-color: #FFED00;
+        font-family: "Barlow Condensed", sans-serif;
+    }
     .content-container span {
         font-size: 0.8rem;
         text-align: center;
     }
 
     .content-container h3 {
+        margin: 0px;
         font-weight: 400;
         font-size: 0.8rem;
         text-align: center;
@@ -585,12 +592,12 @@
     }
 
     .content-container .contup {
-        padding: 5px 0px;
+        padding: 0px 0px;
         display: flex;
         transition: .5s;
         justify-content: center;
         flex-direction: column;
-        margin: 7px 0px;
+        margin: 0px 0px;
     }
 
     .content-container .contup:hover span,
@@ -649,7 +656,7 @@
         display: none;
     } */
     .content-container .contup {
-        padding: 5px 0px;
+        padding: 2px 0px;
         display: flex;
         transition: .5s;
         justify-content: center;
