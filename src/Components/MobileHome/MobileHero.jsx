@@ -3,7 +3,7 @@ import homepageImg from "./new.png"
 import { Row, Col } from "antd"
 import CountUp from 'react-countup';
 import OutDoor from "../Home/icons/outDoor.png"
-import Impressions from "../Home/icons/experience.png"
+import Impressions from "../Home/icons/DailyImpressions.png"
 import Clients from "../Home/icons/Clients.png"
 import Experience from "../Home/icons/experience.png"
 import Media from "../Home/icons/media.png"
@@ -37,6 +37,7 @@ const MobileHero = () => {
                         <div className="image-container" style={{ position: "absolute", }}>
                             <img src={CounterBack} alt="Yellow-Spot poster" />
                         </div>
+                        <div className="image-overlay" style={{backgroundColor: "rgb(39 39 39 / 76%)"}}></div>
                         <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center", width: "100%", margin: "auto" }}>
 
                             <Col lg={8} md={12} style={{ display: "flex", justifyContent: "end" }}>
