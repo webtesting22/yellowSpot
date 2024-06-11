@@ -48,7 +48,9 @@ select{
 option{
     font-family: 'Times New Roman', Times, serif;
 }
-
+a{
+    font-family: 'Times New Roman', Times, serif;
+}
 @media (max-width:800px) {
     #header {
         display: none;

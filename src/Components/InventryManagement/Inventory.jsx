@@ -145,26 +145,27 @@ const Inventory = () => {
 
     ]
     useEffect(() => {
-        if (selectedMediaType) {
+        if (selectedItemsOnType.length > 0) {
             const filtered = data.allInv
-                .filter(item => item.typeOfMedia.name === selectedMediaType)
+                .filter(item => selectedItemsOnType.includes(item.typeOfMedia.name))
                 .map(item => item.locations?.Area);
             setFilteredAreas(Array.from(new Set(filtered)));
         } else {
             setFilteredAreas(areas);
         }
-    }, [selectedMediaType, data, areas]);
+    }, [selectedItemsOnType, data, areas]);
 
     useEffect(() => {
-        if (selectedArea) {
+        if (selectedItemsOnArea.length > 0) {
             const filtered = data.allInv
-                .filter(item => item.locations?.Area === selectedArea)
+                .filter(item => selectedItemsOnArea.includes(item.locations?.Area))
                 .map(item => item.typeOfMedia.name);
             setFilteredMediaTypes(Array.from(new Set(filtered)));
         } else {
             setFilteredMediaTypes(mediaTypes);
         }
-    }, [selectedArea, data, mediaTypes]);
+    }, [selectedItemsOnArea, data, mediaTypes]);
+
 
 
     const sortedMediaTypes = mediaTypes.sort((a, b) => a.localeCompare(b));
@@ -233,11 +234,6 @@ const Inventory = () => {
                                 selectedItems={selectedItemsOnType}
                                 setSelectedItems={(items) => {
                                     setSelectedItemsOnType(items);
-                                    if (items.length > 0) {
-                                        setSelectedMediaType(items[0]);
-                                    } else {
-                                        setSelectedMediaType(null);
-                                    }
                                 }}
                                 disabled={filteredMediaTypes.length === 0}
                             />
@@ -248,11 +244,6 @@ const Inventory = () => {
                                 selectedItems={selectedItemsOnArea}
                                 setSelectedItems={(items) => {
                                     setSelectedItemsOnArea(items);
-                                    if (items.length > 0) {
-                                        setSelectedArea(items[0]);
-                                    } else {
-                                        setSelectedArea(null);
-                                    }
                                 }}
                                 disabled={filteredAreas.length === 0}
                             />
@@ -377,15 +368,15 @@ const Inventory = () => {
                                     <div className="location-details">
                                         <div style={{ width: "100%" }} className="location-content">
                                             <br />
-                                            <Tooltip title={item.locations?.name}>
+                                            <Tooltip title={item.locations?.name} >
                                                 <a
                                                     href="#"
                                                     onClick={() => handleLocationClick(item.lat, item.lng)}
                                                 >
 
-                                                    <p style={{ margin: "0px", color: "white", fontFamily: '"Barlow Condensed", sans-serif' }}>
+                                                    <p style={{ margin: "0px", color: "white", }}>
                                                         <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                        &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
+                                                        &nbsp;<span>{truncateText(item.locations?.name, 20)}</span>
                                                     </p>
 
                                                 </a>
@@ -425,11 +416,6 @@ const Inventory = () => {
                                     selectedItems={selectedItemsOnType}
                                     setSelectedItems={(items) => {
                                         setSelectedItemsOnType(items);
-                                        if (items.length > 0) {
-                                            setSelectedMediaType(items[0]);
-                                        } else {
-                                            setSelectedMediaType(null);
-                                        }
                                     }}
                                     disabled={filteredMediaTypes.length === 0}
                                 />
@@ -440,14 +426,10 @@ const Inventory = () => {
                                     selectedItems={selectedItemsOnArea}
                                     setSelectedItems={(items) => {
                                         setSelectedItemsOnArea(items);
-                                        if (items.length > 0) {
-                                            setSelectedArea(items[0]);
-                                        } else {
-                                            setSelectedArea(null);
-                                        }
                                     }}
                                     disabled={filteredAreas.length === 0}
                                 />
+
                             </div>
                         </>} width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
 
@@ -470,7 +452,7 @@ const Inventory = () => {
                                                         >
                                                             <p style={{ margin: "0px", color: "white", }}>
                                                                 <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                                &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
+                                                                &nbsp;<span>{truncateText(item.locations?.name, 20)}</span>
                                                             </p>
                                                         </a>
                                                     </Tooltip>
