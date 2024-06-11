@@ -632,6 +632,7 @@
 
     .content-container .contup:hover {
         /* border: 1px solid rgba(255, 255, 255, 0.091); */
+        
         background-color: transparent;
         color: black;
     }
@@ -674,8 +675,8 @@
     .content-container .contup:hover div {
         background-color: #FFED00;
         ;
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
         margin: auto;
         border-radius: 50%;
         display: flex;
