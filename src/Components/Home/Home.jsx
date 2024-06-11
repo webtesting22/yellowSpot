@@ -37,7 +37,7 @@ import Impressions from "./icons/DailyImpressions.png"
 import Clients from "./icons/Clients.png"
 import Experience from "./icons/experience.png"
 import Media from "./icons/media.png"
-import BackLightMedia from "./icons/BackLight.png"
+import BackLightMedia from "./icons/graphicsNew.png"
 import MobileHero from '../MobileHome/MobileHero';
 import countersBack from "../Home/CountersBackFinal.png"
 import OurOfficetry from "./offeringFinal.jpg"

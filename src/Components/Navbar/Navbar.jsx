@@ -74,7 +74,7 @@ const Navbar = () => {
                       data-aos-duration="1000" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/OurOfferings">Our Offerings</Link></span></div>
                     <div className="line"><div></div></div>
                     <div className="left-side" data-aos="fade-left"
-                      data-aos-duration="1000" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="/ContactUs">ContactUs</Link></span></div>
+                      data-aos-duration="1000" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="/ContactUs">Contact Us</Link></span></div>
 
 
                   </div>

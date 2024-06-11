@@ -140,7 +140,7 @@ const AboutUS = () => {
                                                 </div>
                                                 <div className="socials">
                                                     <i className='bx bxl-linkedin-square'></i>
-                                                    <i className='bx bxl-twitter' ></i>
+                                                    {/* <i className='bx bxl-twitter' ></i> */}
                                                 </div>
                                             </div>
                                             {founder.FounderDescription && founder.FounderDescription.map((descriptionItem, descriptionIndex) => (
