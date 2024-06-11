@@ -371,7 +371,7 @@ const Inventory = () => {
                                 <div className="complete-card-design">
                                     <div className="inside-card-data">
                                         <div className="card-image-container">
-                                            <Image src={item.img} alt="" />
+                                            <Image src={item.img} alt="YellowspotInventory" />
                                         </div>
                                     </div>
                                     <div className="location-details">
@@ -385,7 +385,7 @@ const Inventory = () => {
 
                                                     <p style={{ margin: "0px", color: "white", fontFamily: '"Barlow Condensed", sans-serif' }}>
                                                         <img src={locationIcon} alt="" style={{ color: "white" }} />
-                                                        &nbsp;<span>{truncateText(item.locations?.name, 40)}</span>
+                                                        &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
                                                     </p>
 
                                                 </a>
@@ -398,7 +398,7 @@ const Inventory = () => {
                                             alignItems: "center"
                                         }}>
                                             <div style={{ fontFamily: '"Barlow Condensed", sans-serif' }}>
-                                                Dimensions
+                                                <span>Dimensions</span>
                                             </div>
                                             <div className="Content-info">
                                                 <DynamicCreateShape width={item.width} height={item.height} />
@@ -406,7 +406,7 @@ const Inventory = () => {
                                         </div>
 
                                     </div>
-                                    <p style={{ margin: "5px 0px", fontFamily: '"Barlow Condensed", sans-serif' }}>
+                                    <p style={{ margin: "5px 0px" }}>
                                         Illumination: {item.Illu ?
                                             (item.Illu === "FL" ? "Front light" : (item.Illu === "BL" ? "Back light" : "No light"))
                                             : "No light"
@@ -419,35 +419,35 @@ const Inventory = () => {
                         <Modal title={<>
                             <h6>Inventory Details</h6>
                             <div className="filter-select">
-                            <NamedSelectComponent
-                                options={filteredMediaTypes.map(type => ({ label: type, value: type }))}
-                                title="Type"
-                                selectedItems={selectedItemsOnType}
-                                setSelectedItems={(items) => {
-                                    setSelectedItemsOnType(items);
-                                    if (items.length > 0) {
-                                        setSelectedMediaType(items[0]);
-                                    } else {
-                                        setSelectedMediaType(null);
-                                    }
-                                }}
-                                disabled={filteredMediaTypes.length === 0}
-                            />
-                            <div className="small-slite-padding"></div>
-                            <NamedSelectComponent
-                                options={filteredAreas.map(area => ({ label: area, value: area }))}
-                                title="Area"
-                                selectedItems={selectedItemsOnArea}
-                                setSelectedItems={(items) => {
-                                    setSelectedItemsOnArea(items);
-                                    if (items.length > 0) {
-                                        setSelectedArea(items[0]);
-                                    } else {
-                                        setSelectedArea(null);
-                                    }
-                                }}
-                                disabled={filteredAreas.length === 0}
-                            />
+                                <NamedSelectComponent
+                                    options={filteredMediaTypes.map(type => ({ label: type, value: type }))}
+                                    title="Type"
+                                    selectedItems={selectedItemsOnType}
+                                    setSelectedItems={(items) => {
+                                        setSelectedItemsOnType(items);
+                                        if (items.length > 0) {
+                                            setSelectedMediaType(items[0]);
+                                        } else {
+                                            setSelectedMediaType(null);
+                                        }
+                                    }}
+                                    disabled={filteredMediaTypes.length === 0}
+                                />
+                                <div className="small-slite-padding"></div>
+                                <NamedSelectComponent
+                                    options={filteredAreas.map(area => ({ label: area, value: area }))}
+                                    title="Area"
+                                    selectedItems={selectedItemsOnArea}
+                                    setSelectedItems={(items) => {
+                                        setSelectedItemsOnArea(items);
+                                        if (items.length > 0) {
+                                            setSelectedArea(items[0]);
+                                        } else {
+                                            setSelectedArea(null);
+                                        }
+                                    }}
+                                    disabled={filteredAreas.length === 0}
+                                />
                             </div>
                         </>} width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
 
@@ -457,7 +457,7 @@ const Inventory = () => {
                                         <div className="complete-card-design">
                                             <div className="inside-card-data">
                                                 <div className="card-image-container">
-                                                    <Image src={item.img} alt="" />
+                                                    <Image src={item.img} alt="YellowspotInventory" />
                                                 </div>
                                             </div>
                                             <div className="location-details">
@@ -468,7 +468,7 @@ const Inventory = () => {
                                                             href="#"
                                                             onClick={() => handleLocationClick(item.lat, item.lng)}
                                                         >
-                                                            <p style={{ margin: "0px", color: "white", fontFamily: '"Barlow Condensed", sans-serif' }}>
+                                                            <p style={{ margin: "0px", color: "white", }}>
                                                                 <img src={locationIcon} alt="" style={{ color: "white" }} />
                                                                 &nbsp;<span>{truncateText(item.locations?.name, 30)}</span>
                                                             </p>
@@ -481,7 +481,7 @@ const Inventory = () => {
                                                     alignItems: "center"
                                                 }}>
                                                     <div>
-                                                        Dimensions
+                                                        <span>Dimensions</span>
                                                     </div>
                                                     <div className="Content-info">
                                                         <DynamicCreateShape width={item.width} height={item.height} />
