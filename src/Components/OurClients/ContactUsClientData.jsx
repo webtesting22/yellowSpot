@@ -286,7 +286,112 @@ import NESTERRA from "./DirectClients/NESTERRA.png"
 import NEWS18 from "./DirectClients/NEWS-18.png"
 import NEXONEVTATA from "./DirectClients/NEXON-EV-TATA.jpg"
 import NIMBANATURECURE from "./DirectClients/NIMBA-NATURE-CURE.jpg"
+import NYCINEMAS from "./DirectClients/NY-CINEMAS.avif"
+import OCCURA0EYECARE from "./DirectClients/OCCURA-0EYE-CARE.jfif"
+import OHOGUJARATI from "./DirectClients/OHO-GUJARATI.png"
+import OLVVI from "./DirectClients/OLVVI.png"
+import OMG2MOVIE from "./DirectClients/OMG-2-MOVIE.jpg"
+// import Palladium from "./DirectClients/Palladium.png"
+import PANTALOONS from "./DirectClients/PANTALOONS.jpg"
+// import PARIJATGROUP from "./DirectClients/PARIJAT-GROUP.png"
+// import PARSHWAJEWELLERS from "./DirectClients/PARSHWA-JEWELLERS.png"
+// import POLARISGROUP from "./DirectClients/POLARIS-GROUP.png"
+import POOJADIAMONDS from "./DirectClients/POOJA-DIAMONDS.png"
+import RAADOGUJARATIMOVIE from "./DirectClients/RAADO-GUJARATI-MOVIE.jpg"
 const DirectClient = [
+
+    {
+        clientImg: RAADOGUJARATIMOVIE,
+        clientWebLink: "https://www.rado.com/",
+        ClientName: "RADO",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: RAADOGUJARATIMOVIE,
+        clientWebLink: "https://poojadiamonds.com/",
+        ClientName: "RAADO GUJARATI MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: POOJADIAMONDS,
+        clientWebLink: "https://poojadiamonds.com/",
+        ClientName: "POOJA DIAMONDS",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    // {
+    //     clientImg: POLARISGROUP,
+    //     clientWebLink: "https://www.polarisgroup.in/",
+    //     ClientName: "POLARIS GROUP",
+    //     Backcolor: "white",
+    //     Category: "Infrastructure"
+    // },
+    // {
+    //     clientImg: PARSHWAJEWELLERS,
+    //     clientWebLink: "https://www.parshwajewellers.com/index.htm",
+    //     ClientName: "PARSHWA JEWELLERS",
+    //     Backcolor: "white",
+    //     Category: "Lifestyle"
+    // },
+    // {
+    //     clientImg: PARIJATGROUP,
+    //     clientWebLink: "https://parijatagrochemicals.com/",
+    //     ClientName: "PARIJAT GROUP",
+    //     Backcolor: "white",
+    //     Category: "Infrastructure"
+    // },
+
+    {
+        clientImg: PANTALOONS,
+        clientWebLink: "https://www.pantaloons.com/",
+        ClientName: "PANTALOONS",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    // {
+    //     clientImg: Palladium,
+    //     clientWebLink: "https://phoenixpalladium.com/",
+    //     ClientName: "PALLADIUM MALL",
+    //     Backcolor: "white",
+    //     Category: "Lifestyle"
+    // },
+    {
+        clientImg: OMG2MOVIE,
+        clientWebLink: "",
+        ClientName: "OMG - 2 MOVIE",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: OLVVI,
+        clientWebLink: "http://olvvi.com/",
+        ClientName: "OLVVI",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: OHOGUJARATI,
+        clientWebLink: "",
+        ClientName: "OHO GUJARATI",
+        Backcolor: "white",
+        Category: "E-commerce"
+    },
+    {
+        clientImg: OCCURA0EYECARE,
+        clientWebLink: "https://www.occuraeyecare.in/",
+        ClientName: "OCCURA EYE CARE",
+        Backcolor: "white",
+        Category: "Hospitality"
+    },
+    {
+        clientImg: NYCINEMAS,
+        clientWebLink: "",
+        ClientName: "NY CINEMAS",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
     {
         clientImg: NIMBANATURECURE,
         clientWebLink: "https://www.nimba.in/",

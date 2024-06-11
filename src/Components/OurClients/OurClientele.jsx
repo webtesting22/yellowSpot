@@ -9,7 +9,7 @@ import { ClientDataLogos, DirectClient } from "../OurClients/ContactUsClientData
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 import "./OurClients.css"
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
-import client from "../Home/Banners/clienteleHome.png"
+import client from "../Home/Banners/clienteleHome.jpg"
 const capitalizeEachWord = (string) => {
     return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 };
