@@ -89,7 +89,7 @@ const Home = () => {
                   <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" />About&nbsp;US <span></span></li></Link>
                   <Link to="/OurOfferings"><li className="flip-animate" ><img src={vector7} alt="" />Our Offerings<span></span></li></Link>
                   <Link to="/OurClientele"><li className="flip-animate" ><img src={vector1} alt="" />Our Clientele<span></span></li></Link>
-                  <Link to="/ContactUs"><li className="flip-animate" ><img src={Contact} alt="" />ContactUs<span></span></li></Link>
+                  <Link to="/ContactUs"><li className="flip-animate" ><img src={Contact} alt="" />Contact&nbsp;Us<span></span></li></Link>
                 </ul>
               </div>
               <div className="slite-padding"></div>
