@@ -283,13 +283,13 @@ const MobileHero = () => {
                             </div>
                             <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "0px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                                 <div style={{ paddingTop: "2px" }}>
-                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", fontFamily: '"Barlow Condensed", sans-serif' }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
+                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px",  }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
                                 </div>
                                 <div className="btn-container" style={{ margin: "0px 10px" }}>
                                     <Link to="/OurClientele"><button style={{
                                         margin: "5px 0px",
                                         backgroundColor: "#FFED00",
-                                        fontFamily: '"Barlow Condensed", sans-serif'
+                                       
                                     }}><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
                                 </div>
                             </div>

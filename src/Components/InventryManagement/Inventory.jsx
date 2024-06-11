@@ -388,7 +388,7 @@ const Inventory = () => {
                                             display: "flex", justifyContent: "space-between",
                                             alignItems: "center"
                                         }}>
-                                            <div style={{ fontFamily: '"Barlow Condensed", sans-serif' }}>
+                                            <div >
                                                 <span>Dimensions</span>
                                             </div>
                                             <div className="Content-info">
