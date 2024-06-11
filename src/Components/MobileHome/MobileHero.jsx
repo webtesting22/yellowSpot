@@ -21,7 +21,7 @@ import { Mousewheel, Pagination, FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import ourOffering from "../Home/offeringFinal.jpg"
-import OurClients from "./clientHome.png"
+import OurClients from "../Home/Banners/KeyClients.jpeg"
 import CounterBack from "../Home/CountersBackFinal.png"
 import "./mobilecss.css"
 const MobileHero = () => {
@@ -215,7 +215,7 @@ const MobileHero = () => {
                     <div className="image-container">
                         <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
-                    <div className="image-overlay"></div>
+                    <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 21%)" }}></div>
                     <div className="text-container-set" style={{ position: "absolute", bottom: "5px" }}>
                         <div className="text-container second" style={{ display: "flex", alignItems: "center", justifyContent: "space-around", padding: "0px 5px" }}>
                             <div>
@@ -234,6 +234,7 @@ const MobileHero = () => {
                         <div className="image-container" >
                             <img src={OurClients} alt="Yellow-Spot poster" />
                         </div>
+                        <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 21%)" }}></div>
                         <div>
                             <div className="text-container-set" style={{ position: "absolute", bottom: "40px" }} >
                                 <div className="text-container second">
@@ -283,13 +284,13 @@ const MobileHero = () => {
                             </div>
                             <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "0px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                                 <div style={{ paddingTop: "2px" }}>
-                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px",  }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
+                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
                                 </div>
                                 <div className="btn-container" style={{ margin: "0px 10px" }}>
                                     <Link to="/OurClientele"><button style={{
                                         margin: "5px 0px",
                                         backgroundColor: "#FFED00",
-                                       
+
                                     }}><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
                                 </div>
                             </div>
