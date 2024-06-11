@@ -98,8 +98,8 @@ const Home = () => {
                 <hr style={{ margin: "8px 0px", border: "1px solid #FFED00", opacity: "1" }} />
                 <ul className=" social">
                   <li className="flip-animate"><a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={vector4} alt="" /></a></li>
-                  <li className="flip-animate"><img src={vector8} alt="" /></li>
-                  <li className="flip-animate"><img src={LinkdinImg} alt="" /></li>
+                  {/* <li className="flip-animate"><img src={vector8} alt="" /></li> */}
+                  <li className="flip-animate"><a href="https://www.linkedin.com/company/yellowspotindia/about/" target='_blank'><img src={LinkdinImg} alt="" /></a></li>
                   <li className="flip-animate"><a href="https://www.facebook.com/people/Yellow-Spot/100083305608740/" target="_blank"><img src={vector2} alt="" /></a></li>
                 </ul>
               </div>
@@ -336,7 +336,7 @@ const Home = () => {
                 </div>
                 <div className="slite-padding"></div>
                 <div className="btn-container">
-                  <Link to="/OurOfferings#OurProducts"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <Link to="/OurOfferings#OurProducts"><button><span>Our Products</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                   <Link to="/OurOfferings#OurServices"><button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>

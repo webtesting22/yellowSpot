@@ -43,8 +43,8 @@ const Footer = () => {
 
                                     <div className="social-content">
                                         <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>
-                                        <img src={twitterImg} alt="" />
-                                        <img src={LinkedinImg} alt="" />
+                                        {/* <img src={twitterImg} alt="" /> */}
+                                        <a href="https://www.linkedin.com/company/yellowspotindia/about/"><img src={LinkedinImg} alt="" /></a>
                                     </div>
                                 </div>
                             </div>

@@ -17,7 +17,7 @@ import vector7 from "../Home/iconsImages/Vector7.svg"
 import vector8 from "../Home/iconsImages/Vector8.svg"
 import CombineLogo from "../Navbar/CombineLogo.jpg"
 import Contact from "../Home/iconsImages/ContactUs.svg"
-const HomePageNavigation = ( ) => {
+const HomePageNavigation = () => {
     const [open, setOpen] = useState(false);
     const [placement, setPlacement] = useState('right');
 
@@ -35,11 +35,11 @@ const HomePageNavigation = ( ) => {
     };
     const onClose = () => {
         setOpen(false);
-    };    return (
+    }; return (
         <>
             <section id="home-page-header">
 
-                <Link to="/"> <img src={CombineLogo} alt="Yellow-Spot Logo" className="logo-home"/></Link>
+                <Link to="/"> <img src={CombineLogo} alt="Yellow-Spot Logo" className="logo-home" /></Link>
                 <button className="menu-btn" onClick={showDrawer}>
                     <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
                         {drawerVisible ? <CloseOutlined /> : <MenuOutlined />}
@@ -59,7 +59,7 @@ const HomePageNavigation = ( ) => {
                     <div>
                         <div className="container-heading">
                             <h5>Menu</h5>
-                            <hr style={{ margin: "8px 0px", border: "1px solid #FFED00",opacity:"1" }} />
+                            <hr style={{ margin: "8px 0px", border: "1px solid #FFED00", opacity: "1" }} />
                             <ul className="home-menu-ul">
                                 <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" />About&nbsp;US <span></span></li></Link>
                                 <Link to="/OurOfferings"><li className="flip-animate" ><img src={vector7} alt="" />Our Offerings<span></span></li></Link>
@@ -70,11 +70,11 @@ const HomePageNavigation = ( ) => {
                         <div className="slite-padding"></div>
                         <div className="container-heading social-container">
                             <h5>Social</h5>
-                            <hr style={{ margin: "8px 0px", border: "1px solid #FFED00",opacity:"1" }} />
+                            <hr style={{ margin: "8px 0px", border: "1px solid #FFED00", opacity: "1" }} />
                             <ul className=" social">
                                 <li className="flip-animate"><a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={vector4} alt="" /></a></li>
                                 <li className="flip-animate"><img src={vector8} alt="" /></li>
-                                <li className="flip-animate"><img src={LinkdinImg} alt="" /></li>
+                                <li className="flip-animate"><a href="https://www.linkedin.com/company/yellowspotindia/about/"><img src={LinkdinImg} alt="" /></a></li>
                                 <li className="flip-animate"><a href="https://www.facebook.com/people/Yellow-Spot/100083305608740/" target="_blank"><img src={vector2} alt="" /></a></li>
                             </ul>
                         </div>

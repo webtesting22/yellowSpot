@@ -22,6 +22,7 @@ const AboutUS = () => {
         {
             Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             FounderName: "Asit",
+            Link: "",
             FounderSecondName: "Shah",
             FounderDescription: [
                 {
@@ -41,6 +42,7 @@ const AboutUS = () => {
         {
             Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             FounderName: "Pranay",
+            Link: "https://www.linkedin.com/in/pranay-shah-852b4b5b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
             FounderSecondName: "Shah",
             FounderDescription: [
                 {

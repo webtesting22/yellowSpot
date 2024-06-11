@@ -144,6 +144,8 @@
     hyphens: auto;
     margin-top: 10px;
     margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 20px;
     color: rgb(198, 198, 198);
     font-family: "Barlow Condensed", sans-serif;
 
@@ -214,7 +216,7 @@
 @media (max-width:900px) {
     .co-founder-section p {
         margin-top: 10px;
-        font-size: 17px;
+        font-size:20px;
         margin-bottom: 0px;
         color: rgb(198, 198, 198);
         font-family: "Barlow Condensed", sans-serif;
