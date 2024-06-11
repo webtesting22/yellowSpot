@@ -61,18 +61,15 @@
     /* Color of the label text */
 }
 #dropdown-title{
-    font-family: "Barlow Condensed", sans-serif;
     color: black;
     font-weight: 600;
     margin: 0px;
 }
 .named-select-filter-name{
-    font-family: "Barlow Condensed", sans-serif;
     color: black;
     font-weight: 400;
 }
 .options-style{
-    font-family: "Barlow Condensed", sans-serif;
     color: black;
     font-weight: 400;
 }

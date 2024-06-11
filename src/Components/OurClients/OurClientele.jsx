@@ -64,7 +64,7 @@ const OurClientele = () => {
                                                         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                                                             <i className='bx bx-link'></i>
                                                             <div style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
-                                                                {item.ClientName}
+                                                                <p>{item.ClientName}</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -120,7 +120,7 @@ const OurClientele = () => {
                                                             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
                                                                 <i className='bx bx-link'></i>
                                                                 <div className="client-name" style={{ width: "100%", marginLeft: "10px", textAlign: "center" }}>
-                                                                    {capitalizeEachWord(item.ClientName)}
+                                                                    <p>{capitalizeEachWord(item.ClientName)}</p>
                                                                 </div>
                                                             </div>
                                                         </div>

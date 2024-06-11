@@ -148,7 +148,6 @@ h1 {
 
 .content-box h4 {
     color: white;
-    font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 3px;
     font-weight: 400;
     font-size: 30px;
@@ -218,7 +217,6 @@ h1 {
 
     .content-box h4 {
         color: white;
-        font-family: "Barlow Condensed", sans-serif;
         letter-spacing: 3px;
         font-weight: 600;
         font-size: 2rem;
