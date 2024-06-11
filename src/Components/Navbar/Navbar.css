@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&display=swap');
-#header{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#header {
   position: absolute;
-    z-index: 666;
-    width: 100%;
-    padding: 18px 0px;
-    background: transparent;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
-    
+  z-index: 666;
+  width: 100%;
+  padding: 18px 0px;
+  background: transparent;
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+
 }
+
 .main-nav-container {
   padding: 0px 30px;
   display: flex;
@@ -41,31 +44,35 @@
 
 
 
-.line{
+.line {
   width: 100px;
   height: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.line div{
+
+.line div {
   width: 40px;
   background-color: #FFED00;
   height: 2px;
 }
+
 .left-side span a,
-.right-side span a{
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
+.right-side span a {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
   font-style: normal;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
-  text-transform:uppercase;
+  text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
+  font-size: 20px;
 }
-.yellow-spot-logo h2{
-  font-family: "Barlow Condensed", sans-serif;
+
+.yellow-spot-logo h2 {
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 300;
   font-style: normal;
   font-size: 3rem;

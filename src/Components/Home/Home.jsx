@@ -15,7 +15,7 @@ import ClientLogos from './ClientLogosData';
 import Homepagefirst from "../MobileHome/new.png"
 import Industy from "../Home/Banners/OurEgency.png"
 import offering from "../Home/Banners/OfferingHome.png"
-import client from "../Home/LogosBack.png"
+import client from "../Home/Banners/KeyClients.jpeg"
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import CountUp from 'react-countup';
 import Combinelogo from "../Navbar/CombineLogo.jpg"

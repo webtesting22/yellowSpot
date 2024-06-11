@@ -1,7 +1,7 @@
 .section-heading {
     animation: fadeDown 2s ease forwards;
     font-size: 50px;
-    font-family: Barlow Condensed, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 300;
     position: relative;
     z-index: 5;
