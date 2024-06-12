@@ -176,31 +176,7 @@ const Inventory = () => {
             <section className=" main-container-edit container p-0" id="InventoryFilters">
                 <div className="left-side-container">
                     <div className="pc-filter-btn container">
-                        <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
-                            <Swiper
-                                direction={'vertical'}
-
-                                autoplay={{
-                                    delay: 2000,
-                                    disableOnInteraction: false,
-                                }}
-                                modules={[Autoplay]}
-                                className="mySwiper"
-                                loop={true}
-                                style={{ height: "10vh", width: "10vh", margin: "0px" }}
-                            >
-                                {imgMap.map((item, index) => (
-                                    <SwiperSlide key={index}>
-                                        <img src={item.img} alt="Yellow-Spot Logo" style={{ width: "100%", height: "100%", backgroundColor: "#FFED00", borderRadius: "50%" }} />
-                                    </SwiperSlide>
-                                ))}
-
-                            </Swiper>
-                            <div style={{ marginTop: "-30px", marginLeft: "30px" }}>
-                                <MagicHeading text="Our Products" />
-                            </div>
-                        </div>
-                        {/* <div className="small-slite-padding"></div> */}
+                        
                         <div className="filter-select">
                             {/* <NamedSelectComponent
                                 options={mediaTypes.map(type => ({ label: type, value: type }))}
