@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useLocation } from 'react-router-dom';
 import Navbar from "../Navbar/Navbar";
-import { Card, Row, Col } from 'antd';
-import { TypeAnimation } from 'react-type-animation';
 import "./ouroffering.css";
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
 import Inventory from "../InventryManagement/Inventory";
@@ -20,7 +18,10 @@ const OurOfferings = () => {
             const sectionId = location.hash.substring(1); // Remove the '#' character
             const sectionElement = document.getElementById(sectionId);
             if (sectionElement) {
-                sectionElement.scrollIntoView({ behavior: 'smooth' });
+                // Use setTimeout to ensure the component is fully rendered before scrolling
+                setTimeout(() => {
+                    sectionElement.scrollIntoView({ behavior: 'smooth' });
+                }, 0);
             }
         }
     }, [location]);
