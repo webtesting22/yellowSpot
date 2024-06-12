@@ -14,16 +14,25 @@ const OurOfferings = () => {
     const location = useLocation();
 
     useEffect(() => {
-        if (location.hash) {
-            const sectionId = location.hash.substring(1); // Remove the '#' character
-            const sectionElement = document.getElementById(sectionId);
-            if (sectionElement) {
-                // Use setTimeout to ensure the component is fully rendered before scrolling
-                setTimeout(() => {
-                    sectionElement.scrollIntoView({ behavior: 'smooth' });
-                }, 0);
+        const handleScroll = () => {
+            if (location.hash) {
+                const sectionId = location.hash.substring(1); // Remove the '#' character
+                const sectionElement = document.getElementById(sectionId);
+                if (sectionElement) {
+                    setTimeout(() => {
+                        sectionElement.scrollIntoView({ behavior: 'smooth' });
+                    }, 100); // Slightly longer delay to ensure the component is fully rendered
+                }
             }
-        }
+        };
+
+        handleScroll();
+
+        window.addEventListener('resize', handleScroll); // Listen for resize events
+
+        return () => {
+            window.removeEventListener('resize', handleScroll);
+        };
     }, [location]);
 
     return (
