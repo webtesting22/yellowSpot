@@ -418,7 +418,10 @@ const Inventory = () => {
                                         <div className="complete-card-design">
                                             <div className="inside-card-data">
                                                 <div className="card-image-container">
-                                                    <Image src={item.img} alt="YellowspotInventory" />
+                                                <Image
+                                                src={item.img ? item.img : altImageInventory}
+                                                alt="YellowspotInventory"
+                                            />
                                                 </div>
                                             </div>
                                             <div className="location-details">
