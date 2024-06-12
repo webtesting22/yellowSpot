@@ -228,106 +228,7 @@ const Inventory = () => {
 
                         </div>
                     </div>
-                    {/* <div className="slite-padding"></div> */}
-                    {/* <div className="mobile-filter-btn">
-                        <button className="filter-button" onClick={toggleDrawer}>Filter <i className='bx bx-filter-alt'></i></button>
-                        <div ref={drawerRef} className={`filter-drawer ${showDrawer ? 'visible' : ''}`}>
 
-                            <div className="drawer-screen">
-
-                                <div className="tabs-button">
-                                    <button
-                                        onClick={() => handleTabClick('types')}
-                                        className={activeTab === 'types' ? 'active' : ''}
-                                    >
-                                        Types
-                                    </button>
-                                    <button
-                                        onClick={() => handleTabClick('area')}
-                                        className={activeTab === 'area' ? 'active' : ''}
-                                    >
-                                        Area
-                                    </button>
-                                </div>
-                                <div className="drawer-container" style={{ padding: "10px 0px" }}>
-                                    <button className="reset-btn"><i class='bx bx-reset' ></i></button>
-                                    {activeTab === 'types' && (
-                                        <div className="tab-content">
-                                            Populate uniqueNames with unique names
-                                            {data && data.allInv.forEach((item, index) => {
-                                                uniqueNames.add(item.typeOfMedia.name);
-                                            })}
-                                            Render unique names with checkboxes
-                                            {[...uniqueNames].map((name, index) => (
-                                                <div key={index} className="container" style={{ margin: "5px 0px" }}>
-                                                    <input
-                                                        type="checkbox"
-                                                        id={`nameCheckbox-${index}`}
-                                                        checked={checkedTypes.includes(name)}
-                                                        onChange={(e) => {
-                                                            if (e.target.checked) {
-                                                                setCheckedTypes([...checkedTypes, name]);
-                                                            } else {
-                                                                setCheckedTypes(checkedTypes.filter(item => item !== name));
-                                                            }
-                                                        }}
-                                                    />
-                                                    <label htmlFor={`nameCheckbox-${index}`}>{name}</label>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
-                                    {activeTab === 'area' && (
-                                        <div className="tab-content">
-                                            Populate uniqueAreaNames with unique names
-                                            {data && data.allInv.forEach((item, index) => {
-                                                if (item.locations && item.locations.Area) {
-                                                    uniqueAreaNames.add(item.locations.Area);
-                                                }
-                                            })}
-                                            Render unique Area names with checkboxes
-                                            {[...uniqueAreaNames].map((name, index) => (
-                                                <div key={index} className="container" style={{ margin: "5px 0px" }}>
-                                                    <input
-                                                        type="checkbox"
-                                                        id={`areaCheckbox-${index}`}
-                                                        checked={checkedArea.includes(name)}
-                                                        onChange={(e) => {
-                                                            if (e.target.checked) {
-                                                                setCheckedArea([...checkedArea, name]);
-                                                            } else {
-                                                                setCheckedArea(checkedArea.filter(item => item !== name));
-                                                            }
-                                                        }}
-                                                    />
-                                                    <label htmlFor={`areaCheckbox-${index}`}>{name}</label>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    )}
-                                </div>
-
-
-                                <style>
-                                    {`
-                                        .tabs-button button {
-                                            background-color: white;
-                                            color: black;
-                                            border: none;
-                                            cursor: pointer;
-                                            padding: 5px 20px;
-                                        }
-
-                                        .tabs-button button.active {
-                                            background-color: black;
-                                            color: #FFED00;
-                                        }
-                                        
-                                    `}
-                                </style>
-                            </div>
-                        </div>
-                    </div> */}
                     <br />
                 </div>
 
@@ -418,10 +319,10 @@ const Inventory = () => {
                                         <div className="complete-card-design">
                                             <div className="inside-card-data">
                                                 <div className="card-image-container">
-                                                <Image
-                                                src={item.img ? item.img : altImageInventory}
-                                                alt="YellowspotInventory"
-                                            />
+                                                    <Image
+                                                        src={item.img ? item.img : altImageInventory}
+                                                        alt="YellowspotInventory"
+                                                    />
                                                 </div>
                                             </div>
                                             <div className="location-details">
