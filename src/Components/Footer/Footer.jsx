@@ -5,6 +5,7 @@ import { Row, Col } from "antd";
 import instgramImg from "../Home/iconsImages/Vector4.svg"
 import twitterImg from "../Home/iconsImages/Vector8.svg"
 import LinkedinImg from "../Home/iconsImages/Vector.svg"
+import faceBookImage from "../Home/iconsImages/Vector2.svg"
 import { Link } from "react-router-dom";
 const Footer = () => {
 
@@ -36,7 +37,7 @@ const Footer = () => {
                                         <li><span>Phone:</span> <a href="tel:+91 93242 44444">+91 93242 44444</a></li>
                                         <li><span>Email:</span> <a href="mailto:sales@yellowspot.on">sales@yellowspot.on</a></li>
                                         {/* <li><span>Website:</span> https:yellow-spot.vercel.app/</li> */}
-                                        <li><a href="https://maps.app.goo.gl/MGmfKMWcejLVDw9F6" target="blank"><span>Adress:</span> 4th floor, 12, Magnet corporate park, Thaltej, Ahmedabad, Gujrat, 380054</a></li>
+                                        <li><a href="https://maps.app.goo.gl/MGmfKMWcejLVDw9F6" target="blank"><span>Address:</span> 4th floor, 12, Magnet corporate park, Thaltej, Ahmedabad, Gujrat, 380054</a></li>
                                     </ul>
                                 </div>
                                 <div className="logo-set-and-social">
@@ -44,7 +45,9 @@ const Footer = () => {
                                     <div className="social-content">
                                         <a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={instgramImg} alt="" /></a>
                                         {/* <img src={twitterImg} alt="" /> */}
-                                        <a href="https://www.linkedin.com/company/yellowspotindia/about/"><img src={LinkedinImg} alt="" /></a>
+                                        
+                                        <a href="https://www.linkedin.com/company/yellowspotindia/about/" target="_blank"><img src={LinkedinImg} alt="" /></a>
+                                        <a href="https://www.facebook.com/people/Yellow-Spot/100083305608740/" target="_blank"><img src={faceBookImage} alt="" /></a>
                                     </div>
                                 </div>
                             </div>

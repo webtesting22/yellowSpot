@@ -46,7 +46,6 @@ const Inventory = () => {
     const [selectedItemsOnArea, setSelectedItemsOnArea] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [modalItem, setModalItem] = useState(null);
-
     const [selectedMediaType, setSelectedMediaType] = useState(null);
     const [filteredAreas, setFilteredAreas] = useState([]);
     const [selectedArea, setSelectedArea] = useState(null);

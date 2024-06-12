@@ -373,7 +373,6 @@ const DirectClient = [
     },
     {
         clientImg: OHOGUJARATI,
-        clientWebLink: "",
         ClientName: "OHO GUJARATI",
         Backcolor: "white",
         Category: "E-commerce"
@@ -387,7 +386,6 @@ const DirectClient = [
     },
     {
         clientImg: NYCINEMAS,
-        clientWebLink: "",
         ClientName: "NY CINEMAS",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -401,7 +399,7 @@ const DirectClient = [
     },
     {
         clientImg: NEXONEVTATA,
-        clientWebLink: "https://ev.tatamotors.com/nexon/ev/",
+        clientWebLink: "https://ev.tatamotors.com/",
         ClientName: "NEXON EV TATA",
         Backcolor: "white",
         Category: "Automobiles"
@@ -443,7 +441,6 @@ const DirectClient = [
     },
     {
         clientImg: MUKTAA2CINEMA,
-        clientWebLink: "",
         ClientName: "MUKTA A2 CINEMA",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -471,7 +468,6 @@ const DirectClient = [
     },
     {
         clientImg: MISSIONIMPOSSIBLE,
-        clientWebLink: "",
         ClientName: "MISSION IMPOSSIBLE MOVIE",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -555,14 +551,12 @@ const DirectClient = [
     },
     {
         clientImg: MAKEMYTRIP,
-        clientWebLink: "MAKE MY TRIP",
         ClientName: "MAKE MY TRIP",
         Backcolor: "white",
         Category: "E-commerce"
     },
     {
         clientImg: LYCKABUILDERS,
-        clientWebLink: "",
         ClientName: "LYCKA BUILDERS",
         Backcolor: "white",
         Category: "Infrastructure"
@@ -611,14 +605,12 @@ const DirectClient = [
     },
     {
         clientImg: LAKIROMOVIE,
-        clientWebLink: "",
         ClientName: "LAKIRO MOVIE",
         Backcolor: "white",
         Category: "Media & Entertainment"
     },
     {
         clientImg: KUTCHEXPRESSMOVIE,
-        clientWebLink: "",
         ClientName: "KUTCH EXPRESS MOVIE",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -653,14 +645,12 @@ const DirectClient = [
     },
     {
         clientImg: KASUMBOMOVIE,
-        clientWebLink: "",
         ClientName: "KIARA SPACE VENTURES LLP",
         Backcolor: "white",
         Category: "Media & Entertainment"
     },
     {
         clientImg: KASUMBOMOVIE,
-        clientWebLink: "",
         ClientName: "KASUMBO MOVIE",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -702,14 +692,12 @@ const DirectClient = [
     },
     {
         clientImg: JAISHREEKRISHMOVIE,
-        clientWebLink: "",
         ClientName: "JAI SHREE KRISH MOVIE",
         Backcolor: "white",
         Category: "Media & Entertainment"
     },
     {
         clientImg: JAGATMOVIE,
-        clientWebLink: "",
         ClientName: "JAGAT MOVIE",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -898,16 +886,8 @@ const DirectClient = [
         Backcolor: "white",
         Category: "Govt Sector"
     },
-    // {
-    //     clientImg: GAURAVVANTAGUJARATIAWARDS,
-    //     clientWebLink: "https://www.gyanjyot.co.in/",
-    //     ClientName: "GAYAN JYOT INSTITUTE",
-    //     Backcolor: "white",
-    //     Category: "Education"
-    // },
     {
         clientImg: GAURAVVANTAGUJARATIAWARDS,
-        // clientWebLink: "https://ganeshinfra.com/",
         ClientName: "GAURAVVANTA GUJARATI AWARDS",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -982,13 +962,6 @@ const DirectClient = [
         Backcolor: "white",
         Category: "Lifestyle"
     },
-    // {
-    //     clientImg: FABINDIA,
-    //     clientWebLink: "https://www.fabindia.com/",
-    //     ClientName: "FAKTH MAHILAO MATE OOH",
-    //     Backcolor: "white",
-    //     Category: "Lifestyle"
-    // },
     {
         clientImg: FABINDIA,
         clientWebLink: "https://www.fabindia.com/",
@@ -1097,7 +1070,6 @@ const DirectClient = [
     },
     {
         clientImg: DANNYJIGAR,
-        clientWebLink: "",
         ClientName: "DANNY JIGAR - MOVIE",
         Backcolor: "white",
         Category: "Media & Entertainment"
@@ -1245,7 +1217,6 @@ const DirectClient = [
     },
     {
         clientImg: BOURNVITA,
-        clientWebLink: "",
         ClientName: "BOURNVITA",
         Backcolor: "white",
         Category: "FMCG"
@@ -1608,12 +1579,6 @@ const DirectClient = [
         Backcolor: "white",
         Category: "Media & Entertainment"
     },
-    // {
-    //     clientImg: LIBFExpo,
-    //     clientWebLink: "https://euroeximbank.com/media-events/libf-expo-2024",
-    //     ClientName: "LIBF Expo",
-    //     Backcolor: "white"
-    // },
     {
         clientImg: BankofBaroda,
         clientWebLink: "https://www.bankofbaroda.in/",
@@ -1889,12 +1854,6 @@ const DirectClient = [
         Backcolor: "white",
         Category: "Infrastructure"
     },
-    // {
-    //     clientImg: ShaktInfrastructure,
-    //     clientWebLink: "https://shaktiinfrastructure.in/",
-    //     ClientName: "Shakt Infrastructure",
-    //     Backcolor: "white"
-    // },
     {
         clientImg: KavishaGroup,
         clientWebLink: "https://kavishacorp.com/",
@@ -1924,7 +1883,7 @@ const DirectClient = [
     },
     {
         clientImg: RitBuildspace,
-        clientWebLink: "",
+        clientWebLink:"https://www.ritibuildspace.com/",
         ClientName: "riti Buildspace",
         Backcolor: "white"
     },
