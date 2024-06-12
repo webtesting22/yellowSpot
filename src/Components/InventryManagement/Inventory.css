@@ -63,32 +63,32 @@
 }
 
 :where(.css-1r287do).ant-modal .ant-modal-content {
-    background-color: black;
+    background-color: black !important;
 }
 
 :where(.css-17seli4).ant-modal .ant-modal-content {
-    background-color: black;
+    background-color: black !important;
 }
 
 :where(.css-17seli4).ant-modal .ant-modal-title {
-    background-color: black;
+    background-color: black !important;
 }
 
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-content {
-    background-color: black;
+    background-color: black !important;
 }
 
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title {
-    background-color: black;
+    background-color: black !important;
     color: white;
 }
 
 :where(.css-17seli4).ant-modal .ant-modal-close-x {
-    color: white;
+    color: white !important;
 }
 
 :where(.css-17seli4).ant-modal .ant-modal-title {
-    color: white;
+    color: white !important;
 }
 
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close-x {
@@ -96,12 +96,12 @@
 }
 
 :where(.css-1r287do).ant-modal .ant-modal-title {
-    background-color: black;
+    background-color: black !important;
     color: white;
 }
 
 :where(.css-1r287do).ant-modal .ant-modal-close-x {
-    color: white;
+    color: white !important;
 }
 
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close:hover {
@@ -109,20 +109,20 @@
 }
 
 :where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title {
-    color: white;
+    color: white !important;
 }
 
 :where(.css-j9bb5n).ant-modal .ant-modal-content {
-    background-color: black;
+    background-color: black !important;
 }
 
 :where(.css-j9bb5n).ant-modal .ant-modal-title {
-    background-color: black;
+    background-color: black !important;
     color: white;
 }
 
 :where(.css-j9bb5n).ant-modal .ant-modal-close {
-    color: white;
+    color: white !important;
 }
 
 .pc-filter-btn h6 {
@@ -158,7 +158,7 @@
 
 .all-btn-stylings {
     border: none;
-    
+
     padding: 7px 20px;
     border-radius: 5px;
     background-color: #FFED00;
