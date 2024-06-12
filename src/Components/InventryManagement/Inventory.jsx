@@ -20,7 +20,7 @@ import { Autoplay } from 'swiper/modules';
 import { TypeAnimation } from 'react-type-animation';
 import { Button, Modal, Tooltip } from 'antd';
 import MagicHeading from "../MagicHeading/MagicHeading";
-
+import altImageInventory from "../MobileHome/new.png"
 
 const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
@@ -176,7 +176,7 @@ const Inventory = () => {
             <section className=" main-container-edit container p-0" id="InventoryFilters">
                 <div className="left-side-container">
                     <div className="pc-filter-btn container">
-                        
+
                         <div className="filter-select">
                             {/* <NamedSelectComponent
                                 options={mediaTypes.map(type => ({ label: type, value: type }))}
@@ -338,7 +338,10 @@ const Inventory = () => {
                                 <div className="complete-card-design">
                                     <div className="inside-card-data">
                                         <div className="card-image-container">
-                                            <Image src={item.img} alt="YellowspotInventory" />
+                                            <Image
+                                                src={item.img ? item.img : altImageInventory}
+                                                alt="YellowspotInventory"
+                                            />
                                         </div>
                                     </div>
                                     <div className="location-details">
