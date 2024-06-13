@@ -20,14 +20,14 @@
     color: #FFED00;
     width: 100%;
     text-align: center;
-    border-top: 3px dotted rgba(255, 255, 255, 0.333);
-    border-bottom: 3px dotted rgba(255, 255, 255, 0.333);
+    border-top: 3px dashed rgba(255, 255, 255, 0.333);
+    border-bottom: 3px dashed rgba(255, 255, 255, 0.333);
 }
 
 .infiniteCarousal {
     width: 50%;
-    border-top: 5px dotted white;
-    border-bottom: 5px dotted white;
+    border-top: 4px dashed white;
+    border-bottom: 4px dashed white;
     background-color: black;
     padding: 10px;
 }
@@ -36,8 +36,8 @@
     .infiniteCarousal {
         margin: 20px 0px;
         width: 100%;
-        border-top: 5px dotted white;
-        border-bottom: 5px dotted white;
+        border-top: 5px dashed white;
+        border-bottom: 5px dashed white;
         background-color: black;
         padding: 10px;
     }
