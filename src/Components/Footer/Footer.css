@@ -147,8 +147,13 @@
 
 }
 
-
+.spacing{
+    margin-left: 78px;
+}
 @media (max-width:769px) {
+    .spacing{
+        margin-left: 0px;
+    }
     .middleOnceContainer {
         display: flex;
         justify-content: space-between;
