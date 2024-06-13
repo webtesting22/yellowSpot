@@ -223,8 +223,8 @@ const MobileHero = () => {
                             </div>
                             <div className="slite-padding"></div>
                             <div className="btn-container">
-                                <Link to="/OurOfferings"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-                                <Link to="/OurOfferings"><button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                                <Link to="/OurOfferings#OurProducts"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                                <Link to="/OurOfferings#serviceCard"><button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                             </div>
                         </div>
                     </div>
@@ -266,7 +266,7 @@ const MobileHero = () => {
                                                 },
                                             }}
                                             style={{ height: "10vh", padding: "0px 10px" }}
-                                            modules={[FreeMode, Pagination]}
+                                            modules={[FreeMode, Pagination,Autoplay]}
                                             className="mySwiper"
                                         >
                                             {ClientLogos.map((item, index) => (
