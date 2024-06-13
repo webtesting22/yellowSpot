@@ -1,0 +1,62 @@
+.animatedFooterCarousal .imgContainer {
+    height: 160px;
+    width: 180px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+
+.animatedFooterCarousal .mySwiper img {
+    /* aspect-ratio: 3/2; */
+    width: 180px;
+    height: 160px;
+    /* object-fit: contain; */
+}
+
+.imgContainer h6 {
+    position: absolute;
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.432);
+    color: #FFED00;
+    width: 100%;
+    text-align: center;
+    border-top: 3px dotted rgba(255, 255, 255, 0.333);
+    border-bottom: 3px dotted rgba(255, 255, 255, 0.333);
+}
+
+.infiniteCarousal {
+    width: 50%;
+    border-top: 5px dotted white;
+    border-bottom: 5px dotted white;
+    background-color: black;
+    padding: 10px;
+}
+
+@media (max-width:769px) {
+    .infiniteCarousal {
+        margin: 20px 0px;
+        width: 100%;
+        border-top: 5px dotted white;
+        border-bottom: 5px dotted white;
+        background-color: black;
+        padding: 10px;
+    }
+}
+
+@media (min-width:200px) and (max-width:370px) {
+    .animatedFooterCarousal .imgContainer {
+        height: 150px;
+        width: 160px;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+    }
+
+    .animatedFooterCarousal .mySwiper img {
+        /* aspect-ratio: 3/2; */
+        width: 160px;
+        height: 150px;
+        /* object-fit: contain; */
+    }
+
+}

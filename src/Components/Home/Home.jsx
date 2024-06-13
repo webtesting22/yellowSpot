@@ -86,7 +86,7 @@ const Home = () => {
                 <h5>Menu</h5>
                 <hr style={{ margin: "8px 0px", border: "1px solid #FFED00", opacity: "1" }} />
                 <ul className="home-menu-ul">
-                  <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" />About&nbsp;US <span></span></li></Link>
+                  <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" />About&nbsp;Us <span></span></li></Link>
                   <Link to="/OurOfferings"><li className="flip-animate" ><img src={vector7} alt="" />Our Offerings<span></span></li></Link>
                   <Link to="/OurClientele"><li className="flip-animate" ><img src={vector1} alt="" />Our Clientele<span></span></li></Link>
                   <Link to="/ContactUs"><li className="flip-animate" ><img src={Contact} alt="" />Contact&nbsp;Us<span></span></li></Link>
@@ -155,7 +155,7 @@ const Home = () => {
                           </div>
                           <CountUp
                             end={25}
-                            duration={20}
+                            duration={10}
                             suffix="+"
                           />
                           <h3>Years of Industry <br /> Experience </h3>
@@ -169,7 +169,7 @@ const Home = () => {
                           </div>
                           <CountUp
                             end={400}
-                            duration={20}
+                            duration={10}
                             suffix="+"
                           />
 
@@ -183,7 +183,7 @@ const Home = () => {
                           </div>
                           <CountUp
                             end={500}
-                            duration={20}
+                            duration={10}
                             suffix="+"
                           />
                           <h3>Daily Impressions</h3>
@@ -196,7 +196,7 @@ const Home = () => {
                           </div>
                           <CountUp
                             end={500}
-                            duration={20}
+                            duration={10}
                             suffix="+"
                           />
                           <h3>Clients</h3>
@@ -210,7 +210,7 @@ const Home = () => {
                           </div>
                           <CountUp
                             end={99}
-                            duration={20}
+                            duration={10}
                             suffix="%"
                           />
                           <h3> Backlit Media</h3>

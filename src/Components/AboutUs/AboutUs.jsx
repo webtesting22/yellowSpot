@@ -23,7 +23,6 @@ const AboutUS = () => {
         {
             Founderimage: "https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             FounderName: "Asit",
-            Link: "",
             FounderSecondName: "Shah",
             FounderDescription: [
                 {
@@ -78,7 +77,7 @@ const AboutUS = () => {
                     <Row>
                         <Col lg={16}>
                             <div className="parent-comapny-content second" data-aos="fade-up">
-                                <h4><span>Yellow</span>Spot</h4>
+                                <h4><span>Yellow </span>Spot</h4>
                                 {/* <br /> */}
                                 <p>YellowSpot emerged as a collaborative effort between Het Graphics and Khushi Advertising. Our strategic alliance brings together two industry leaders, establishing one of the most formidable outdoor media houses in Gujarat.
                                     We offer over 400 premium outdoor media inventory throughout the city of Ahmedabad, 99% back-lit, located in high-traffic locations, strategically placed in every neighborhood.
@@ -142,8 +141,9 @@ const AboutUS = () => {
                                                     <h4 style={{ fontSize: "40px" }}><span>{founder.FounderName}</span> {founder.FounderSecondName}</h4>
                                                 </div>
                                                 <div className="socials">
-                                                    <i className='bx bxl-linkedin-square'></i>
-                                                    {/* <i className='bx bxl-twitter' ></i> */}
+                                                    <a href={founder.Link} target="_blank" rel="noopener noreferrer">
+                                                        <i className='bx bxl-linkedin-square'></i>
+                                                    </a>
                                                 </div>
                                             </div>
                                             {founder.FounderDescription && founder.FounderDescription.map((descriptionItem, descriptionIndex) => (
@@ -154,8 +154,6 @@ const AboutUS = () => {
                                         </div>
 
                                     </div>
-                                    {/* Map over the FounderDescription array for each founder */}
-
                                 </Col>
                             ))}
 

@@ -38,7 +38,6 @@ const HomePageNavigation = () => {
     }; return (
         <>
             <section id="home-page-header">
-
                 <Link to="/"> <img src={CombineLogo} alt="Yellow-Spot Logo" className="logo-home" /></Link>
                 <button className="menu-btn" onClick={showDrawer}>
                     <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
@@ -61,7 +60,7 @@ const HomePageNavigation = () => {
                             <h5>Menu</h5>
                             <hr style={{ margin: "8px 0px", border: "1px solid #FFED00", opacity: "1" }} />
                             <ul className="home-menu-ul">
-                                <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" />About&nbsp;US <span></span></li></Link>
+                                <Link to="/AboutUs"><li className="flip-animate" ><img src={vector5} alt="" />About&nbsp;Us <span></span></li></Link>
                                 <Link to="/OurOfferings"><li className="flip-animate" ><img src={vector7} alt="" />Our Offerings<span></span></li></Link>
                                 <Link to="/OurClientele"><li className="flip-animate" ><img src={vector1} alt="" />Our Clientele<span></span></li></Link>
                                 <Link to="/ContactUs"><li className="flip-animate" ><img src={Contact} alt="" />Contact&nbsp;Us<span></span></li></Link>

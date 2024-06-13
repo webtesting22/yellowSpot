@@ -45,7 +45,7 @@
 
 
 .line {
-  width: 100px;
+  width: 60px;
   height: 10px;
   display: flex;
   justify-content: center;
@@ -55,20 +55,20 @@
 .line div {
   width: 40px;
   background-color: #FFED00;
-  height: 2px;
+  height: 3px;
 }
 
 .left-side span a,
 .right-side span a {
   font-family: 'Times New Roman', Times, serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   cursor: pointer;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .yellow-spot-logo h2 {

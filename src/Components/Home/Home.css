@@ -692,7 +692,7 @@
 .animated-boxes-five .writeUpContent,
 .animated-boxes-six .writeUpContent {
     position: absolute;
-    z-index: 55555555555555555555555555555555555555;
+    z-index: 55;
     color: white;
     height: 100%;
     width: 100%;
