@@ -11,16 +11,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import DynamicCreateShape from "../DynamicCreateShape/DynamicCreateShape";
 import 'swiper/css/pagination';
-import img from "../InventryManagement/animatedImg.svg"
-import locationIcon from "../InventryManagement/LocationIcon.svg"
+import img from "../InventryManagement/animatedImg.svg";
+import locationIcon from "../InventryManagement/LocationIcon.svg";
 import NamedSelectComponent from "../FilterSelect/NameSelectComponent";
-import { Row, Col, Image } from 'antd'
+import { Row, Col, Image } from 'antd';
 import Navbar from "../Navbar/Navbar";
 import { Autoplay } from 'swiper/modules';
 import { TypeAnimation } from 'react-type-animation';
 import { Button, Modal, Tooltip } from 'antd';
 import MagicHeading from "../MagicHeading/MagicHeading";
-import altImageInventory from "../MobileHome/new.png"
+import altImageInventory from "../MobileHome/new.png";
 
 const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
@@ -29,12 +29,11 @@ const truncateText = (text, maxLength) => {
     return text;
 };
 
-
 const Inventory = () => {
     const [showDrawer, setShowDrawer] = useState(false);
     const drawerRef = useRef(null);
     const [activeTab, setActiveTab] = useState('types');
-    const [data, setData] = useState('')
+    const [data, setData] = useState('');
     const [currentPage, setCurrentPage] = useState(1); // State to manage current page
     const [pageSize, setPageSize] = useState(10); // State to manage page size
     const [totalItems, setTotalItems] = useState(10); // Total number of items
@@ -50,12 +49,12 @@ const Inventory = () => {
     const [filteredAreas, setFilteredAreas] = useState([]);
     const [selectedArea, setSelectedArea] = useState(null);
     const [filteredMediaTypes, setFilteredMediaTypes] = useState([]);
-
+    const [filteredCount, setFilteredCount] = useState(0); // State for filtered data count
 
     // Function to handle opening and closing of the modal
     const handleModal = () => {
         setIsModalOpen(!isModalOpen);
-    }
+    };
     const handleOk = () => {
         setIsModalOpen(false);
     };
@@ -114,6 +113,7 @@ const Inventory = () => {
         // Open Google Maps in a new tab
         window.open(googleMapsUrl, '_blank');
     };
+
     // Filter the data based on selected checkboxes
     const filteredData = data && data.allInv.filter(item => {
         if (selectedItemsOnType.length > 0 && !selectedItemsOnType.includes(item.typeOfMedia.name)) {
@@ -124,10 +124,19 @@ const Inventory = () => {
         }
         return true;
     });
+
+    // Update the filtered count whenever filteredData changes
+    useEffect(() => {
+        if (filteredData) {
+            setFilteredCount(filteredData.length);
+        }
+    }, [filteredData]);
+
     const handlePaginationChange = (page, pageSize) => {
         setCurrentPage(page); // Update currentPage state
         setPageSize(pageSize); // Update pageSize state
     };
+
     // Empty dependency array means this effect will run once when the component mounts
     const uniqueNames = new Set();
     const uniqueAreaNames = new Set();
@@ -141,8 +150,8 @@ const Inventory = () => {
         {
             img: img
         },
+    ];
 
-    ]
     useEffect(() => {
         if (selectedItemsOnType.length > 0) {
             const filtered = data.allInv
@@ -165,10 +174,9 @@ const Inventory = () => {
         }
     }, [selectedItemsOnArea, data, mediaTypes]);
 
-
-
     const sortedMediaTypes = mediaTypes.sort((a, b) => a.localeCompare(b));
     const sortedAreas = areas.sort((a, b) => a.localeCompare(b));
+
     return (
         <>
 
@@ -177,32 +185,7 @@ const Inventory = () => {
                     <div className="pc-filter-btn container">
 
                         <div className="filter-select">
-                            {/* <NamedSelectComponent
-                                options={mediaTypes.map(type => ({ label: type, value: type }))}
-                                title="Type"
-                                selectedItems={selectedItemsOnType}
-                                setSelectedItems={setSelectedItemsOnType}
-                            />
-                            <div className="small-slite-padding"></div>
-                            <NamedSelectComponent
-                                options={areas.map(area => ({ label: area, value: area }))}
-                                title="Area"
-                                selectedItems={selectedItemsOnArea}
-                                setSelectedItems={setSelectedItemsOnArea}
-                            /> */}
-                            {/* <NamedSelectComponent
-                                options={sortedMediaTypes.map(type => ({ label: type, value: type }))}
-                                title="Type"
-                                selectedItems={selectedItemsOnType}
-                                setSelectedItems={setSelectedItemsOnType}
-                            />
-                            <div className="small-slite-padding"></div>
-                            <NamedSelectComponent
-                                options={sortedAreas.map(area => ({ label: area, value: area }))}
-                                title="Area"
-                                selectedItems={selectedItemsOnArea}
-                                setSelectedItems={setSelectedItemsOnArea}
-                            /> */}
+
                             <NamedSelectComponent
                                 options={filteredMediaTypes.map(type => ({ label: type, value: type }))}
                                 title="Type"
@@ -225,6 +208,10 @@ const Inventory = () => {
 
 
 
+
+                        </div>
+                        <div className="filtered-count">
+                            <p style={{ color: "#FFED00", fontSize: "20px", margin: "0px" }}>Inventories: {filteredCount}</p>
                         </div>
                     </div>
 
@@ -309,6 +296,9 @@ const Inventory = () => {
                                     disabled={filteredAreas.length === 0}
                                 />
 
+                            </div>
+                            <div className="filtered-count" style={{ margin: "0px 20px" }}>
+                                <p style={{ color: "#FFED00", fontSize: "20px", fontWeight: "400", margin: "0px" }}>Inventories: {filteredCount}</p>
                             </div>
                         </>} width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
 
