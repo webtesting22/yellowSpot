@@ -143,9 +143,10 @@
     
 } */
 @media (max-width:769px) {
-    .filtered-count{
+    .filtered-count {
         text-align: center;
     }
+
     .pc-filter-btn {
         display: flex;
         align-items: center;
