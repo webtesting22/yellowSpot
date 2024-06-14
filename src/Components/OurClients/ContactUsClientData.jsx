@@ -260,7 +260,7 @@ import LIBERTYCAREERACADEMY from "./DirectClients/LIBERTY CAREER-ACADEMY.png"
 import LONGINESWATCHES from "./DirectClients/LONGINES-WATCHES.png"
 import LOUISEPHILIPPE from "./DirectClients/LOUISE-PHILIPPE.jpg"
 import LIC from "./DirectClients/LIC.png"
-import LUIRE from "./DirectClients/LUIRE.jpg"
+import LUIRE from "./DirectClients/LUIRE.avif"
 import LYCKABUILDERS from "./DirectClients/LYCKA-BUILDERS.jfif"
 import MAKEMYTRIP from "./DirectClients/MAKE-0MY-TRIP.svg"
 import MALABARGOLD from "./DirectClients/MALABAR-GOLD.jpg"
@@ -307,13 +307,13 @@ const DirectClient = [
         Backcolor: "white",
         Category: "Media & Entertainment"
     },
-    {
-        clientImg: RAADOGUJARATIMOVIE,
-        clientWebLink: "https://poojadiamonds.com/",
-        ClientName: "RAADO GUJARATI MOVIE",
-        Backcolor: "white",
-        Category: "Media & Entertainment"
-    },
+    // {
+    //     clientImg: RAADOGUJARATIMOVIE,
+    //     clientWebLink: "https://poojadiamonds.com/",
+    //     ClientName: "RAADO GUJARATI MOVIE",
+    //     Backcolor: "white",
+    //     Category: "Media & Entertainment"
+    // },
     {
         clientImg: POOJADIAMONDS,
         clientWebLink: "https://poojadiamonds.com/",
@@ -1735,7 +1735,7 @@ const DirectClient = [
     {
         clientImg: GayanJyotInsttute,
         clientWebLink: "https://www.gyanjyot.co.in/",
-        ClientName: "Gayan Jyot Institute",
+        ClientName: "Gyan Jyot Institute",
         Backcolor: "white",
         Category: "Education"
     },
@@ -1883,7 +1883,7 @@ const DirectClient = [
     },
     {
         clientImg: RitBuildspace,
-        clientWebLink:"https://www.ritibuildspace.com/",
+        clientWebLink: "https://www.ritibuildspace.com/",
         ClientName: "riti Buildspace",
         Backcolor: "white"
     },
