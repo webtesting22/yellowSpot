@@ -74,7 +74,7 @@ const HomePageNavigation = () => {
                                 <li className="flip-animate"><a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={vector4} alt="" /></a></li>
                                 <li className="flip-animate"><img src={vector8} alt="" /></li>
                                 <li className="flip-animate"><a href="https://www.linkedin.com/company/yellowspotindia/about/"><img src={LinkdinImg} alt="" /></a></li>
-                                <li className="flip-animate"><a href="https://www.facebook.com/people/Yellow-Spot/100083305608740/" target="_blank"><img src={vector2} alt="" /></a></li>
+                                <li className="flip-animate"><a href="https://www.facebook.com/p/Yellow-Spot-100083305608740/" target="_blank"><img src={vector2} alt="" /></a></li>
                             </ul>
                         </div>
                     </div>

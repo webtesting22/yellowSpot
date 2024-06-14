@@ -55,7 +55,7 @@ const Footer = () => {
                                         {/* <img src={twitterImg} alt="" /> */}
 
                                         <a href="https://www.linkedin.com/company/yellowspotindia/about/" target="_blank"><img src={LinkedinImg} alt="" /></a>
-                                        <a href="https://www.facebook.com/people/Yellow-Spot/100083305608740/" target="_blank"><img src={faceBookImage} alt="" /></a>
+                                        <a href="https://www.facebook.com/p/Yellow-Spot-100083305608740/" target="_blank"><img src={faceBookImage} alt="" /></a>
                                     </div>
                                 </div>
                             </div>
