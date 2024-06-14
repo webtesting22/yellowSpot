@@ -43,10 +43,8 @@ import countersBack from "../Home/CountersBackFinal.png"
 import OurOfficetry from "./ouroffering.png"
 import AnimatedClientsScroll from '../AnimatedClientsScroll/AnimatedClientsScroll';
 const Home = () => {
-  const [open, setOpen] = useState(false);
-  const [placement, setPlacement] = useState('right');
-
   const [drawerVisible, setDrawerVisible] = useState(false);
+
   const showDrawer = () => {
     setDrawerVisible(!drawerVisible); // Toggle the state
   };
@@ -55,32 +53,20 @@ const Home = () => {
     setDrawerVisible(false);
   };
 
-  const onChange = (e) => {
-    setPlacement(e.target.value);
-  };
-  const onClose = () => {
-    setOpen(false);
-
-  }
-
-
-
   return (
     <>
       <div id="HomePage">
         <section id="home-page-header">
-
           <Link to="/"> <img src={CombineLogo} alt="Yellow-Spot Logo" className="logo-home" style={{ opacity: "0" }} /></Link>
           <button className="menu-btn" onClick={showDrawer} style={{ backgroundColor: "black" }}>
             <span className={`icon-transition ${drawerVisible ? 'rotate-180' : ''}`}>
               {drawerVisible ? <CloseOutlined /> : <MenuOutlined />}
             </span>
-
           </button>
 
           <Drawer
             title={null}
-            placement={placement}
+            placement="right"
             width={400}
             onClose={onCloseDrawer}
             visible={drawerVisible}
@@ -103,7 +89,6 @@ const Home = () => {
                 <hr style={{ margin: "8px 0px", border: "1px solid #FFED00", opacity: "1" }} />
                 <ul className=" social">
                   <li className="flip-animate"><a href="https://www.instagram.com/yellowspot.in/" target="_blank"><img src={vector4} alt="" /></a></li>
-                  {/* <li className="flip-animate"><img src={vector8} alt="" /></li> */}
                   <li className="flip-animate"><a href="https://www.linkedin.com/company/yellowspotindia/about/" target='_blank'><img src={LinkdinImg} alt="" /></a></li>
                   <li className="flip-animate"><a href="https://www.facebook.com/people/Yellow-Spot/100083305608740/" target="_blank"><img src={vector2} alt="" /></a></li>
                 </ul>
@@ -116,12 +101,10 @@ const Home = () => {
         <Swiper
           direction="vertical"
           slidesPerView={1}
-          spaceBetween={30}
+          spaceBetween={0} // Ensure there is no space between slides
           mousewheel={true}
           pagination={{ clickable: true }}
           modules={[Mousewheel, Pagination]}
-        // style={{ height: "100vh", width: "100%", position: "relative" }}
-
         >
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
@@ -130,11 +113,9 @@ const Home = () => {
             <div className="image-overlay"></div>
             <div className="text-container-set">
               <div className="text-container second">
-                {/* <p ><span style={{ color: "black", backgroundColor: "#ffed00", padding: "0px 20px" }}>Your Art, Our Canvas</span></p> */}
                 <div className="slite-padding"></div>
                 <div className="btn-container">
                   <Link to="/AboutUs"><button><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
-
                 </div>
               </div>
             </div>
@@ -147,12 +128,8 @@ const Home = () => {
             <div className="text-container-set four" id='textContainerset'>
               <div className="text-container" id='textContainer'>
                 <div className="main-content-container">
-                  {/* <img src={logo} alt="" style={{ width: "130px",margin:"auto" }} /> */}
-                  {/* <h1><span><span style={{ color: "#FFED00" }}>industry</span> experience</span></h1>
-                  <div className="slite-padding"></div> */}
                   <div className="content-container">
                     <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "center" }}>
-
                       <Col lg={12} md={12} >
                         <div className='contup'>
                           <div>
@@ -168,7 +145,6 @@ const Home = () => {
                       </Col>
                       <Col lg={12} md={12} >
                         <div className='contup'>
-
                           <div>
                             <img src={OutDoor} alt="" />
                           </div>
@@ -177,7 +153,6 @@ const Home = () => {
                             duration={10}
                             suffix="+"
                           />
-
                           <h3>Premium Outdoor Sites <br /> in Ahmedabad</h3>
                         </div>
                       </Col>
@@ -203,7 +178,6 @@ const Home = () => {
                           <h3>Clients</h3>
                         </div>
                       </Col>
-
                       <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
@@ -214,12 +188,11 @@ const Home = () => {
                             duration={10}
                             suffix="%"
                           />
-                          <h3> Backlit Media</h3>
+                          <h3>Backlit Media</h3>
                         </div>
                       </Col>
                     </Row>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -233,7 +206,6 @@ const Home = () => {
                     <div style={{
                       display: "flex",
                       zIndex: "-1",
-                      /* position: absolute; */
                       width: "100%"
                     }}>
                       <img src={img1} alt="" style={{ border: "2px solid black", borderBottom: "none" }} />
@@ -249,18 +221,6 @@ const Home = () => {
                     <div className="small-slite-padding"></div>
                   </div>
                 </div>
-                {/* <div className='animated-boxes-six'>
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4>Cantilever</h4>
-                      <div className="small-slite-padding"></div>
-                    </div>
-                  </div> */}
-                {/* </div> */}
-                {/* <div className="twoslidesContainer"> */}
                 <div className='animated-boxes-six'>
                   <div className='writeUpContent'>
                     <p>Similar to gantries, cantilevers are overhead billboards placed right in the center of high-traffic roads. Positioned at direct eye level, our cantilevers are impossible to miss for both commuters and pedestrians.</p>
@@ -293,8 +253,6 @@ const Home = () => {
 
                   </div>
                 </div>
-                {/* </div>
-                <div className="twoslidesContainer"> */}
                 <div className="animated-boxes-three">
                   <div className='writeUpContent'>
                     <p>As pioneers in introducing Pole Kiosks to Ahmedabad, we offer these small-format billboards which are perfect for branding your products and enhancing brand recognition among a broad audience.</p>
@@ -318,13 +276,8 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
-
-              {/* </div> */}
-
             </div>
           </SwiperSlide>
-
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">
               <img src={OurOfficetry} alt="Yellow-Spot poster" />
@@ -343,7 +296,6 @@ const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-          <div>
             <SwiperSlide style={{ height: "100vh" }}>
               <div className='ClientPageContainer'>
                 <div className='AnimatedClientScrollSection'>
@@ -406,18 +358,10 @@ const Home = () => {
               </div>
             </div> */}
             </SwiperSlide>
-          </div>
-
-
-
         </Swiper>
       </div>
-      <div id='MobileOnly'>
-        <MobileHero />
-      </div>
     </>
-
   );
-};
+}
 
 export default Home;
