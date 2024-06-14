@@ -40,7 +40,7 @@ import Media from "./icons/media.png"
 import BackLightMedia from "./icons/graphicsNew.png"
 import MobileHero from '../MobileHome/MobileHero';
 import countersBack from "../Home/CountersBackFinal.png"
-import OurOfficetry from "./Offering.png"
+import OurOfficetry from "./ouroffering.png"
 import AnimatedClientsScroll from '../AnimatedClientsScroll/AnimatedClientsScroll';
 const Home = () => {
   const [open, setOpen] = useState(false);
