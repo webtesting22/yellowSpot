@@ -1,10 +1,9 @@
 .section-heading {
     animation: fadeDown 2s ease forwards;
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
     position: relative;
     z-index: 5;
+    text-transform: uppercase;
 }
 /* @media (max-width:769px){
     .section-heading{

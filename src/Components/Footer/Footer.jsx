@@ -45,7 +45,7 @@ const Footer = () => {
                                         <li><span>Phone:</span> <a href="tel:+91 93242 44444">+91 93242 44444</a></li>
                                         <li><span>Email:</span> <a href="mailto:sales@yellowspot.on">sales@yellowspot.in</a></li>
                                         {/* <li><span>Website:</span> https:yellow-spot.vercel.app/</li> */}
-                                        <li><a href="https://maps.app.goo.gl/MGmfKMWcejLVDw9F6" target="blank"><span>Address:</span> 4th floor, 12, Magnet Corporate Park, Thaltej,<br /> <span className="spacing text-white fw-normal">Ahmedabad, Gujarat, India, 380054</span></a></li>
+                                        <li><a href="https://maps.app.goo.gl/MGmfKMWcejLVDw9F6" target="blank"><span>Address:</span> 4th floor, 12, Magnet Corporate Park, Thaltej,<br /> <span className="spacing text-white">Ahmedabad, Gujarat, India, 380054</span></a></li>
                                     </ul>
                                 </div>
                                 <div className="logo-set-and-social">

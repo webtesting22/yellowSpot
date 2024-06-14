@@ -8,6 +8,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 import ClientLogos from "../Home/ClientLogosData";
+import billboard from "../Home/iconsImages/billboard.png"
+import { Link } from "react-router-dom";
 const AnimatedClientsScroll = () => {
     const containerRef = useRef(null);
 
@@ -30,10 +32,10 @@ const AnimatedClientsScroll = () => {
     }, []);
 
     const headings = [
-        "Unacademy", "Pallidium", "Google", "Jeep", "Colours", "Coke",
+        "Unacademy", "palladium", "Google", "Jeep", "colors tv", "Coke",
         "Bank Of Baroda", "Amul", "Axis Bank", "Gujarat Titans", "LIC",
         "Adani Group", "Reliance Digital", "Aditya Birla", "Oppo",
-        "Vivo", "Tanishq", "Kalyan"
+        "Vivo", "Tanishq", "kalyan jewellers"
     ];
 
     const sortedHeadings = headings.sort((a, b) => a.localeCompare(b));
@@ -41,13 +43,16 @@ const AnimatedClientsScroll = () => {
         <>
             <section className="clientCarousalContainer">
                 <div className="bothSection">
-                    <div className="left-sideContainer ">
+                    <div className="left-sideContainer">
                         <div className="left-side-Content">
-                            <h1>Our Key Clientele</h1>
-                            <p>
+                            <h1 style={{ fontSize: "50px" }}><span style={{ color: "rgb(255, 237, 0)" }}>Our</span> Key Clientele</h1>
+                            <p style={{ fontSize: "30px", lineHeight: "35px" }}>
                                 Whether it be real estate, service industry or FMCG products, OOH is for everyone.
                             </p>
-                            <a href="/OurClientele"><button style={{ padding: "8px 20px", border: "none", backgroundColor: "#FFED00", borderRadius: "5px" }}>Explore All Clients</button></a>
+                            <div className="btn-container">
+                                <Link to="/OurClientele"><button style={{backgroundColor:"rgb(255, 237, 0) ",width:"180px"}}><span>Explore All Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
+                            </div>
+                           
                         </div>
                     </div>
                     <div className="right-sideContainer">

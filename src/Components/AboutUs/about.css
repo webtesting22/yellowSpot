@@ -28,20 +28,22 @@
 .parent-comapny-content h4 {
     font-size: 40px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    /* */
 }
 
 .parent-comapny-content h4 span {
     font-size: 40px;
     color: #FFED00;
-    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    /* */
 }
 
 .parent-comapny-content p {
     font-size: 20px;
-    font-weight: 300;
+    /*  */
     color: rgb(198, 198, 198);
-    font-family: 'Times New Roman', Times, serif;
+    /* */
 }
 
 .yellow-color-back {
@@ -125,13 +127,12 @@
 
 .founder-info h4 {
     color: white;
-    /* margin: 0px 10px; */
-    font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
 }
 
 .founder-info h4 span {
     color: #FFED00;
+    font-weight: 200;
 }
 
 .co-founder-section p {
@@ -141,10 +142,8 @@
     line-height: 1.2;
     margin-top: 10px;
     margin-bottom: 0px;
-    font-weight: 300;
     font-size: 19px;
     color: rgb(198, 198, 198);
-    font-family: 'Times New Roman', Times, serif;
 
 }
 
@@ -266,15 +265,15 @@
 
     .section-heading {
         font-size: 30px;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 300;
+       
+        
     }
 
     .parent-comapny-content p {
         font-size: 20px;
-        font-weight: 300;
+        
         color: rgb(198, 198, 198);
-        font-family: 'Times New Roman', Times, serif;
+       
     }
 
     .founder-container {

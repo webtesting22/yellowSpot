@@ -222,6 +222,7 @@
     transition: .6s;
     position: absolute;
     color: black;
+    font-weight: 400;
 }
 
 .btn-container button:hover span:nth-child(1) {
@@ -398,7 +399,19 @@
 
 .second h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    /* font-family: "Raleway", sans-serif; */
+}
+
+.second h1 span {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
 }
 
 .second .btn-container {
