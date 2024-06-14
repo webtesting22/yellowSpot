@@ -144,23 +144,3 @@
 .custom-scrollbar-container::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
-.left-side-Content{
-    width: 80%;
-}
-.left-side-Content p{
-    color: white;
-    font-size: 20px;
-    font-family: "Raleway", sans-serif;
-    /* text-transform: uppercase; */
-    font-weight: 200;
-
-}
-.left-side-Content h1{
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 200;
-}
-.left-side-Content h1 span{
-    font-family: "Raleway", sans-serif;
-}

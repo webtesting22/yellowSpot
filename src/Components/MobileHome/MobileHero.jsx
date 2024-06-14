@@ -19,7 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination, FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import ourOffering from "../Home/offeringFinal.jpg"
+import ourOffering from "../Home/ouroffering.png"
 import OurClients from "../Home/Banners/checkClientsChockImage.png"
 import CounterBack from "../Home/CountersBackFinal.png"
 import "./mobilecss.css"
@@ -219,6 +219,7 @@ const MobileHero = () => {
                     </div>
                 </div>
                 <div style={{ position: "relative", overflow: "hidden", border: "2px solid white" }}>
+                    {/* <AnimatedClientsScroll /> */}
                     <div style={{ position: "relative" }}>
                         <div className="image-container" >
                             <img src={OurClients} alt="Yellow-Spot poster" />
@@ -255,7 +256,7 @@ const MobileHero = () => {
                                                     slidesPerView: 3 // For mobile devices
                                                 },
                                             }}
-                                            style={{ height:"18vh",width:"100%", padding: "0px 10px" }}
+                                            style={{ height: "18vh", width: "100%", padding: "0px 10px" }}
                                             modules={[FreeMode, Pagination, Autoplay]}
                                             className="mySwiper"
                                         >

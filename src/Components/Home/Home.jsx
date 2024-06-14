@@ -102,7 +102,7 @@ const Home = () => {
           direction="vertical"
           slidesPerView={1}
           spaceBetween={0} // Ensure there is no space between slides
-          mousewheel={true}
+          mousewheel={{ forceToAxis: true, sensitivity: 1, thresholdDelta:50,thresholdTime:100 }}
           pagination={{ clickable: true }}
           modules={[Mousewheel, Pagination]}
         >
@@ -296,17 +296,17 @@ const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-            <SwiperSlide style={{ height: "100vh" }}>
-              <div className='ClientPageContainer'>
-                <div className='AnimatedClientScrollSection'>
-                  <AnimatedClientsScroll />
-                </div>
+          <SwiperSlide style={{ height: "100vh" }}>
+            <div className='ClientPageContainer'>
+              <div className='AnimatedClientScrollSection'>
+                <AnimatedClientsScroll />
               </div>
-              <div className="image-container">
-                <img src={client} alt="Yellow-Spot poster" />
-              </div>
-              <div className="image-overlay" style={{ backgroundColor: "rgb(0 0 0 / 39%)" }}></div>
-              {/* <div className="text-container-set">
+            </div>
+            <div className="image-container">
+              <img src={client} alt="Yellow-Spot poster" />
+            </div>
+            <div className="image-overlay" style={{ backgroundColor: "rgb(0 0 0 / 39%)" }}></div>
+            {/* <div className="text-container-set">
               <div className="text-container second">
                 <div>
                   <h1><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
@@ -357,8 +357,12 @@ const Home = () => {
                 </div>
               </div>
             </div> */}
-            </SwiperSlide>
+          </SwiperSlide>
         </Swiper>
+
+      </div>
+      <div id='MobileOnly'>
+        <MobileHero />
       </div>
     </>
   );
