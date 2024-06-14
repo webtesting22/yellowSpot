@@ -12,10 +12,10 @@ import logo from "../Navbar/logo1.svg"
 import { TypeAnimation } from 'react-type-animation';
 import { Row, Col, Drawer } from "antd";
 import ClientLogos from './ClientLogosData';
-import Homepagefirst from "../MobileHome/new.png"
+import Homepagefirst from "../AboutUs/aboutUsGraphicsfinal.png"
 import Industy from "../Home/Banners/OurEgency.png"
 import offering from "../Home/Banners/OfferingHome.png"
-import client from "../Home/Banners/KeyClients.jpeg"
+import client from "../Home/Banners/checkClientsChockImage.png"
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import CountUp from 'react-countup';
 import Combinelogo from "../Navbar/CombineLogo.jpg"
@@ -41,6 +41,7 @@ import BackLightMedia from "./icons/graphicsNew.png"
 import MobileHero from '../MobileHome/MobileHero';
 import countersBack from "../Home/CountersBackFinal.png"
 import OurOfficetry from "./offeringFinal.jpg"
+import AnimatedClientsScroll from '../AnimatedClientsScroll/AnimatedClientsScroll';
 const Home = () => {
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState('right');
@@ -59,7 +60,11 @@ const Home = () => {
   };
   const onClose = () => {
     setOpen(false);
+
   }
+
+  
+
   return (
     <>
       <div id="HomePage">
@@ -125,7 +130,7 @@ const Home = () => {
             <div className="image-overlay"></div>
             <div className="text-container-set">
               <div className="text-container second">
-                <p ><span style={{ color: "black", backgroundColor: "#ffed00", padding: "0px 20px" }}>Your Art, Our Canvas</span></p>
+                {/* <p ><span style={{ color: "black", backgroundColor: "#ffed00", padding: "0px 20px" }}>Your Art, Our Canvas</span></p> */}
                 <div className="slite-padding"></div>
                 <div className="btn-container">
                   <Link to="/AboutUs"><button><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
@@ -181,11 +186,7 @@ const Home = () => {
                           <div>
                             <img src={Impressions} alt="" />
                           </div>
-                          <CountUp
-                            end={500}
-                            duration={10}
-                            suffix="+"
-                          />
+                          <h3 style={{ fontSize: "40px" }}>xyz</h3>
                           <h3>Daily Impressions</h3>
                         </div>
                       </Col>
@@ -342,12 +343,18 @@ const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide style={{ height: "100vh" }}>
-            <div className="image-container">
-              <img src={client} alt="Yellow-Spot poster" />
-            </div>
-            <div className="image-overlay" style={{ backgroundColor: "#000000a3" }}></div>
-            <div className="text-container-set">
+          <div>
+            <SwiperSlide style={{ height: "100vh" }}>
+              <div className='ClientPageContainer'>
+                <div className='AnimatedClientScrollSection'>
+                  <AnimatedClientsScroll />
+                </div>
+              </div>
+              <div className="image-container">
+                <img src={client} alt="Yellow-Spot poster" />
+              </div>
+              <div className="image-overlay" style={{ backgroundColor: "#000000a3" }}></div>
+              {/* <div className="text-container-set">
               <div className="text-container second">
                 <div>
                   <h1><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
@@ -382,10 +389,10 @@ const Home = () => {
                     modules={[FreeMode, Autoplay, Pagination]}
                     className="mySwiper"
                   >
-                    {ClientLogos.map((item, index) => (
-                      <SwiperSlide style={{ display: "flex" }}>
-                        <div key={index} className='home-page-client-logo'>
-                          <img src={item.img} alt="" style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
+                    {sortedClientLogos.map((item, index) => (
+                      <SwiperSlide key={index} style={{ display: "flex" }}>
+                        <div className='home-page-client-logo'>
+                          <img src={item.img} alt={item.Title} style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
                         </div>
                       </SwiperSlide>
                     ))}
@@ -397,8 +404,9 @@ const Home = () => {
                   <Link to="/OurClientele"><button><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
+            </div> */}
+            </SwiperSlide>
+          </div>
 
 
 

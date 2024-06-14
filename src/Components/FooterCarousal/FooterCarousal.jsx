@@ -7,6 +7,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Autoplay } from 'swiper/modules';
 import GantryImage from "../Home/Banners/Final1.png"
+import GantryImage2 from "../Home/Banners/Final2.png"
 import CantileverImage from "../Home/Banners/cantilever.png"
 import UnipoleImage from "../Home/Banners/unipole.jpeg"
 import HordingImage from "../Home/Banners/hoardings.jpeg"
@@ -33,6 +34,10 @@ const FooterAnimatedCarousal = () => {
             imageType: "LED"
         },
         {
+            img: GantryImage2,
+            imageType: "Gantry"
+        },
+        {
             img: UnipoleImage,
             imageType: "Unipole"
         },
@@ -51,24 +56,24 @@ const FooterAnimatedCarousal = () => {
                     spaceBetween={30}
                     freeMode={true}
                     loop={true}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: false,
-                    }}
+                    // autoplay={{
+                    //     delay: 2000,
+                    //     disableOnInteraction: false,
+                    // }}
                     // pagination={{
                     //     clickable: true,
                     // }}
                     breakpoints={{
-                        1100:{
+                        1100: {
                             slidesPerView: 3
                         },
                         768: {
-                          slidesPerView: 2// For tablets
+                            slidesPerView: 2// For tablets
                         },
                         250: {
-                          slidesPerView: 2 // For mobile devices
+                            slidesPerView: 2 // For mobile devices
                         },
-                      }}
+                    }}
                     modules={[FreeMode, Autoplay]}
                     className="mySwiper"
                 >

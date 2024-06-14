@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.left-sideContainer,
+.right-sideContainer {
+    width: 50%;
+    height: 100%;
+}
+
+.left-sideContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-sideContainer {
+    height: 100vh;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.bothSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.clientCarousalContainer {
+    height: 100%;
+}
+
+.mySwiper .HomeCarousalImage {
+    width: 30%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.containerss {
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+
+.Fontset {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transform: rotateX(-0deg) rotateY(-45deg);
+
+    /* transform: rotateY(-45deg) translateZ(0) scale(1); */
+    /* transform-style: preserve-3d; */
+    color: white;
+}
+
+@media (max-width:769px) {
+    .mySwiper .HomeCarousalImage {
+        width: 100%;
+        /* aspect-ratio: 3/2;
+        object-fit: contain; */
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #mySwiper {
+        height: 25vh;
+    }
+
+    .right-sideContainer {
+        height: 28vh;
+        /* background-color: green; */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        overflow: auto;
+    }
+}
+
+.right-sideContainer .container {
+    width: 50%;
+    height: 80vh;
+    overflow: auto;
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    perspective: 800px;
+
+}
+
+.heading {
+    font-size: 3rem;
+    color: #ffffff;
+    transform: rotateX(0deg) rotateY(-25deg) translate(0);
+    transition: transform 0.5s ease;
+    margin: 10px 0;
+    font-weight: 900;
+    text-align: end;
+    /* margin-right: 100px; */
+}
+
+.heading:hover {
+    font-size: 3rem;
+    color: #FFED00;
+    transform: rotateX(0deg) rotateY(0deg) translate(0);
+    transition: transform 0.5s ease;
+    margin: 10px 0;
+    font-weight: 900;
+    /* margin-right: 100px; */
+}
+
+.custom-scrollbar-container {
+
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.custom-scrollbar-container::-webkit-scrollbar {
+    width: 0px;
+}
+
+.custom-scrollbar-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.custom-scrollbar-container::-webkit-scrollbar-thumb {
+    background-color: #FFED00;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.custom-scrollbar-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.left-side-Content{
+    width: 80%;
+}
+.left-side-Content p{
+    color: white;
+    font-size: 20px;
+    
+}

@@ -13,7 +13,6 @@ import offering from "../Home/Banners/28.png"
 import { Link } from "react-router-dom";
 import billboard from "../Home/iconsImages/billboard.png"
 import BackLightICon from "../Home/icons/BackLight.png"
-// import Clients from "..Home/icons/Clients.png"
 import client from "../Home/Banners/KeyClients.png"
 import ClientLogos from '../Home/ClientLogosData';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -21,9 +20,11 @@ import { Mousewheel, Pagination, FreeMode, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import ourOffering from "../Home/offeringFinal.jpg"
-import OurClients from "../Home/Banners/KeyClients.jpeg"
+import OurClients from "../Home/Banners/checkClientsChockImage.png"
 import CounterBack from "../Home/CountersBackFinal.png"
 import "./mobilecss.css"
+import AnimatedClientsScroll from "../AnimatedClientsScroll/AnimatedClientsScroll";
+
 const MobileHero = () => {
     return (
         <>
@@ -137,18 +138,6 @@ const MobileHero = () => {
                                         <div className="small-slite-padding"></div>
                                     </div>
                                 </div>
-                                {/* <div className='animated-boxes-six'>
-                    <div className='writeUpContent'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste error doloribus quas dolore voluptate, deserunt minima quo illum velit sed!</p>
-                    </div>
-                    <div className="back-overlay"></div>
-                    <div className="content-box">
-                      <h4>Cantilever</h4>
-                      <div className="small-slite-padding"></div>
-                    </div>
-                  </div> */}
-                                {/* </div> */}
-                                {/* <div className="twoslidesContainer"> */}
                                 <div className='animated-boxes-six'>
                                     <div className='writeUpContent'>
                                         <p>Similar to gantries, cantilevers are overhead billboards placed right in the center of high-traffic roads. Positioned at direct eye level, our cantilevers are impossible to miss for both commuters and pedestrians.</p>
@@ -235,8 +224,9 @@ const MobileHero = () => {
                             <img src={OurClients} alt="Yellow-Spot poster" />
                         </div>
                         <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 21%)" }}></div>
+
                         <div>
-                            <div className="text-container-set" style={{ position: "absolute", bottom: "40px" }} >
+                            <div className="text-container-set" style={{ position: "absolute", bottom: "25%" }} >
                                 <div className="text-container second">
 
                                     <div className="slite-padding"></div>
@@ -249,10 +239,10 @@ const MobileHero = () => {
                                             pagination={{
                                                 clickable: true,
                                             }}
-                                            autoplay={{
-                                                delay: 2000,
-                                                disableOnInteraction: false,
-                                            }}
+                                            // autoplay={{
+                                            //     delay: 2000,
+                                            //     disableOnInteraction: false,
+                                            // }}
                                             breakpoints={{
                                                 // Define breakpoints for different screen sizes
                                                 1100: {
@@ -265,14 +255,14 @@ const MobileHero = () => {
                                                     slidesPerView: 3 // For mobile devices
                                                 },
                                             }}
-                                            style={{ height: "10vh", padding: "0px 10px" }}
-                                            modules={[FreeMode, Pagination,Autoplay]}
+                                            style={{ height:"18vh",width:"100%", padding: "0px 10px" }}
+                                            modules={[FreeMode, Pagination, Autoplay]}
                                             className="mySwiper"
                                         >
                                             {ClientLogos.map((item, index) => (
                                                 <SwiperSlide style={{ display: "flex" }}>
                                                     <div key={index} className='home-page-client-logo'>
-                                                        <img src={item.img} alt="" style={{ width: "100%", aspectRatio: "3/2", objectFit: "contain" }} />
+                                                        <img src={item.img} alt="" className="HomeCarousalImage" />
                                                     </div>
                                                 </SwiperSlide>
                                             ))}

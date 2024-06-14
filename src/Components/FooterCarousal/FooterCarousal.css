@@ -1,15 +1,17 @@
 .animatedFooterCarousal .imgContainer {
     height: 160px;
-    width: 180px;
+    width: 182px;
     overflow: hidden;
     display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
 .animatedFooterCarousal .mySwiper img {
     /* aspect-ratio: 3/2; */
-    width: 180px;
-    height: 160px;
+    width: 250px;
+    height: 180px;
     /* object-fit: contain; */
 }
 
