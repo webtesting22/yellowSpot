@@ -551,6 +551,7 @@ const DirectClient = [
     },
     {
         clientImg: MAKEMYTRIP,
+        clientWebLink:"https://www.makemytrip.com/",
         ClientName: "MAKE MY TRIP",
         Backcolor: "white",
         Category: "E-commerce"
