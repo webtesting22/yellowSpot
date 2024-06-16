@@ -1105,7 +1105,7 @@ const DirectClient = [
     {
         clientImg: COLORS,
         clientWebLink: "https://www.colorstv.com/",
-        ClientName: "COLORS",
+        ClientName: "COLORS TV",
         Backcolor: "white",
         Category: "Media & Entertainment"
     },
@@ -1413,7 +1413,7 @@ const DirectClient = [
     {
         clientImg: ADITYABIRLA,
         clientWebLink: "https://www.adityabirla.com/",
-        ClientName: "ADITYABIRLA",
+        ClientName: "ADITYA BIRLA",
         Backcolor: "white",
         Category: "BFSI - Banking, Financial Services, Insurance"
     },
