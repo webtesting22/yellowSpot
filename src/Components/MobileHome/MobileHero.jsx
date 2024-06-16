@@ -42,7 +42,7 @@ const MobileHero = () => {
                         <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 76%)" }}></div>
                         <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "space-around", padding: "3px 0px", width: "100%", margin: "auto" }}>
 
-                            <Col lg={8} md={12} style={{ display: "flex", justifyContent: "end" }}>
+                            <Col lg={8} md={12}>
                                 <div className='contup'>
                                     <div>
                                         <img src={Experience} alt="" />
@@ -52,7 +52,7 @@ const MobileHero = () => {
                                         duration={20}
                                         suffix="+"
                                     />
-                                    <h3>Years of Industry Experience </h3>
+                                    <h3>Years of Industry <br /> Experience </h3>
                                 </div>
                             </Col>
                             <Col lg={8} md={12} >
