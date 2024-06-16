@@ -49,7 +49,7 @@ const MobileHero = () => {
                                     </div>
                                     <CountUp
                                         end={25}
-                                        duration={20}
+                                        duration={10}
                                         suffix="+"
                                     />
                                     <h3>Years of Industry <br /> Experience </h3>
@@ -63,7 +63,7 @@ const MobileHero = () => {
                                     </div>
                                     <CountUp
                                         end={400}
-                                        duration={20}
+                                        duration={10}
                                         suffix="+"
                                     />
 
@@ -75,11 +75,12 @@ const MobileHero = () => {
                                     <div>
                                         <img src={Impressions} alt="" />
                                     </div>
-                                    <CountUp
+                                    {/* <CountUp
                                         end={500}
-                                        duration={20}
+                                        duration={10}
                                         suffix="+"
-                                    />
+                                    /> */}
+                                    <h3 style={{ fontSize: "0.8rem",marginBottom:"5px" }}>xyz</h3>
                                     <h3>Daily Impressions</h3>
                                 </div>
                             </Col>
@@ -90,7 +91,7 @@ const MobileHero = () => {
                                     </div>
                                     <CountUp
                                         end={1000}
-                                        duration={20}
+                                        duration={10}
                                         suffix="+"
                                     />
                                     <h3>Clients</h3>
@@ -104,7 +105,7 @@ const MobileHero = () => {
                                     </div>
                                     <CountUp
                                         end={99}
-                                        duration={20}
+                                        duration={10}
                                         suffix="%"
                                     />
                                     <h3> Backlit Media</h3>
