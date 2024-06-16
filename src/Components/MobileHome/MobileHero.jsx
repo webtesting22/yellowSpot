@@ -1,5 +1,5 @@
 import React from "react";
-import homepageImg from "./new.png"
+import homepageImg from "../AboutUs/aboutUsGraphicsfinal.png"
 import { Row, Col } from "antd"
 import CountUp from 'react-countup';
 import OutDoor from "../Home/icons/outDoor.png"
@@ -204,7 +204,7 @@ const MobileHero = () => {
                     <div className="image-container">
                         <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
-                    <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 21%)" }}></div>
+                    <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 37%)" }}></div>
                     <div className="text-container-set" style={{ position: "absolute", bottom: "5px" }}>
                         <div className="text-container second" style={{ display: "flex", alignItems: "center", justifyContent: "space-around", padding: "0px 5px" }}>
                             <div>
@@ -224,7 +224,7 @@ const MobileHero = () => {
                         <div className="image-container" >
                             <img src={OurClients} alt="Yellow-Spot poster" />
                         </div>
-                        <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 21%)" }}></div>
+                        <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 37%)" }}></div>
 
                         <div>
                             <div className="text-container-set" style={{ position: "absolute", bottom: "25%" }} >
