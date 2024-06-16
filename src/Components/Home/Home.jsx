@@ -102,7 +102,7 @@ const Home = () => {
           direction="vertical"
           slidesPerView={1}
           spaceBetween={0} // Ensure there is no space between slides
-          mousewheel={{ forceToAxis: true, sensitivity: 1, thresholdDelta:50,thresholdTime:100 }}
+          mousewheel={{ forceToAxis: true, sensitivity: 1, thresholdDelta: 50, thresholdTime: 100 }}
           pagination={{ clickable: true }}
           modules={[Mousewheel, Pagination]}
         >

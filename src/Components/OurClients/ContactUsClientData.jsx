@@ -249,6 +249,7 @@ import JSWPAINTS from "./DirectClients/JSW-PAINTS.jfif"
 import KDHOSPITAL from "./DirectClients/KD-HOSPITAL.jfif"
 import KBZAVERI from "./DirectClients/K.B.-ZAVERI.jpg"
 import KASUMBOMOVIE from "./DirectClients/KASUMBO-MOVIE.jfif"
+import KIARASPACE from "./DirectClients/KIARASPACE.png"
 import KITCHENEXPRESS from "./DirectClients/KITCHEN-EXPRESS.png"
 import KKJEWELS from "./DirectClients/KK-JEWELS.png"
 import KOHINOOROPTICAL from "./DirectClients/KOHINOOR-OPTICAL.svg"
@@ -298,8 +299,154 @@ import PANTALOONS from "./DirectClients/PANTALOONS.jpg"
 // import POLARISGROUP from "./DirectClients/POLARIS-GROUP.png"
 import POOJADIAMONDS from "./DirectClients/POOJA-DIAMONDS.png"
 import RAADOGUJARATIMOVIE from "./DirectClients/RAADO-GUJARATI-MOVIE.jpg"
+import RAJYASHGROUP from "./DirectClients/RAJYASH-GROUP.jfif"
+import RAMESHWARDEVELOPERS from "./DirectClients/RAMESHWAR-DEVELOPERS.png"
+import RAPIDOBIKETAXI from "./DirectClients/RAPIDO-BIKE-TAXI.png"
+import RATNANJALIINFRALLP from "./DirectClients/RATNANJALI-INFRA-LLP.png"
+import RAYBAN from "./DirectClients/RAYBAN.png"
+import RELIANCEJEWELS from "./DirectClients/RELIANCE-JEWELS.png"
+import RELIANCESMART from "./DirectClients/RELIANCE-SMART.png"
+import RENAULT from "./DirectClients/RENAULT.jpg"
+import RIOCONN from "./DirectClients/RIOCONN.png"
+import RIVIERANFRAPROJECTS from "./DirectClients/RIVIERA-INFRA-PROJECTS.png"
+import RIYATRAVEL from "./DirectClients/RIYA-TRAVEL.png"
+import RNWMULTIMEDIAEDUCATION from "./DirectClients/RNW-MULTIMEDIA-EDUCATION.png"
+import ROASTEA from "./DirectClients/ROASTEA.png"
+import ROOHTHECAFÉ from "./DirectClients/ROOH-THE-CAFÉ.jfif"
+import SAANVINIRMAN from "./DirectClients/SAANVI-NIRMAN.png"
+import SABTV from "./DirectClients/SAB-TV.png"
+import SABARMATIUNIVERSTY from "./DirectClients/SABARMATI-UNIVERSTY.jfif"
+import safalyagroup from "./DirectClients/safalyagroup.png"
+import SARKARJEWELLERS from "./DirectClients/SARKAR-JEWELLERS.avif"
 const DirectClient = [
 
+    {
+        clientImg: SARKARJEWELLERS,
+        clientWebLink: "https://sarkarjewellers.com/",
+        ClientName: "SARKAR JEWELLERS PVT LTD",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: safalyagroup,
+        clientWebLink: "https://safalyagroup.in/",
+        ClientName: "SAFALIYA",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: SABARMATIUNIVERSTY,
+        clientWebLink: "https://sabarmatiuniversity.edu.in/",
+        ClientName: "SABARMATI UNIVERSTY",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: SABTV,
+        clientWebLink: "https://www.sonysab.in/en_in/",
+        ClientName: "SAB TV",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+
+    {
+        clientImg: SAANVINIRMAN,
+        clientWebLink: "https://www.saanvinirman.com/",
+        ClientName: "SAANVI NIRMAN",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: ROOHTHECAFÉ,
+        clientWebLink: "https://roohthecafe.com/",
+        ClientName: "ROOH THE CAFÉ",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: ROASTEA,
+        clientWebLink: "https://roastea.in/",
+        ClientName: "ROASTEA",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: RNWMULTIMEDIAEDUCATION,
+        clientWebLink: "https://www.rnwmultimedia.edu.in/",
+        ClientName: "RNW MULTIMEDIA EDUCATION",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: RIYATRAVEL,
+        clientWebLink: "https://www.riya.travel/",
+        ClientName: "RIYA TRAVEL",
+        Backcolor: "white",
+        Category: "Travel & Tourism"
+    },
+    {
+        clientImg: RIVIERANFRAPROJECTS,
+        clientWebLink: "https://rivierainfra.com/",
+        ClientName: "RIVIERA INFRA PROJECTS",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: RIOCONN,
+        clientWebLink: "https://rioconn.in/",
+        ClientName: "RIOCONN",
+        Backcolor: "white",
+        Category: "E-commerce"
+    },
+    {
+        clientImg: RENAULT,
+        clientWebLink: "https://www.renault.co.in/",
+        ClientName: "RENAULT",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: RELIANCESMART,
+        clientWebLink: "https://relianceretail.com/",
+        ClientName: "RELIANCE SMART",
+        Backcolor: "white",
+        Category: "FMCG"
+    },
+    {
+        clientImg: RELIANCEJEWELS,
+        clientWebLink: "https://reliancejewels.net/Product/GenericProduct",
+        ClientName: "RELIANCE JEWELS",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: RAYBAN,
+        clientWebLink: "https://www.ray-ban.com/usa",
+        ClientName: "RAYBAN",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: RATNANJALIINFRALLP,
+        clientWebLink: "http://ratnanjaliinfra.com/",
+        ClientName: "RATNANJALI INFRA LLP",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: RAPIDOBIKETAXI,
+        clientWebLink: "https://www.rapido.bike/",
+        ClientName: "RAPIDO BIKE TAXI",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: RAMESHWARDEVELOPERS,
+        clientWebLink: "https://rameshwardevelopers.com/",
+        ClientName: "RAMESHWAR DEVELOPERS",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
     {
         clientImg: RAADOGUJARATIMOVIE,
         clientWebLink: "https://www.rado.com/",
@@ -551,7 +698,7 @@ const DirectClient = [
     },
     {
         clientImg: MAKEMYTRIP,
-        clientWebLink:"https://www.makemytrip.com/",
+        clientWebLink: "https://www.makemytrip.com/",
         ClientName: "MAKE MY TRIP",
         Backcolor: "white",
         Category: "E-commerce"
@@ -645,10 +792,11 @@ const DirectClient = [
         Category: "FMCG"
     },
     {
-        clientImg: KASUMBOMOVIE,
+        clientImg: KIARASPACE,
+        clientWebLink: "https://kiaraspaceventures.com/",
         ClientName: "KIARA SPACE VENTURES LLP",
         Backcolor: "white",
-        Category: "Media & Entertainment"
+        Category: "Infrastructure"
     },
     {
         clientImg: KASUMBOMOVIE,
