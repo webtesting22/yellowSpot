@@ -275,7 +275,7 @@ const MobileHero = () => {
                             </div>
                             <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "0px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
                                 <div style={{ paddingTop: "2px" }}>
-                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px",textTransform:"uppercase" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
+                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", textTransform: "uppercase" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clients</h1>
                                 </div>
                                 <div className="btn-container" style={{ margin: "0px 10px" }}>
                                     <Link to="/OurClientele"><button style={{

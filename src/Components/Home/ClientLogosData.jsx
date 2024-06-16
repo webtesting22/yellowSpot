@@ -16,7 +16,6 @@ import Jeep from "../OurClients/DirectClients/JEEP.png"
 import Google from "../OurClients/DirectClients/GOOGLE.webp"
 import Pallidium from "../OurClients/DirectClients/Palladium.png"
 import Unacademy from "../OurClients/DirectClients/Unacademy.svg"
-import Title from "antd/es/skeleton/Title"
 const ClientLogos = [
     {
         img: Unacademy,
@@ -24,7 +23,7 @@ const ClientLogos = [
     },
     {
         img: Pallidium,
-        Title: "Pallidium"
+        Title: "Palladium"
     },
     {
         img: Google,
@@ -36,59 +35,59 @@ const ClientLogos = [
     },
     {
         img: Colours,
-        Title: "Colours"
+        Title: "Colours Tv"
     },
     {
         img: Coke,
         Title: "Coke"
     },
-    // {
-    //     img: BankOfBaroda,
-    //     Title: "Bank Of Baroda"
-    // },
-    // {
-    //     img: Amul,
-    //     Title: "Amul"
-    // },
-    // {
-    //     img: AxisBank,
-    //     Title: "Axis Bank"
-    // },
-    // {
-    //     img: GujratTitles,
-    //     Title: "Gujrat Titans"
-    // },
-    // {
-    //     img: LIC,
-    //     Title: "LIC"
-    // },
-    // {
-    //     img: AdaniGrp,
-    //     Title: "Adani Group"
-    // },
-    // {
-    //     img: RelienceD,
-    //     Title: "Relience Digital"
-    // },
-    // {
-    //     img: AdityaBirla,
-    //     Title: "Aditya Birla"
-    // },
-    // {
-    //     img: Oppo,
-    //     Title: "Oppo"
-    // },
-    // {
-    //     img: Vivo,
-    //     Title: "Vivo"
-    // },
-    // {
-    //     img: TanishqLogo,
-    //     Title: "Tanishq"
-    // },
-    // {
-    //     img: kalyanLogo,
-    //     Title: "Kalyan"
-    // }
+    {
+        img: BankOfBaroda,
+        Title: "Bank Of Baroda"
+    },
+    {
+        img: Amul,
+        Title: "Amul"
+    },
+    {
+        img: AxisBank,
+        Title: "Axis Bank"
+    },
+    {
+        img: GujratTitles,
+        Title: "Gujrat Titans"
+    },
+    {
+        img: LIC,
+        Title: "LIC"
+    },
+    {
+        img: AdaniGrp,
+        Title: "Adani Group"
+    },
+    {
+        img: RelienceD,
+        Title: "Relience Digital"
+    },
+    {
+        img: AdityaBirla,
+        Title: "Aditya Birla"
+    },
+    {
+        img: Oppo,
+        Title: "Oppo"
+    },
+    {
+        img: Vivo,
+        Title: "Vivo"
+    },
+    {
+        img: TanishqLogo,
+        Title: "Tanishq"
+    },
+    {
+        img: kalyanLogo,
+        Title: "Kalyan Jewellers"
+    }
 ]
 export default ClientLogos;
