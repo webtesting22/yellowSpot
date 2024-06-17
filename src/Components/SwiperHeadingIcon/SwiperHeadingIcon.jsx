@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { Autoplay } from 'swiper/modules';
 import MagicHeading from "../MagicHeading/MagicHeading";
 import img from "../InventryManagement/animatedImg.svg"
+import "./swiperHeading.css"
 const SwiperHeadingIcon = ({ headingText }) => {
     const imgMap = [
         {
@@ -21,7 +22,7 @@ const SwiperHeadingIcon = ({ headingText }) => {
     return (
         <>
             <div style={{ display: "flex", alignItems: "center", width: "100%" }}>
-                <div style={{width:"30%"}}>
+                <div className="SliderAdjust">
                     <Swiper
                         direction={'vertical'}
 
@@ -42,7 +43,7 @@ const SwiperHeadingIcon = ({ headingText }) => {
 
                     </Swiper>
                 </div>
-                <div style={{ marginTop: "-30px",marginLeft:"10px" }}>
+                <div style={{ marginTop: "-30px", marginLeft: "10px" }}>
                     <MagicHeading text={headingText} />
                 </div>
             </div >
