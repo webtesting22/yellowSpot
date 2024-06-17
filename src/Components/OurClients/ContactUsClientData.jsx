@@ -318,8 +318,136 @@ import SABTV from "./DirectClients/SAB-TV.png"
 import SABARMATIUNIVERSTY from "./DirectClients/SABARMATI-UNIVERSTY.jfif"
 import safalyagroup from "./DirectClients/safalyagroup.png"
 import SARKARJEWELLERS from "./DirectClients/SARKAR-JEWELLERS.avif"
+import SATYAMEVDEVELOPER from "./DirectClients/SATYAMEV-DEVELOPER.png"
+import SGVPINTERNATIONALSCHOOL from "./DirectClients/SGVP-INTERNATIONAL-SCHOOL.png"
+import SHAHSWATSCHOOL from "./DirectClients/SHAHSWAT-SCHOOL.jfif"
+import SHANTANUANDNIKHIL from "./DirectClients/SHANTANU-AND-NIKHIL.webp"
+import SHELADIADEVELOPERS from "./DirectClients/SHELADIA-DEVELOPERS.jpg"
+import SHERLYJEWELS from "./DirectClients/SHERLY-JEWELS.jfif"
+import SHREEJIPROJECTSAHMEDABAD from "./DirectClients/SHREEJI-PROJECTS-AHMEDABAD.jpg"
+import SKIPSAHMEDABAD from "./DirectClients/SKIPS-AHMEDABAD.png"
+import SKODA from "./DirectClients/SKODA.png"
+import SKRMADHAV from "./DirectClients/SKR-MADHAV.png"
+import SKYANGDEVELOPERS from "./DirectClients/SKYANG-DEVELOPERS.jfif"
+import SONYMAX from "./DirectClients/SONY-MAX.png"
+import SONYTV from "./DirectClients/SONY-TV.png"
+import SPARSHINFRASTRUCTURES from "./DirectClients/SPARSH-INFRASTRUCTURES.png"
+import SPINNYCAR from "./DirectClients/SPINNY-CAR.png"
 const DirectClient = [
 
+    {
+        clientImg: SPINNYCAR,
+        clientWebLink: "https://www.spinny.com/",
+        ClientName: "SPINNY CAR",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: SPARSHINFRASTRUCTURES,
+        clientWebLink: "https://www.sparshinfra.com/",
+        ClientName: "SPARSH INFRASTRUCTURES",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: SONYTV,
+        // clientWebLink: "",
+        ClientName: "SONY TV",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: SONYMAX,
+        clientWebLink: "https://www.sonymax.tv/en_in/",
+        ClientName: "SONY MAX",
+        Backcolor: "white",
+        Category: "Media & Entertainment"
+    },
+    {
+        clientImg: SKYANGDEVELOPERS,
+        clientWebLink: "http://skyangdevelopers.com/",
+        ClientName: "SKYANG DEVELOPERS",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: SKRMADHAV,
+        clientWebLink: "https://skrmadhav.com/",
+        ClientName: "SKR MADHAV DEVELOPERS LLP",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: SKODA,
+        clientWebLink: "https://www.skoda-auto.co.in/",
+        ClientName: "SKODA",
+        Backcolor: "white",
+        Category: "Automobiles"
+    },
+    {
+        clientImg: SKIPSAHMEDABAD,
+        clientWebLink: "https://www.skips.in/",
+        ClientName: "SKIPS AHMEDABAD",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: SHREEJIPROJECTSAHMEDABAD,
+        clientWebLink: "https://shyaminfratech.com/",
+        ClientName: "SHYAMVIJAY INFRASTRUCTURE",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: SHREEJIPROJECTSAHMEDABAD,
+        clientWebLink: "https://www.shreejiprojects.com/",
+        ClientName: "SHREEJI PROJECTS AHMEDABAD",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+
+    {
+        clientImg: SHERLYJEWELS,
+        clientWebLink: "https://sherlyjewels.com/",
+        ClientName: "SHERLY JEWELS",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: SHELADIADEVELOPERS,
+        clientWebLink: "https://sheladia.xyz/",
+        ClientName: "SHELADIA DEVELOPERS",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
+    {
+        clientImg: SHANTANUANDNIKHIL,
+        clientWebLink: "https://www.shantanunikhil.com/",
+        ClientName: "SHANTANU AND NIKHIL",
+        Backcolor: "white",
+        Category: "Lifestyle"
+    },
+    {
+        clientImg: SHAHSWATSCHOOL,
+        clientWebLink: "https://www.shashwatschool.ac.in/",
+        ClientName: "SHAHSWAT SCHOOL",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: SGVPINTERNATIONALSCHOOL,
+        clientWebLink: "https://amd.sgvp.org/",
+        ClientName: "SGVP INTERNATIONAL SCHOOL",
+        Backcolor: "white",
+        Category: "Education"
+    },
+    {
+        clientImg: SATYAMEVDEVELOPER,
+        clientWebLink: "https://satyamevdevelopers.com/",
+        ClientName: "SATYAMEV DEVELOPER",
+        Backcolor: "white",
+        Category: "Infrastructure"
+    },
     {
         clientImg: SARKARJEWELLERS,
         clientWebLink: "https://sarkarjewellers.com/",
