@@ -20,21 +20,23 @@ const Footer = () => {
                 <div className=" slite-padding container">
                     <div className="topHeadingStyle">
                         <div className="ContactusHeading container">
-                            <p style={{ textAlign: "start" }}>Ready to work together?</p>
-                            <h1>Get In Touch </h1>
-                              <div className="Footer_Logo">
-                            <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
-                        </div>
+                            <div className="GetInTouch">
+                                <p style={{ textAlign: "start" }}>Ready to work together?</p>
+                                <h1>Get In Touch </h1>
+                            </div>
+                            <div className="Footer_Logo">
+                                <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
+                            </div>
                         </div>
                         <div className="infiniteCarousal">
-                            <FooterAnimatedCarousal/>
+                            <FooterAnimatedCarousal />
                         </div>
                         {/* <div className="Footer_Logo">
                             <Link to="/"><img src={FooterLogo} alt="Yellow-Spot Logo" /></Link>
                         </div> */}
                     </div>
                     <div className="slite-padding"></div>
-                    <hr style={{ opacity: "1" }} />
+                    {/* <hr style={{ opacity: "1" }} /> */}
                     <Row className="w-100">
                         {/* <Col lg={12}>
                         </Col> */}
@@ -62,8 +64,9 @@ const Footer = () => {
                         </Col>
 
                     </Row>
-                    <hr style={{ opacity: "1" }} />
-                    <p>@2024 <a href="https://www.outleadsolutions.com/" target="_blank" style={{ color: "#FFED00" }}>Outlead solution.</a> All rights reserved.</p>
+                    <br />
+                    {/* <hr style={{ opacity: "1" }} /> */}
+                    <p>@2024 <a href="https://www.outleadsolutions.com/" target="_blank" style={{ color: "#FFED00" }}>Outlead solutions.</a> All rights reserved.</p>
                 </div>
             </section>
         </>

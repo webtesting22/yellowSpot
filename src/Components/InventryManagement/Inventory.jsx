@@ -4,9 +4,6 @@ import { Card } from 'antd';
 import { Checkbox, Pagination } from 'antd';
 import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 import { GrPowerReset } from "react-icons/gr";
-const onChange = (e) => {
-    console.log(`checked = ${e.target.checked}`);
-};
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import DynamicCreateShape from "../DynamicCreateShape/DynamicCreateShape";
@@ -50,6 +47,7 @@ const Inventory = () => {
     const [selectedArea, setSelectedArea] = useState(null);
     const [filteredMediaTypes, setFilteredMediaTypes] = useState([]);
     const [filteredCount, setFilteredCount] = useState(0); // State for filtered data count
+    const [filteredData, setFilteredData] = useState([]); // New state for filtered data
 
     // Function to handle opening and closing of the modal
     const handleModal = () => {
@@ -81,6 +79,7 @@ const Inventory = () => {
     const toggleDrawer = () => {
         setShowDrawer(prevState => !prevState); // Toggle the drawer state
     };
+
     useEffect(() => {
         const fetchData = async () => {
             console.log("hello", import.meta.env);
@@ -97,6 +96,8 @@ const Inventory = () => {
                 setMediaTypes(typeNames);
                 setAreas(areaNames);
                 setData(jsonData);
+                setFilteredData(jsonData.allInv); // Set the initial filtered data
+                setFilteredCount(jsonData.allInv.length); // Set the initial filtered count
             } catch (error) {
                 console.log(error);
             }
@@ -115,22 +116,19 @@ const Inventory = () => {
     };
 
     // Filter the data based on selected checkboxes
-    const filteredData = data && data.allInv.filter(item => {
-        if (selectedItemsOnType.length > 0 && !selectedItemsOnType.includes(item.typeOfMedia.name)) {
-            return false;
-        }
-        if (selectedItemsOnArea.length > 0 && !selectedItemsOnArea.includes(item.locations?.Area)) {
-            return false;
-        }
-        return true;
-    });
-
-    // Update the filtered count whenever filteredData changes
     useEffect(() => {
-        if (filteredData) {
-            setFilteredCount(filteredData.length);
-        }
-    }, [filteredData]);
+        const filtered = data && data.allInv.filter(item => {
+            if (selectedItemsOnType.length > 0 && !selectedItemsOnType.includes(item.typeOfMedia.name)) {
+                return false;
+            }
+            if (selectedItemsOnArea.length > 0 && !selectedItemsOnArea.includes(item.locations?.Area)) {
+                return false;
+            }
+            return true;
+        });
+        setFilteredData(filtered);
+        setFilteredCount(filtered.length);
+    }, [selectedItemsOnType, selectedItemsOnArea, data]);
 
     const handlePaginationChange = (page, pageSize) => {
         setCurrentPage(page); // Update currentPage state
@@ -176,7 +174,13 @@ const Inventory = () => {
 
     const sortedMediaTypes = mediaTypes.sort((a, b) => a.localeCompare(b));
     const sortedAreas = areas.sort((a, b) => a.localeCompare(b));
-
+ // Log the count of the first option in the filters
+ useEffect(() => {
+    sortedMediaTypes.forEach(type => {
+        const count = filteredData.filter(item => item.typeOfMedia.name === type).length;
+        console.log(`Count of ${type}:`, count);
+    });
+}, [sortedMediaTypes, filteredData]);
     return (
         <>
 
@@ -205,10 +209,6 @@ const Inventory = () => {
                                 }}
                                 disabled={filteredAreas.length === 0}
                             />
-
-
-
-
                         </div>
                         <div className="filtered-count">
                             <p style={{ color: "#FFED00", fontSize: "20px", margin: "0px" }}>Inventories: {filteredCount}</p>
@@ -233,7 +233,6 @@ const Inventory = () => {
                                     </div>
                                     <div className="location-details">
                                         <div style={{ width: "100%" }} className="location-content">
-                                            <br />
                                             <Tooltip title={item.locations?.name} >
                                                 <a
                                                     href="#"
@@ -247,21 +246,19 @@ const Inventory = () => {
 
                                                 </a>
                                             </Tooltip>
-
                                         </div>
                                         <hr style={{ margin: "3px 0px" }} />
                                         <div style={{
                                             display: "flex", justifyContent: "space-between",
                                             alignItems: "center"
                                         }}>
-                                            <div >
+                                            <div>
                                                 <span>Dimensions</span>
                                             </div>
                                             <div className="Content-info">
                                                 <DynamicCreateShape width={item.width} height={item.height} />
                                             </div>
                                         </div>
-
                                     </div>
                                     <p style={{ margin: "5px 0px" }}>
                                         Illumination: {item.Illu ?
@@ -295,13 +292,11 @@ const Inventory = () => {
                                     }}
                                     disabled={filteredAreas.length === 0}
                                 />
-
                             </div>
                             <div className="filtered-count" style={{ margin: "0px 20px" }}>
                                 <p style={{ color: "#FFED00", fontSize: "20px", fontWeight: "400", margin: "0px" }}>Inventories: {filteredCount}</p>
                             </div>
                         </>} width={1000} footer={null} visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-
                             <Row>
                                 {filteredData && filteredData.map(item => (
                                     <Col lg={8} key={item.id}>
@@ -357,14 +352,11 @@ const Inventory = () => {
                     <div style={{ textAlign: "center", marginTop: "20px" }}>
                         <button onClick={handleModal} className="all-btn-stylings">Show all Inventories</button>
                     </div>
-
-
                 </div>
-
-            </section >
+            </section>
             <br /><br />
         </>
-    )
-}
+    );
+};
 
 export default Inventory;

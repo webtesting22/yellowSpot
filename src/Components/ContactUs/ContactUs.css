@@ -1,50 +1,67 @@
-#contactUssection .tagline{
+#contactUssection .tagline {
   font-size: 20px;
   color: white;
   margin-top: 30px;
-  
+
 }
-.twoColumsContainer{
+
+.twoColumsContainer {
   display: flex;
 }
+
 .twoColumsContainer .rightSideColumn,
-.twoColumsContainer .leftSideColumn{
+.twoColumsContainer .leftSideColumn {
   width: 50%;
   display: flex;
   align-items: center;
 }
-.twoColumsContainer .leftSideColumn{
+
+.twoColumsContainer .leftSideColumn {
   padding-right: 20px;
 }
-.twoColumsContainer .rightSideColumn img{
+
+.twoColumsContainer .rightSideColumn img {
   width: 100%;
 }
+
 .ContactContent ul {
   list-style: none;
   color: white;
   padding: 0px;
 }
+
 .ContactContent ul li,
-.ContactContent ul li a{
+.ContactContent ul li a {
   line-height: 30px;
   font-size: 20px;
   color: white;
 }
 
-.ContactContent ul li span{
+.ContactContent ul li span {
   font-weight: 200;
   color: #FFED00;
 }
-@media (max-width:600px){
-  .twoColumsContainer{
+
+@media (max-width:600px) {
+
+  .ContactContent ul li,
+  .ContactContent ul li a {
+    line-height: 30px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .twoColumsContainer {
     display: flex;
     flex-direction: column;
   }
-  .contactUsSection{
+
+  .contactUsSection {
     padding-top: 6rem;
   }
+
   .twoColumsContainer .rightSideColumn,
-  .twoColumsContainer .leftSideColumn{
+  .twoColumsContainer .leftSideColumn {
     width: 100%;
     display: flex;
     align-items: center;

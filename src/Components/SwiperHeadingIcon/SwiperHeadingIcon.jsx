@@ -25,7 +25,6 @@ const SwiperHeadingIcon = ({ headingText }) => {
                 <div className="SliderAdjust">
                     <Swiper
                         direction={'vertical'}
-
                         autoplay={{
                             delay: 2000,
                             disableOnInteraction: false,

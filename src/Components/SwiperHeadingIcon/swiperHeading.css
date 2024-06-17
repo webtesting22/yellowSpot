@@ -1,5 +1,7 @@
 @media (max-width:769px){
     .SliderAdjust{
         width: 30%;
+        display: flex;
+        justify-content: center;
     }
 }

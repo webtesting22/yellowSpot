@@ -90,7 +90,7 @@ const AboutUS = () => {
                             <img src={YelloSpot} alt="yellowspot_logo" className="yellowSpotImg" data-aos="fade-up" />
                         </Col>
                         <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
-                        <Col lg={8}>
+                        <Col lg={8} id="OnlyForPc">
                             <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
                         </Col>
 
@@ -107,6 +107,9 @@ const AboutUS = () => {
 
                                 </div>
                             </div>
+                        </Col>
+                        <Col lg={8} id="onlyMobile">
+                            <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
                         </Col>
                         <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
                         <Col lg={16}>

@@ -14,7 +14,7 @@
     /* padding: 2rem; */
     /* aspect-ratio: 3/2;
     object-fit: contain; */
-    border-radius: 20px;
+    /* border-radius: 20px; */
     display: flex;
     /* margin: auto; */
 }
@@ -142,7 +142,7 @@
     line-height: 1.2;
     margin-top: 10px;
     margin-bottom: 0px;
-    font-size: 19px;
+    font-size: 20px;
     color: rgb(198, 198, 198);
 
 }
@@ -208,18 +208,41 @@
    width: 300px;
    height: 300px;
 } */
+#onlyMobile {
+    display: none;
+}
+
+#OnlyForPc {
+    display: block;
+}
+
 @media (max-width:900px) {
+
+    #OnlyForPc {
+        display: none;
+    }
+
+    #onlyMobile {
+        padding: 2rem 0rem;
+        display: block;
+    }
+
     .co-founder-section p {
+        text-align: start;
+        word-break: break-word;
+        hyphens: auto;
+        line-height: 1.2;
         margin-top: 10px;
-        font-size: 20px;
         margin-bottom: 0px;
+        font-size: 18px;
         color: rgb(198, 198, 198);
-        
 
     }
 
+
     #KhushiImg {
-        padding: 3rem 0rem;
+        padding: 2rem 0rem;
+        /* border-radius: 10px; */
     }
 
     .HET_IMG,
@@ -231,7 +254,7 @@
     .parent-comapny-content h4 {
         font-size: 40px;
         color: white;
-        
+
         margin: 30px 0px;
     }
 
@@ -242,7 +265,7 @@
         /* padding: 1rem; */
         /* aspect-ratio: 3/2;
     object-fit: contain; */
-        border-radius: 20px;
+        /* border-radius: 20px; */
         display: flex;
     }
 
@@ -265,15 +288,14 @@
 
     .section-heading {
         font-size: 30px;
-       
-        
+
+
     }
 
     .parent-comapny-content p {
-        font-size: 20px;
-        
+        font-size: 18px;
         color: rgb(198, 198, 198);
-       
+
     }
 
     .founder-container {

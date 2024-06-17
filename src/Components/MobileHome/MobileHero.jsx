@@ -35,83 +35,85 @@ const MobileHero = () => {
                 <div>
 
                     {/* <div className="image-overlay"></div> */}
-                    <div className="content-container" style={{ padding: "0px", position: "relative", borderBottom: "2px solid white" }} >
-                        <div className="image-container" style={{ position: "absolute", }}>
+                    <div className="content-container" style={{ padding: "0px", position: "relative", borderBottom: "2px solid white", height: "40vh" }} >
+                        <div className="image-container" style={{ position: "absolute", display: "flex", justifyContent: "center" }}>
                             <img src={CounterBack} alt="Yellow-Spot poster" />
                         </div>
                         <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 76%)" }}></div>
-                        <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "space-around", padding: "3px 0px", width: "100%", margin: "auto" }}>
+                        <div style={{ display: "flex", height: "100%" }}>
+                            <Row gutter={[16, 16]} style={{ display: "flex", justifyContent: "space-around", padding: "3px 0px", width: "100%", margin: "auto" }}>
 
-                            <Col lg={8} md={12}>
-                                <div className='contup'>
-                                    <div>
-                                        <img src={Experience} alt="" />
+                                <Col lg={8} md={12}>
+                                    <div className='contup'>
+                                        <div>
+                                            <img src={Experience} alt="" />
+                                        </div>
+                                        <CountUp
+                                            end={25}
+                                            duration={10}
+                                            suffix="+"
+                                        />
+                                        <h3>Years of Industry <br /> Experience </h3>
                                     </div>
-                                    <CountUp
-                                        end={25}
-                                        duration={10}
-                                        suffix="+"
-                                    />
-                                    <h3>Years of Industry <br /> Experience </h3>
-                                </div>
-                            </Col>
-                            <Col lg={8} md={12} >
-                                <div className='contup'>
+                                </Col>
+                                <Col lg={8} md={12} >
+                                    <div className='contup'>
 
-                                    <div>
-                                        <img src={OutDoor} alt="" />
-                                    </div>
-                                    <CountUp
-                                        end={400}
-                                        duration={10}
-                                        suffix="+"
-                                    />
+                                        <div>
+                                            <img src={OutDoor} alt="" />
+                                        </div>
+                                        <CountUp
+                                            end={400}
+                                            duration={10}
+                                            suffix="+"
+                                        />
 
-                                    <h3>Premium Outdoor Sites in Ahmedabad</h3>
-                                </div>
-                            </Col>
-                            <Col lg={8} md={12} style={{ display: "flex", justifyContent: "start" }}>
-                                <div className='contup'>
-                                    <div>
-                                        <img src={Impressions} alt="" />
+                                        <h3>Premium Outdoor Sites in Ahmedabad</h3>
                                     </div>
-                                    {/* <CountUp
-                                        end={500}
-                                        duration={10}
-                                        suffix="+"
-                                    /> */}
-                                    <h3 style={{ fontSize: "0.8rem", marginBottom: "5px" }}>xyz</h3>
-                                    <h3>Daily Impressions</h3>
-                                </div>
-                            </Col>
-                            <Col lg={8} md={12} >
-                                <div className='contup'>
-                                    <div>
-                                        <img src={Clients} alt="" />
+                                </Col>
+                                <Col lg={8} md={12} style={{ display: "flex", justifyContent: "start" }}>
+                                    <div className='contup'>
+                                        <div>
+                                            <img src={Impressions} alt="" />
+                                        </div>
+                                        {/* <CountUp
+            end={500}
+            duration={10}
+            suffix="+"
+        /> */}
+                                        <h3 style={{ fontSize: "0.8rem", marginBottom: "5px" }}>xyz</h3>
+                                        <h3>Daily Impressions</h3>
                                     </div>
-                                    <CountUp
-                                        end={1000}
-                                        duration={10}
-                                        suffix="+"
-                                    />
-                                    <h3>Clients</h3>
-                                </div>
-                            </Col>
+                                </Col>
+                                <Col lg={8} md={12} >
+                                    <div className='contup'>
+                                        <div>
+                                            <img src={Clients} alt="" />
+                                        </div>
+                                        <CountUp
+                                            end={1000}
+                                            duration={10}
+                                            suffix="+"
+                                        />
+                                        <h3>Clients</h3>
+                                    </div>
+                                </Col>
 
-                            <Col lg={8} md={12} >
-                                <div className='contup'>
-                                    <div>
-                                        <img src={BackLightICon} alt="" />
+                                <Col lg={8} md={12} >
+                                    <div className='contup'>
+                                        <div>
+                                            <img src={BackLightICon} alt="" />
+                                        </div>
+                                        <CountUp
+                                            end={99}
+                                            duration={10}
+                                            suffix="%"
+                                        />
+                                        <h3> Backlit Media</h3>
                                     </div>
-                                    <CountUp
-                                        end={99}
-                                        duration={10}
-                                        suffix="%"
-                                    />
-                                    <h3> Backlit Media</h3>
-                                </div>
-                            </Col>
-                        </Row>
+                                </Col>
+                            </Row>
+                        </div>
                     </div>
                     <div>
                         <div className="our-products">
@@ -290,7 +292,7 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", border: "2px solid white" }}>
+                <div style={{ position: "relative", border: "1px solid white",borderBottom:"0px" }}>
                     <div className="image-container">
                         <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
@@ -308,7 +310,7 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", overflow: "hidden", border: "2px solid white" }}>
+                <div style={{ position: "relative", overflow: "hidden", border: "1px solid white" }}>
                     {/* <AnimatedClientsScroll /> */}
                     <div style={{ position: "relative" }}>
                         <div className="image-container" >
@@ -319,8 +321,9 @@ const MobileHero = () => {
                         <div>
                             <div className="text-container-set" style={{ position: "absolute", bottom: "25%" }} >
                                 <div className="text-container second">
-
-                                    <div className="slite-padding"></div>
+                                    <div style={{ paddingTop: "2px" }}>
+                                        <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", textTransform: "uppercase" }}><span style={{ color: "#FFED00", fontSize: "25px" }}>Our Key</span> Clientele</h1>
+                                    </div>
                                     <div className="clients-logo-home-container">
                                         <Swiper
                                             slidesPerView={6}
@@ -346,7 +349,7 @@ const MobileHero = () => {
                                                     slidesPerView: 3 // For mobile devices
                                                 },
                                             }}
-                                            style={{ height: "18vh", width: "100%", padding: "0px 10px" }}
+                                            style={{ height: "16vh", width: "100%", padding: "0px 10px" }}
                                             modules={[FreeMode, Pagination, Autoplay]}
                                             className="mySwiper"
                                         >
@@ -363,10 +366,8 @@ const MobileHero = () => {
 
                                 </div>
                             </div>
-                            <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "0px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
-                                <div style={{ paddingTop: "2px" }}>
-                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", textTransform: "uppercase" }}><span style={{ color: "#FFED00" }}>Our Key</span> Clientele</h1>
-                                </div>
+                            <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "15px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
+
                                 <div className="btn-container" style={{ margin: "0px 10px" }}>
                                     <Link to="/OurClientele"><button style={{
                                         margin: "5px 0px",

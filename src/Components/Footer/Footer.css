@@ -144,13 +144,22 @@
 
 }
 
-.spacing{
+.spacing {
     margin-left: 78px;
 }
+.GetInTouch {
+    display: block;
+}
+
 @media (max-width:769px) {
-    .spacing{
+    .GetInTouch {
+        display: none;
+    }
+
+    .spacing {
         margin-left: 0px;
     }
+
     .middleOnceContainer {
         display: flex;
         justify-content: space-between;
@@ -180,4 +189,10 @@
         width: 100%;
         align-items: center;
     }
+    .footer {
+        background-color: rgb(36, 36, 36);
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    
 }

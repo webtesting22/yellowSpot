@@ -85,9 +85,11 @@
     .animated-card-content-info {
         padding: 20px 0px;
     }
-
-    .animated-card-content-info p {
+    .animated-card-content-info h4{
         font-size: 20px;
+    }
+    .animated-card-content-info p {
+        font-size: 18px;
         font-weight: 300;
         color: rgb(198, 198, 198);
         

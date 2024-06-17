@@ -41,7 +41,7 @@ function NamedSelectComponent({ title, selectedItems, setSelectedItems, options 
             <div className="named-select-filter" ref={selectFilterRef} onClick={() => setShowOptions(!showOptions)}>
                 <div ><p id="dropdown-title">{title}</p></div>
                 <div style={{ display: "flex", alignItems: "center" }}>
-                    <div className="named-select-filter-name">{selectedItems.length}&nbsp;selected</div>
+                    <div className="named-select-filter-name">({selectedItems.length})</div>&nbsp;&nbsp;
                     {
                         showOptions ? <AiFillCaretUp style={{ color: 'gray' }} /> : <AiFillCaretDown />
                     }
