@@ -29,9 +29,20 @@ const MobileHero = () => {
     return (
         <>
             <section>
-                <div className="image-container" style={{ borderBottom: "2px solid white" }}>
+                <div className="image-container" style={{ borderBottom: "2px solid white", position: "relative" }}>
                     <img src={homepageImg} alt="Yellow-Spot poster" />
+                    <div className="btn-container" style={{
+                        position: "absolute",
+                        zIndex: "6666666655555",
+                        bottom: "4%",
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "center"
+                    }}>
+                        <Link to="/AboutUs"><button style={{backgroundColor:"#FFED00"}}><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                    </div>
                 </div>
+
                 <div>
 
                     {/* <div className="image-overlay"></div> */}
@@ -292,7 +303,7 @@ const MobileHero = () => {
                         </div>
                     </div>
                 </div>
-                <div style={{ position: "relative", border: "1px solid white",borderBottom:"0px" }}>
+                <div style={{ position: "relative", border: "1px solid white", borderBottom: "0px" }}>
                     <div className="image-container">
                         <img src={ourOffering} alt="Yellow-Spot poster" />
                     </div>
