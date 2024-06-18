@@ -204,7 +204,7 @@ const MobileHero = () => {
                                             </div>
                                             <div className="back-overlay"></div>
                                             <div className="content-box">
-                                                <h4> <span>Hoa</span>rding</h4>
+                                                <h4> <span>Hoar</span>ding</h4>
                                                 <div className="small-slite-padding"></div>
 
                                             </div>
@@ -384,7 +384,7 @@ const MobileHero = () => {
                                         margin: "5px 0px",
                                         backgroundColor: "#FFED00",
 
-                                    }}><span>Show all Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
+                                    }}><span>Explore All Clients</span><span><img src={billboard} alt="Yellow-Spot poster" style={{ width: "30px" }} /></span></button></Link>
                                 </div>
                             </div>
                         </div>

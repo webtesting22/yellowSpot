@@ -248,7 +248,7 @@ const Home = () => {
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4><span>Hoa</span>rding</h4>
+                    <h4><span>Hoar</span>ding</h4>
                     <div className="small-slite-padding"></div>
 
                   </div>
