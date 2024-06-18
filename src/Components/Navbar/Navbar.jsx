@@ -50,7 +50,7 @@ const Navbar = () => {
               <Link to="/"><img src={CombineLogo} alt="Yellow-Spot Logo" style={{ width: "180px" }} /></Link>
             </div>
           </div>
-          <div style={{display:"flex"}}>
+          <div style={{ display: "flex" }}>
             <div className="left-side-links">
               <div className="container">
                 <div className="left-side-ul">
@@ -59,7 +59,7 @@ const Navbar = () => {
                       data-aos-duration="1000" onMouseEnter={handleLeftHover} onMouseLeave={handleHoverOut}><span><Link to="/AboutUS">About Us</Link> </span></div>
                     <div className="line"><div></div></div>
                     <div className="right-side" data-aos="fade-right"
-                      data-aos-duration="1000" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/OurClientele">Our clientele</Link></span></div>
+                      data-aos-duration="1000" onMouseEnter={handleRightHover} onMouseLeave={handleHoverOut}><span><Link to="/OurOfferings">Our Offerings</Link></span></div>
                   </div>
 
                 </div>
@@ -71,16 +71,11 @@ const Navbar = () => {
                 <div className="right-side-ul">
                   <div className="d-flex animation-class" style={{ alignItems: "center" }}>
                     <div className="right-side" data-aos="fade-right"
-                      data-aos-duration="1000" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/OurOfferings">Our Offerings</Link></span></div>
+                      data-aos-duration="1000" onMouseEnter={handletwoLeftHover} onMouseLeave={handletwoHoverOut}><span><Link to="/OurClientele">Our clientele</Link></span></div>
                     <div className="line"><div></div></div>
                     <div className="left-side" data-aos="fade-left"
                       data-aos-duration="1000" onMouseEnter={handletwoRightHover} onMouseLeave={handletwoHoverOut}><span><Link to="/ContactUs">Contact Us</Link></span></div>
-
-
                   </div>
-
-
-
                 </div>
               </div>
             </div>
