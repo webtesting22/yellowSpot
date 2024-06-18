@@ -154,6 +154,14 @@ h1 {
     font-family: "Raleway", sans-serif;
     font-weight: 200;
 }
+.content-box h4 span {
+    color: #ffed00;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 200;
+}
 
 .content-box button {
     border: none;
@@ -219,6 +227,14 @@ h1 {
 
     .content-box h4 {
         color: white;
+        letter-spacing: 3px;
+        font-weight: 400;
+        font-size: 25px;
+        text-transform: uppercase;
+
+    }
+    .content-box h4 span {
+        color: #ffed00;
         letter-spacing: 3px;
         font-weight: 400;
         font-size: 25px;

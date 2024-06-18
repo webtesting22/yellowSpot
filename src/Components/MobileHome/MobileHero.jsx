@@ -39,7 +39,7 @@ const MobileHero = () => {
                         display: "flex",
                         justifyContent: "center"
                     }}>
-                        <Link to="/AboutUs"><button style={{backgroundColor:"#FFED00"}}><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                        <Link to="/AboutUs"><button style={{ backgroundColor: "#FFED00" }}><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                     </div>
                 </div>
 
@@ -166,7 +166,7 @@ const MobileHero = () => {
                                             </div>
                                             <div className="back-overlay"></div>
                                             <div className="content-box">
-                                                <h4>Gantry</h4>
+                                                <h4><span>Gan</span>try</h4>
                                                 <div className="small-slite-padding"></div>
                                             </div>
                                         </div>
@@ -179,7 +179,7 @@ const MobileHero = () => {
                                             </div>
                                             <div className="back-overlay"></div>
                                             <div className="content-box">
-                                                <h4>Cantilever</h4>
+                                                <h4><span>Cant</span>ilever</h4>
                                                 <div className="small-slite-padding"></div>
                                             </div>
                                         </div>
@@ -191,7 +191,7 @@ const MobileHero = () => {
                                             </div>
                                             <div className="back-overlay"></div>
                                             <div className="content-box">
-                                                <h4>Unipole</h4>
+                                                <h4><span>Uni</span>pole</h4>
                                                 <div className="small-slite-padding"></div>
 
                                             </div>
@@ -204,7 +204,7 @@ const MobileHero = () => {
                                             </div>
                                             <div className="back-overlay"></div>
                                             <div className="content-box">
-                                                <h4> Hoarding</h4>
+                                                <h4> <span>Hoa</span>rding</h4>
                                                 <div className="small-slite-padding"></div>
 
                                             </div>
@@ -217,7 +217,7 @@ const MobileHero = () => {
                                             </div>
                                             <div className="back-overlay"></div>
                                             <div className="content-box">
-                                                <h4> Pole Kiosk</h4>
+                                                <h4> <span>Pole</span> Kiosk</h4>
                                                 <div className="small-slite-padding"></div>
 
                                             </div>
@@ -230,7 +230,7 @@ const MobileHero = () => {
                                             </div>
                                             <div className="back-overlay"></div>
                                             <div className="content-box">
-                                                <h4> LED</h4>
+                                                <h4> <span>L</span>ED</h4>
                                                 <div className="small-slite-padding"></div>
 
                                             </div>
@@ -330,11 +330,9 @@ const MobileHero = () => {
                         <div className="image-overlay" style={{ backgroundColor: "rgb(39 39 39 / 37%)" }}></div>
 
                         <div>
-                            <div className="text-container-set" style={{ position: "absolute", bottom: "25%" }} >
+                            <div className="text-container-set" style={{ position: "absolute", bottom: "30%" }} >
                                 <div className="text-container second">
-                                    <div style={{ paddingTop: "2px" }}>
-                                        <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", textTransform: "uppercase" }}><span style={{ color: "#FFED00", fontSize: "25px" }}>Our Key</span> Clientele</h1>
-                                    </div>
+
                                     <div className="clients-logo-home-container">
                                         <Swiper
                                             slidesPerView={6}
@@ -377,8 +375,10 @@ const MobileHero = () => {
 
                                 </div>
                             </div>
-                            <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "15px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}>
-
+                            <div style={{ width: "100%", zIndex: "4", position: "absolute", bottom: "15px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+                                <div style={{ paddingTop: "2px" }}>
+                                    <h1 style={{ textAlign: "center", margin: "0px", fontSize: "25px", textTransform: "uppercase" }}><span style={{ color: "#FFED00", fontSize: "25px" }}>Our Key</span> Clientele</h1>
+                                </div>
                                 <div className="btn-container" style={{ margin: "0px 10px" }}>
                                     <Link to="/OurClientele"><button style={{
                                         margin: "5px 0px",

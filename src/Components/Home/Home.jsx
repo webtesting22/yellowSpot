@@ -217,7 +217,7 @@ const Home = () => {
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Gantry</h4>
+                    <h4><span>Gan</span>try</h4>
                     <div className="small-slite-padding"></div>
                   </div>
                 </div>
@@ -227,7 +227,7 @@ const Home = () => {
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Cantilever</h4>
+                    <h4><span>Cant</span>ilever</h4>
                     <div className="small-slite-padding"></div>
                   </div>
                 </div>
@@ -237,7 +237,7 @@ const Home = () => {
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4>Unipole</h4>
+                    <h4><span>Uni</span>pole</h4>
                     <div className="small-slite-padding"></div>
 
                   </div>
@@ -248,7 +248,7 @@ const Home = () => {
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4> Hoarding</h4>
+                    <h4><span>Hoa</span>rding</h4>
                     <div className="small-slite-padding"></div>
 
                   </div>
@@ -259,7 +259,7 @@ const Home = () => {
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4> Pole Kiosk</h4>
+                    <h4><span>Pole </span>Kiosk</h4>
                     <div className="small-slite-padding"></div>
 
                   </div>
@@ -270,7 +270,7 @@ const Home = () => {
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
-                    <h4> LED</h4>
+                    <h4><span>L</span>ED</h4>
                     <div className="small-slite-padding"></div>
 
                   </div>
