@@ -390,7 +390,7 @@ const Inventory = () => {
                         </Modal>
                     </Row>
                     <div style={{ textAlign: "center", marginTop: "20px" }}>
-                        <button onClick={handleModal} className="all-btn-stylings">Show all Inventories</button>
+                        <button onClick={handleModal} className="all-btn-stylings">Show All Inventories</button>
                     </div>
                 </div>
             </section>
