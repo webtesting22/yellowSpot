@@ -48,7 +48,9 @@ const Inventory = () => {
     const [filteredMediaTypes, setFilteredMediaTypes] = useState([]);
     const [filteredCount, setFilteredCount] = useState(0); // State for filtered data count
     const [filteredData, setFilteredData] = useState([]); // New state for filtered data
-
+    const [optionCounts, setOptionCounts] = useState({});
+    const [areaCounts, setAreaCounts] = useState({});
+    const [clickedArea, setClickedArea] = useState(null);
     // Function to handle opening and closing of the modal
     const handleModal = () => {
         setIsModalOpen(!isModalOpen);
@@ -174,13 +176,31 @@ const Inventory = () => {
 
     const sortedMediaTypes = mediaTypes.sort((a, b) => a.localeCompare(b));
     const sortedAreas = areas.sort((a, b) => a.localeCompare(b));
- // Log the count of the first option in the filters
- useEffect(() => {
-    sortedMediaTypes.forEach(type => {
-        const count = filteredData.filter(item => item.typeOfMedia.name === type).length;
-        console.log(`Count of ${type}:`, count);
-    });
-}, [sortedMediaTypes, filteredData]);
+    // Log the count of the first option in the filters
+    useEffect(() => {
+        const counts = {};
+        sortedMediaTypes.forEach(type => {
+            const count = filteredData.filter(item => item.typeOfMedia.name === type).length;
+            console.log(`Count of ${type}:`, count);
+            counts[type] = count;
+        });
+        setOptionCounts(counts);
+    }, [sortedMediaTypes, filteredData]);
+
+    useEffect(() => {
+        const counts = {};
+        sortedAreas.forEach(area => {
+            const count = filteredData.filter(item => item.locations?.Area === area).length;
+            console.log(`Count of ${area}:`, count);
+            counts[area] = count;
+        });
+        setAreaCounts(counts);
+    }, [sortedAreas, filteredData]);
+
+    const handleAreaClick = (area) => {
+        setClickedArea(area === clickedArea ? null : area);
+    };
+
     return (
         <>
 
@@ -191,7 +211,11 @@ const Inventory = () => {
                         <div className="filter-select">
 
                             <NamedSelectComponent
-                                options={filteredMediaTypes.map(type => ({ label: type, value: type }))}
+                                options={filteredMediaTypes.map(type => ({
+                                    label: `${type} (${optionCounts[type]})`,
+                                    value: type,
+                                    count: optionCounts[type]
+                                }))}
                                 title="Type"
                                 selectedItems={selectedItemsOnType}
                                 setSelectedItems={(items) => {
@@ -199,14 +223,20 @@ const Inventory = () => {
                                 }}
                                 disabled={filteredMediaTypes.length === 0}
                             />
+
                             <div className="small-slite-padding"></div>
                             <NamedSelectComponent
-                                options={filteredAreas.map(area => ({ label: area, value: area }))}
+                                options={filteredAreas.map(area => ({
+                                    label: `${area} (${areaCounts[area]})`,
+                                    value: area,
+                                    count: areaCounts[area]
+                                }))}
                                 title="Area"
                                 selectedItems={selectedItemsOnArea}
                                 setSelectedItems={(items) => {
                                     setSelectedItemsOnArea(items);
                                 }}
+
                                 disabled={filteredAreas.length === 0}
                             />
                         </div>
@@ -274,7 +304,11 @@ const Inventory = () => {
                             <h6>Inventory Details</h6>
                             <div className="filter-select">
                                 <NamedSelectComponent
-                                    options={filteredMediaTypes.map(type => ({ label: type, value: type }))}
+                                    options={filteredMediaTypes.map(type => ({
+                                        label: `${type} (${optionCounts[type]})`,
+                                        value: type,
+                                        count: optionCounts[type]
+                                    }))}
                                     title="Type"
                                     selectedItems={selectedItemsOnType}
                                     setSelectedItems={(items) => {
@@ -282,14 +316,20 @@ const Inventory = () => {
                                     }}
                                     disabled={filteredMediaTypes.length === 0}
                                 />
+
                                 <div className="small-slite-padding"></div>
                                 <NamedSelectComponent
-                                    options={filteredAreas.map(area => ({ label: area, value: area }))}
+                                    options={filteredAreas.map(area => ({
+                                        label: `${area} (${areaCounts[area]})`,
+                                        value: area,
+                                        count: areaCounts[area]
+                                    }))}
                                     title="Area"
                                     selectedItems={selectedItemsOnArea}
                                     setSelectedItems={(items) => {
                                         setSelectedItemsOnArea(items);
                                     }}
+
                                     disabled={filteredAreas.length === 0}
                                 />
                             </div>

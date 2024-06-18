@@ -142,6 +142,9 @@
     height: 30vh;
     
 } */
+ .location-content{
+    margin-top: 10px;
+ }
 @media (max-width:769px) {
     .filtered-count {
         text-align: center;
