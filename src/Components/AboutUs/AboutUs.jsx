@@ -68,7 +68,9 @@ const AboutUS = () => {
 
             <section>
 
+                <div id="AboutUSpage">
                 <AnimatedCoverPage backgroundImage={Homepagefirst} />
+                </div>
                 <br /><br />
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
                 </div>

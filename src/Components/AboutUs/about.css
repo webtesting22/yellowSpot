@@ -217,6 +217,14 @@
 }
 
 @media (max-width:900px) {
+    #AboutUSpage .textbackAnimation {
+        display: flex;
+        justify-content: start;
+    }
+
+    #AboutUSpage .textbackAnimation img {
+        width: 120%;
+    }
 
     #OnlyForPc {
         display: none;

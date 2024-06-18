@@ -10,7 +10,7 @@
 }
 
 .animated-text-about h1 {
-    
+
     font-weight: 400;
 }
 
@@ -36,7 +36,7 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    z-index:5555555;
+    z-index: 5555555;
 }
 
 .textbackAnimation img {
@@ -45,13 +45,18 @@
 }
 
 @media (max-width:700px) {
-    .textbackAnimation{
+    .textbackAnimation {
         position: static;
         opacity: 1;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
     }
+
     .textbackAnimation img {
         height: 100%;
-        width: 100%;
+        width: 150%;
     }
 
     #MobileFreidly {
