@@ -42,7 +42,7 @@ const OurOfferings = () => {
             <AnimatedCoverPage backgroundImage={offering} />
             <br /><br />
             <section id="serviceCard" className="container">
-                <SwiperHeadingIcon headingText="Our Services" />
+                <SwiperHeadingIcon headingText="OUR SERVICES" />
                 <br />
                 <div className="container p-0">
                     <div>
@@ -52,7 +52,7 @@ const OurOfferings = () => {
             </section>
             <br /><br />
             <section id="OurProducts" className="container">
-                <SwiperHeadingIcon headingText="Our Products" />
+                <SwiperHeadingIcon headingText="OUR PRODUCTS" />
                 <Inventory />
             </section>
             <Footer />

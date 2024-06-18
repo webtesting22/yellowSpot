@@ -142,7 +142,7 @@ const MobileHero = () => {
                                         disableOnInteraction: true,
                                     }}
 
-                                    style={{ width: "100%",height:"40vh" }}
+                                    style={{ width: "100%", height: "40vh" }}
                                     modules={[FreeMode, Pagination, Autoplay]}
                                     className="mySwiper"
                                 >
@@ -315,7 +315,7 @@ const MobileHero = () => {
                             </div>
                             <div className="slite-padding"></div>
                             <div className="btn-container">
-                                <Link to="/OurOfferings#OurProducts"><button><span>Our Product</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                                <Link to="/OurOfferings#OurProducts"><button><span>Our Products</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                                 <Link to="/OurOfferings#serviceCard"><button><span>Our Services</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                             </div>
                         </div>
