@@ -92,7 +92,7 @@ const MobileHero = () => {
             duration={10}
             suffix="+"
         /> */}
-                                        <h3 style={{ fontSize: "0.8rem", marginBottom: "5px" }}>xyz</h3>
+                                        <h3 style={{ fontSize: "16px", marginBottom: "5px" }}>xyz</h3>
                                         <h3>Daily Impressions</h3>
                                     </div>
                                 </Col>
@@ -102,7 +102,7 @@ const MobileHero = () => {
                                             <img src={Clients} alt="" />
                                         </div>
                                         <CountUp
-                                            end={1000}
+                                            end={500}
                                             duration={10}
                                             suffix="+"
                                         />
