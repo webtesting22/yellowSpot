@@ -12,7 +12,7 @@ import img2 from "../Home/Banners/Final2.png"
 import offering from "../Home/Banners/28.png"
 import { Link } from "react-router-dom";
 import billboard from "../Home/iconsImages/billboard.png"
-import BackLightICon from "../Home/icons/BackLight.png"
+import BackLightICon from "../Home/icons/graphicsNew.png"
 import client from "../Home/Banners/KeyClients.png"
 import ClientLogos from '../Home/ClientLogosData';
 import { Swiper, SwiperSlide } from "swiper/react";

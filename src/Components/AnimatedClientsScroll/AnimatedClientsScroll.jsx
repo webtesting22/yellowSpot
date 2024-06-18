@@ -45,7 +45,7 @@ const AnimatedClientsScroll = () => {
                 <div className="bothSection">
                     <div className="left-sideContainer" style={{paddingLeft:"40px"}}>
                         <div className="left-side-Content">
-                            <h1 style={{ fontSize: "50px",color:"white",textTransform:"uppercase" }}><span style={{ color: "rgb(255, 237, 0)" }}>Our</span> Key Clientele</h1>
+                            <h1 style={{ fontSize: "50px",color:"white",textTransform:"uppercase" }}><span style={{ color: "rgb(255, 237, 0)" }}>Our Key</span> Clientele</h1>
                             <p style={{ fontSize: "30px", lineHeight: "35px",color:"white" }}>
                                 Whether it be real estate, service industry or FMCG products, OOH is for everyone.
                             </p>
