@@ -57,73 +57,28 @@
     background-color: rgb(49, 51, 53);
     color: rgb(255, 237, 0);
 }
+.ant-modal {
+    background-color: transparent; /* Make the wrapper transparent if needed */
+}
 
+/* Change the background color of the modal content */
+.ant-modal-content .ant-modal-close{
+    color: white !important;
+}
+.ant-modal-content {
+    background-color: black !important; /* Replace with your desired background color */
+}
+.ant-modal-header{
+    background-color: black !important;
+    color: white !important;
+}
+.ant-modal-title{
+    color: white  !important;
+}
 .complete-card-design:hover a {
     color: rgb(255, 237, 0);
 }
 
-:where(.css-1r287do).ant-modal .ant-modal-content {
-    background-color: black !important;
-}
-
-:where(.css-17seli4).ant-modal .ant-modal-content {
-    background-color: black !important;
-}
-
-:where(.css-17seli4).ant-modal .ant-modal-title {
-    background-color: black !important;
-}
-
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-content {
-    background-color: black !important;
-}
-
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title {
-    background-color: black !important;
-    color: white;
-}
-
-:where(.css-17seli4).ant-modal .ant-modal-close-x {
-    color: white !important;
-}
-
-:where(.css-17seli4).ant-modal .ant-modal-title {
-    color: white !important;
-}
-
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close-x {
-    color: white;
-}
-
-:where(.css-1r287do).ant-modal .ant-modal-title {
-    background-color: black !important;
-    color: white;
-}
-
-:where(.css-1r287do).ant-modal .ant-modal-close-x {
-    color: white !important;
-}
-
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-close:hover {
-    color: white;
-}
-
-:where(.css-dev-only-do-not-override-kghr11).ant-modal .ant-modal-title {
-    color: white !important;
-}
-
-:where(.css-j9bb5n).ant-modal .ant-modal-content {
-    background-color: black !important;
-}
-
-:where(.css-j9bb5n).ant-modal .ant-modal-title {
-    background-color: black !important;
-    color: white;
-}
-
-:where(.css-j9bb5n).ant-modal .ant-modal-close {
-    color: white !important;
-}
 
 .pc-filter-btn h6 {
     color: white;
