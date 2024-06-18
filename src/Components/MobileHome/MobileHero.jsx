@@ -142,7 +142,7 @@ const MobileHero = () => {
                                         disableOnInteraction: true,
                                     }}
 
-                                    style={{ width: "100%", }}
+                                    style={{ width: "100%",height:"40vh" }}
                                     modules={[FreeMode, Pagination, Autoplay]}
                                     className="mySwiper"
                                 >

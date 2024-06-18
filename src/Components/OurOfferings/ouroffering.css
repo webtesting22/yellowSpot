@@ -207,6 +207,7 @@ h1 {
     .animated-hover-boxes .animated-boxes-six {
 
         border: 1px solid black;
+        /* height: 40vh; */
     }
 
     .content-box button {

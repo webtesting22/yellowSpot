@@ -791,7 +791,14 @@
 }
 
 @media (max-width:600px) {
-
+    .doubleImageContainer {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        align-items: center;
+    }
     .animated-boxes-five .writeUpContent p {
         width: 90%;
 
