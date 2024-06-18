@@ -33,7 +33,7 @@ const MobileHero = () => {
                     <img src={homepageImg} alt="Yellow-Spot poster" />
                     <div className="btn-container" style={{
                         position: "absolute",
-                        zIndex: "6666666655555",
+                        zIndex: "2",
                         bottom: "4%",
                         width: "100%",
                         display: "flex",
