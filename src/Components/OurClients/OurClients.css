@@ -95,7 +95,9 @@
   aspect-ratio: 3/2;
   object-fit: contain;
 }
-
+#ClientImage img{
+  width: 100%;
+}
 @media (max-width:600px) {
   #ColSet {
     width: 50%;

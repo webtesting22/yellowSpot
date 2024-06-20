@@ -9,7 +9,7 @@ import { ClientDataLogos, DirectClient } from "../OurClients/ContactUsClientData
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
 import "./OurClients.css"
 import SwiperHeadingIcon from "../SwiperHeadingIcon/SwiperHeadingIcon";
-import client from "../Home/Banners/clienteleHome.jpg"
+import client from "../Home/Banners/clienteleHomeFinal.png"
 const capitalizeEachWord = (string) => {
     return string.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 };
@@ -23,7 +23,7 @@ const OurClientele = () => {
 
     // Get unique categories
     const categories = [...new Set(DirectClient.map(item => item.Category).filter(Boolean))];
-
+    console.log("categories", categories)
     // Filter clients based on selected category
     const filteredClientData = selectedCategory
         ? DirectClient.filter(item => item.Category === selectedCategory)
@@ -38,7 +38,9 @@ const OurClientele = () => {
             <HomePageNavigation />
 
             <section>
-                <AnimatedCoverPage backgroundImage={client} />
+                <div id="ClientImage">
+                    <AnimatedCoverPage backgroundImage={client} />
+                </div>
                 <br /><br />
                 <div className="container">
 
@@ -85,7 +87,7 @@ const OurClientele = () => {
                         <select onChange={handleCategoryChange} value={selectedCategory}>
                             <option value="">All</option>
                             {categories
-                                .sort((a, b) => a.localeCompare(b)) // Sort the categories alphabetically
+                                .sort((a, b) => a.localeCompare(b))
                                 .map((category, index) => (
                                     <option key={index} value={category}>
                                         {category}

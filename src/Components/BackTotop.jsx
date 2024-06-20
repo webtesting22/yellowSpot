@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from "react";
-
+import React, { useState, useEffect } from "react";
+import "./AnimatedBtn.css"
 const BackToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -38,6 +38,12 @@ const BackToTop = () => {
             >
                 ↑
             </button>
+            {/* <button className="whatsappBtn">
+                <i class='bx bxl-whatsapp'></i>
+            </button> */}
+            <a href="https://wa.me/+91 93242 44444" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
+                <i class='bx bxl-whatsapp'></i>
+            </a>
         </>
     )
 }

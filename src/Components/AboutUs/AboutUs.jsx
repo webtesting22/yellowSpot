@@ -18,6 +18,19 @@ import AboutUsBanner from "./AboutUsBanner.png"
 import Homepagefirst from "./aboutUsGraphicsfinal.png"
 import Item from "antd/es/list/Item";
 const AboutUS = () => {
+    const [expandedIndexes, setExpandedIndexes] = useState([]);
+
+    const toggleExpand = (index) => {
+        if (expandedIndexes.includes(index)) {
+            setExpandedIndexes(expandedIndexes.filter((i) => i !== index));
+        } else {
+            setExpandedIndexes([...expandedIndexes, index]);
+        }
+    };
+
+    const isExpanded = (index) => {
+        return expandedIndexes.includes(index);
+    };
 
     const foudersDetails = [
         {
@@ -69,7 +82,7 @@ const AboutUS = () => {
             <section>
 
                 <div id="AboutUSpage">
-                <AnimatedCoverPage backgroundImage={Homepagefirst} />
+                    <AnimatedCoverPage backgroundImage={Homepagefirst} />
                 </div>
                 <br /><br />
                 <div className="parent-poster-content container" id="parent-company" data-aos="fade-up">
@@ -151,13 +164,17 @@ const AboutUS = () => {
                                                     </a>
                                                 </div>
                                             </div>
-                                            {founder.FounderDescription && founder.FounderDescription.map((descriptionItem, descriptionIndex) => (
-                                                <p key={descriptionIndex}>
-                                                    {descriptionItem.description}
-                                                </p>
-                                            ))}
+                                            <div className="description-container" style={{ maxHeight: isExpanded(index) ? 'none' : '40vh', overflow: 'hidden' }}>
+                                {founder.FounderDescription && founder.FounderDescription.map((descriptionItem, descriptionIndex) => (
+                                    <p key={descriptionIndex}>{descriptionItem.description}</p>
+                                ))}
+                            </div>
+                            {founder.FounderDescription && founder.FounderDescription.length > 1 && (
+                                <button onClick={() => toggleExpand(index)} className="readMoreBtn">
+                                    {isExpanded(index) ? 'Read Less' : 'Read More'}...
+                                </button>
+                            )}
                                         </div>
-
                                     </div>
                                 </Col>
                             ))}

@@ -25,7 +25,7 @@ const AnimatedClientsScroll = () => {
                 // Scroll down by 30px
                 scrollContainer.scrollBy({ top: 90, behavior: 'smooth' });
             }
-        }, 1000);
+        }, 1500);
 
         // Clean up the interval on component unmount
         return () => clearInterval(scrollInterval);

@@ -18,8 +18,8 @@
 
 .scrollToTopButton {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 80px;
+    right: 25px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -147,6 +147,7 @@
 .spacing {
     margin-left: 78px;
 }
+
 .GetInTouch {
     display: block;
 }
@@ -189,10 +190,11 @@
         width: 100%;
         align-items: center;
     }
+
     .footer {
         background-color: rgb(36, 36, 36);
         padding-top: 30px;
         padding-bottom: 5px;
     }
-    
+
 }

@@ -278,6 +278,7 @@ const Inventory = () => {
                                             </Tooltip>
                                         </div>
                                         <hr style={{ margin: "3px 0px" }} />
+                                        <p style={{marginBottom:"0px",position:"absolute"}}>{item.typeOfMedia.name}</p>
                                         <div style={{
                                             display: "flex", justifyContent: "space-between",
                                             alignItems: "center"
@@ -350,7 +351,7 @@ const Inventory = () => {
                                                 </div>
                                             </div>
                                             <div className="location-details">
-                                                <br />
+                                                {/* <br /> */}
                                                 <div style={{ width: "100%" }} className="location-content">
                                                     <Tooltip title={item.locations?.name}>
                                                         <a
@@ -365,6 +366,7 @@ const Inventory = () => {
                                                     </Tooltip>
                                                 </div>
                                                 <hr style={{ margin: "3px 0px" }} />
+                                                <p style={{marginBottom:"0px",position:"absolute"}}>{item.typeOfMedia.name}</p>
                                                 <div style={{
                                                     display: "flex", justifyContent: "space-between",
                                                     alignItems: "center"

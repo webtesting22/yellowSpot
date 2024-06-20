@@ -136,10 +136,10 @@
 }
 
 .co-founder-section p {
-    text-align: justify;
-    word-break: break-word;
+    /* text-align: justify; */
+    /* word-break: break-word; */
     hyphens: auto;
-    line-height: 1.2;
+    line-height: 1.4;
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 20px;
@@ -216,6 +216,16 @@
     display: block;
 }
 
+.readMoreBtn{
+    width: 30%;
+    margin: 20px 0px;
+    border: none;
+    background: transparent;
+    color: white;
+    display: flex;
+    padding: 0px;
+    margin-bottom: 0px;
+}
 @media (max-width:900px) {
     #AboutUSpage .textbackAnimation {
         display: flex;

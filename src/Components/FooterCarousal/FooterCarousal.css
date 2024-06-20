@@ -30,7 +30,7 @@
     width: 50%;
     border-top: 4px dashed white;
     border-bottom: 4px dashed white;
-    background-color: black;
+    background-color: #1f1f1f;
     padding: 10px;
 }
 
@@ -40,7 +40,7 @@
         width: 100%;
         border-top: 5px dashed white;
         border-bottom: 5px dashed white;
-        background-color: black;
+        background-color: #1f1f1f;
         padding: 10px;
     }
 }

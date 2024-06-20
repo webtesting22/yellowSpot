@@ -115,7 +115,7 @@ const Home = () => {
               <div className="text-container second">
                 <div className="slite-padding"></div>
                 <div className="btn-container">
-                  <Link to="/AboutUs"><button><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
+                  <Link to="/AboutUs"><button><span>About Us</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
                 </div>
               </div>
             </div>
@@ -161,7 +161,7 @@ const Home = () => {
                           <div>
                             <img src={Impressions} alt="" />
                           </div>
-                          <h3 style={{ fontSize: "40px" }}>xyz</h3>
+                          <h3 style={{ fontSize: "40px", fontWeight: "200" }}>xyz</h3>
                           <h3>Daily Impressions</h3>
                         </div>
                       </Col>
@@ -213,7 +213,19 @@ const Home = () => {
                     </div>
                   </div>
                   <div className='writeUpContent'>
-                    <p>Our gantries represent the latest and most premium innovation in Ahmedabad's outdoor advertising industry. Designed to advertise to both sides of traffic, these large-format, high-impact, overhead billboards inevitably capture the attention of commuters from a distance. Strategically placed in the centre of high-traffic roads and areas, at direct eye level, our gantries ensure maximum visibility and reach to a masses.</p>
+                    <div >
+                      <p>Our gantries represent the latest and most premium innovation in Ahmedabad's outdoor advertising industry.</p>
+                      <div style={{ display: "flex", justifyContent: "center" }}>
+                        <ul>
+                          <li>Premium, large-format, high-impact, overhead billboards</li>
+                          <li>Advertise to both sides of the traffic </li>
+                          <li>Placed in the centre of high-traffic roads</li>
+                          <li>Direct eye-level visibility </li>
+                          <li>Captures commuter’s attention from a great distance</li>
+                          <li>Reach masses with maximum visibility </li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -223,7 +235,11 @@ const Home = () => {
                 </div>
                 <div className='animated-boxes-six'>
                   <div className='writeUpContent'>
-                    <p>Similar to gantries, cantilevers are overhead billboards placed right in the center of high-traffic roads. Positioned at direct eye level, our cantilevers are impossible to miss for both commuters and pedestrians.</p>
+                    <ul>
+                      <li>Placed in the centre of high-traffic roads </li>
+                      <li>Captures commuter’s attention from a great distance</li>
+                      <li>Positioned at eye-level</li>
+                    </ul>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -233,7 +249,12 @@ const Home = () => {
                 </div>
                 <div className="animated-boxes-one">
                   <div className='writeUpContent'>
-                    <p>Standing on a single pole, unipoles offer high aesthetic value and convey an elevated brand image. Our unipoles are strategically placed at direct eye level in high-traffic areas, with the sole purpose to avoid clusters and grab eyeballs</p>
+                    <ul>
+                      <li>High aesthetic value</li>
+                      <li>Conveys elevated brand image</li>
+                      <li>Stands on a single pole</li>
+                      <li>Positioned in high-traffic areas at direct eye-level</li>
+                    </ul>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -244,7 +265,12 @@ const Home = () => {
                 </div>
                 <div className="animated-boxes-two">
                   <div className='writeUpContent'>
-                    <p>These traditional billboards come in medium to large sizes and are supported by multiple poles. Our hoardings are planned to position in a way that provides direct visibility to moving traffic, avoids clusters with other advertisements and ensures clear vision</p>
+                    <ul>
+                      <li>Medium-to-large size billboards</li>
+                      <li>Supported by multiple poles</li>
+                      <li>Direct visibility for moving traffic</li>
+                      <li>Avoids clusters with other advertisements</li>
+                    </ul>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -255,7 +281,11 @@ const Home = () => {
                 </div>
                 <div className="animated-boxes-three">
                   <div className='writeUpContent'>
-                    <p>As pioneers in introducing Pole Kiosks to Ahmedabad, we offer these small-format billboards which are perfect for branding your products and enhancing brand recognition among a broad audience.</p>
+                    <ul>
+                      <li>Small-format billboards</li>
+                      <li>Branding within a budget</li>
+                      <li>Reach a broader audience</li>
+                    </ul>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -266,7 +296,12 @@ const Home = () => {
                 </div>
                 <div className="animated-boxes-four">
                   <div className='writeUpContent'>
-                    <p>Digital billboards are the up and coming form of outdoor media. With our established LEDs in the top clubs and premier malls of Ahmedabad, get access to premium and large audience. </p>
+                    <ul>
+                      <li>Digital billboards</li>
+                      <li>Available in top 2 premium malls</li>
+                      <li>Available in top 3 clubs</li>
+                      <li>Access to premium and large audience</li>
+                    </ul>
                   </div>
                   <div className="back-overlay"></div>
                   <div className="content-box">
@@ -282,7 +317,7 @@ const Home = () => {
             <div className="image-container">
               <img src={OurOfficetry} alt="Yellow-Spot poster" />
             </div>
-            <div className="image-overlay" style={{ backgroundColor: "#00000075" }}></div>
+            <div className="image-overlay" style={{ backgroundColor: "rgb(0 0 0 / 53%)" }}></div>
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
