@@ -18,7 +18,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { Button, Modal, Tooltip } from 'antd';
 import MagicHeading from "../MagicHeading/MagicHeading";
 import altImageInventory from "../MobileHome/new.png";
-
+import BillBoardIcon from "./BillBoardIcon.svg"
 const truncateText = (text, maxLength) => {
     if (text.length > maxLength) {
         return text.substring(0, maxLength) + '...';
@@ -278,7 +278,9 @@ const Inventory = () => {
                                             </Tooltip>
                                         </div>
                                         <hr style={{ margin: "3px 0px" }} />
-                                        <p style={{marginBottom:"0px",position:"absolute"}}>{item.typeOfMedia.name}</p>
+                                        <div style={{display:"flex",position: "absolute"}}>
+                                            <img src={BillBoardIcon} alt="" style={{width:"18%"}}/>&nbsp;<p style={{ marginBottom: "0px",  }}>{item.typeOfMedia.name}</p>
+                                        </div>
                                         <div style={{
                                             display: "flex", justifyContent: "space-between",
                                             alignItems: "center"
@@ -366,7 +368,9 @@ const Inventory = () => {
                                                     </Tooltip>
                                                 </div>
                                                 <hr style={{ margin: "3px 0px" }} />
-                                                <p style={{marginBottom:"0px",position:"absolute"}}>{item.typeOfMedia.name}</p>
+                                                <div style={{display:"flex",position: "absolute"}}>
+                                            <img src={BillBoardIcon} alt="" style={{width:"18%"}}/>&nbsp;<p style={{ marginBottom: "0px",  }}>{item.typeOfMedia.name}</p>
+                                        </div>
                                                 <div style={{
                                                     display: "flex", justifyContent: "space-between",
                                                     alignItems: "center"
