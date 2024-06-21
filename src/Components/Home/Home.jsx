@@ -105,6 +105,15 @@ const Home = () => {
           mousewheel={{ forceToAxis: true, sensitivity: 1, thresholdDelta: 50, thresholdTime: 100 }}
           pagination={{ clickable: true }}
           modules={[Mousewheel, Pagination]}
+          speed={500}
+          // direction="vertical"
+          // slidesPerView={1}
+          // spaceBetween={0} // Ensure there is no space between slides
+          // mousewheel={{ forceToAxis: true, sensitivity: 0.5, thresholdDelta: 50, thresholdTime: 100 }}
+          // pagination={{ clickable: true }}
+          // modules={[Mousewheel, Pagination]}
+          // speed={200} // Transition speed in milliseconds
+          // cssMode={true} // Enable CSS scroll snap
         >
           <SwiperSlide style={{ height: "100vh" }}>
             <div className="image-container">

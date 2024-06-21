@@ -278,8 +278,8 @@ const Inventory = () => {
                                             </Tooltip>
                                         </div>
                                         <hr style={{ margin: "3px 0px" }} />
-                                        <div style={{display:"flex",position: "absolute"}}>
-                                            <img src={BillBoardIcon} alt="" style={{width:"18%"}}/>&nbsp;<p style={{ marginBottom: "0px",  }}>{item.typeOfMedia.name}</p>
+                                        <div style={{ display: "flex", position: "absolute" }}>
+                                            <img src={BillBoardIcon} alt="" style={{ width: "18%" }} />&nbsp;<p style={{ marginBottom: "0px", }}>{item.typeOfMedia.name}</p>
                                         </div>
                                         <div style={{
                                             display: "flex", justifyContent: "space-between",
@@ -368,9 +368,9 @@ const Inventory = () => {
                                                     </Tooltip>
                                                 </div>
                                                 <hr style={{ margin: "3px 0px" }} />
-                                                <div style={{display:"flex",position: "absolute"}}>
-                                            <img src={BillBoardIcon} alt="" style={{width:"18%"}}/>&nbsp;<p style={{ marginBottom: "0px",  }}>{item.typeOfMedia.name}</p>
-                                        </div>
+                                                <div style={{ display: "flex", position: "absolute" }}>
+                                                    <img src={BillBoardIcon} alt="" style={{ width: "18%" }} />&nbsp;<p style={{ marginBottom: "0px", }}>{item.typeOfMedia.name}</p>
+                                                </div>
                                                 <div style={{
                                                     display: "flex", justifyContent: "space-between",
                                                     alignItems: "center"
