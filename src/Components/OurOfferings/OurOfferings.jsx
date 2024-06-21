@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 import HomePageNavigation from "../Home/HomePageNavigation";
 import AnimatedCards from "../AnimationScrollingCard/AnimationCards";
 import AnimatedCoverPage from "../animatedCoverPage/animatedCoverPage";
-import offering from "../AboutUs/AboutUsBanner.png";
+import offering from "./OurOfferingYellowSpot.png";
 
 const OurOfferings = () => {
     const location = useLocation();
