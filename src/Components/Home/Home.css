@@ -798,6 +798,9 @@
     }
 }
 
+.writeUpContent ul li{
+    font-size: 18px;
+}
 @media (max-width:600px) {
     .doubleImageContainer {
         display: flex;

@@ -317,7 +317,7 @@ const Home = () => {
             <div className="image-container">
               <img src={OurOfficetry} alt="Yellow-Spot poster" />
             </div>
-            <div className="image-overlay" style={{ backgroundColor: "rgb(0 0 0 / 53%)" }}></div>
+            <div className="image-overlay" style={{ backgroundColor: "rgb(0 0 0 / 57%)" }}></div>
             <div className="text-container-set">
               <div className="text-container second">
                 <div>
