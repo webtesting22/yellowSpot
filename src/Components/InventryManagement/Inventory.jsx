@@ -92,7 +92,7 @@ const Inventory = () => {
                 }
                 const jsonData = await response.json();
                 const typeNames = Array.from(new Set(jsonData.allInv.map(item => item.typeOfMedia.name)));
-                const areaNames = Array.from(new Set(jsonData.allInv.map(item => item.locations?.Area)));
+                const areaNames = Array.from(new Set(jsonData.allInv.map(item => item.locations?.Area.trim()))); 
                 console.log('Area Names:', areaNames);
                 setTotalItems(jsonData.totalItems);
                 setMediaTypes(typeNames);
@@ -176,6 +176,7 @@ const Inventory = () => {
 
     const sortedMediaTypes = mediaTypes.sort((a, b) => a.localeCompare(b));
     const sortedAreas = areas.sort((a, b) => a.localeCompare(b));
+    const uniqueFilteredAreas = [...new Set(filteredAreas)];
     // Log the count of the first option in the filters
     useEffect(() => {
         const counts = {};
@@ -225,7 +226,7 @@ const Inventory = () => {
                             />
 
                             <div className="small-slite-padding"></div>
-                            <NamedSelectComponent
+                            {/* <NamedSelectComponent
                                 options={filteredAreas.map(area => ({
                                     label: `${area} (${areaCounts[area]})`,
                                     value: area,
@@ -238,7 +239,20 @@ const Inventory = () => {
                                 }}
 
                                 disabled={filteredAreas.length === 0}
-                            />
+                            /> */}
+                            <NamedSelectComponent
+    options={uniqueFilteredAreas.map(area => ({
+        label: `${area} (${areaCounts[area]})`,
+        value: area,
+        count: areaCounts[area]
+    }))}
+    title="Area"
+    selectedItems={selectedItemsOnArea}
+    setSelectedItems={(items) => {
+        setSelectedItemsOnArea(items);
+    }}
+    disabled={uniqueFilteredAreas.length === 0}
+/>
                         </div>
                         <div className="filtered-count">
                             <p style={{ color: "#FFED00", fontSize: "20px", margin: "0px" }}>Inventories: {filteredCount}</p>

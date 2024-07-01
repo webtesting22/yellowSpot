@@ -20,19 +20,19 @@ function App() {
     <BrowserRouter>
       <div>
         {/* <Navbar /> */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Inventory" element={<Inventory />} />
-            <Route path="/AboutUS" element={<AboutUS />} />
-            <Route path="/ContactUs" element={<ContactUs />} />
-            <Route path="/OurOfferings" element={<OurOfferings />} />
-            <Route path="/Footer" element={<Footer />} />
-            <Route path="/DynamicCreateShape" element={<DynamicCreateShape />} />
-            <Route path="/OurClientele" element={<OurClientele />} />
-            <Route path="/AnimatedCoverPage" element={<AnimatedCoverPage />} />
-          </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Inventory" element={<Inventory />} />
+          <Route path="/AboutUS" element={<AboutUS />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/OurOfferings" element={<OurOfferings />} />
+          <Route path="/Footer" element={<Footer />} />
+          <Route path="/DynamicCreateShape" element={<DynamicCreateShape />} />
+          <Route path="/OurClientele" element={<OurClientele />} />
+          <Route path="/AnimatedCoverPage" element={<AnimatedCoverPage />} />
+        </Routes>
       </div>
-      <BackToTop/>
+      <BackToTop />
     </BrowserRouter>
   );
 }

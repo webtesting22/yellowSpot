@@ -57,24 +57,31 @@
     background-color: rgb(49, 51, 53);
     color: rgb(255, 237, 0);
 }
+
 .ant-modal {
-    background-color: transparent; /* Make the wrapper transparent if needed */
+    background-color: transparent;
+    /* Make the wrapper transparent if needed */
 }
 
 /* Change the background color of the modal content */
-.ant-modal-content .ant-modal-close{
+.ant-modal-content .ant-modal-close {
     color: white !important;
 }
+
 .ant-modal-content {
-    background-color: black !important; /* Replace with your desired background color */
+    background-color: black !important;
+    /* Replace with your desired background color */
 }
-.ant-modal-header{
+
+.ant-modal-header {
     background-color: black !important;
     color: white !important;
 }
-.ant-modal-title{
-    color: white  !important;
+
+.ant-modal-title {
+    color: white !important;
 }
+
 .complete-card-design:hover a {
     color: rgb(255, 237, 0);
 }
@@ -97,9 +104,10 @@
     height: 30vh;
     
 } */
- .location-content{
+.location-content {
     margin-top: 10px;
- }
+}
+
 @media (max-width:769px) {
     .filtered-count {
         text-align: center;
