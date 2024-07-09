@@ -41,7 +41,10 @@ const BackToTop = () => {
             {/* <button className="whatsappBtn">
                 <i class='bx bxl-whatsapp'></i>
             </button> */}
-            <a href="https://wa.me/+91 93242 44444" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
+            {/* <a href="https://wa.me/9324244444" target="_blank" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
+                <i class='bx bxl-whatsapp'></i>
+            </a> */}
+            <a href="https://wa.me/9324244444" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-pulse btn-whatsapp-pulse-border">
                 <i class='bx bxl-whatsapp'></i>
             </a>
         </>
