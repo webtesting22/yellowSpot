@@ -131,7 +131,8 @@ const AboutUS = () => {
                             <div className="parent-comapny-content second" data-aos="fade-up">
                                 <h4><span>Khushi</span> Advertising</h4>
                                 {/* <br /> */}
-                                <p>Khushi Advertising, India’s leading ambient media agency, leverages its expertise and consummate skills to present the most effective campaigns with a distinct and long-lasting impact. With a presence in 22 cities, we are your one-stop solution for advertising in India’s 2700+ multiplex screens, 350+ malls, and 30+ airports. Our wide-spread reach across India and 300+ professionals enable us to be present at the right avenue at the right time to reach out to the right audience.</p>
+                                {/* <p>Khushi Advertising, India’s leading ambient media agency, leverages its expertise and consummate skills to present the most effective campaigns with a distinct and long-lasting impact. With a presence in 22 cities, we are your one-stop solution for advertising in India’s 2700+ multiplex screens, 350+ malls, and 30+ airports. Our wide-spread reach across India and 300+ professionals enable us to be present at the right avenue at the right time to reach out to the right audience.</p> */}
+                                <p>Khushi Advertising is a specialist in providing integrated OOH solutions in India. With over 20 years of experience, Khushi leads in crafting innovative and effective campaigns, utilizing a diverse array of mediums to ensure a lasting impression. As the foremost aggregator of advertising revenues for major multiplex chains, Khushi offers comprehensive solutions for advertising across 3,000+ screens. Additionally, it serves as a premier agency for advertising and activations in 200+ malls and 50+ airports throughout India. Constantly evolving, Khushi’s latest services now encompass strategic avenues like OOH, movie marketing, and corporate parks. With a widespread presence in 30 cities, a dedicated team of 250+ professionals, and 70+ operations team members, Khushi Advertising excels in reaching the right audience at the right time across dynamic and competitive landscapes.</p>
                                 <div className="small-slite-padding"></div>
                                 <div className="btn-container d-block">
                                     <Link to="https://khushiadvertising.com/" target="_blank"><button className="m-0"><span>Explore</span><span><img src={billboard} alt="" style={{ width: "30px" }} /></span></button></Link>
@@ -144,6 +145,7 @@ const AboutUS = () => {
                         </Col>
                     </Row>
                 </div>
+
                 <br /><br />
                 <div className="co-founder-section container">
                     <SwiperHeadingIcon headingText="Meet Our Team" />
