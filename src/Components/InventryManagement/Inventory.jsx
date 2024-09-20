@@ -20,10 +20,12 @@ import MagicHeading from "../MagicHeading/MagicHeading";
 import altImageInventory from "../MobileHome/new.png";
 import BillBoardIcon from "./BillBoardIcon.svg"
 const truncateText = (text, maxLength) => {
-    if (text.length > maxLength) {
+    // Check if text is a valid string before accessing its length property
+    if (typeof text === 'string' && text.length > maxLength) {
         return text.substring(0, maxLength) + '...';
     }
-    return text;
+    // Return an empty string if text is undefined, null, or not a string
+    return text || '';
 };
 
 const Inventory = () => {
