@@ -165,7 +165,7 @@ const Home = () => {
                           <h3>Premium Outdoor Sites <br /> in Ahmedabad</h3>
                         </div>
                       </Col>
-                      <Col lg={8} md={12} >
+                      {/* <Col lg={8} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Impressions} alt="" />
@@ -173,8 +173,8 @@ const Home = () => {
                           <h3 style={{ fontSize: "40px", fontWeight: "200" }}>xyz</h3>
                           <h3>Daily Impressions</h3>
                         </div>
-                      </Col>
-                      <Col lg={8} md={12} >
+                      </Col> */}
+                      <Col lg={12} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={Clients} alt="" />
@@ -187,7 +187,7 @@ const Home = () => {
                           <h3>Clients</h3>
                         </div>
                       </Col>
-                      <Col lg={8} md={12} >
+                      <Col lg={12} md={12} >
                         <div className='contup'>
                           <div>
                             <img src={BackLightMedia} alt="" />

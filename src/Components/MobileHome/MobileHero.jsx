@@ -82,20 +82,16 @@ const MobileHero = () => {
                                         <h3>Premium Outdoor Sites in Ahmedabad</h3>
                                     </div>
                                 </Col>
-                                <Col lg={8} md={12} style={{ display: "flex", justifyContent: "start" }}>
+                                {/* <Col lg={8} md={12} style={{ display: "flex", justifyContent: "start" }}>
                                     <div className='contup'>
                                         <div>
                                             <img src={Impressions} alt="" />
                                         </div>
-                                        {/* <CountUp
-            end={500}
-            duration={10}
-            suffix="+"
-        /> */}
+                                       
                                         <h3 style={{ fontSize: "16px", marginBottom: "5px", fontWeight: "200" }}>xyz</h3>
                                         <h3>Daily Impressions</h3>
                                     </div>
-                                </Col>
+                                </Col> */}
                                 <Col lg={8} md={12} >
                                     <div className='contup'>
                                         <div>
