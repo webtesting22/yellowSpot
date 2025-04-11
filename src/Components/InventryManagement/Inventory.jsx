@@ -88,14 +88,20 @@ const Inventory = () => {
         const fetchData = async () => {
             console.log("hello", import.meta.env);
             try {
-                const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/inventoryManagement/v2`);
+                const response = await fetch(`https://testapi.prepseed.com/inventoryManagement/v2`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
                 const jsonData = await response.json();
                 const typeNames = Array.from(new Set(jsonData.allInv.map(item => item.typeOfMedia.name)));
-                const areaNames = Array.from(new Set(jsonData.allInv.map(item => item.locations?.Area.trim()))); 
-                console.log('Area Names:', areaNames);
+                const areaNames = Array.from(
+                    new Set(
+                        jsonData.allInv
+                            .map(item => item.locations?.Area?.trim())
+                            .filter(area => !!area) // Remove null/undefined
+                    )
+                );
+                // console.log('Area Names:', areaNames);
                 setTotalItems(jsonData.totalItems);
                 setMediaTypes(typeNames);
                 setAreas(areaNames);
@@ -243,18 +249,18 @@ const Inventory = () => {
                                 disabled={filteredAreas.length === 0}
                             /> */}
                             <NamedSelectComponent
-    options={uniqueFilteredAreas.map(area => ({
-        label: `${area} (${areaCounts[area]})`,
-        value: area,
-        count: areaCounts[area]
-    }))}
-    title="Area"
-    selectedItems={selectedItemsOnArea}
-    setSelectedItems={(items) => {
-        setSelectedItemsOnArea(items);
-    }}
-    disabled={uniqueFilteredAreas.length === 0}
-/>
+                                options={uniqueFilteredAreas.map(area => ({
+                                    label: `${area} (${areaCounts[area]})`,
+                                    value: area,
+                                    count: areaCounts[area]
+                                }))}
+                                title="Area"
+                                selectedItems={selectedItemsOnArea}
+                                setSelectedItems={(items) => {
+                                    setSelectedItemsOnArea(items);
+                                }}
+                                disabled={uniqueFilteredAreas.length === 0}
+                            />
                         </div>
                         <div className="filtered-count">
                             <p style={{ color: "#FFED00", fontSize: "20px", margin: "0px" }}>Inventories: {filteredCount}</p>
