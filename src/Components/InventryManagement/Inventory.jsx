@@ -93,21 +93,26 @@ const Inventory = () => {
                     throw new Error('Failed to fetch data');
                 }
                 const jsonData = await response.json();
-                const typeNames = Array.from(new Set(jsonData.allInv.map(item => item.typeOfMedia.name)));
+
+                // Filter the data to only include inventories where isTrading is false
+                const filteredInventories = jsonData.allInv.filter(item =>
+                    item.isTrading === false && item.isArchived === false
+                );
+
+                const typeNames = Array.from(new Set(filteredInventories.map(item => item.typeOfMedia.name)));
                 const areaNames = Array.from(
                     new Set(
-                        jsonData.allInv
+                        filteredInventories
                             .map(item => item.locations?.Area?.trim())
                             .filter(area => !!area) // Remove null/undefined
                     )
                 );
-                // console.log('Area Names:', areaNames);
-                setTotalItems(jsonData.totalItems);
+
+                setTotalItems(filteredInventories.length);
                 setMediaTypes(typeNames);
                 setAreas(areaNames);
-                setData(jsonData);
-                setFilteredData(jsonData.allInv); // Set the initial filtered data
-                setFilteredCount(jsonData.allInv.length); // Set the initial filtered count
+                setFilteredData(filteredInventories); // Set the filtered data (only isTrading === false)
+                setFilteredCount(filteredInventories.length); // Set the filtered count
             } catch (error) {
                 console.log(error);
             }
@@ -115,6 +120,7 @@ const Inventory = () => {
 
         fetchData();
     }, []);
+
 
     const handleLocationClick = (lat, lng) => {
         console.log("Latitude:", lat);

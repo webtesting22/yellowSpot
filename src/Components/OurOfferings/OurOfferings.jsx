@@ -41,6 +41,12 @@ const OurOfferings = () => {
             <HomePageNavigation />
             <AnimatedCoverPage backgroundImage={offering} />
             <br /><br />
+
+            <section id="OurProducts" className="container">
+                <SwiperHeadingIcon headingText="OUR PRODUCTS" />
+                <Inventory />
+            </section>
+            <br /><br />
             <section id="serviceCard" className="container">
                 <SwiperHeadingIcon headingText="OUR SERVICES" />
                 <br />
@@ -51,10 +57,7 @@ const OurOfferings = () => {
                 </div>
             </section>
             <br /><br />
-            <section id="OurProducts" className="container">
-                <SwiperHeadingIcon headingText="OUR PRODUCTS" />
-                <Inventory />
-            </section>
+           
             <Footer />
         </>
     );
