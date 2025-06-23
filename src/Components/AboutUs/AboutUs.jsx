@@ -106,7 +106,7 @@ const AboutUS = () => {
                         </Col>
                         <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
                         <Col lg={8} id="OnlyForPc">
-                            <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/55.png" alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
                         </Col>
 
                         <Col lg={16}>
@@ -124,7 +124,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8} id="onlyMobile">
-                            <img src={hetgraphics} alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
+                            <img src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/55.png" alt="het_graphics_logo" className="HET_IMG" data-aos="fade-up" />
                         </Col>
                         <hr style={{ border: "1px solid white", opacity: "0.7", width: "100%" }} />
                         <Col lg={16}>
@@ -141,7 +141,7 @@ const AboutUS = () => {
                             </div>
                         </Col>
                         <Col lg={8}>
-                            <img src={khushiLogo} alt="khushi_advertising_logo" className="KhushiImg" id="KhushiImg" data-aos="fade-up" />
+                            <img style={{backgroundColor:"white"}} src="https://s3.ap-south-1.amazonaws.com/prepseed/prod/ldoc/media/56.png" alt="khushi_advertising_logo" className="KhushiImg" id="KhushiImg" data-aos="fade-up"/>
                         </Col>
                     </Row>
                 </div>
